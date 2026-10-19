@@ -1,0 +1,35 @@
+{
+  "0.0": {
+    "max_component_error": 2.7609650676829744e-12,
+    "max_length_error": 4.9960036108132044e-15,
+    "dt_halving_difference": 2.59091359477992e-12,
+    "max_increase_normalised_zeeman": -0.0,
+    "final_m": [
+      -0.8163559574084299,
+      -0.5775490895186004,
+      0.0
+    ]
+  },
+  "0.1": {
+    "max_component_error": 5.17808018685173e-13,
+    "max_length_error": 1.021405182655144e-13,
+    "dt_halving_difference": 4.844458167951871e-13,
+    "max_increase_normalised_zeeman": -6.566231889326701e-07,
+    "final_m": [
+      -0.05921965318972912,
+      -0.016228542373867852,
+      0.9981130532603543
+    ]
+  },
+  "0.5": {
+    "max_component_error": 6.716849298982197e-14,
+    "max_length_error": 5.10702591327572e-14,
+    "dt_halving_difference": 6.306066779870889e-14,
+    "max_increase_normalised_zeeman": -1.6653345369377348e-15,
+    "final_m": [
+      -1.5374415015272693e-06,
+      2.0998348156727692e-07,
+      0.9999999999988427
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "method": "Independent volume Gauss-Legendre quadrature of rectangular-face solid-angle field",
+  "exact_Nz": 0.9408621743243292,
+  "results": [
+    {
+      "points_per_axis": 24,
+      "Nz_volume_integral": 0.9409067421390138,
+      "absolute_error": 4.456781468464843e-05
+    },
+    {
+      "points_per_axis": 48,
+      "Nz_volume_integral": 0.9408650655889929,
+      "absolute_error": 2.891264663684723e-06
+    },
+    {
+      "points_per_axis": 96,
+      "Nz_volume_integral": 0.9408623587171202,
+      "absolute_error": 1.8439279103610318e-07
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+[
+  {
+    "原路径": "理论学习资料.md",
+    "新路径": "理论学习资料/0-阅读指南.md",
+    "整理前SHA256": "b680b2d15df015acc001260f0c21c23b9821ad0e60ad405cefc7e72e8c972eaa"
+  },
+  {
+    "原路径": "微磁学四种能量竞争_学习笔记.md",
+    "新路径": "理论学习资料/2-微磁学四种能量竞争_学习笔记.md",
+    "整理前SHA256": "70f10daa2404ebaff87f30fdefec4a2d2caf57305265d870b52773c64adf6032"
+  },
+  {
+    "原路径": "output/QAH基本概念与面外磁化学习指南.md",
+    "新路径": "理论学习资料/4-QAH基本概念与面外磁化学习指南.md",
+    "整理前SHA256": "52e48461ec6ac0c781f1ba7ffb73b2a724845c83e69f55271df7328cd32ac0d3"
+  },
+  {
+    "原路径": "output/QAH学习资料.html",
+    "新路径": "理论学习资料/4-QAH学习资料.html",
+    "整理前SHA256": "37e7988329532a3676915b668a980732746e9211af7dc6d5ce9912489a24127b"
+  },
+  {
+    "原路径": "output/QAH综述中文译读.md",
+    "新路径": "理论学习资料/4-QAH综述中文译读.md",
+    "整理前SHA256": "e9ff669d78adaec4835dd4a34fa25897a4efc74bee6277f8de99e13c42b1fbd2"
+  },
+  {
+    "原路径": "output/demag-learning/example_200x200x4.json",
+    "新路径": "理论学习资料/辅助文件/output/demag-learning/example_200x200x4.json",
+    "整理前SHA256": "9f1d738d1ed62f756c93b8c5f1a4122c1a2bbf9a3c668b6a76c1b486afe98327"
+  },
+  {
+    "原路径": "output/demag-learning/independent_quadrature_check.json",
+    "新路径": "理论学习资料/辅助文件/output/demag-learning/independent_quadrature_check.json",
+    "整理前SHA256": "ac5e0e80493547fb958c9da740f44800ddf24ff6b66cca8f3760da68d54e49cd"
+  },
+  {
+    "原路径": "output/demag-learning/rectangular_demag.py",
+    "新路径": "理论学习资料/辅助文件/output/demag-learning/rectangular_demag.py",
+    "整理前SHA256": "fde78d042b430a9cf5015ea7e6e324284aaaec9c6b626262a723353ecf8b7a8c"
+  },
+  {
+    "原路径": "output/demag-learning/退磁因子学习与校验.md",
+    "新路径": "理论学习资料/5-退磁因子学习与校验.md",
+    "整理前SHA256": "2039c3dd59c3c9b9d5f2865a23ceffa6199fb1c393b720f42eba798eec69f46f"
+  },
+  {
+    "原路径": "output/fidimag-learning/macrospin_llg.py",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/macrospin_llg.py",
+    "整理前SHA256": "3261a045e0e6e92043b8bd97d642f265e8e51ccdc0ab2eb06e3d167f27f2ef04"
+  },
+  {
+    "原路径": "output/fidimag-learning/thinfilm_fidimag.py",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/thinfilm_fidimag.py",
+    "整理前SHA256": "ea31ea9ffedd4a25945f6e9816268ed4c6621f6a34b189a13bfcae714ccd8680"
+  },
+  {
+    "原路径": "output/fidimag-learning/学习指南.html",
+    "新路径": "理论学习资料/3-Fidimag_材料参数与LLG方程学习指南.html",
+    "整理前SHA256": "03d2b76079cef4960706bbc8f46f08896afb30025458dbdeda77162baff5cb40"
+  },
+  {
+    "原路径": "output/fidimag-learning/学习指南.md",
+    "新路径": "理论学习资料/3-Fidimag_材料参数与LLG方程学习指南.md",
+    "整理前SHA256": "acfb425c5561ebcf2c923b0d6ee83792fdf82d897528b0ed9edc63734f88621f"
+  },
+  {
+    "原路径": "output/mit-ch9/build-reading.cjs",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/build-reading.cjs",
+    "整理前SHA256": "6a7d4460bf464688b903b5feec89dbe91b6ab09f5dcc1d16753c1a6d992cca52"
+  },
+  {
+    "原路径": "output/mit-ch9/README.md",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/README.md",
+    "整理前SHA256": "825fd5e035ae9515bebbc10bed52f94762256c5c2ec9e1f383ca303d1e8474e3"
+  },
+  {
+    "原路径": "output/mit-ch9/磁化与退磁场_中文译注.html",
+    "新路径": "理论学习资料/1-磁化与退磁场_中文译注.html",
+    "整理前SHA256": "a710530fb6efd7420d880694543fca04034914216b70a2a51c34a222f45557bd"
+  },
+  {
+    "原路径": "output/mit-ch9/磁化与退磁场_中文译注.md",
+    "新路径": "理论学习资料/1-磁化与退磁场_中文译注.md",
+    "整理前SHA256": "dba6f3855733dd647b047725d53c555d95ec02ab8a54c54423c05a96b519a5a8"
+  },
+  {
+    "原路径": "output/mumax3/微磁学四种能量竞争_学习版.html",
+    "新路径": "理论学习资料/2-微磁学四种能量竞争_学习版.html",
+    "整理前SHA256": "1680bcb00f891270907e052b336e551361dc6051ed31ec9cbad80d4d16a42b28"
+  },
+  {
+    "原路径": "output/mumax3/微磁学四种能量竞争_学习版.html.review.json",
+    "新路径": "理论学习资料/辅助文件/output/mumax3/微磁学四种能量竞争_学习版.html.review.json",
+    "整理前SHA256": "8e5aded88d12d99f8af90239e2ef6bfcc48ec361eebaf53e3f79b72151452ba3"
+  },
+  {
+    "原路径": "output/pdf/Fidimag_材料参数与LLG方程学习指南.pdf",
+    "新路径": "理论学习资料/3-Fidimag_材料参数与LLG方程学习指南.pdf",
+    "整理前SHA256": "62ceec9b6dd39d51f05365e78599f352905fe2562eec4755e2cb3b4654fc44b5"
+  },
+  {
+    "原路径": "output/pdf/磁化与退磁场_中文译注.pdf",
+    "新路径": "理论学习资料/1-磁化与退磁场_中文译注.pdf",
+    "整理前SHA256": "9f473a8e8e9f55b36ebca6999febc26288f6776a1788319091a54babbaac3e96"
+  },
+  {
+    "原路径": "output/mit-ch9/assets/fig-9.5.1.png",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/assets/fig-9.5.1.png",
+    "整理前SHA256": "9943eca6ab69b9ef1c3991f31ad94e8a836a651e8f1e0551ee242256fdcde2fe"
+  },
+  {
+    "原路径": "output/mit-ch9/assets/fig-9.5.2.png",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/assets/fig-9.5.2.png",
+    "整理前SHA256": "2e50cd7f3b3924b9828721e4efb61dbfe3dbe7dc4fe88035a784cddccf46b055"
+  },
+  {
+    "原路径": "output/mit-ch9/assets/fig-9.5.3.png",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/assets/fig-9.5.3.png",
+    "整理前SHA256": "b718ad9f99c76e461688743f47f7a3526082d066b3ba67fb4691293eff3f50c9"
+  },
+  {
+    "原路径": "output/mit-ch9/assets/fig-9.5.4.png",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/assets/fig-9.5.4.png",
+    "整理前SHA256": "c21f511930e15505f84d7317f31d1a1184540b7dc42c354ab9d4f59d7de40b6d"
+  },
+  {
+    "原路径": "output/mit-ch9/assets/fig-9.5.5.png",
+    "新路径": "理论学习资料/辅助文件/output/mit-ch9/assets/fig-9.5.5.png",
+    "整理前SHA256": "e32ed5f8218dabdb99d490e54887f98173b7cc710c017812c50e9cab399caf9f"
+  },
+  {
+    "原路径": "output/fidimag-learning/macrospin_results/alpha_0.1.csv",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/macrospin_results/alpha_0.1.csv",
+    "整理前SHA256": "a0f1c1d187d50857efb96f0b51f03c1b1bd1db00adb41c0aa764f4e8ac7f0d5b"
+  },
+  {
+    "原路径": "output/fidimag-learning/macrospin_results/alpha_0.5.csv",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/macrospin_results/alpha_0.5.csv",
+    "整理前SHA256": "3cdeca746fd3545f6f030ab9683e6f2845f9950cd5aa43e39cbc7b548fbd1a43"
+  },
+  {
+    "原路径": "output/fidimag-learning/macrospin_results/alpha_0.csv",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/macrospin_results/alpha_0.csv",
+    "整理前SHA256": "20dd70acee91a1b4da728428fc99d980e5ce7fd5f51787d64bd0149f8fd49c37"
+  },
+  {
+    "原路径": "output/fidimag-learning/macrospin_results/llg_trajectory.svg",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/macrospin_results/llg_trajectory.svg",
+    "整理前SHA256": "76a80b34752b2d22191136adfddbc2f5581cfaee8064d133a5efb676aa08941f"
+  },
+  {
+    "原路径": "output/fidimag-learning/macrospin_results/verification.json",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/macrospin_results/verification.json",
+    "整理前SHA256": "eed49a7724528a9d7323306a2a625f3fd071ce0f5dafcbc2a762c2e127210f61"
+  },
+  {
+    "原路径": "output/fidimag-learning/__pycache__/macrospin_llg.cpython-312.pyc",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/__pycache__/macrospin_llg.cpython-312.pyc",
+    "整理前SHA256": "4d04105e249a1272d83453cd2eb6a75eb3317390bc3319ef9fe70d360fede9cf"
+  },
+  {
+    "原路径": "output/fidimag-learning/__pycache__/thinfilm_fidimag.cpython-312.pyc",
+    "新路径": "理论学习资料/辅助文件/output/fidimag-learning/__pycache__/thinfilm_fidimag.cpython-312.pyc",
+    "整理前SHA256": "1460719596635370122e529e17d38a0f2689a026d293ddb31ab5ac74a4e45ac7"
+  },
+  {
+    "原路径": "output/demag-learning/__pycache__/rectangular_demag.cpython-312.pyc",
+    "新路径": "理论学习资料/辅助文件/output/demag-learning/__pycache__/rectangular_demag.cpython-312.pyc",
+    "整理前SHA256": "d2ec7f6889400eabd4d5168c92f0f7fc8f1dbf4242bceac5ca8744ce4eefcf10"
+  },
+  {
+    "原路径": "sources/fidimag/anisotropy.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/anisotropy.py",
+    "整理前SHA256": "8d09cbd8db219ee48da8d85e6b99a4cfbd60540745d7533853db171e44e7bf56"
+  },
+  {
+    "原路径": "sources/fidimag/commit.json",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/commit.json",
+    "整理前SHA256": "0413dec90a4a4bff06cde407e227acc7ab9a995e9486de6aa8bc1cc567fceffd"
+  },
+  {
+    "原路径": "sources/fidimag/core_eqs.rst.txt",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/core_eqs.rst.txt",
+    "整理前SHA256": "ed15ad6a12441f0d2d3dbf4b982d1bf0645aa4faf028121d227981f8175cc73f"
+  },
+  {
+    "原路径": "sources/fidimag/demag.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/demag.py",
+    "整理前SHA256": "82e65d14da016726c94bc7d1a764d8f947aed79b97e8b66c6347548e3d62d58a"
+  },
+  {
+    "原路径": "sources/fidimag/driver_base.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/driver_base.py",
+    "整理前SHA256": "670ae3bf2ece03c5323fe8bcd002d07e44887cdd05b15574af354084d315ad39"
+  },
+  {
+    "原路径": "sources/fidimag/energy.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/energy.py",
+    "整理前SHA256": "218004683be94c251ebe89b371a5556875531377dc69162f422cddc4756b2461"
+  },
+  {
+    "原路径": "sources/fidimag/exchange.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/exchange.py",
+    "整理前SHA256": "b00acc035ea4458731f43a6b3f08faa860bac59e93e550f6843db750ec1875ff"
+  },
+  {
+    "原路径": "sources/fidimag/LICENSE.txt",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/LICENSE.txt",
+    "整理前SHA256": "810b8a94be9a5341772c55c9d9be557e0515652daa106ea6157eaf0f59e5f65a"
+  },
+  {
+    "原路径": "sources/fidimag/llg.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/llg.py",
+    "整理前SHA256": "39dd0dc531d3a11f17fda4b39134bfeea66cc7378d380b8a5b961728e3ea5edb"
+  },
+  {
+    "原路径": "sources/fidimag/micro_driver.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/micro_driver.py",
+    "整理前SHA256": "6b84efc2e8e1f314b4f3fc988488410dd2be0969fd96d88f447cab1059fa8b79"
+  },
+  {
+    "原路径": "sources/fidimag/sim.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/sim.py",
+    "整理前SHA256": "03a11b7740862b1a1f1c0e0fc475e18095fa70d735a47c98c60e5578ba6e0aa3"
+  },
+  {
+    "原路径": "sources/fidimag/sources.json",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/sources.json",
+    "整理前SHA256": "a71e66bef56d8dcad1ac50ab16141bee4dcf0e6884aea961ace9a0395d14cf5b"
+  },
+  {
+    "原路径": "sources/fidimag/zeeman.py",
+    "新路径": "理论学习资料/辅助文件/sources/fidimag/zeeman.py",
+    "整理前SHA256": "f23919c71adc5e7e1d9187512b03ce1404386f3b64c7c8dd0be0200de5aacfc9"
+  },
+  {
+    "原路径": "sources/mit-ch9/09.pdf",
+    "新路径": "理论学习资料/1-MIT_第9章_英文原文.pdf",
+    "整理前SHA256": "2f9514a97a00cfd10aa6c72edab369de9d99640937f2b736b30f0428bced6348"
+  },
+  {
+    "原路径": "sources/mit-ch9/9.1.html",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/9.1.html",
+    "整理前SHA256": "22518572f2b7ee5382ba5a2dd2acc4f783ecaba1d8bdce8fbb18df2e5f32c414"
+  },
+  {
+    "原路径": "sources/mit-ch9/9.2.html",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/9.2.html",
+    "整理前SHA256": "d8c393ae3032f2bbf88bb3f756227f2895482f734753915068be947674c36452"
+  },
+  {
+    "原路径": "sources/mit-ch9/9.5.html",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/9.5.html",
+    "整理前SHA256": "145983911aec4709fca552bbbda51d36325dd3bb34738bfeee6ca2f05e4e10d1"
+  },
+  {
+    "原路径": "sources/mit-ch9/ch9-951.gif",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/ch9-951.gif",
+    "整理前SHA256": "1af2ea08c3aaf2e52104c1e964db1825d9f3985741eeb6b3b2b4a0b642a59aea"
+  },
+  {
+    "原路径": "sources/mit-ch9/ch9-952.gif",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/ch9-952.gif",
+    "整理前SHA256": "e1bfeed4b3245775381900b5310b682597a79235f752c7f5a3bbd22e19fddcaa"
+  },
+  {
+    "原路径": "sources/mit-ch9/ch9-953.gif",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/ch9-953.gif",
+    "整理前SHA256": "ee4ed3dd842e7263a6fc12f86d644a307198835b3b96e6778ffada441e14f722"
+  },
+  {
+    "原路径": "sources/mit-ch9/ch9-954.gif",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/ch9-954.gif",
+    "整理前SHA256": "b340ecb34f0450b8c803801dbb605018ba0dea4e3ff4eb5672aec394947269c2"
+  },
+  {
+    "原路径": "sources/mit-ch9/ch9-955.gif",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/ch9-955.gif",
+    "整理前SHA256": "ef89811b03d9776eee33c4ba861321eddddc51239d21eaf2f8b2e79292739a76"
+  },
+  {
+    "原路径": "sources/mit-ch9/katex.min.css",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/katex.min.css",
+    "整理前SHA256": "717bc9ae7853b61f0f76455dddf0ecd4f527a783f42de2ac24684899c1c46258"
+  },
+  {
+    "原路径": "sources/mit-ch9/katex.min.js",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/katex.min.js",
+    "整理前SHA256": "e6bfe5deebd4c7ccd272055bab63bd3ab2c73b907b6e6a22d352740a81381fd4"
+  },
+  {
+    "原路径": "sources/mit-ch9/selected-text.txt",
+    "新路径": "理论学习资料/辅助文件/sources/mit-ch9/selected-text.txt",
+    "整理前SHA256": "64edb1f3a586a6a68c693f4c26513b64dafa19747b6148575d7aff47500f1f53"
+  },
+  {
+    "原路径": "sources/mumax3/build_study_html.cjs",
+    "新路径": "理论学习资料/辅助文件/sources/mumax3/build_study_html.cjs",
+    "整理前SHA256": "d6a1038645f24f1cc71e0f2b038aa8a0863d04bc613a74ec873ae05149854f9c"
+  },
+  {
+    "原路径": "sources/mumax3/selected-text.txt",
+    "新路径": "理论学习资料/辅助文件/sources/mumax3/selected-text.txt",
+    "整理前SHA256": "d9dae938a287508475c118b8e73b10a2ba9bf5cfff8795d5f11a11f50e32dfe2"
+  },
+  {
+    "原路径": "sources/mumax3/tutorial1.pdf",
+    "新路径": "理论学习资料/2-MuMax3_入门讲义_英文原文.pdf",
+    "整理前SHA256": "2d424fa8ca0f9605d9b34b6249c6b39294716a640d587e952432a036db4bc15b"
+  },
+  {
+    "原路径": "sources/qah-nsr-2014/original.html",
+    "新路径": "理论学习资料/辅助文件/sources/qah-nsr-2014/original.html",
+    "整理前SHA256": "3eeb92414a0a1cd9eeec5d6d5b74379db78389a632219d50d52897d5673b3533"
+  },
+  {
+    "原路径": "sources/qah-nsr-2014/paragraphs.txt",
+    "新路径": "理论学习资料/辅助文件/sources/qah-nsr-2014/paragraphs.txt",
+    "整理前SHA256": "8089bfeb8a0d9bb1f3d366bc8cebed863c1a8803f3edde6c1954c9599ff6e91b"
+  },
+  {
+    "原路径": "sources/qah-nsr-2014/README.md",
+    "新路径": "理论学习资料/辅助文件/sources/qah-nsr-2014/README.md",
+    "整理前SHA256": "cf1aa2e27fb4067ebd87048263e349a030ec5757b8d554b62d127ccc58084543"
+  },
+  {
+    "原路径": "tmp/fidimag/build_guide.cjs",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/build_guide.cjs",
+    "整理前SHA256": "63fc2f5a3ef2d1e91de1e75d3cb9980c08ad61834714639ce492bbcb62923b7c"
+  },
+  {
+    "原路径": "tmp/fidimag/layout.json",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/layout.json",
+    "整理前SHA256": "b2656007c440973e9228d686dd138ba7e81f7a2e5dab32d51c8c7ac274b1d037"
+  },
+  {
+    "原路径": "tmp/fidimag/page-01.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-01.png",
+    "整理前SHA256": "bf0ccf4b7eaeb10b09420ae8a85bfd1866fdd92415417155f48a72c5ab19770f"
+  },
+  {
+    "原路径": "tmp/fidimag/page-02.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-02.png",
+    "整理前SHA256": "a8ef488545a27657f6ca4ce11dab7104317320de92e071b48c1a2a833edf045c"
+  },
+  {
+    "原路径": "tmp/fidimag/page-03.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-03.png",
+    "整理前SHA256": "c14559b39595952db1496494f58ffbdd5a54182c83941ac7eb5b1224de14b8f7"
+  },
+  {
+    "原路径": "tmp/fidimag/page-04.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-04.png",
+    "整理前SHA256": "1cef0a98898417ec8a40984f0c8066678e101904b1f0e91ab9d3411673006617"
+  },
+  {
+    "原路径": "tmp/fidimag/page-05.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-05.png",
+    "整理前SHA256": "a5276cf38a9744b5e758060672818438554e27e70a51a5fa4185daa1f399f019"
+  },
+  {
+    "原路径": "tmp/fidimag/page-06.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-06.png",
+    "整理前SHA256": "672663a8fca1fcedf2456dec1506405bd07e8c6135635f189c86c52c74ac9149"
+  },
+  {
+    "原路径": "tmp/fidimag/page-07.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-07.png",
+    "整理前SHA256": "20dfe121bfc148b1621affb06db9c1dd33e0f3f1f0ae9af0c916367af419f635"
+  },
+  {
+    "原路径": "tmp/fidimag/page-08.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-08.png",
+    "整理前SHA256": "a50140a6464528acb738c3d20be1dd3c942d4e7f40f480530c1d51e1c708af18"
+  },
+  {
+    "原路径": "tmp/fidimag/page-09.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-09.png",
+    "整理前SHA256": "d486c8028bcc178a5a6578be2e59cded2aff1ab922b2d78de7ed9f8f36be7b51"
+  },
+  {
+    "原路径": "tmp/fidimag/page-10.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-10.png",
+    "整理前SHA256": "02e99906a54a94bbf23d1163777b9675347251df3eed1d476a3ea693a57d62e0"
+  },
+  {
+    "原路径": "tmp/fidimag/page-11.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-11.png",
+    "整理前SHA256": "f73688285de1b700833a5c3292939e7efe6dcb55392d5bfbc46319fbf07797b3"
+  },
+  {
+    "原路径": "tmp/fidimag/page-12.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-12.png",
+    "整理前SHA256": "b799bdb93799fbd280f6b916aa55b24836771f64787602e7166391690db30501"
+  },
+  {
+    "原路径": "tmp/fidimag/page-13.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-13.png",
+    "整理前SHA256": "71910daddc85135aa8f201e8f099a18f0c82d5530a1e10685570ed98807eb958"
+  },
+  {
+    "原路径": "tmp/fidimag/page-14.png",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/page-14.png",
+    "整理前SHA256": "ac06d5dd7de16b6b83c5332026c6b3b853562fab9ea515a3c0345dd442c0c5b2"
+  },
+  {
+    "原路径": "tmp/fidimag/render_guide.cjs",
+    "新路径": "理论学习资料/辅助文件/tmp/fidimag/render_guide.cjs",
+    "整理前SHA256": "dea8982ea55934a78f7388bf779f4f86aff10901ebc5c816bac3637836389952"
+  },
+  {
+    "原路径": "tmp/mumax3/browser-check.json",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/browser-check.json",
+    "整理前SHA256": "b43314c7a1c4897c18a6cc6eb1da1d47c9b029418aeab53eb0e747d1a05bc984"
+  },
+  {
+    "原路径": "tmp/mumax3/check_html.cjs",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/check_html.cjs",
+    "整理前SHA256": "7f616ae18c89fb85790df7b6fbaa6a1f90db4ce3b9d939203350f9ab92887d67"
+  },
+  {
+    "原路径": "tmp/mumax3/page-26.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/page-26.png",
+    "整理前SHA256": "4858f349b2e5025807b6008b7a92264b92b8c283ed1ff5f9761f6c2e491ff527"
+  },
+  {
+    "原路径": "tmp/mumax3/page-27.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/page-27.png",
+    "整理前SHA256": "46f6b833ef3b89d7d1099a49414b94f53764dfc46c9f7cf76ee26eb86091b997"
+  },
+  {
+    "原路径": "tmp/mumax3/page-28.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/page-28.png",
+    "整理前SHA256": "15127b0524091445fb96de9e33f388b98e8a2adf8fa8221a3b4dd0a95a0c54ad"
+  },
+  {
+    "原路径": "tmp/mumax3/page-30.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/page-30.png",
+    "整理前SHA256": "38b3606c4f09a139aec8da31e08544ebc5855aeda687431a35e015703c039876"
+  },
+  {
+    "原路径": "tmp/mumax3/page-6.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/page-6.png",
+    "整理前SHA256": "edd3c6c58811c33964359f6ac25fda6a42f46fc654049987fa1e750eef27e048"
+  },
+  {
+    "原路径": "tmp/mumax3/page-8.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/page-8.png",
+    "整理前SHA256": "ff09e7d6b602e0c2728c8336b5f70c94348885a7a6faa9bd3480148000c2eae3"
+  },
+  {
+    "原路径": "tmp/mumax3/relevant-pages.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/relevant-pages.png",
+    "整理前SHA256": "b9221c180dcdbb28fab34687c86fddbb998e89572bfb0f4bc659fb076916d5b3"
+  },
+  {
+    "原路径": "tmp/mumax3/study-base.html",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/study-base.html",
+    "整理前SHA256": "e893064f49d30b470cd568d40514af82b1e1050c8b104426cdf5e59044e6d922"
+  },
+  {
+    "原路径": "tmp/mumax3/study-competition.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/study-competition.png",
+    "整理前SHA256": "ba7453ac12583d23212e11b7e7b5951d4d18bcabbc7747e88bac6b9c24ce8b41"
+  },
+  {
+    "原路径": "tmp/mumax3/study-desktop.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/study-desktop.png",
+    "整理前SHA256": "ed750265722ec6759e47d4681bfef9bdc46193125b26ef2e66942db73e3f16ea"
+  },
+  {
+    "原路径": "tmp/mumax3/study-mobile.png",
+    "新路径": "理论学习资料/辅助文件/tmp/mumax3/study-mobile.png",
+    "整理前SHA256": "397e99810e7b55138406ff405c3266c6af0d66445ec48e4e1d01e41b479cd8ed"
+  },
+  {
+    "原路径": "tmp/pdfs/contact-sheet.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/contact-sheet.png",
+    "整理前SHA256": "35efcc11160fd1a71d253b7ec3713afe0e21dbfe975ccdf2a6f739bb13a06b28"
+  },
+  {
+    "原路径": "tmp/pdfs/html-page3.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/html-page3.png",
+    "整理前SHA256": "53281910e0a4f6238201466fd1a725335b21965747585fc040894849bc50572d"
+  },
+  {
+    "原路径": "tmp/pdfs/layout-audit.json",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/layout-audit.json",
+    "整理前SHA256": "d9ba908b8f86c509cd426d01266506b58f3afe41b8ae84d521fc7a8707a2bab9"
+  },
+  {
+    "原路径": "tmp/pdfs/original-04.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/original-04.png",
+    "整理前SHA256": "a7374949d4c6e4c28d83c431fd058ac6cfefdfdd8e77c144c40d46c5391ce60e"
+  },
+  {
+    "原路径": "tmp/pdfs/original-05.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/original-05.png",
+    "整理前SHA256": "7addbfd066567800f55e216355553227997cf4ba2aefed09267c7889c17a1ecc"
+  },
+  {
+    "原路径": "tmp/pdfs/original-26.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/original-26.png",
+    "整理前SHA256": "ba7e9e103f74d33bfc53d3a6d31bcc47d265b0d701b6aa08dbc8e8df5e39d4bb"
+  },
+  {
+    "原路径": "tmp/pdfs/original-27.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/original-27.png",
+    "整理前SHA256": "0123842203673535279e26e0650afdf8a3627b4c89adc4035e2b6df8a26e1cd8"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-01.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-01.png",
+    "整理前SHA256": "05ceb88180213b26fe9b7ba26582ff6e1f2fc8a6517a574cb8a7797e1351a158"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-02.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-02.png",
+    "整理前SHA256": "8501440272554b47c17fdf6049633c07da8f68b64e848acfecaca71ec26cb8f9"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-03.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-03.png",
+    "整理前SHA256": "ef43565b83d8833e996f69a0c3fcf432f4e64afe9dcaa175d167b12b94d180f0"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-04.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-04.png",
+    "整理前SHA256": "420224ffd4862c4f9ace88282481e01fa5a7f392c963a8d1c99c4118c9921dc0"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-05.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-05.png",
+    "整理前SHA256": "cdb08588353e72f3d2d6335af3d0eac9c9dda1b9a597ea9f8e6a5c6bdf9e4bad"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-06.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-06.png",
+    "整理前SHA256": "6937e53b503535ad4336d000c924ee291b47f50b2f3a0d8b4d2fe03dc02f6209"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-07.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-07.png",
+    "整理前SHA256": "99dee4525b235b4e998294b03b20ae14fa58843e263c43f677e7102d4ff6ef9f"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-08.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-08.png",
+    "整理前SHA256": "b827e329320fde5541d6bfee263757ac4b6abfe1cc15801ed719eed66c0b4084"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-09.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-09.png",
+    "整理前SHA256": "9ab9756a1fc7b09af5f198aeaa923516ed6cbe8bdb7141e41ab90847908119e9"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-10.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-10.png",
+    "整理前SHA256": "6fa9420b6b63d349737957eec5ce2acbd2025295eafa8993eee436d891e5ac9a"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-11.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-11.png",
+    "整理前SHA256": "ae5eed76c7ed35c9f9a5ac49eefa3ffddcd46ce4592cbf0f124d1b6945d16b96"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-12.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-12.png",
+    "整理前SHA256": "70ce43367a408336498e28d66e527cdbd7be2496676ed9234ad9a01dad0e6b81"
+  },
+  {
+    "原路径": "tmp/pdfs/translated-13.png",
+    "新路径": "理论学习资料/辅助文件/tmp/pdfs/translated-13.png",
+    "整理前SHA256": "3298f4953cbd031c2c09751f55424cae9877b10dfa02117b23d0062af8848559"
+  },
+  {
+    "原路径": "tools/build_qah_learning.py",
+    "新路径": "理论学习资料/辅助文件/tools/build_qah_learning.py",
+    "整理前SHA256": "e14fc2a475a1ace97b0123bd8731b9027680a947aef8c04cbcc69aa7d14ba811"
+  }
+]

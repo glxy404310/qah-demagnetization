@@ -1,0 +1,473 @@
+PAGE 3
+3 Sec. 9.1 Magnetization Density 
+into a magnetic ﬁeld is common evidence of the induced magnetization described 
+by the constitutive laws of Sec. 9.4. 
+The extensive analogy between polarization and magnetization makes most of 
+the examples from Chap. 6 analogous to magnetization examples. This is especially 
+true in Secs. 9.5 and 9.6, where materials are considered that have a magnetization 
+that is linearly related to the magnetic ﬁeld intensity. Thus, these sections not only 
+build on the insights gained in the earlier sections on polarization, but give the 
+opportunity to expand on both topics as well. The magnetic circuits considered in 
+Sec. 9.7 are of great practical interest and exemplify an approximate way for the 
+evaluation of ﬁelds in the presence of strongly magnetized materials. The saturation 
+of magnetizable materials is of primary practical concern. The problems for Secs. 9.6 
+and 9.7 are an introduction to ﬁelds in materials that are magnetically nonlinear. 
+We generalize Faraday’slaw in Sec. 9.2 so that it can be used in this chapter to 
+predict the voltage at the terminals of coils in systems that include magnetization. 
+This generalization is used to determine terminal relations that include magneti­
+zation in Sec. 9.5. The examples in the subsequent sections study the implications 
+of Faraday’slaw with magnetization included. As in Chap. 8, we conﬁne ourselves 
+in this chapter to examples that can be modeled using the terminal variables of 
+perfectly conducting circuits. The MQS laws, generalized in Sec. 9.2 to include 
+magnetization, form the basis for the discussion of electric ﬁelds in MQS systems 
+that is the theme of Chap. 10. 
+9.1 MAGNETIZATION DENSITY 
+The sources of magnetic ﬁeld in matter are the (more or less) aligned magnetic 
+dipoles of individual electrons or currents caused by circulating electrons.1 We now 
+describe the eﬀect on the magnetic ﬁeld of a distribution of magnetic dipoles rep­
+resenting the material. 
+In Sec. 8.3, we deﬁned the magnitude of the magnetic moment m of a cir­
+culating current loop of current i and area a as m = ia. The moment vector, m, 
+was deﬁned as normal to the surface spanning the contour of the loop and pointing 
+in the direction determined by the right­hand rule. In Sec. 8.3, where the moment 
+was in the z direction in spherical coordinates, the loop was found to produce the 
+magnetic ﬁeld intensity 
+H = µ om [2 cos θir + sin θiθ] (1)4πµ or3
+This ﬁeld is analogous to the electric ﬁeld associated with a dipole having the 
+moment p. With p directed along the z axis, the electric dipole ﬁeld is given by 
+taking the gradient of (4.4.10). 
+E = 4π� 
+p 
+or3 [2 cos θir + sin θiθ] (2) 
+1 Magnetic monopoles, which would play a role with respect to magnetic ﬁelds analogous 
+to that of the charge with respect to electric ﬁelds, may in fact exist, but are certainly not of 
+engineering signiﬁcance. See Science, Research News, “In search of magnetic monopoles,” Vol. 
+216, p. 1086 (June 4, 1982). 
+
+PAGE 4
+4 Magnetization Chapter 9 
+Thus, the dipole ﬁelds are obtained from each other by making the identiﬁcations 
+p µ om (3)↔ 
+In Sec. 6.1, a spatial distribution of electric dipoles is represented by the polarization 
+density P = N p, where N is the number density of dipoles. Similarly, here we deﬁne 
+a magnetization density as 
+M = N m (4) 
+where again N is the number of dipoles per unit volume. Note that just as the 
+analog of the dipole moment p is µ om, the analog of the polarization density P is 
+µ oM. 
+9.2 LAWS AND CONTINUITY	CONDITIONS WITH 
+MAGNETIZATION 
+Recall that the eﬀect of a spatial distribution of electric dipoles upon the electric 
+ﬁeld is described by a generalization of Gauss’ law for electric ﬁelds, (6.2.1) and 
+(6.2.2), 
+� · �oE = −� · P + ρu	 (1) 
+The eﬀect of the spatial distribution of magnetic dipoles upon the magnetic ﬁeld 
+intensity is now similarly taken into account by generalizing the magnetic ﬂux 
+continuity law. 
+(2)� · µ oH = −� · µ oM 
+In this law, there is no analog to an unpaired electric charge density. 
+The continuity condition found by integrating (2) over an incremental volume 
+enclosing a section of an interface having a normal n is 
+n µ o(Ha − Hb) = µ o(Ma − Mb) (3)−n ·	 · 
+Suggested by the analogy to the description of polarization is the deﬁnition 
+of the quantities on the right in (2) and (3), respectively, as the magnetic charge 
+density ρm and the magnetic surface charge density σsm. 
+ρm M (4)≡ −� · µ o
+(5)σsm ≡ −n · µ o(Ma − Mb) 
+
+PAGE 5
+5 Sec. 9.2 Laws and Continuity 
+Faraday’s Law Including Magnetization. The modiﬁcation of the magnetic 
+ﬂux continuity law implies that another of Maxwell’s equations must be generalized. 
+In introducing the ﬂux continuity law in Sec. 1.7, we observed that it was almost 
+inherent in Faraday’slaw. Because the divergence of the curl is zero, the divergence 
+of the free space form of Faraday’s law reduces to 
+∂ � · (� × E) = 0 = − ∂t � · µ oH (6) 
+Thus, in free space, µ oH must have a divergence that is at least constant in time. 
+The magnetic ﬂux continuity law adds the information that this constant is zero. 
+In the presence of magnetizable material, (2) shows that the quantity µ o(H + M) 
+is solenoidal. To make Faraday’s law consistent with this requirement, the law is 
+now written as 
+∂ � × E = − ∂t µ o(H + M) (7) 
+Magnetic Flux Density. The grouping of H and M in Faraday’s law and 
+the ﬂux continuity law makes it natural to deﬁne a new variable, the magnetic ﬂux 
+density B. 
+B ≡ µ o(H + M) (8) 
+This quantity plays a role that is analogous to that of the electric displacement 
+ﬂux density D deﬁned by (6.2.14). Because there are no macroscopic quantities of 
+monopoles of magnetic charge, its divergence is zero. That is, the ﬂux continuity 
+law, (2), becomes simply 
+� · B = 0 (9) 
+and the corresponding continuity condition, (3), becomes simply 
+n (Ba − Bb) = 0 (10)· 
+A similar simpliﬁcation is obtained by writing Faraday’s law in terms of the 
+magnetic ﬂux density. Equation (7) becomes 
+∂B = (11)� × E − ∂t 
+If the magnetization is speciﬁed independent of H, it is usually best to have it 
+entered explicitly in the formulation by not introducing B. However, if M is given 
+
+PAGE 6
+6 Magnetization Chapter 9 
+as a function of H, especially if it is linear in H, it is most convenient to remove 
+M from the formulation by using B as a variable. 
+Terminal Voltage with Magnetization. In Sec. 8.4, where we discussed the 
+terminal voltage of a perfectly conducting coil, there was no magnetization. The 
+generalization of Faraday’s law to include magnetization requires a generalization 
+of the terminal relation. 
+The starting point in deriving the terminal relation was Faraday’s integral 
+law, (8.4.9). This law is generalized to included magnetization eﬀects by replacing 
+µ oH with B. Otherwise, the derivation of the terminal relation, (8.4.11), is the 
+same as before. Thus, the terminal voltage is again 
+dλ v = dt (12) 
+but now the ﬂux linkage is 
+� 
+B daλ ≡ 
+S 
+· 
+(13) 
+In Sec. 9.4 we will see that Faraday’s law of induction, as reﬂected in these 
+last two relations, is the basis for measuring B. 
+9.3 PERMANENT MAGNETIZATION 
+As the modern­day versions of the lodestone, which made the existence of magnetic 
+ﬁelds apparent in ancient times, permanent magnets are now so cheaply manufac­
+tured that they are used at home to pin notes on the refrigerator and so reliable 
+that they are at the heart of motors, transducers, and information storage systems. 
+To a ﬁrst approximation, a permanent magnet can be modeled by a material hav­
+ing a speciﬁed distribution of magnetization density M. Thus, in this section we 
+consider the magnetic ﬁeld intensity generated by prescribed distributions of M. 
+In a region where there is no current density J, Amp`ere’s law requires that H 
+be irrotational. It is then often convenient to represent the magnetic ﬁeld intensity 
+in terms of the scalar magnetic potential Ψ introduced in Sec. 8.3. 
+H = (1)−� Ψ 
+From the ﬂux continuity law, (9.2.2), it then follows that Ψ satisﬁes Poisson’s 
+equation. ρm � 2Ψ = − µ o 
+; ρm ≡ −� · µ oM (2) 
+A speciﬁed magnetization density leads to a prescribed magnetic charge density ρm. 
+The situation is analogous to that considered in Sec. 6.3, where the polarization 
+density was prescribed and, as a result, where ρp was known. 
+
+PAGE 19
+Sec. 9.5 Fields in Linear Materials 19 
+Here also the relatively high magnetizability comes from the ferromagnetic charac­
+ter of the individual domains. However, the very diﬀerent way in which the domains 
+interact with each other helps in gaining an appreciation for the magnetization of 
+ferromagnetic polycrystalline solids. 
+In the absence of a ﬁeld imposed on the synthesized liquid, the thermal molec­
+ular energy randomizes the dipole moments and there is no residual magnetization. 
+With the application of a low frequency H ﬁeld, the suspended particles assume 
+an average alignment with the ﬁeld and a single­valued B − H curve is traced out, 
+typically as shown in Fig. 9.4.4. However, as the frequency is raised, the reorien­
+tation of the domains lags behind the applied ﬁeld, and the B − H curve shows 
+hysteresis, much as for solids. 
+Although both the solid and the liquid can show hysteresis, the two diﬀer 
+in an important way. In the solid, the magnetization shows hysteresis even in the 
+limit of zero frequency. In the liquid, hysteresis results only if there is a ﬁnite rate 
+of change of the applied ﬁeld. 
+Ferromagnetic materials such as iron are metallic solids and hence tend to be 
+relatively good electrical conductors. As we will see in Chap. 10, this means that 
+unless care is taken to interrupt conduction paths in the material, currents will be 
+induced by a time­varying magnetic ﬂux density. Often, these eddy currents are un­
+desired. With the objective of obtaining a highly magnetizable insulating material, 
+iron atoms can be combined into an oxide crystal. Although the spontaneous inter­
+action between molecules that characterizes ferromagnetism is indeed observed, the 
+alignment of neighbors is antiparallel rather than parallel. As a result, such pure 
+oxides do not show strong magnetic properties. However, a mixed­oxide material 
+like Fe3O4 (magnetite) is composed of sublattice oxides of diﬀering moments. The 
+spontaneous antiparallel alignment results in a net moment. The class of relatively 
+magnetizable but electrically insulating materials are called ferrimagnetic. 
+Our discussion of the origins of magnetization began at the atomic level, where 
+electronic orbits and spins are fundamental. However, it ends with a discussion of 
+constitutive laws that can only be explained by bringing in additional eﬀects that 
+occur on scales much greater than atomic or molecular. Thus, the macroscopic B 
+and H used to describe magnetizable materials can represent averages with respect 
+to scales of domains or of macroscopic particles. In Sec. 9.5 we will make an artiﬁcial 
+diamagnetic material from a matrix of “perfectly” conducting particles. In a time­
+varying magnetic ﬁeld, a magnetic moment is induced in each particle that tends 
+to cancel that being imposed, as was shown in Example 8.4.3. In fact, the currents 
+induced in the particles and responsible for this induced moment are analogous 
+to the induced changes in electronic orbits responsible on the atomic scale for 
+diamagnetism[1]. 
+9.5 FIELDS IN THE PRESENCE OF MAGNETICALLY 
+LINEAR INSULATING MATERIALS 
+In this and the next two sections, we study materials with the linear magnetization 
+characteristic of (9.4.4). With the understanding that µ is a prescribed function of 
+position, B = µ H, the MQS forms of Amp`ere’s law and the ﬂux continuity law are 
+
+PAGE 20
+20 Magnetization Chapter 9 
+� × H = J (1) 
+� · µ H = 0 (2) 
+In this chapter, we assume that the current density J is conﬁned to perfect conduc­
+tors. We will ﬁnd in Chap. 10 that a time­varying magnetic ﬂux implies an electric 
+ﬁeld. Thus, wherever a conducting material ﬁnds itself in a time­varying ﬁeld, there 
+is the possibility that eddy currents will be induced. It is for this reason that the 
+magnetizable materials considered in this and the next sections are presumed to be 
+insulating. If the ﬁelds of interest vary slowly enough, these induced currents can 
+be negligible. 
+Ferromagnetic materials are often metallic, and hence also conductors. How­
+ever, materials can be made both readily magnetizable and insulating by breaking 
+up the conduction paths. By engineering at the molecular or domain scale, or even 
+introducing laminations of magnetizable materials, the material is rendered essen­
+tially free of a current density J. The considerations that determine the thickness 
+of laminations used in transformers to prevent eddy currents will be taken up in 
+Chap. 10. 
+In the regions outside the perfect conductors carrying the current J of (1), 
+H is irrotational and B is solenoidal. Thus, we have a choice of representations. 
+Either, as in Sec. 8.3, we can use the scalar magnetic potential and let H = −� Ψ, 
+or we can follow the lead from Sec. 8.6 and use the vector potential to represent 
+the ﬂux density by letting B = � × A. 
+Where there are discontinuities in the permeability and/or thin coils modeled 
+by surface currents, the continuity conditions associated with Amp`ere’s law and 
+the ﬂux continuity law are used. With B expressed using the linear magnetization 
+constitutive law, (1.4.16) and (9.2.10) become 
+n × (Ha − Hb) = K (3) 
+n (µ aHa − µ bHb) = 0 (4)· 
+The classiﬁcation of physical conﬁgurations given in Sec. 6.5 for linearly polariz­
+able materials is equally useful here. In the ﬁrst of these, the region of interest is 
+of uniform permeability. The laws summarized by (1) and (2) are the same as for 
+free space except that µ o is replaced by µ , so the results of Chap. 6 apply directly. 
+Conﬁgurations made up of materials having essentially uniform permeabilities are 
+of the greatest practical interest by far. Thus, piece­wise uniform systems are the 
+theme of Secs. 9.6 and 9.7. The smoothly inhomogeneous systems that are the last 
+category in Fig. 9.5.1 are of limited practical interest. However, it is sometimes use­
+ful, perhaps in numerical simulations, to regard the uniform and piece­wise uniform 
+systems as special cases of the smoothly nonuniform systems. 
+
+PAGE 21
+Sec. 9.5 Fields in Linear Materials 21 
+Fig. 9.5.1 (a) Uniform permeability, (b) piece­wise uniform permeability, 
+and (c) smoothly inhomogeneous conﬁgurations involving linearly magnetiz­
+able material. 
+Inductance in the Presence of Linearly Magnetizable Materials. In the 
+presence of linearly magnetizable materials, the magnetic ﬂux density is again pro­
+portional to the excitation currents. If ﬁelds are produced by a single perfectly 
+conducting coil, its inductance is the generalization of that introduced with (8.4.13). 
+λ = 
+�
+S µ H · da (5)L ≡ i i 
+The surface S spanning a contour deﬁned by the perfectly conducting wire is the 
+same as that shown in Figs. 8.4.3 and 8.4.4. The eﬀect of having magnetizable 
+material is, of course, represented in (5) by the eﬀect of this material on the intensity, 
+direction, and distribution of B = µ H. 
+For systems in the ﬁrst category of Fig. 9.5.1, where the entire region occupied 
+by the ﬁeld is ﬁlled by a material of uniform permeability µ , the eﬀect of the 
+magnetization on the inductance is clear. The solutions to (1) and (2) for H are 
+not altered in the presence of the permeable material. It then follows from (5) that 
+the inductance is simply proportional to µ. 
+Because it imposes a magnetic ﬁeld intensity that never leaves the core mate­
+rial, the toroid of Example 9.4.1 is a special case of a piece­wise uniform magnetic 
+material that acts as if all of space were ﬁlled with the magnetizable material. 
+As shown by the following example, the inductance of the toroid is therefore also 
+proportional to µ . 
+Example 9.5.1. Inductance of a Toroid 
+If the toroidal core of the winding shown in Fig. 9.4.1 and used in the experiment 
+of Fig. 9.4.3 were made a linearly magnetizable material, what would be the voltage 
+needed to supply the driving current i? If we deﬁne the ﬂux linkage of the driving 
+coil as λ1, 
+dλ1 
+v = (6)dt 
+
+PAGE 22
+22 Magnetization Chapter 9 
+Fig. 9.5.2 (a) Solenoid of length d and radius a ﬁlled with material 
+of uniform permeability µ. (b) Solenoid of (a) ﬁlled with artiﬁcial dia­
+magnetic material composed of an array of metal spheres having radius 
+R and spacing s. 
+We now ﬁnd the inductance L, where λ1 = Li, and hence determine the required 
+input voltage. 
+The ﬂux linked by one turn of the driving coil is essentially the cross­sectional 
+area of the toroid multiplied by the ﬂux density. The total ﬂux linked is this quantity 
+multiplied by the total turns N1. 
+λ1 = N1
+� 1 πw2�
+B (7)4 
+According to the linear constitutive law, the ﬂux density follows from the ﬁeld 
+intensity as B = µH . For the toroid, H is related to the driving current i by (9.4.1), 
+so 
+B = µH = µ
+� N1 �
+i (8)2πR
+ 
+The desired relation is the combination of these last two expressions.
+ 
+1 w 2
+2λ1 = Li; L ≡ µ N1 (9)8 R 
+As predicted, the inductance is proportional to µ. Although inductances are gen­
+erally increased by bringing paramagnetic and especially ferromagnetic materials 
+into their ﬁelds, the eﬀect of introducing ferromagnetic materials into coils can be 
+less dramatic than in the toroidal geometry for reasons discussed in Sec. 9.6. The 
+dependence of the inductance on the square of the turns results because not only is 
+the ﬁeld induced by the current i proportional to the number of turns, but so too is 
+the amount of the resulting ﬂux that is linked by the coil. 
+Example 9.5.2. An Artiﬁcial Diamagnetic Material 
+The cross­section of a long (ideally “inﬁnite”) solenoid ﬁlled with material of uniform 
+permeability is shown in Fig. 9.5.2a. The azimuthal surface current Kφ results in 
+an axial magnetic ﬁeld intensity Hz = Kφ. We presume that the axial length d is 
+very large compared to the radius a of the coil. Thus, the ﬁeld inside the coil is 
+uniform while that outside is zero. To see that this simple ﬁeld solution is indeed 
+correct, note that it is both irrotational and solenoidal everywhere except at the 
+surface r = a, and that there the boundary conditions, (3) and (4), are satisﬁed. 
+For an n­turn coil carrying a current i, the surface current density Kφ = ni/d. 
+Thus, the magnetic ﬁeld intensity is related to the terminal current by 
+ni Hz = (10)d 
+
+PAGE 23
+Sec. 9.5 Fields in Linear Materials 23 
+Fig. 9.5.3 Inductance of the coil in Fig. 9.5.2b is decreased because 
+perfectly conducting spheres tend to reduce its eﬀective cross­sectional 
+area. 
+In the linearly magnetized core region, the ﬂux density is Bz = µH z , and so it is 
+also uniform. As a result, the ﬂux linked by each turn is simply πa2Bz and the total 
+ﬂux linked by the coil is 
+λ = nπa2µH z (11) 
+Substitution from (1) then gives 
+λ = Li, 
+2πµa 2 n L ≡ d (12) 
+where L is the inductance of the coil. Because the coil is assumed to be very long, 
+its inductance is increased by a factor µ/µ o over that of a coil in free space, much 
+as for the toroid of Example 9.5.1. 
+Now suppose that the permeable material is actually a cubic array of metal 
+spheres, each having a radius R, as shown in Fig. 9.5.2b. The frequency of the 
+current i is presumably high enough so that each sphere can be regarded as perfectly 
+conducting in the MQS sense discussed in Sec. 8.4. The spacing s of the spheres is 
+large compared to their radius, so that the ﬁeld of one sphere does not produce 
+an appreciable ﬁeld at the positions of its neighbors. Each sphere ﬁnds itself in an 
+essentially uniform magnetic ﬁeld. 
+The dipole moment of the currents induced in a sphere by a magnetic ﬁeld 
+that is uniform at inﬁnity was calculated in Example 8.4.3, (8.4.21). 
+m = −2πHoR3 (13) 
+Because the induced currents must produce a ﬁeld that bucks out the imposed ﬁeld, 
+a negative moment is induced by a positive ﬁeld. 
+By deﬁnition, the magnetization density is the number of magnetic moments 
+per unit volume. For a cubic array with spacing s between the sphere centers, the 
+number per unit volume is s−3. Thus, the magnetization density is simply 
+M = N m = −2πHo
+� R �3 
+(14) s 
+Comparison of this expression to (9.4.3), which deﬁnes the susceptibility χm, shows 
+that 
+χm = −2π
+� R �3 
+(15) s 
+As we might have expected from the antiparallel moment induced in a sphere by 
+an imposed ﬁeld, the susceptibility is negative. The permeability, related to χm by 
+(9.4.4), is therefore less than 1. 
+µ = µ o(1 + χm) = µ o
+�
+1 − 2π
+� R �3� 
+(16) s 
+The perfectly conducting spheres eﬀectively reduce the cross­sectional area 
+of the ﬂux, as suggested by Fig. 9.5.3, and hence reduce the inductance. With the 
+introduction of the array of metal spheres, the inductance goes from a value given 
+by (12) with µ = µ o to one with µ given by (16). 
+
+PAGE 24
+24 Magnetization Chapter 9 
+Fig. 9.5.4 Experiment to measure the decrease of inductance that 
+results when the artiﬁcial diamagnetic array of Fig. 9.5.2b is inserted 
+into a solenoid. 
+Faraday’s law of induction is also responsible for diamagnetism due to atomic 
+moments. Instead of inducing circulating conduction currents in a metal sphere, as 
+in this example, the time­varying ﬁeld induces changes in the orbits of electrons 
+about the nucleus that, on the average, contribute an antiparallel magnetic moment 
+to the atom. 
+The following demonstration is the MQS analog of the EQS Demonstration 
+6.6.1. In the latter, a measurement was made of the change in capacitance caused 
+by inserting an artiﬁcial dielectric between capacitor plates. Here the change in in­
+ductance is observed as an artiﬁcial diamagnetic material is inserted into a solenoid. 
+Although the spheres are modeled as perfectly conducting in both demonstrations, 
+we will ﬁnd in Chap. 10 that the requirements to justify this assumption in this 
+MQS example are very diﬀerent from those for its EQS counterpart. 
+Demonstration 9.5.1. Artiﬁcial Diamagnetic Material 
+The experiment shown in Fig. 9.5.4 measures the change in solenoid inductance 
+when an array of conducting spheres is inserted. The coil is driven at the angular 
+frequency ω by an oscillator­ampliﬁer. Over the length d shown in the ﬁgure, the 
+ﬁeld tends to be uniform. The circuit shown schematically in Fig. 9.5.5 takes the 
+form of a bridge with the inductive reactance of L2 used to balance the reactance 
+of the central part of the empty solenoid. 
+The input resistances of the oscilloscope’s balanced ampliﬁers, represented by 
+Rs, are large compared to the inductor reactances. These branches dominate over 
+the inductive reactances in determining the current through the inductors and, as 
+a result, the inductor currents remain essentially constant as the inductances are 
+varied. With the reactance of the inductor L2 balancing that of the empty solenoid, 
+these currents are equal and the balanced ampliﬁer voltage vo = 0. When the array of 
+spheres is inserted into the solenoid, the currents through both legs remain essentially 
+constant. Thus, the resulting voltage vo is the change in voltage across the solenoid 
+
+PAGE 25
+Sec. 9.5 Fields in Linear Materials	 25 
+Fig. 9.5.5 Bridge used to measure the change in inductance in the 
+experiment of Fig. 9.5.4. 
+caused by its change in inductance Δ L. 
+vo = (Δ L)	di vˆo = ω(Δ L) ˆi (17)dt → | | || 
+In the latter expression, the current and voltage indicated by a circumﬂex are either 
+peak or rms sinusoidal steady state amplitudes. In view of (12), this expression 
+becomes 
+|vˆo| = ω(µ − µ o) πa
+d 
+2 n 2 
+|ˆi|	 (18) 
+In terms of the sphere radius and spacing, the change in permeability is given 
+by (16), so the voltage measured by the balanced ampliﬁers is 
+vˆo = 2π2ωa2 n 2 � R �3 ˆi (19)| | d s || 
+To evaluate this expression, we need only the frequency and amplitude of the coil 
+current, the number of turns in the length d, and other dimensions of the system. 
+Induced Magnetic Charge: Demagnetization. The complete analogy be­
+tween linearly polarized and linearly magnetized materials is proﬁtably carried yet 
+another step. Magnetic charge is induced where µ is spatially varying, and hence 
+the magnetizable material can introduce sources that revise the free space ﬁeld dis­
+tribution. In the linearly magnetizable material, the distribution of these sources is 
+not known until after the ﬁelds have been determined. However, it is often helpful 
+in qualitatively predicting the ﬁeld eﬀects of magnetizable materials to picture the 
+distribution of induced magnetic charges. 
+Using a vector identity, (2) can be written 
+µ � · H + H ·� µ = 0	 (20) 
+Rearrangement of this expression shows that the source of µ oH, the magnetic charge 
+density, is 
+� · µ oH = − µ
+µ 
+o H ·� µ ≡ ρm	 (21) 
+
+PAGE 26
+26 Magnetization Chapter 9 
+Most often we deal with piece­wise uniform systems where variations in µ are con­
+ﬁned to interfaces. In that case, it is appropriate to write the continuity of ﬂux 
+density condition in the form 
+µ a n µ o(Ha − Hb) = n µ oHa�
+1 − 
+� 
+≡ σsm (22)· · µ b 
+where σsm is the magnetic surface charge density. The following illustrates the use 
+of this relation. 
+Illustration. The Demagnetization Field 
+A sphere of material having uniform permeability µ is placed in an initially uniform 
+upward­directed ﬁeld. It is clear from (21) that there are no distortions of the uniform 
+ﬁeld from magnetic charge induced in the volume of the material. Rather, the sources 
+of induced ﬁeld are located on the surface where the imposed ﬁeld has a component 
+normal to the permeability discontinuity. It follows from (22) that positive and 
+negative magnetic surface charges are induced on the top and bottom parts of the 
+surface, respectively. 
+The H ﬁeld caused by the induced magnetic surface charges originates at the 
+positive charge at the top and terminates on the negative charge at the bottom. 
+This is illustrated by the magnetization analog of the permanently polarized sphere, 
+considered in Example 6.3.1. Our point here is that the ﬁeld resulting from these 
+induced magnetic surface charges tends to cancel the one imposed. Thus, the ﬁeld 
+intensity available to magnetize the material is reduced. 
+The remarks following (6.5.11) apply equally well here. The roles of E, D, and 
+� are taken by H, B, and µ . In regions of uniform permeability, (1) and (2) are the 
+same laws considered in Chap. 8, and where the current density is zero, Laplace’s 
+equation governs. As we now consider piece­wise nonuniform systems, the eﬀect of 
+the material is accounted for by the continuity conditions. 
+9.6 FIELDS IN PIECE­WISE UNIFORM MAGNETICALLY 
+LINEAR MATERIALS 
+Whether we choose to represent the magnetic ﬁeld in terms of the magnetic scalar 
+potential Ψ or the vector potential A, in a current­free region having uniform 
+permeability it assumes a distribution governed by Laplace’s equation. That is, 
+where µ is constant and J = 0, (9.5.1) and (9.5.2) require that H is both solenoidal 
+and irrotational. If we let H = −� Ψ, the ﬁeld is automatically irrotational and 
+� 2Ψ = 0 (1) 
+is the condition that it be solenoidal. If we let µH = � × A, the ﬁeld is automatically 
+solenoidal. The condition that it also be irrotational (together with the requirement 
+that A be solenoidal) is then2 
+2 � × � × A = � (� · A) − � 2A 

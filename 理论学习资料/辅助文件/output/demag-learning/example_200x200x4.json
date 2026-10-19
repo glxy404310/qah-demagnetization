@@ -1,0 +1,34 @@
+{
+  "full_size_nm": [
+    200.0,
+    200.0,
+    4.0
+  ],
+  "Ms_A_per_m": 300000.0,
+  "N_magnetometric": {
+    "x": 0.029568912837833375,
+    "y": 0.029568912837833375,
+    "z": 0.9408621743243292
+  },
+  "sum_N": 0.9999999999999959,
+  "N_center_point": {
+    "x": 0.009001663021399693,
+    "y": 0.009001663021399693,
+    "z": 0.9819966739572007
+  },
+  "mean_Hd_A_per_m_for_separate_xyz_states": [
+    -8870.673851350013,
+    -8870.673851350013,
+    -282258.6522972988
+  ],
+  "Ed_J_for_separate_xyz_states": [
+    2.675332205164059e-19,
+    2.675332205164059e-19,
+    8.512720401305758e-18
+  ],
+  "verification": {
+    "reference_max_abs_error": 7.494005416219807e-15,
+    "sampled_max_trace_error": 4.020228594470154e-12,
+    "status": "passed; analytic implementation only, no micromagnetic solver run"
+  }
+}

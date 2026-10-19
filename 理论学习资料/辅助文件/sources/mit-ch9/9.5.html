@@ -1,0 +1,494 @@
+<html>
+<body bgcolor=ffffff>
+<a href = 9.4.html><img src=Images/prev.gif alt=prev></a>
+<a href = 9.6.html><img src=Images/next.gif alt=next></a><br><br>
+<hr width=50%>
+<br>
+<h2>9.5<br>Fields In The Presence Of Magnetically Linear Insulating Materials</h2>
+<blockquote><p>
+
+<p>
+In this and the next two sections, we study materials with the
+linear magnetization characteristic of (9.4.4).  With the
+understanding that <i><img src = Images/mu.gif></i> is a prescribed function of position,
+<i><b>B</b> = <img src = Images/mu.gif> <b>H</b></i>, the MQS forms of Amp&#232;re's law and the flux 
+continuity law are
+
+<p>
+
+<p>
+<center><img src = Images/box-9.17.gif alt='boxed equation GIF #9.17'></center>
+
+<p>
+
+<p>
+<center><img src = Images/box-9.18.gif alt='boxed equation GIF #9.18'></center>
+
+<p>
+
+<p>
+In this chapter, we assume that the current density <i><b>J</b></i> is confined
+to perfect conductors.  We will find in Chap. 10 that a time-varying
+magnetic flux implies an electric field.  Thus, wherever a conducting
+material finds itself in a time-varying field, there is the possibility
+that <i> eddy currents</i> will be induced.  It is for this reason that
+the magnetizable materials considered in this and the next sections
+are presumed to be insulating.  If the fields of interest
+vary slowly enough, these induced currents can be negligible.
+
+<p>
+<p>
+
+<p>
+Ferromagnetic materials are often metallic, and hence also
+conductors.  However, materials can be made both readily magnetizable
+and insulating by breaking up the conduction paths.  By engineering at
+the molecular or domain scale, or even introducing laminations of
+magnetizable materials, the material is rendered essentially free of a
+current density <i><b>J</b></i>.  The considerations that determine the
+thickness of laminations used in transformers to prevent eddy
+currents will be taken up in Chap. 10.
+
+<p>
+<p>
+In the regions outside the perfect conductors carrying the
+current <i><b>J</b></i> of (1), <i><b>H</b></i> is irrotational and <i><b>B</b></i> is solenoidal.
+Thus, we have a choice of representations.  Either, as in Sec. 8.3, we
+can use the scalar magnetic potential and let <i><b>H</b> = -<img src=Images/nabla.gif> <img src=Images/Psi.gif></i>,
+or we can follow the lead from Sec. 8.6 and use the vector potential
+to represent the flux density by letting <i><b>B</b> = <img src=Images/nabla.gif> x <b>A</b></i>.
+
+<p>
+<p>
+Where there are discontinuities in the permeability and/or thin
+coils modeled by surface currents, the continuity conditions
+associated with Amp&#232;re's law and the flux continuity law are used.
+With <i><b>B</b></i> expressed using the linear magnetization constitutive law,
+(1.4.16) and (9.2.10) become
+
+<p>
+<p>
+
+<p>
+<center><img src = Images/box-9.19.gif alt='boxed equation GIF #9.19'></center>
+
+<p>
+
+<p>
+<center><img src = Images/box-9.20.gif alt='boxed equation GIF #9.20'></center>
+
+<p>
+
+<p>
+The classification of physical configurations given in Sec. 6.5
+for linearly polarizable materials is equally useful here.  In the
+first of these, the region of interest is of uniform permeability.
+The laws summarized by (1) and (2) are the same as for free space
+except that <i><img src = Images/mu.gif><sub>o</sub></i> is replaced by <i><img src = Images/mu.gif></i>, so the results of Chap. 6 
+apply directly.  Configurations made up of materials having
+essentially uniform permeabilities are of the greatest practical
+interest by far.  Thus, piece-wise uniform systems are the theme of  
+Secs. 9.6 and 9.7.  The smoothly inhomogeneous systems that are the
+last category in Fig.  9.5.1 are of limited practical interest.
+However, it is sometimes useful, perhaps in numerical simulations, to
+regard the uniform and piece-wise uniform systems as special cases of
+the smoothly nonuniform systems.
+
+<p>
+<p>
+
+<p>
+<center><img src = ch9-951.gif alt='floating figure GIF #13'></center>
+<center><b>Figure 9.5.1</b> (a) Uniform permeability, (b)
+piece-wise uniform permeability, and (c) smoothly inhomogeneous
+configurations involving linearly magnetizable material.</center>
+
+<p>
+<h3>Inductance in the Presence of Linearly Magnetizable
+Materials</h3><hr align=left width=50%><blockquote><p>In the presence of linearly magnetizable materials, the magnetic
+flux density is again proportional to the excitation currents.  If
+fields are produced by a single perfectly conducting coil, its
+inductance is the generalization of that introduced with (8.4.13).
+
+<p>
+<p>
+<center><img src=Images/eqn-9.32.gif alt='equation GIF #9.32'></center>
+
+<p>
+The surface <i>S</i> spanning a contour defined by the perfectly conducting
+wire is the same as that shown in Figs. 8.4.3 and 8.4.4.  The effect
+of having magnetizable material is, of course, represented in (5) by
+the effect of this material on the intensity, direction, and
+distribution of <i><b>B</b> = <img src = Images/mu.gif> <b>H</b></i>.
+
+<p>
+<p>
+For systems in the first category of Fig. 9.5.1, where the entire
+region occupied by the field is filled by a material of uniform
+permeability <i><img src = Images/mu.gif></i>, the effect of the magnetization on the inductance
+is clear. The solutions to (1) and (2) for <i><b>H</b></i> are not altered in
+the presence of the permeable material.  It then follows from (5)
+that the inductance is simply proportional to <i><img src = Images/mu.gif></i>.
+
+<p>
+<p>
+Because it imposes a magnetic field intensity that never leaves
+the core material, the toroid of Example 9.4.1 is a special case of a
+piece-wise uniform magnetic material that acts as if all of space were
+filled with the magnetizable material.  As shown by the following
+example, the inductance of the toroid is therefore also proportional
+to <i><img src = Images/mu.gif></i>.
+
+<p>
+<p>
+<h4>Example 9.5.1. Inductance of a Toroid</h4>
+<blockquote><p>
+If the toroidal core of the winding shown in Fig. 9.4.1 and used
+in the experiment of Fig. 9.4.3 were made a linearly magnetizable
+material, what would be the voltage needed to supply the driving
+current <i>i</i>?  If we define the flux linkage of the driving coil as
+<i><img src = Images/lambda.gif><sub>1</sub></i>,
+
+<p>
+<center><img src=Images/eqn-9.33.gif alt='equation GIF #9.33'></center>
+
+<p>
+We now find the inductance <i>L</i>, where <i><img src = Images/lambda.gif><sub>1</sub> = Li</i>, and hence
+determine the required input voltage.
+
+<p>
+<p>
+The flux linked by one turn of the driving coil is essentially
+the cross-sectional area of the toroid multiplied by the flux density.
+The total flux linked is this quantity multiplied by the total turns
+<i>N<sub>1</sub></i>.
+
+<p>
+<p>
+<center><img src=Images/eqn-9.34.gif alt='equation GIF #9.34'></center>
+
+<p>
+According to the linear constitutive law, the flux density
+follows from the field intensity as <i><b>B</b> = <img src = Images/mu.gif> <b>H</b></i>.  For the toroid,
+<i>H</i> is related to the driving current <i>i</i> by (9.4.1), so
+
+<p>
+<center><img src=Images/eqn-9.35.gif alt='equation GIF #9.35'></center>
+
+<p>
+The desired relation is the combination of these last two expressions.
+
+<p>
+<p>
+<center><img src=Images/eqn-9.36.gif alt='equation GIF #9.36'></center>
+
+<p>
+As predicted, the inductance is proportional to <i><img src = Images/mu.gif></i>.  Although
+inductances are generally increased by bringing paramagnetic and
+especially ferromagnetic materials into their fields, the effect of
+introducing ferromagnetic materials into coils can be less dramatic
+than in the toroidal geometry for reasons discussed in Sec. 9.6.
+The dependence of the inductance on the square of the turns results
+because not only is the field induced by the current <i>i</i> proportional
+to the number of turns, but so too is the amount of the resulting flux
+that is linked by the coil. 
+</blockquote>
+
+<p>
+<p>
+<h4>Example 9.5.2. An Artificial Diamagnetic Material</h4>
+<blockquote><p>
+The cross-section of a long (ideally "infinite") solenoid filled
+with material of uniform permeability is shown in Fig. 9.5.2a.  The
+azimuthal surface current <i>K<sub><img src = Images/phi.gif></sub></i> results in an axial magnetic
+field intensity <i>H<sub>z</sub> = K<sub><img src = Images/phi.gif></sub></i>.  We presume that the axial length <i>d</i>
+is very large compared to the radius <i>a</i> of the coil.  Thus, the field
+inside the coil is uniform while that outside is zero.  To see that
+this simple field solution is indeed correct, note that it is both
+irrotational and solenoidal everywhere except at the surface <i>r = a</i>, and
+that there the boundary conditions, (3) and (4), are
+satisfied.
+
+<p>
+<p>
+
+<p>
+<center><img src = ch9-952.gif alt='floating figure GIF #14'></center>
+<center><b>Figure 9.5.2</b> (a) Solenoid of length <i>d</i> and radius
+<i>a</i> filled with material of uniform permeability <img src=Images/mu.gif>.  (b) Solenoid
+of (a) filled with artificial diamagnetic material composed of an
+array of metal spheres having radius <i>R</i> and spacing <i>s</i>. </center>
+
+<p>
+For an <i>n</i>-turn coil carrying a current <i>i</i>, the surface current
+density <i>K<sub><img src = Images/phi.gif></sub> = ni/d</i>.  Thus, the magnetic field intensity is
+related to the terminal current by
+
+<p>
+<center><img src=Images/eqn-9.37.gif alt='equation GIF #9.37'></center>
+
+<p>
+In the linearly magnetized core region, the flux density is
+<i>B<sub>z</sub> = <img src = Images/mu.gif> H<sub>z</sub></i>, and so it is also uniform.  As a result, the flux
+linked by each turn is simply <i><img src = Images/pi.gif> a<sup>2</sup> B<sub>z</sub></i> and the total flux linked
+by the coil is
+
+<p>
+<center><img src=Images/eqn-9.38.gif alt='equation GIF #9.38'></center>
+
+<p>
+Substitution from (1) then gives
+
+<p>
+<center><img src=Images/eqn-9.39.gif alt='equation GIF #9.39'></center>
+
+<p>
+where <i>L</i> is the inductance of the coil.  Because the coil is assumed
+to be very long, its inductance is increased by a factor <i><img src = Images/mu.gif> /<img src = Images/mu.gif><sub>o</sub></i>
+over that of a coil in free space, much as for the toroid of Example
+9.5.1. 
+
+<p>
+Now suppose that the permeable material is actually a cubic
+array of metal spheres, each having a radius <i>R</i>, as shown in Fig.
+9.5.2b.  The frequency of the current <i>i</i> is presumably high enough
+so that 
+each sphere can be regarded as perfectly conducting in the MQS sense
+discussed in Sec. 8.4.  The spacing <i>s</i> of the spheres is large compared
+to their radius, so that the field of one sphere does not produce an
+appreciable field at the positions of its neighbors.  Each sphere
+finds itself in an essentially uniform magnetic field.
+
+<p>
+<p>
+The dipole moment of the currents induced in a sphere by a
+magnetic field that is uniform at infinity was calculated in Example
+8.4.3, (8.4.21).
+
+<p>
+<p>
+<center><img src=Images/eqn-9.40.gif alt='equation GIF #9.40'></center>
+
+<p>
+Because the induced currents must produce a field that
+bucks out the imposed field, a negative moment is induced by a
+positive field.
+
+<p>
+<p>
+By definition, the magnetization density is the number of magnetic
+moments per unit volume.  For a cubic array with spacing <i>s</i> 
+between the sphere centers, the number per unit volume is <i>s<sup>-3</sup></i>.  
+Thus, the magnetization density is simply
+
+<p>
+<center><img src=Images/eqn-9.41.gif alt='equation GIF #9.41'></center>
+
+<p>
+Comparison of this expression to (9.4.3), which defines the
+susceptibility <i><img src = Images/chi.gif><sub>m</sub></i>, shows that
+
+<p>
+<center><img src=Images/eqn-9.42.gif alt='equation GIF #9.42'></center>
+
+<p>
+As we might have expected from the antiparallel moment induced in a
+sphere by an imposed field, the susceptibility is negative.  The
+permeability, related to <i><img src = Images/chi.gif><sub>m</sub></i> by (9.4.4), is therefore less than
+1. 
+
+<p>
+<center><img src=Images/eqn-9.43.gif alt='equation GIF #9.43'></center>
+
+<p>
+
+<p>
+The perfectly conducting spheres effectively reduce the
+cross-sectional area of the flux, as suggested by Fig. 9.5.3, and
+hence reduce the inductance.  With the introduction of the array of
+metal spheres, the inductance goes from a value given by (12) with
+<i><img src = Images/mu.gif> = <img src = Images/mu.gif><sub>o</sub></i> to one with <i><img src = Images/mu.gif></i> given by (16).
+
+<p>
+<p>
+
+<p>
+<center><img src = ch9-953.gif alt='floating figure GIF #15'></center>
+<center><b>Figure 9.5.3</b> Inductance of the coil in Fig. 9.5.2b
+is decreased because perfectly conducting spheres tend to reduce its
+effective cross-sectional area.</center>
+
+<p>
+Faraday's law of induction is also responsible for diamagnetism due
+to atomic moments.  Instead of inducing circulating conduction
+currents in a metal sphere, as in this example, the time-varying
+field induces changes in the orbits of electrons about the nucleus
+that, on the average, contribute an antiparallel magnetic moment to the
+atom.
+</blockquote>
+
+<p>
+<p>
+The following demonstration is the MQS analog of the EQS
+Demonstration 6.6.1.  In the latter, a measurement was made of the
+change in capacitance caused by inserting an artificial dielectric
+between capacitor plates.  Here the change in inductance is observed
+as an artificial diamagnetic material is inserted into a solenoid.
+Although the spheres are modeled as perfectly conducting in both 
+demonstrations, we will find in Chap. 10 that the requirements
+to justify this assumption in this MQS example are very different from
+those for its EQS counterpart.
+
+<p>
+<p>
+<h4>Demonstration 9.5.1. Artificial Diamagnetic Material</h4><blockquote><p>
+The experiment shown in Fig. 9.5.4 measures 
+the change in solenoid inductance when an array of conducting spheres
+is inserted.  The coil is driven at the angular frequency <i><img src = Images/omega.gif></i> by an
+oscillator-amplifier.  Over the length <i>d</i> shown
+in the figure, the field tends to be uniform.  The circuit shown
+schematically in Fig. 9.5.5 takes the form of a bridge with the
+inductive reactance of <i>L<sub>2</sub></i> used to balance the reactance of the
+central part of the empty solenoid.
+
+<p>
+<p>
+
+<p>
+<center><img src = ch9-954.gif alt='floating figure GIF #16'></center>
+<center><b>Figure 9.5.4</b> Experiment to measure the decrease
+of inductance that results when the artificial diamagnetic array of
+Fig. 9.5.2b is inserted into a solenoid.</center>
+
+<p>
+
+<p>
+<center><img src = ch9-955.gif alt='floating figure GIF #17'></center>
+<center><b>Figure 9.5.5</b> Bridge used to measure the change in 
+inductance in the experiment of Fig. 9.5.4.</center>
+
+<p>
+The input resistances of the oscilloscope's balanced amplifiers,
+represented by <i>R<sub>s</sub></i>, are large compared to the inductor reactances.
+These branches dominate over the inductive reactances in determining
+the current through the inductors and, as a result, the inductor
+currents remain essentially constant as the inductances are varied.
+With the reactance of the inductor <i>L<sub>2</sub></i> balancing that of the empty
+solenoid, these currents are equal and the balanced amplifier voltage
+<i>v<sub>o</sub> = 0</i>.  When the array of spheres is inserted into the solenoid,
+the currents through both legs remain essentially constant.  Thus, the
+resulting voltage <i>v<sub>o</sub></i> is the change in voltage across the solenoid
+caused by its change in inductance <i><img src=Images/Delta.gif> L</i>.
+
+<p>
+<p>
+<center><img src=Images/eqn-9.44.gif alt='equation GIF #9.44'></center>
+
+<p>
+In the latter expression, the current and voltage indicated by a
+circumflex are either peak or
+rms sinusoidal steady state amplitudes.   In view of (12), this
+expression becomes
+
+<p>
+<center><img src=Images/eqn-9.45.gif alt='equation GIF #9.45'></center>
+
+<p>
+
+<p>
+In terms of the sphere radius and spacing, the change in permeability
+is given by (16), so the voltage measured by the balanced amplifiers
+is 
+
+<p>
+<center><img src=Images/eqn-9.46.gif alt='equation GIF #9.46'></center>
+
+<p>
+To evaluate this expression, we need only the frequency and amplitude
+of the coil current, the number of turns in the length <i>d</i>, and other
+dimensions of the system.  
+</blockquote>
+
+<p>
+<h3>Induced Magnetic Charge:  Demagnetization</h3>
+
+<p>
+The complete analogy between linearly polarized and linearly
+magnetized materials is profitably carried yet another step.  
+Magnetic charge is induced where <i><img src = Images/mu.gif></i> is spatially varying, and
+hence the magnetizable material can introduce sources that revise
+the free space field distribution.  In the linearly magnetizable
+material, the distribution of these sources is not known until after
+the fields have been determined.  However, it is often helpful in
+qualitatively predicting the field effects of magnetizable materials
+to picture the distribution of induced magnetic charges.
+
+<p>
+<p>
+Using a vector identity, (2) can be written
+
+<p>
+<center><img src=Images/eqn-9.47.gif alt='equation GIF #9.47'></center>
+
+<p>
+Rearrangement of this expression shows that the source of
+<i><img src = Images/mu.gif><sub>o</sub><b>H</b></i>, the magnetic charge density, is
+
+<p>
+<center><img src=Images/eqn-9.48.gif alt='equation GIF #9.48'></center>
+
+<p>
+Most often we deal with piece-wise uniform systems where variations in
+<i><img src = Images/mu.gif></i> are confined to interfaces.  In that case, it is appropriate to
+write the continuity of flux density condition in the form
+
+<p>
+<center><img src=Images/eqn-9.49.gif alt='equation GIF #9.49'></center>
+
+<p>
+where <i><img src = Images/sigma.gif><sub>sm</sub></i> is the magnetic surface charge density.  The 
+following illustrates the use of this relation.
+
+<p>
+<p>
+<h4>Illustration. The Demagnetization Field</h4><blockquote><p>
+A sphere of material having uniform permeability <i><img src = Images/mu.gif></i> is placed
+in an initially uniform upward-directed field.  It is clear from 
+(21) that there are no distortions of the uniform field from magnetic
+charge induced in the volume of the material.  Rather, the sources of
+induced field are located on the surface where the imposed field has a
+component normal to the permeability discontinuity.  It follows from
+(22) that positive and negative magnetic surface charges are induced
+on the top and bottom parts of the surface, respectively.
+
+<p>
+<p>
+The <i><b>H</b></i> field caused by the induced magnetic surface charges
+originates at the positive charge at the top and terminates on the
+negative charge at the bottom.  This is illustrated by the
+magnetization analog of the permanently polarized sphere, considered
+in Example 6.3.1.  Our point here is that the field resulting from
+these induced magnetic surface charges tends to cancel the one
+imposed.  Thus, the field intensity available to magnetize the
+material is reduced.
+</blockquote>
+
+<p>
+<p>
+The remarks following (6.5.11) apply equally well here.  The
+roles of <i><b>E</b>,  <b>D</b></i>, and <i><img src = Images/epsilon.gif></i> are taken by <i><b>H</b>, 
+<b>B</b></i>, and <i><img src = Images/mu.gif></i>.  In regions of uniform permeability, (1) and (2)
+are the same laws considered in Chap. 8, and where the current
+density is zero, Laplace's equation governs.  As we now consider
+piece-wise nonuniform systems, the effect of the material is
+accounted for by the continuity conditions.
+
+<p>
+<p>
+</blockquote>
+
+<br>
+<hr width=50%>
+<br>
+<a href = 9.4.html><img src=Images/prev.gif alt=prev></a>
+<a href = 9.6.html><img src=Images/next.gif alt=next></a><br></body></html>

@@ -1,0 +1,13 @@
+{
+  "core_eqs.html": "https://fidimag.readthedocs.io/en/latest/physics_num_methods/core_eqs.html",
+  "core_eqs.rst.txt": "https://fidimag.readthedocs.io/en/latest/_sources/physics_num_methods/core_eqs.rst.txt",
+  "LICENSE.txt": "https://raw.githubusercontent.com/computationalmodelling/fidimag/master/LICENSE.txt",
+  "micro_driver.py": "https://raw.githubusercontent.com/computationalmodelling/fidimag/master/fidimag/micro/micro_driver.py",
+  "driver_base.py": "https://raw.githubusercontent.com/computationalmodelling/fidimag/master/fidimag/common/driver_base.py",
+  "zeeman.py": "https://raw.githubusercontent.com/computationalmodelling/fidimag/master/fidimag/micro/zeeman.py",
+  "anisotropy.py": "https://raw.githubusercontent.com/computationalmodelling/fidimag/master/fidimag/micro/anisotropy.py",
+  "exchange.py": "https://raw.githubusercontent.com/computationalmodelling/fidimag/master/fidimag/micro/exchange.py",
+  "install.html": "https://fidimag.readthedocs.io/en/latest/install.html",
+  "time_integration.html": "https://fidimag.readthedocs.io/en/latest/physics_num_methods/time_integration.html",
+  "commit.json": "https://api.github.com/repos/computationalmodelling/fidimag/commits/master"
+}

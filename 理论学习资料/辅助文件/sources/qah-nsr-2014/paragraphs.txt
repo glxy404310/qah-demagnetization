@@ -1,0 +1,299 @@
+0: Hall effect is a well-known electromagnetic phenomenon that has been widely applied in the semiconductor industry. The quantum Hall effect discovered in two-dimensional electronic systems under a strong magnetic field provided new insights into condensed matter physics, especially the topological aspect of electronic states. The quantum anomalous Hall effect is a special kind of the quantum Hall effect that occurs without a magnetic field. It has long been sought after because its realization will significantly facilitate the studies and applications of the quantum Hall physics. In this paper, we review how the idea of the quantum anomalous Hall effect was developed and how the effect was finally experimentally realized in thin films of a magnetically doped topological insulator.
+
+1: The Hall effect, first discovered by Hall in 1879 [1], indicates the voltage drop across a conductor transverse to the direction of the applied electrical current in the presence of a perpendicular magnetic field (as depicted in Fig. 1a). In a non-magnetic material, the Hall voltage is proportional to the applied magnetic field because it results from the deflection of charge carriers by the Lorentz force. The slope of the linear field dependence of the Hall resistance, defined as the transverse voltage divided by the current, is determined by the type and density of carriers (Fig. 1b). This ordinary Hall effect (OHE) provides a probe for the properties of semiconductor materials and a direct measurement of the magnetic field, which have been widely used in industries.
+
+2: (a) Measurement geometry of Hall effect. ((b), (c)) Magnetic field (B) dependence of Hall resistance (RH) in OHE (b) and AHE (c).
+
+3: Soon after the discovery of the OHE, Hall tried similar experiments on ferromagnetic materials. He observed that the magnetic-field-dependent Hall resistance shows an unusually large slope at a low field [2]. It was recognized that this unusually large Hall effect originates from the magnetization of ferromagnetic materials, which was later known as the anomalous Hall effect (AHE) [3]. Since a ferromagnetic material keeps its spontaneous magnetization even when the external magnetic field is removed, the AHE can be measured in the zero magnetic field (Fig. 1c).
+
+4: Although it is generally believed that the spin–orbit coupling (SOC) plays a fundamental role in the AHE, its exact mechanism is a subject of debate for over one century. One group of thought ascribes the AHE to impurity-induced skew-scattering or side jump of carriers which are referred to as extrinsic mechanisms. The other believes that AHE results from the property of the electronic energy band structures of ferromagnetic materials, which is known as the intrinsic mechanism [3].
+
+5: In 1980, about 100 years after Hall's works, von Klitzing discovered the integer quantum Hall effect (QHE) in a Si/SiO2 field effect transistor in a strong magnetic field, which won him the Nobel Prize in physics [4]. The discovery of the fractional QHE two years later gained another Nobel Prize for Tsui, Stormer, and Laughlin [5]. These milestone discoveries made the QHE one of the most important fields in modern condensed matter physics.
+
+6: QHE occurs in a layer of two-dimensional electron gas (2DEG) formed at the interface of a semiconductor heterostructure, such as Si/SiO2 or GaAs/AlGaAs, due to band bending. Without needing impurity doping, a 2DEG can have very high electron mobility, so that well-defined Landau levels can appear under a strong magnetic field. With increasing magnetic field, the Hall resistance evolves from a straight line into step-like behaviors with well-defined plateaus. At the plateaus the Hall resistance has the exact value of h/νe2, with h being Planck's constant, e the electron's charge and ν an integer or a certain fraction. At the same time, the four-terminal longitudinal resistance drops to zero, suggesting dissipationless transport of electrons [6].
+
+7: It is now well known that the quantized Hall resistance and vanishing longitudinal resistance are due to the quantum transport of quasi-1D edge states [7]. In the QHE regime, all the bulk carriers in the 2DEG are localized by impurities. However, electrons propagating along the sample edge remain extended over the whole sample. In quantum transport theory, each 1D edge channel contributes a quantized Hall conductance e2/h, so that at filling factor ν (ν edge channels cross the Fermi level) the total Hall conductance is νe2/h. Moreover, the edge states are ‘chiral’ with the chirality determined by the direction of the external magnetic field (Fig. 2a). Because the forward and backward channels are located at the opposite edges, the edge state electrons are immune to back-scattering and keep dissipationless over macroscopic length scale [6].
+
+8: (a) The chiral edge states in the QHE or QAHE (ν = 1). (b) The helical edge states in the QSHE. Red and blue colors of the lines in (a) and (b) indicate the spin-up and spin-down states, respectively, and the arrows indicate current direction. (c) The Dirac surface states of 3D TI. The red arrows indicate the spin direction.
+
+9: The unique chiral edge states responsible for the QHE originate from the magnetically induced Landau levels. A QH system with the Fermi level lying between two neighboring Landau levels can be considered as a special insulator with a topologically different electronic structure from that of the vacuum and usual insulators [8–10]. Topology is a mathematical concept which describes the fundamental properties of space that is insensitive to details [10]. If one can find a topological character of a material's electronic band structure, then the physical properties related to the band topology will be insensitive to the details of the material, such as sample size, shape, and degree of disorderness. Indeed, one can define a topological character for a completely filled energy band, which is known as the Chern number. The Chern number is proportional to the integral of the Berry curvature of the energy band over the whole (magnetic) Brillouin zone, which is zero for a usual energy band but is unity for a Landau level. The Hall conductance is the sum of the Chern numbers of all the occupied bands in the unit of e2/h [9]. At the edge of a QH sample, the Chern number has to experience a change from non-zero to zero. Thus, an energy level is bound to cross the Fermi level at some point around the edge, which results in the conducting edge states.
+
+10: The dissipationless chiral edge states of the QHE regime can be used in low power consumption, high-speed electronic devices. However, well-defined Landau levels are only possible in high-mobility samples under strong external magnetic fields. The demanding requirements prevent the QHE from being widely applied in industry. Therefore, it is highly desirable to achieve the QHE without the need of a strong magnetic field and an extraordinarily high-mobility sample. Since the discovery of the QHE, numerous theoretical models have been proposed to realize it in the zero magnetic field [3,11,12]. In 1988, Haldane proposed the first model for the QHE without Landau levels [11]. The model is basically a graphene lattice with the time-reversal symmetry (TRS) broken by a periodic magnetic field (however with zero net magnetic flux). Graphene has a Dirac-cone-shaped gapless band structure. The broken TRS opens a gap at the Dirac point, changing graphene into an insulator with a Chern number of unity. This model says yes to the possibility of realizing the QHE in a system without Landau levels, but does not provide any particular materials for it.
+
+11: As mentioned earlier, the AHE in a ferromagnet can be induced by spontaneous magnetization without needing an external magnetic field [3]. Therefore, a quantized version of the AHE, namely the quantum anomalous Hall effect (QAHE), represents the realization of the QHE in the zero magnetic field [3,12]. After the discovery of the QHE, it was found that the theory for the QHE can also be used to explain the AHE in magnetic materials. The anomalous velocity that was used to introduce the intrinsic AHE is related to the Berry curvature of the energy band. The AH conductivity of a magnetic material is also determined by the integral of the Berry curvature, but it is not quantized for a metal, since the valence band is partly filled and thus the integral is not taken over the whole Brillouin zone [3]. Naturally, if one has a 2D ferromagnetic insulator with a non-zero Chern number, which can be called a Chern insulator, the QAHE will be realized. However, finding a Chern insulator is very challenging. The main difficulty lies in the fact that there are few ferromagnetic insulators in nature. Thus, little experimental progress was made in this way to the QAHE.
+
+12: Since 2005, a new class of topological matters, namely topological insulators (TIs) were discovered, partly inspired by Haldane's work in 1988 [13–17]. The topological property of a TI is induced by the SOC, which keeps the TRS, and is characterized by the topological invariant Z2 number, instead of the Chern number [13]. A 2D TI is topologically characterized by a single Z2 number and expected to show the quantum spin Hall effect (QSHE) in which a pair of spin-polarized edge states counter-propagates at each edge (Fig. 2b). The helical edge states will lead to quantized spin-accumulation at the two edges transverse to the current flowing direction and quantized longitudinal resistance (h/2e2, ∼12.9 kΩ for six-terminal measurements) [18,19]. The TR invariant TI can be generalized to 3D, which is a bulk insulator topologically characterized by four Z2 invariants and possesses 2D Dirac-type surface states at all surfaces [15]. The 2D Dirac-type surface states have similar band dispersion to that of graphene but are spin-polarized except for certain symmetry points (TR invariant points) in momentum space (Fig. 2c).
+
+13: TR invariant TIs attracted intense research interests in short time because many existing materials were soon found belonging to this class [16,17]. The QSHE was theoretically proposed and experimentally observed in HgTe/CdTe and InAs/GaSb/AlSb quantum wells, two semiconductor structures that have been long studied and are now recognized as 2D TIs [18–21]. Well-known thermoelectric materials such as BixSb1–x alloys and chalcogenide compounds Bi2Se3, Bi2Te3, and Sb2Te3 were found to be 3D TIs [22–28]. By far the Bi2Se3 family TIs are the most popular TI materials due to their stoichiometric chemical composition, relatively large bulk gaps (up to 0.3 eV in Bi2Se3), and simple surface Dirac-cone structures [25–28]. From the material point of view, there is no essential difference between 2D and 3D TIs. One can obtain the 2D TI phase, though not always, by reducing the thickness of a 3D TI to several nanometers [29–31]. The 3D TI, on the other hand, can result from stacking 2D TI quantum wells under certain conditions [32,33].
+
+14: Breaking the TRS of a TI thin film with ferromagnetism will lead to the QAHE [34–38]. In a 2D TI, if ferromagnetically induced exchange splitting of the lowest order quantum well subbands is large enough, so that one set of spin subbands are driven back to the topologically trivial phase [35], there will be only one spin channel at each edge remaining topologically protected, and thus the helical edge states responsible for the QSHE will evolve into chiral edge states exhibiting QAHE. In a 3D TI, ferromagnetism opens a gap in the Dirac surface band of the surface perpendicular to the magnetization vector and changes it into a QH system. Chiral edge states appear at each magnetic domain wall which is also the boundary between two topologically different phases. In a uniformly perpendicularly magnetized 3D TI film, the gapped surface bands at the top and bottom surfaces have different topological characters due to the opposite normal directions. The chiral edge states reside at sample edge which acts as the topological boundary between the top and bottom gapped surface bands. The QAHE can thus be measured easily with the electrodes at the sample edge [36].
+
+15: When the thickness of a 3D TI is reduced to several nanometers, the hybridization between the Dirac surface states of the top and bottom surfaces induces gap-opening, which pushes the system into a 2D TI or a 2D topologically trivial insulator phase [29–31]. In both cases, the QAHE can be observed, as long as the hybridization gap is smaller than the ferromagnetic exchange energy, because exchange splitting can always lead to the situation that one set of spin subbands is topologically non-trivial, whereas the other is topologically trivial [37].
+
+16: Doping magnetic impurities is a convenient approach to bring ferromagnetism in a TI. Many choices in a TI material make magnetically doped TIs a promising system to observe the QAHE. There are several challenges in material preparation to obtain a magnetically doped TI exhibiting the QAHE. First, the magnetically doped TI should have a long-range ferromagnetic order that can hold even in an insulating regime; the easy magnetization axis should be perpendicular to the film plane. Second, the ferromagnetic TI film should have uniform and well-controlled thickness; to localize the dissipative conduction electrons, the film should be as thin as possible, but should be thick enough to keep the energy gap larger than the ferromagnetic exchange energy. Third, the Fermi level should be able to be finely tuned into the gap of the magnetically doped TI thin film.
+
+17: With molecular beam epitaxy (MBE), a standard technique to prepare high-quality semiconductor films, Bi2Se3 family TIs with well-controlled composition and thickness can be grown on various substrates [39–42]. The thickness-dependent angle-resolved photoemission spectroscopy (ARPES) clearly reveals gap-opening of Dirac surface states due to hybridization between top and bottom surface states. For Bi2Se3, the hybridization gap reaches ∼ 40 meV in a 5 QL film, but cannot be distinguished at 6 QL (Fig. 3) [41]. For Sb2Te3 and Bi2Te3, the crossover thickness is ∼3–4 QL [39,42]. Considering that the typical Curie temperature (TC) of a magnetically doped semiconductor/insulator is usually below 100 K, corresponding to an exchange energy of the order of 10 meV, a thickness near 3D–2D crossover thickness, i.e. 4–6 QL, should be chosen for Bi2Se3 family TI films to observe the QAHE.
+
+18: ARPES bandmaps of the surface states of Bi2Se3 films with the thickness of 1 QL, 2 QL, 3 QL, 5 QL, and 6 QL, respectively. Reprinted with permission from Zhang et al. [41], © 2010 NPG.
+
+19: In most magnetically doped semiconductors/insulators, long-range ferromagnetic order cannot exist without itinerant charge carriers because the ferromagnetic coupling between magnetic dopants is of RKKY-type which requires mobile charge carriers of bulk bands as a medium [43,44]. The bulk carriers however will kill the QAHE by providing a parallel conduction channel. Hence, a different long-distance ferromagnetic coupling mechanism independent of carriers is a prerequisite for the observation of the QAHE in a magnetically doped TI. Fortunately, the unique band structure of Bi2Se3 family TIs opens the possibility for such insulating ferromagnetism. Different from usual semiconductors/insulators, Bi2Se3 family TIs have an inverted band structure, in which the conduction and valence bands are mixed together with the bulk gap opened by the SOC [25]. The special band structure leads to a large Van Vleck susceptibility even when the Fermi level lies in the bulk gap [37]. Magnetic impurities dispersed in a Bi2Se3 family TI can be ferromagnetically coupled by the strong Van Vleck susceptibility without the need of free carriers. This mechanism can support ferromagnetism with TC up to tens of Kelvin in a magnetically doped Bi2Se3 family TI according to mean-field-based calculations [37].
+
+20: Bi2Se3 is naturally the first choice of the three members of Bi2Se3 family TIs for its largest bulk gap and its Dirac point residing in the bulk gap. However, long-range ferromagnetic order could not been observed in magnetically doped Bi2Se3 down to 1.5 K. The absence of long-range ferromagnetic order is mainly due to the change in the band structure of Bi2Se3 induced by magnetic doping. The SOC of Bi2Se3 is mostly contributed by Bi atoms. Substitution of Bi atoms with much lighter magnetic elements can significantly lower the SOC of Bi2Se3, so that the band structure does no longer get inverted at a certain doping level. Van Vleck susceptibility will be greatly reduced as the result [45]. In Sb2Te3 and Bi2Te3, because Te atoms also contribute significant SOC, the inverted band structure and Van Vleck susceptibility are less influenced by magnetic doping. Clear long-range ferromagnetic order was indeed observed in Cr- and V-doped Sb2Te3 and Mn-doped Bi2Te3 [46–49].
+
+21: Bi2Te3 and Sb2Te3 have the same crystal structure and close lattice constants, whereas the former one is usually p-doped [50] and the latter one is n-doped [51]. By simply mixing the two compounds into (Bi,Sb)2Te3 with a certain Bi:Sb ratio, one can tune the chemical potential between n- and p-types. The ARPES result has shown that the topological surface states exist over the entire composition range of (Bi,Sb)2Te3 with dominating carriers tunable between p- and n-types [52]. Moreover, near a charge neutral point, the carrier density estimated by ARPES and transport measurements are well consistent. It suggests that (Bi,Sb)2Te3 films have negligible band bending and are little influenced by the ambient condition in transport measurements [53], both of which are important for the observation of the QAHE.
+
+22: Fig. 4a–f shows the magnetic-field-dependent Hall resistance (ρyx) of 5 QL Cr0.22(BixSb1–x)1.78Te3 films grown on sapphire (0 0 0 1) substrates with the same Cr doping level but different Bi:Sb ratio. At 1.5 K (the thicker lines) [46], for all the films the curves show nearly square-shaped hysteresis loops at a low field, suggesting good long-range ferromagnetic order with the easy magnetization axis perpendicular to the sample plane. With increasing Bi content, the OHE (the slope of the linear background at high field) evolves from positive to negative, indicating the change of the dominating carriers from p- to n-type. Therefore, the ferromagnetism of Cr-doped (BixSb1–x)2Te3 always holds despite the significant change in the carrier density and type induced by variation in sample composition. The TC of the films shows little dependence on carrier density and type, always ∼30–35 K, even in the rather insulating samples around the p–n crossover region (Fig. 4g). The carrier-independent ferromagnetism supports the existence of the ferromagnetic insulator phase presumably induced by the Van Vleck mechanism. The AH resistance is significantly enhanced up to ∼3 kΩ in the samples of lower carrier density. It is much larger than the AHE observed in most ferromagnetic metals, though still far from the quantized value (Fig. 4f).
+
+23: Transport properties of Cr-doped (BixSb1–x)2Te3 films. (a)–(f) Magnetic field dependent Hall resistance ρyx of the Cr0.22(BixSb1–x)1.78Te3 films with x = 0 (a), x = 0.15 (b), x = 0.2 (c), x = 0.25 (d), x = 0.35 (e) and x = 0.5 (f) at different temperatures. (g) Dependence of Curie temperature (TC) on Bi content (x) (bottom axis) and estimated carrier density (top axis). (h) Dependence of ρyx(0) (red solid squares) and ρxx(0) (blue solid circles) at 1.5 K on Bi content (x) (bottom axis) and carrier density (top axis). Reprinted with permission from Chang et al. [46], © 2013 Wiley.
+
+24: Only by varying the Bi:Sb ratio, it is difficult to tune the Fermi level accurately in the magnetically induced gap. Electric field effect has to be applied for fine-tuning of the chemical potential. SrTiO3 has a huge dielectric constant (∼20 000) at low temperature and is a commonly used substrate for MBE growth. By using the SrTiO3 substrate as a gate dielectric to tune the chemical potential of the TI thin film grown on it, one can realize the carrier density variation of ∼3 × 1013 cm−2 by changing the gate voltage (Vg) between ±210 V for a typical substrate thickness of 0.5 mm (see the schematic drawing for the measurement setup in Fig. 5a) [54]. Fig. 5b shows the ρyx hysteresis loops of a 5 QL Cr0.22(Bi0.2Sb0.8)1.78Te3 film grown on SrTiO3 (1 1 1) measured with different gate voltages (Vgs) (at 250 mK). The coercivity and the shape of the hysteresis loops are nearly unchanged with Vg, reconfirming the carrier-independent ferromagnetism. At the same time, the AH resistance changes dramatically with Vg, from 660 Ω at –210 V to 6.1 kΩ (the maximum) at 35 V, ∼1/4 quantum Hall resistance, as a result of a lower carrier density (Fig. 5c). Hence, the ferromagnetic insulator phase, well-controlled thickness and tunable carrier density are all satisfied in an MBE-grown Cr-doped (Bi,Sb)2Te3 thin film on the SrTiO3 (1 1 1) substrate, which validates the material as a perfect system to realize the QAHE.
+
+25: (a) A schematic drawing depicting the measurement geometry of the back-gated Cr-doped (Bi,Sb)2Te3 film with a SrTiO3 substrate as gate dielectrics. (b) Magnetic field dependent ρyx of a 5 QL Cr0.22(Bi0.2Sb0.8)1.78Te3 film grown on the SrTiO3 (1 1 1) substrate at different Vgs measured at 250 mK. (c) Dependence of ρyx(0) (red solid squares) and ρxx(0) (blue solid line) of the 5 QL Cr0.22(Bi0.2Sb0.8)1.78Te3 film grown on the SrTiO3 (1 1 1) substrate on Vg at 250 mK. (b) and (c) are reprinted with permission from Chang et al. [46], © 2013 Wiley.
+
+26: Through a careful optimization of sample growth parameters and measurements at ultra-low temperature, the QAHE was finally observed in Cr-doped (Bi,Sb)2Te3 thin films grown on SrTiO3 (1 1 1) substrates [55]. Figure 6a and c shows the magnetic field dependence of ρyx and ρxx, of a 5 QL Cr0.15(Bi0.1Sb0.9)1.85Te3 film, respectively, at different Vgs measured at T = 30 mK. In the magnetized states, ρyx is nearly invariant with magnetic field, suggesting perfect ferromagnetic ordering and charge neutrality of the sample. The AH resistance reaches a maximum value of h/e2 even at the zero magnetic field. The magneto-resistance (MR) curves (Fig. 6c) exhibit the typical shape for a ferromagnetic material: two sharp symmetric peaks at the coercive fields. But the MR ratio ((ρxx(Hc)–ρxx(0))/ρxx(0)) has a surprisingly large value of 2251% as ρyx reaches the quantized value (Fig. 6c).
+
+27: The QAHE measured at 30 mK. (a) Magnetic field dependence of ρyx at different Vgs. (b) Dependence of ρyx(0) (empty blue squares) and ρxx(0) (empty red circles) on Vg. (c) Magnetic field dependence of ρxx at different Vgs. (d) Dependence of σxy(0) (empty blue squares) and σxx(0) (empty red circles) on Vg. The vertical purple dashed-dotted lines in (b) and (d) indicate the Vg for V0g. Reprinted with permission from Chang et al. [55], © 2013 AAAS.
+
+28: The Vg dependences of zero field Hall and longitudinal resistance (ρyx(0) and ρxx(0)) are plotted in Fig. 6b. The ρyx(0)–Vg curve exhibits a distinct plateau ∼–1.5 V (indicated as V0g) with the quantized value h/e2. Accompanying the ρyx plateau is a clear dip in the longitudinal resistance ρxx(0) down to 0.098 h/e2. For comparison with theory, we transform ρyx(0) and ρxx(0) into sheet conductance via the relations σxy = ρyx/(ρyx2 + ρxx2) and σxx = ρxx/(ρyx2 + ρxx2) and plot them in Fig. 6d. Around V0g, σxy(0) has a notable plateau at 0.987 e2/h, whereas σxx(0) has a dip down to 0.096 e2/h. These observations unambiguously demonstrate the realization of the QAHE.
+
+29: The huge MR can also be attributed to the QAHE phenomenology. In the magnetized QAH state, the existence of a dissipationless edge state leads to a nearly vanishing ρxx. At the coercive field, the magnetization reversal of a QAH system results in a quantum phase transition between two QH states via a highly dissipative phase with a large ρxx [6]. The huge MR thus reflects the distinct difference in transport properties between an ordinary insulator and a QAH insulator.
+
+30: For a QH system, if dissipative conduction channels are not completely localized, σxx has a non-zero value, whereas σxy deviates slightly from the quantized plateau. The observations of the deviation of σxy(0) from e2/h plateau and the non-zero σxx(0) near the charge neutral point in Fig. 6d can thus be attributed to the residual dissipative channels, which are expected to vanish completely at zero temperature or in a strong magnetic field. Figure 7a and b displays the magnetic field dependence of ρyx and ρxx of the same sample as in Fig. 6, respectively, with the magnetic field applied up to 18 T. Except for the large MR peak at coercivity, increasing the field suppresses ρxx toward zero. Above 10 T, ρxx vanishes completely, corresponding to a perfect QH state. Since the increase in ρxx from zero (above 10 T) to 0.098 h/e2 (at zero field) is very smooth and ρyx remains at the quantized value h/e2, no quantum phase transition occurs and the sample stays in the same QH phase as the field sweeps from 10 T to zero field. Therefore, the complete quantization above 10 T can only be attributed to the same QAH state at the zero field.
+
+31: The QAHE under strong magnetic field measured at 30 mK. (a) Magnetic field dependence of ρyx at V0g. (b) Magnetic field dependence of ρxx at V0g. The blue and red lines in (a) and (b) indicate the data taken with increasing and decreasing fields, respectively. Reprinted with permission from Chang et al. [55], © 2013 AAAS.
+
+32: In Fig. 8a, we show Vg dependences of ρyx(0) and ρxx(0) measured at different temperatures. The ρyx(0) maximum value is considerably suppressed by increasing temperatures, accompanied by disappearance of the dip in ρxx(0). The σxx(0) extracted from these measurements (on logarithmic scale, Fig. 8b) exhibits temperature dependence similar to that in integer QH systems [56]: the drop of σxx is at first rapid, resulting from the freezing of the thermal activation mechanism, and then becomes much slower when the temperature is below 1 K. It can be attributed to variable range hopping (VRH), but its exact mechanism remains unknown. Similar to the QHE, zero field σxx is expected to decrease to zero at sufficiently low temperature. In Fig. 8c, we plot the relation between σxx(0) and δσxy(0) (δσxy = e2/h – σxy), which reflects the contribution of dissipative channels). A power-law relation δσxy ∝ σxxα with α ∼ 1.55 is obtained. For a ferromagnetic insulator in the VRH regime, the AH conductivity is related to the longitudinal conductivity through σAH = Aσxxα (the power α is ∼1.6, the pre-factor A can be positive or negative depending on materials) [3]. The above result can thus be qualitatively understood within the VRH framework.
+
+33: Temperature dependence of the QAHE. (a) Vg-dependent ρyx(0) and ρxx(0) measured at 90 mK, 400 mK, 1.5 K and 4 K, respectively. The vertical purple dashed-dotted line indicates the Vg for V0g. The variation in the position and width of the ρyx(0) peak at different temperatures results from the change in substrate dielectric properties induced by temperature and charging cycles. (b) Dependences of logarithmically scaled σxx(0) (empty red circles) and δσxy(0) (empty blue squares) at V0g on inverse temperature. The dashed lines are a guide to the eye. (c) The relation between δσxy(0) and σxx(0) at V0g on a double logarithmic scale. The red dashed line indicates the fit with a power law δσxy ∝ σxxα with α ∼ 1.55. Reprinted with permission from Chang et al. [55], © 2013 AAAS.
+
+34: The experimental realization of the QAHE in magnetically doped TI thin films not only concludes the searching of over 20 years for the QHE without magnetic field, but also confirms the existence of intrinsic AHE that has been questioned for over half century. The realization of the QAHE also brings new hopes for many other novel quantum phenomena predicted previously, such as topological magnetoelectric effect, image magnetic monopoles and Majorana states. Since the QAHE does not require high electron mobility, in principle, low-cost preparation techniques can be used to make the QAH samples, which will significantly reduce the barrier for the studies and applications based on the QAHE.
+
+35: The major challenge preventing further studies on the QAHE is the very low temperature that is needed to reach the quantization plateau. So far it is still not clear what mainly contributes to the remaining non-localized channels. One may try to reduce the film thickness and artificially introduce disorder in a magnetically doped TI film to promote electron localization, so that quantization can be reached at higher temperatures. There are two energy scales that determine at how high a temperature the QAHE can be observed: one is the Curie temperature, and the other is the gap of TI. The future endeavors will be focused on enhancing these two energy scales by choosing novel TI materials, substrates and magnetic dopants.
+
+36: The authors would thank the collaborations and discussions with Cui-Zu Chang, Jinsong Zhang, Xiao Feng, Jie Shen, Zuocheng Zhang, Minghua Guo, Kang Li, Yunbo Ou, Pang Wei, Lili Wang, Li Lu, Zhongqing Ji, Jin-Feng Jia, Shuaihua Ji, Xi Chen, Xi Dai, Zhong Fang, Xincheng Xie, Jian Wang, Shengbai Zhang, Chao-Xing Liu, Bangfen Zhu, Wenhui Duan, Jian Wu, Peizhe Tang, Shun-Qing Shen, Qian Niu, Xiao-Liang Qi, Xu-Cun Ma, and Shou-Cheng Zhang. This work was supported by the National Natural Science Foundation of China, the National Basic Research Program of China, and the Knowledge Innovation Program of Chinese Academy of Sciences.
+
+37: Google Scholar
+
+38: WorldCat
+
+39: Google Scholar
+
+40: WorldCat
+
+41: Google Scholar
+
+42: WorldCat
+
+43: Google Scholar
+
+44: WorldCat
+
+45: Google Scholar
+
+46: WorldCat
+
+47: Google Scholar
+
+48: Google Preview
+
+49: WorldCat
+
+50: Google Scholar
+
+51: Google Preview
+
+52: WorldCat
+
+53: Google Scholar
+
+54: WorldCat
+
+55: Google Scholar
+
+56: WorldCat
+
+57: Google Scholar
+
+58: WorldCat
+
+59: Google Scholar
+
+60: WorldCat
+
+61: Google Scholar
+
+62: WorldCat
+
+63: Google Scholar
+
+64: WorldCat
+
+65: Google Scholar
+
+66: WorldCat
+
+67: Google Scholar
+
+68: WorldCat
+
+69: Google Scholar
+
+70: WorldCat
+
+71: Google Scholar
+
+72: WorldCat
+
+73: Google Scholar
+
+74: WorldCat
+
+75: Google Scholar
+
+76: WorldCat
+
+77: Google Scholar
+
+78: WorldCat
+
+79: Google Scholar
+
+80: WorldCat
+
+81: Google Scholar
+
+82: WorldCat
+
+83: Google Scholar
+
+84: WorldCat
+
+85: Google Scholar
+
+86: WorldCat
+
+87: Google Scholar
+
+88: WorldCat
+
+89: Google Scholar
+
+90: WorldCat
+
+91: Google Scholar
+
+92: WorldCat
+
+93: Google Scholar
+
+94: WorldCat
+
+95: Google Scholar
+
+96: WorldCat
+
+97: Google Scholar
+
+98: WorldCat
+
+99: Google Scholar
+
+100: WorldCat
+
+101: Google Scholar
+
+102: WorldCat
+
+103: Google Scholar
+
+104: WorldCat
+
+105: Google Scholar
+
+106: WorldCat
+
+107: Google Scholar
+
+108: WorldCat
+
+109: Google Scholar
+
+110: WorldCat
+
+111: Google Scholar
+
+112: WorldCat
+
+113: Google Scholar
+
+114: WorldCat
+
+115: Google Scholar
+
+116: WorldCat
+
+117: Google Scholar
+
+118: WorldCat
+
+119: Google Scholar
+
+120: WorldCat
+
+121: Google Scholar
+
+122: WorldCat
+
+123: Google Scholar
+
+124: WorldCat
+
+125: Google Scholar
+
+126: WorldCat
+
+127: Google Scholar
+
+128: WorldCat
+
+129: Google Scholar
+
+130: Google Preview
+
+131: WorldCat
+
+132: Google Scholar
+
+133: WorldCat
+
+134: Google Scholar
+
+135: WorldCat
+
+136: Google Scholar
+
+137: WorldCat
+
+138: Google Scholar
+
+139: WorldCat
+
+140: Google Scholar
+
+141: WorldCat
+
+142: Google Scholar
+
+143: WorldCat
+
+144: Google Scholar
+
+145: WorldCat
+
+146: Google Scholar
+
+147: WorldCat
+
+148: Google Scholar
+
+149: WorldCat

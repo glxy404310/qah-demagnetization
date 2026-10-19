@@ -1,0 +1,23 @@
+PAGE 6
+MICROMAGNETISMଶ଴௘௫௧଴ௗ௘௠௔௚ଷ௏The physics is fully described by the total magnetic energy functional:ExchangeZeemanCrystal anisotropyDzyaloshinskii-MoriyaMagneto-elasticityHigher-order exchange…
+6
+
+PAGE 8
+MICROMAGNETISM𝑯௘௙௙= −1𝜇଴𝑀௦𝛿𝐸𝛿𝒎𝒎̇= −𝛾1 + 𝛼ଶ𝒎 × 𝑯௘௙௙+ 𝛼 𝒎 ×𝒎 × 𝑯௘௙௙Time integration dynamicsThe magnetization dynamics is described by the Landau-Lifshitz-Gilbert (LLG) equationprecessiondampingwith𝐸𝒎, 𝑡   →   𝐻௘௙௙𝒓        LLG      𝒎(𝒓, 𝑡)Computation of the magnetization dynamics:
+8
+
+
+PAGE 26
+DEMAGNETIZATION FIELD TERMRegional Material ParametersMsatSaturation magnetization (A/m)NoDemagSpinsDisable magnetostatic interaction per region (default=0, set to 1 to disable).Output QuantitiesB_demagMagnetostatic field (T)Edens_demagMagnetostatic energy density (J/m3) E_demagMagnetostatic energy (J) Other functionalitiesEnableDemagEnables/disables demag (default=true)SetPBCSets the number of repetitions in X,Y,Z to create periodic boundary conditions. The number of repetitions determines the cutoff range for the demagnetization.DemagAccuracyControls accuracy of demag kernel26
+𝜀 =  −𝜇଴2 𝑀௦ 𝒎 ⋅ 𝑯ௗ௘௠௔௚Demagnetization energy density
+
+PAGE 27
+EXCHANGE FIELD TERMRegional Material ParametersAexExchange stiffness (J/m)MsatSaturation magnetization (A/m)Output QuantitiesB_exchExchange field (T)Edens_exchTotal exchange energy density (including DMI) (J/m3) E_exchTotal exchange energy (including DMI) (J) MaxAngleMaximum angle between exchanged coupled spins (rad)Other functionalitiesExt_InterExchangeSets exchange coupling between two regionsExt_ScaleExchangeRe-scales exchange coupling between two regions𝜀 =  A  ∇𝒎ଶ𝐴𝑀௦= 2𝐴ଵ𝑀௦భ𝐴ଶ𝑀௦మ𝐴ଵ𝑀௦భ+𝐴ଶ𝑀௦మHarmonic mean for inter-region exchange coupling (default behavior)Exchange energy density
+27111222
+
+PAGE 28
+ANISOTROPY FIELD TERMRegional Material ParametersanisUUniaxial anisotropy directionKu1, Ku2Uniaxial anisotropy constants (J/m3)AnisC1, AnisC2Cubic anisotropy directionsKc1, Kc2, Kc3Cubic anisotropy constants (J/m3)MsatSaturation magnetization (A/m)Output QuantitiesB_anisAnisotropy field (T)Edens_anisTotal anisotropy energy density (including DMI) (J/m3) E_anisTotal anisotropy energy (including DMI) (J) 𝜀 = − 𝐾ଵ  𝑢ො⋅ 𝒎ଶ− 𝐾ଶ 𝑢ො⋅ 𝒎ସUniaxial anisotropy energy densitySimilar expression for cubic anisotropy energy density [1][1] "The design and verification of mumax3", AIP Advances 4, 107133 (2014). 28
+
+PAGE 30
+EXTERNAL FIELD TERMRegional Material ParametersMsatSaturation magnetization (A/m)Output QuantitiesB_extExternally applied field(T)Edens_zeemanZeeman energy density (J/m3) E_zeemanZeeman energy (J) ExcitationB_extExternally applied field(T)𝜀 = −𝑀௦ 𝒎 ⋅ 𝑩௘௫௧Zeeman energy density
+30

@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "checks": {
+    "source_hash_match": "pass",
+    "information_fidelity": "pass",
+    "structure": "pass",
+    "math_code_tables": "pass",
+    "callouts": "not_applicable",
+    "safety_escaping": "pass",
+    "placeholder_leak": "pass"
+  },
+  "blocking_issues": [],
+  "warnings": [],
+  "summary": "The final HTML faithfully preserves the source title, all 15 sections and 17 subsections, 11 tables, 29 list items, one code block, 17 source links, and 181 formulas. Full article text matches after removing Markdown syntax and normalizing layout whitespace; all TeX annotations match after whitespace normalization and every MathML fragment parses. Source SHA256 matches. Tags are balanced, internal anchors resolve, and no source-derived executable content or unresolved placeholders were found. Generated metadata, TOC, and native MathML are expected differences."
+}
