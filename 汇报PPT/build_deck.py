@@ -302,11 +302,11 @@ def build():
     prs.slide_height = Inches(H)
     prs.core_properties.title = "基于微磁学模拟探讨量子反常霍尔效应的退磁场效应"
     prs.core_properties.subject = "理论学习阶段汇报（5 分钟）"
-    prs.core_properties.author = "电磁学课程项目"
+    prs.core_properties.author = "孙煜凡、韦中天"
 
     # ------------------------------------------------------------- slide 1 --
     s = new_slide(prs)
-    rect(s, L, 1.28, 0.055, 3.35, ACCENT)
+    rect(s, L, 1.28, 0.055, 3.7, ACCENT)
     textbox(s, 0.95, 1.22, 7.4, 0.3,
             [[("电磁学课程项目 · 阶段汇报", {"spc": 2.0})]], size=11.5, color=ACCENT)
     textbox(s, 0.95, 1.62, 7.6, 2.05,
@@ -314,8 +314,10 @@ def build():
             size=35, color=INK, bold=True, line_spacing=1.12)
     textbox(s, 0.95, 3.82, 7.4, 0.42,
             [[("理论学习完成情况与下一步计划", {})]], size=18, color=BODY)
-    textbox(s, 0.95, 4.38, 7.4, 0.32,
-            [[("2026 年 10 月 · 理论学习阶段", {})]], size=12, color=MUTED)
+    textbox(s, 0.95, 4.38, 7.4, 0.34,
+            [[("孙煜凡　韦中天", {})]], size=14.5, color=INK, bold=True)
+    textbox(s, 0.95, 4.76, 7.4, 0.28,
+            [[("2026 年 10 月 · 理论学习阶段", {})]], size=11, color=MUTED)
 
     # schematic: film + out-of-plane M + opposing demag field
     card(s, 8.55, 1.55, 4.15, 3.15, fill=ACCENT_LIGHT, line=None)
@@ -337,7 +339,7 @@ def build():
                   (label, {"size": 12, "color": BODY})]],
                 size=12, anchor=MSO_ANCHOR.MIDDLE)
     footer(s, 1)
-    note(s, "各位老师好。我汇报这个电磁学课程项目的进展。题目是《基于微磁学模拟探讨量子反常霍尔效应的退磁场效应》。"
+    note(s, "各位老师好。我们汇报这个电磁学课程项目的进展。题目是《基于微磁学模拟探讨量子反常霍尔效应的退磁场效应》。"
             "目前理论学习已经完成，模拟即将启动，今天主要讲已经做完的准备和下一步安排。")
 
     # ------------------------------------------------------------- slide 2 --
