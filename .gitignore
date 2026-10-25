@@ -1,0 +1,15 @@
+# macOS Finder metadata
+.DS_Store
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Office lock files
+~$*
+
+# local runtime state
+state/
+
+# regenerable layout screenshots
+理论学习资料/辅助文件/tmp/**/*.png
