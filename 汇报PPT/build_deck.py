@@ -664,7 +664,8 @@ def build():
     rule(s)
 
     steps = [
-        ("01", "定软件路线", "OOMMF / WSL+Fidimag / MuMax3，先验证 GPU 与 CUDA 兼容性"),
+        ("01", "定软件路线",
+         "OOMMF / WSL+Fidimag / MuMax3：先验证 GPU 与 CUDA 兼容性；本机 RTX 5060 可能不兼容旧版。"),
         ("02", "锁定参数表", "饱和磁化强度、交换刚度、各向异性、阻尼 α：一次定死并注明来源"),
         ("03", "均匀磁化静态校验",
          [("三个方向分别测 N，目标 |ΔN| < 10", {}), ("−4", {"sup": True}),
@@ -672,26 +673,14 @@ def build():
         ("04", "形状 → 磁畴 → 磁滞 → 收敛", "方形 / 圆形 / 长方形，等面积等厚度，再扫厚度"),
     ]
     for i, (num, head, desc) in enumerate(steps):
-        y = 2.02 + i * 1.08
+        y = 2.02 + i * 1.1
         textbox(s, L, y, 0.62, 0.42, [[(num, {})]], size=17, color=ACCENT, bold=True)
-        textbox(s, L + 0.68, y - 0.02, 6.3, 0.36, [[(head, {})]], size=14.5, color=INK,
+        textbox(s, L + 0.7, y - 0.02, CW - 0.7, 0.36, [[(head, {})]], size=14.5, color=INK,
                 bold=True)
-        textbox(s, L + 0.68, y + 0.36, 6.3, 0.5, [desc], size=10.5, color=MUTED,
+        textbox(s, L + 0.7, y + 0.36, CW - 0.7, 0.5, [desc], size=10.5, color=MUTED,
                 line_spacing=1.2)
-
-    card(s, 8.0, 2.02, 4.63, 2.2, fill=WHITE, line=AMBER, width=1.25)
-    textbox(s, 8.24, 2.16, 4.2, 0.28, [[("需要你确认", {"spc": 1.5})]], size=10.5,
-            color=AMBER, bold=True)
-    textbox(s, 8.24, 2.5, 4.2, 1.55,
-            [[("· 软件路线走哪一条", {})],
-             [("· 可用机时 / 机器", {})],
-             [("· 是否沿用教学参数", {})]],
-            size=12, color=BODY, line_spacing=1.6)
-
-    textbox(s, 8.0, 4.45, 4.63, 1.15,
-            [[("风险：", {"bold": True, "color": AMBER}),
-              ("本机 RTX 5060（Blackwell, sm_120）与旧版 MuMax3/CUDA 可能不兼容。", {})]],
-            size=10.5, color=BODY, line_spacing=1.3)
+        if i < len(steps) - 1:
+            rect(s, L, y + 0.98, CW, 0.009, LINE)
 
     card(s, L, 6.4, CW, 0.52, fill=ACCENT_LIGHT, line=None)
     textbox(s, L + 0.24, 6.4, CW - 0.4, 0.52,
@@ -699,7 +688,7 @@ def build():
             color=ACCENT, bold=True, anchor=MSO_ANCHOR.MIDDLE)
     footer(s, 8)
     note(s, "下一步四件事：定软件、锁参数、做静态校验，再跑三形状、磁畴、磁滞和收敛。"
-            "最需要老师定的是软件路线：这台机器有 RTX 5060，但新显卡和旧版 MuMax3 可能不兼容，"
+            "软件路线还没定：这台机器有 RTX 5060，但新显卡和旧版 MuMax3 可能不兼容，"
             "也可能走 OOMMF 或 WSL 加 Fidimag。谢谢。")
 
     prs.save(OUT)
