@@ -1,14 +1,19 @@
-"""Build the 5-minute progress deck: 汇报PPT/1.pptx.
+"""Build the 8-page theory deck: 汇报PPT/1.pptx.
 
-Numbers on the slides are recomputed from the verified analytic scripts and the
-saved JSON summaries, never hand-copied. Run with the bundled Python:
+The deck covers only what the simulation stage actually needs: the four energy
+terms, the demagnetizing factor, the K_eff criterion, the exchange length and
+domain wall, the LLG equation, and the five-stage plan. Numbers on the slides
+are recomputed from the verified analytic scripts and the saved JSON summaries,
+never hand-copied. Run with the bundled Python:
 
     python 汇报PPT/build_deck.py
 
-Output: 汇报PPT/1.pptx (8 slides, 16:9, speaker notes with timing).
+Output: 汇报PPT/1.pptx (8 slides, 16:9, speaker notes). If 1.pptx is locked by
+another program, the deck is saved as 阶段汇报_理论版.pptx instead.
 """
 import json
 import math
+import os
 import re
 import sys
 from pathlib import Path
@@ -24,7 +29,7 @@ from pptx.util import Inches, Pt
 ROOT = Path(__file__).resolve().parent.parent
 DEMAG_DIR = ROOT / "理论学习资料" / "辅助文件" / "output" / "demag-learning"
 FIDIMAG_DIR = ROOT / "理论学习资料" / "辅助文件" / "output" / "fidimag-learning"
-OUT = Path(__file__).resolve().parent / "1.pptx"
+OUT = Path(__file__).resolve().parent / os.environ.get("DECK_NAME", "1.pptx")
 
 sys.path.insert(0, str(DEMAG_DIR))
 from rectangular_demag import center_factors, rectangular_factors  # noqa: E402
@@ -46,7 +51,7 @@ EA = "Microsoft YaHei"
 LATIN = "Segoe UI"
 
 W, H, L, CW = 13.333, 7.5, 0.7, 11.933
-TOTAL_SLIDES = 8
+TOTAL_SLIDES = 7
 
 # ------------------------------------------------------------------ data ----
 MU0 = 4 * math.pi * 1e-7
@@ -78,6 +83,17 @@ THRESHOLD = KD * DELTA_N
 KEFF = KU - THRESHOLD
 LEX_NM = math.sqrt(2 * AEX / (MU0 * MS ** 2)) * 1e9
 
+MU0MS = MU0 * MS  # μ0·M_s, the field scale in tesla (≈0.377 T)
+MU0_MS2 = MU0 * MS ** 2  # μ0·M_s², energy density scale (≈1.13×10⁵ J/m³)
+Q_VALUE = 2 * KU / MU0_MS2
+WALL_DELTA_NM = math.sqrt(AEX / KU) * 1e9
+WALL_NM = math.pi * WALL_DELTA_NM
+SIGMA_WALL = 4 * math.sqrt(AEX * KU)
+assert abs(MU0MS - 0.377) < 1e-3
+assert abs(MU0_MS2 - 1.1310e5) < 5
+assert abs(Q_VALUE - 1.4147) < 5e-3
+assert abs(WALL_NM - 24.84) < 0.2
+
 CENTER_ERR = (N_CENTER_SQ[2] / N_SQ[2] - 1) * 100
 INFINITE_ERR = (1.0 / N_SQ[2] - 1) * 100
 
@@ -102,6 +118,16 @@ def sci(value, digits=2):
     exp = int(math.floor(math.log10(abs(value))))
     mant = value / 10 ** exp
     return [(f"{mant:.{digits}f}×10", {}), sup(str(exp))]
+
+
+SUP_TRANS = str.maketrans("0123456789-", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻")
+
+
+def sci_text(value, digits=1):
+    """Return plain text such as 2.8×10⁻¹², for footers."""
+    exp = int(math.floor(math.log10(abs(value))))
+    mant = value / 10 ** exp
+    return f"{mant:.{digits}f}×10{str(exp).translate(SUP_TRANS)}"
 
 
 # Subscripts are written inline as K_eff, N_z, M_s ... and only these short
@@ -159,7 +185,8 @@ def add_runs(p, parts, size, color, bold=False):
             r = p.add_run()
             r.text = chunk
             sz = opt.get("size", size) * (0.72 if (is_sub or is_sup) else 1.0)
-            style_run(r, sz, opt.get("color", color), opt.get("bold", bold))
+            style_run(r, sz, opt.get("color", color), opt.get("bold", bold),
+                      opt.get("italic", False))
             if is_sub:
                 r._r.get_or_add_rPr().set("baseline", "-25000")
             elif is_sup:
@@ -272,15 +299,29 @@ def rule(slide):
     rect(slide, L, 1.63, 1.15, 0.035, ACCENT)
 
 
-def footer(slide, page, source=None):
-    if source:
-        textbox(slide, L, 7.02, 9.7, 0.26, [[(source, {})]], size=8.5, color=MUTED)
+def footer(slide, page):
     textbox(slide, 11.2, 7.02, 1.43, 0.26, [[(f"{page} / {TOTAL_SLIDES}", {})]],
             size=9, color=MUTED, align=PP_ALIGN.RIGHT)
 
 
 def note(slide, text):
     slide.notes_slide.notes_text_frame.text = text
+
+
+def formula(slide, x, y, w, h, parts, size=20, color=INK, bold=False,
+            fill=ACCENT_LIGHT, caption=None, caption_color=ACCENT,
+            align=PP_ALIGN.CENTER, line_spacing=1.25):
+    """Accent panel with an optional small caption and one centred equation."""
+    card(slide, x, y, w, h, fill=fill, line=None)
+    top = y
+    if caption:
+        textbox(slide, x + 0.24, y + 0.11, w - 0.48, 0.24,
+                [[(caption, {"spc": 1.0})]], size=9.5, color=caption_color,
+                bold=True)
+        top = y + 0.4
+    textbox(slide, x + 0.2, top, w - 0.4, y + h - top - 0.05, parts,
+            size=size, color=color, bold=bold, align=align,
+            anchor=MSO_ANCHOR.MIDDLE, line_spacing=line_spacing)
 
 
 def set_cell(cell, parts, size, color, bold=False, align=PP_ALIGN.CENTER):
@@ -301,403 +342,372 @@ def build():
     prs.slide_width = Inches(W)
     prs.slide_height = Inches(H)
     prs.core_properties.title = "基于微磁学模拟探讨量子反常霍尔效应的退磁场效应"
-    prs.core_properties.subject = "理论学习阶段汇报（5 分钟）"
+    prs.core_properties.subject = "核心理论、关键公式与后续计划（5 分钟）"
     prs.core_properties.author = "孙煜凡、韦中天"
 
     # ------------------------------------------------------------- slide 1 --
     s = new_slide(prs)
     rect(s, L, 1.28, 0.055, 3.7, ACCENT)
     textbox(s, 0.95, 1.22, 7.4, 0.3,
-            [[("电磁学课程项目 · 阶段汇报", {"spc": 2.0})]], size=11.5, color=ACCENT)
+            [[("电磁学课程项目 · 理论汇报", {"spc": 2.0})]], size=11.5, color=ACCENT)
     textbox(s, 0.95, 1.62, 7.6, 2.05,
             [[("基于微磁学模拟探讨", {})], [("量子反常霍尔效应的退磁场效应", {})]],
             size=35, color=INK, bold=True, line_spacing=1.12)
     textbox(s, 0.95, 3.82, 7.4, 0.42,
-            [[("理论学习完成情况与下一步计划", {})]], size=18, color=BODY)
+            [[("核心理论、关键公式与后续计划", {})]], size=18, color=BODY)
     textbox(s, 0.95, 4.38, 7.4, 0.34,
             [[("孙煜凡　韦中天", {})]], size=14.5, color=INK, bold=True)
     textbox(s, 0.95, 4.76, 7.4, 0.28,
             [[("2026 年 10 月 · 理论学习阶段", {})]], size=11, color=MUTED)
 
-    # schematic: film + out-of-plane M + opposing demag field
-    card(s, 8.55, 1.55, 4.15, 3.15, fill=ACCENT_LIGHT, line=None)
-    rect(s, 9.0, 3.52, 3.25, 0.16, INK)
-    arrow(s, 10.42, 2.42, 0.26, 0.95, ACCENT, "up")
-    textbox(s, 10.82, 2.62, 0.9, 0.35, [[("M", {})]], size=15, color=ACCENT, bold=True)
-    arrow(s, 10.42, 3.85, 0.26, 0.72, AMBER, "down")
-    textbox(s, 10.82, 3.98, 1.0, 0.35, [[("H", {}), sub("d")]], size=14, color=AMBER, bold=True)
-    textbox(s, 8.55, 4.8, 4.15, 0.3, [[("面外磁化与退磁场方向相反", {})]],
+    card(s, 8.55, 1.9, 4.15, 3.0, fill=ACCENT_LIGHT, line=None)
+    rect(s, 9.0, 3.68, 3.25, 0.16, INK)
+    arrow(s, 10.42, 2.62, 0.26, 0.9, ACCENT, "up")
+    textbox(s, 10.82, 2.8, 0.9, 0.35, [[("M", {"italic": True})]], size=15,
+            color=ACCENT, bold=True)
+    arrow(s, 10.42, 4.0, 0.26, 0.7, AMBER, "down")
+    textbox(s, 10.82, 4.12, 1.0, 0.35, [[("H", {"italic": True}), sub("d")]], size=14,
+            color=AMBER, bold=True)
+    textbox(s, 8.55, 5.0, 4.15, 0.3, [[("面外磁化与退磁场方向相反", {})]],
             size=9.5, color=MUTED, align=PP_ALIGN.CENTER)
 
-    chips = [("5", "份专题资料"), ("2", "项数值校验通过"), ("3", "种几何退磁因子已算")]
-    for i, (num, label) in enumerate(chips):
-        x = 0.85 + i * 3.95
-        card(s, x, 5.62, 3.75, 0.9)
-        textbox(s, x + 0.26, 5.66, 3.2, 0.82,
-                [[(num, {"size": 24, "color": ACCENT, "bold": True}),
-                  ("    ", {}),
-                  (label, {"size": 12, "color": BODY})]],
-                size=12, anchor=MSO_ANCHOR.MIDDLE)
+    textbox(s, 0.95, 5.3, 7.0, 0.9,
+            [[("面外磁化受到退磁场抑制；", {})],
+             [("其稳定性由各向异性能与退磁能之差决定。", {"bold": True, "color": ACCENT})]],
+            size=12.5, color=BODY, line_spacing=1.4)
     footer(s, 1)
-    note(s, "各位老师好。我们汇报这个电磁学课程项目的进展。题目是《基于微磁学模拟探讨量子反常霍尔效应的退磁场效应》。"
-            "目前理论学习已经完成，模拟即将启动，今天主要讲已经做完的准备和下一步安排。")
+    note(s, "各位老师好。我们汇报这个电磁学课程项目。今天讲三块：项目必需的理论、关键公式，以及下一步计划。"
+            "题目可以概括为：面外磁化受到退磁场的抑制，其稳定性由形状与厚度决定。")
 
     # ------------------------------------------------------------- slide 2 --
     s = new_slide(prs)
-    kicker(s, "01", "研究问题")
-    title(s, "形状改变退磁场，退磁场决定面外磁化能不能稳住")
-    rule(s)
-
-    chain = [
-        ("01", "形状与厚度", "正方形 · 圆形 · 长方形"),
-        ("02", "退磁场与退磁能", [("H", {}), sub("d"), (" 与 E", {}), sub("d"), (" 随几何改变", {})]),
-        ("03", "与交换、各向异性竞争", "总能量决定平衡态"),
-        ("04", "面外磁化与磁畴", "剩磁、边缘倾斜、翻转"),
-    ]
-    bw, gap, by, bh = 2.21, 0.22, 2.1, 2.0
-    for i, (num, head, body) in enumerate(chain):
-        x = L + i * (bw + gap)
-        card(s, x, by, bw, bh, fill=WHITE)
-        textbox(s, x + 0.2, by + 0.18, bw - 0.4, 0.25, [[(num, {"spc": 1.5})]],
-                size=10, color=ACCENT, bold=True)
-        textbox(s, x + 0.2, by + 0.52, bw - 0.4, 0.62, [[(head, {})]],
-                size=14.5, color=INK, bold=True, line_spacing=1.1)
-        textbox(s, x + 0.2, by + 1.2, bw - 0.4, 0.62, [body], size=10.5, color=MUTED,
-                line_spacing=1.15)
-        if i < len(chain) - 1:
-            arrow(s, x + bw + 0.035, by + 0.84, 0.16, 0.3, "9FB6BA", "right")
-
-    x5 = L + 4 * (bw + gap)
-    card(s, x5, by, bw, bh, fill=ACCENT_LIGHT, line=ACCENT, width=1.25,
-         dash=MSO_LINE_DASH_STYLE.DASH)
-    textbox(s, x5 + 0.2, by + 0.18, bw - 0.4, 0.25, [[("05", {"spc": 1.5})]],
-            size=10, color=ACCENT, bold=True)
-    textbox(s, x5 + 0.2, by + 0.52, bw - 0.4, 0.62, [[("QAH 的磁性条件", {})]],
-            size=14.5, color=ACCENT, bold=True, line_spacing=1.1)
-    textbox(s, x5 + 0.2, by + 1.2, bw - 0.4, 0.62, [[("只走到这里为止", {})]],
-            size=10.5, color=ACCENT, line_spacing=1.15)
-
-    card(s, L, 4.78, CW, 1.5, fill=WHITE)
-    rect(s, L, 4.78, 0.055, 1.5, ACCENT)
-    textbox(s, L + 0.28, 4.94, CW - 0.5, 0.3, [[("本项目的解释边界", {})]],
-            size=11, color=ACCENT, bold=True, margins=(0, 0, 0, 0))
-    textbox(s, L + 0.28, 5.22, CW - 0.55, 0.9,
-            [[("微磁学能回答磁化与磁畴是否稳定，不能计算陈数、能隙或霍尔电导。", {})],
-             [("因此结论只表述为“为 QAH 提供更有利的磁性条件”，不涉及输运证据。",
-               {"bold": True})]],
-            size=12.5, color=BODY, line_spacing=1.35)
-    footer(s, 2, "研究范围见 README.md 与 4-QAH基本概念与面外磁化学习指南.md")
-    note(s, "项目要回答的是：改变薄膜形状和厚度，退磁场怎么变；它和交换、各向异性的竞争，"
-            "能不能让磁化更稳地指向面外。注意，微磁学只说明磁性条件，不算霍尔电导，结论会严格限定在这里。")
-
-    # ------------------------------------------------------------- slide 3 --
-    s = new_slide(prs)
-    kicker(s, "02", "进度")
-    title(s, "理论阶段完成，模拟阶段待启动")
-    rule(s)
-
-    stages = [("理论学习", "已完成"), ("基准模拟", "当前位置"), ("形状比较", "待启动"),
-              ("数据分析", "待启动"), ("总结优化", "待启动")]
-    tw, tgap, ty, th = 2.25, 0.17, 2.15, 1.5
-    for i, (name, state) in enumerate(stages):
-        x = L + i * (tw + tgap)
-        if i == 0:
-            card(s, x, ty, tw, th, fill=ACCENT, line=None)
-            textbox(s, x + 0.2, ty + 0.22, tw - 0.4, 0.4, [[(name, {})]], size=15,
-                    color=WHITE, bold=True)
-            textbox(s, x + 0.2, ty + 0.82, tw - 0.4, 0.3, [[("✓ 已完成", {})]], size=11,
-                    color=WHITE)
-        elif i == 1:
-            card(s, x, ty, tw, th, fill=WHITE, line=ACCENT, width=2.0)
-            textbox(s, x + 0.2, ty + 0.22, tw - 0.4, 0.4, [[(name, {})]], size=15,
-                    color=ACCENT, bold=True)
-            textbox(s, x + 0.2, ty + 0.82, tw - 0.4, 0.3, [[(state, {})]], size=11,
-                    color=ACCENT)
-        else:
-            card(s, x, ty, tw, th, fill=FAINT)
-            textbox(s, x + 0.2, ty + 0.22, tw - 0.4, 0.4, [[(name, {})]], size=15,
-                    color=MUTED, bold=True)
-            textbox(s, x + 0.2, ty + 0.82, tw - 0.4, 0.3, [[(state, {})]], size=11,
-                    color=MUTED)
-
-    card(s, L, 4.55, CW, 1.5, fill=WHITE)
-    rect(s, L, 4.55, 0.055, 1.5, ACCENT)
-    textbox(s, L + 0.28, 4.71, CW - 0.5, 0.32, [[("现在的位置", {})]], size=11,
-            color=ACCENT, bold=True)
-    textbox(s, L + 0.28, 5.11, CW - 0.6, 0.9,
-            [[("已就绪：", {"bold": True, "color": INK}),
-              ("5 份专题资料、2 项数值校验、可复现的解析脚本。", {})],
-             [("尚未具备：", {"bold": True, "color": AMBER}),
-              ("本机没有 MuMax3 / Fidimag / OOMMF，薄膜模型一次都还没有跑过。", {})]],
-            size=13, color=BODY, line_spacing=1.55)
-    footer(s, 3, "阶段划分见 README.md 第 8 节；求解器与 GPU 检查于 2026-10-25")
-    note(s, "计划分五个阶段。理论学习和资料准备已完成；基准模拟是下一步；形状比较、数据分析、总结还没开始。"
-            "资料、解析校验和脚本骨架都就绪，但这台电脑还没有任何微磁求解器，薄膜模型一次都没跑过。")
-
-    # ------------------------------------------------------------- slide 4 --
-    s = new_slide(prs)
-    kicker(s, "03", "理论学习")
-    title(s, "五份专题，覆盖“电磁学 → 微磁学 → QAH”")
-    rule(s)
-
-    topics = [
-        ("01", "磁化与退磁场",
-         "MIT 第 9 章 9.1 / 9.2 / 9.5 全文中译注；M、H、B、边界条件与等效磁荷。",
-         "能解释 M、H、B 与边界条件"),
-        ("02", "四种能量竞争",
-         "交换 · 各向异性 · 退磁 · 塞曼；畴壁宽度 Δ=√(A/K)、有效各向异性判据与自测题。",
-         "能判断面外方向是否有利"),
-        ("03", "LLG 与材料参数",
-         "两套单位制必须成对使用；LLG 推导、弛豫设置，附 8 条原页勘误。",
-         "能读懂并设置一次弛豫"),
-        ("04", "QAH 与面外磁化",
-         "面外磁化打开质量隙，面内只移动狄拉克点；明确“不能证明 QAH”的边界。",
-         "能说清结论的适用边界"),
-        ("05", "退磁因子与校验",
-         "椭球与长方体；体积平均、中心点两种定义；可运行的解析计算脚本。",
-         "能算 N 并做数值校验"),
-        ("06", "资料形态",
-         "三种格式成稿 · 自测题 · 来源清单 · HTML 渲染审校。",
-         "三格式可读、来源可查"),
-    ]
-    cw, cgap, ch = 3.83, 0.22, 2.02
-    for i, (num, head, body, outcome) in enumerate(topics):
-        row, col = divmod(i, 3)
-        x = L + col * (cw + cgap)
-        y = 2.12 + row * (ch + 0.2)
-        if num == "06":
-            card(s, x, y, cw, ch, fill=ACCENT_LIGHT, line=None)
-        else:
-            card(s, x, y, cw, ch, fill=WHITE)
-        color = ACCENT if num == "06" else MUTED
-        textbox(s, x + 0.22, y + 0.14, cw - 0.44, 0.24, [[(num, {"spc": 1.5})]],
-                size=10, color=ACCENT, bold=True)
-        textbox(s, x + 0.22, y + 0.44, cw - 0.44, 0.34, [[(head, {})]], size=15,
-                color=ACCENT if num == "06" else INK, bold=True)
-        textbox(s, x + 0.22, y + 0.86, cw - 0.44, 0.72, [[(body, {})]], size=11,
-                color=color, line_spacing=1.25)
-        textbox(s, x + 0.22, y + 1.58, cw - 0.44, 0.3,
-                [[("→ ", {"color": ACCENT}), (outcome, {})]], size=9,
-                color=ACCENT if num == "06" else MUTED)
-    footer(s, 4, "详细内容见 理论学习资料/ 下五份专题文档")
-    note(s, "理论部分拆成五个专题：电磁学基础、四种能量竞争、LLG 与参数、QAH 背景、退磁因子与校验。"
-            "每份都有 PDF、HTML 或 Markdown，附自测题，来源可查。")
-
-    # ------------------------------------------------------------- slide 5 --
-    s = new_slide(prs)
-    kicker(s, "04", "结论一 · 能量竞争")
-    title(s, "面外是否有利，看 K_eff 的符号")
+    kicker(s, "01", "问题与框架")
+    title(s, "面外磁化的稳定性由四项能量的相对大小决定")
     rule(s)
 
     rows = [
-        ("交换能", "让磁化在空间上平滑，不选择绝对方向"),
-        ("各向异性能", "K_u > 0 时偏好 ±z，即面外"),
-        ("退磁能", "偏好面内或分畴；代价由 N 决定"),
-        ("外场能", "偏好沿外场，区分 +z 与 −z"),
+        ("交换能", "相邻自旋取向趋于一致，磁化弯曲需付出交换能代价"),
+        ("各向异性能", "沿易轴时能量最低；本项目取易轴垂直膜面"),
+        ("退磁能", "磁化在自身退磁场中的能量，以退磁因子 N 描述"),
+        ("外场能", "塞曼能随磁化与外场夹角变化，撤场后为零"),
     ]
     for i, (name, desc) in enumerate(rows):
-        y = 2.05 + i * 1.02
-        rect(s, L, y + 0.06, 0.04, 0.72, ACCENT if i != 2 else AMBER)
-        textbox(s, L + 0.2, y, 5.1, 0.34, [[(name, {})]], size=14.5, color=INK, bold=True)
-        textbox(s, L + 0.2, y + 0.36, 5.3, 0.45, [[(desc, {})]], size=11, color=MUTED,
-                line_spacing=1.15)
+        y = 2.02 + i * 0.8
+        rect(s, L, y + 0.05, 0.04, 0.56, AMBER if i == 1 else ACCENT)
+        textbox(s, L + 0.2, y, 5.3, 0.3, [[(name, {})]], size=13, color=INK, bold=True)
+        textbox(s, L + 0.2, y + 0.31, 5.5, 0.32, [[(desc, {})]], size=10.5, color=MUTED)
 
-    card(s, 6.45, 2.05, 6.15, 1.3, fill=ACCENT_LIGHT, line=None)
-    textbox(s, 6.7, 2.14, 5.7, 0.26, [[("均匀态判据", {"spc": 1.5})]], size=9.5,
+    formula(s, 6.6, 1.98, 6.03, 1.42,
+            [("E", {"italic": True}), (" = ", {}),
+             ("E", {"italic": True}), sub("ex"), (" + ", {}),
+             ("E", {"italic": True}), sub("an"), (" + ", {}),
+             ("E", {"italic": True}), sub("d"), (" + ", {}),
+             ("E", {"italic": True}), sub("Z")],
+            size=22, caption="总能量（四项之和）")
+    textbox(s, 6.75, 3.5, 5.7, 0.3,
+            [[("平衡态取总能量的极小值。", {})]], size=10.5, color=MUTED)
+
+    card(s, 6.6, 3.9, 6.03, 1.62, fill=WHITE)
+    textbox(s, 6.82, 4.02, 5.6, 0.26, [[("三条使用规则", {"spc": 1.5})]], size=9.5,
             color=ACCENT, bold=True)
-    textbox(s, 6.7, 2.44, 5.7, 0.6,
-            [[("K", {}), sub("eff"), (" = K", {}), sub("u"), (" − (μ", {}), sub("0"),
-              ("M", {}), sub("s"), ("²/2)(N", {}), sub("z"), (" − N", {}), sub("x"), (")", {})]],
-            size=20, color=INK, bold=True, anchor=MSO_ANCHOR.MIDDLE)
+    textbox(s, 6.82, 4.3, 5.6, 1.1,
+            [[("形状只通过 ", {}), ("E", {"italic": True}), sub("d"),
+              (" 进入；计入退磁能后，不再另设形状各向异性项。", {})],
+             [("判据比较各向异性能与退磁能之差，而非单项绝对值。", {})],
+             [("本工作只讨论磁性条件，不计算陈数、能隙或霍尔电导。", {})]],
+            size=10.5, color=BODY, line_spacing=1.5)
 
-    card(s, 6.45, 3.55, 6.15, 2.3, fill=WHITE)
-    textbox(s, 6.7, 3.68, 5.7, 0.26, [[("代入教学参数（假设值）", {"spc": 1.5})]],
-            size=9.5, color=MUTED, bold=True)
-    lines = [
-        [("M", {}), sub("s"), (" = 3×10", {}), sup("5"), (" A/m   A = 5 pJ/m   K", {}),
-         sub("u"), (" = 8×10", {}), sup("4"), (" J/m³", {})],
-        [("μ", {}), sub("0"), ("M", {}), sub("s"), ("²/2 = ", {}), *sci(KD),
-         (" J/m³，N", {}), sub("z"), (" − N", {}), sub("x"), (" = ", {}),
-         (f"{DELTA_N:.3f}", {})],
-        [("阈值 ", {}), *sci(THRESHOLD),
-         (" < K", {}), sub("u"), ("  ⇒  K", {}), sub("eff"), (" = ", {}),
-         *sci(KEFF), (" J/m³ > 0", {"color": ACCENT})],
-        [("ℓ", {}), sub("ex"), (" = ", {}), (f"{LEX_NM:.1f}", {}),
-         (" nm  ⇒ 网格 2 nm 起步，再以 1 nm 复算", {})],
+    card(s, L, 5.75, CW, 0.95, fill=ACCENT_LIGHT, line=None)
+    rect(s, L, 5.75, 0.055, 0.95, ACCENT)
+    textbox(s, L + 0.28, 5.75, CW - 0.55, 0.95,
+            [[("选择面外方向的原因：", {"bold": True, "color": ACCENT}),
+              ("QAH 的质量隙源于面外磁化；但微磁学只能判断磁性条件，不能给出输运结论。", {})]],
+            size=11.5, color=BODY, line_spacing=1.35, anchor=MSO_ANCHOR.MIDDLE)
+    footer(s, 2)
+    note(s, "磁化状态由四项能量相加决定：交换、各向异性、退磁、外场。平衡态取总能量极小。"
+            "有两条规矩要记住：形状只通过退磁能进来，所以算了退磁就不用再加形状各向异性；"
+            "判据比的是差值。最后，微磁学只到磁性条件，不算电导。")
+
+    # ------------------------------------------------------------- slide 4 --
+    s = new_slide(prs)
+    kicker(s, "02", "四种能量")
+    title(s, "四项能量均以焦耳为单位，可逐项比较")
+    rule(s)
+
+    cards = [
+        ("交换能",
+         [("E", {"italic": True}), sub("ex"), (" = ∫", {}), sub("V"), (" ", {}),
+          ("A", {"italic": True}), (" |∇", {}), ("m", {"italic": True}), ("|² d", {}),
+          ("V", {"italic": True})],
+         "磁化不均匀时产生交换能；均匀态下为零。"),
+        ("各向异性能",
+         [("E", {"italic": True}), sub("an"), (" = ", {}),
+          ("K", {"italic": True}), sub("u"), (" ", {}), ("V", {"italic": True}),
+          (" sin²", {}), ("θ", {"italic": True})],
+         "θ 为磁化与易轴夹角，偏离越大能量越高。"),
+        ("退磁能",
+         [("E", {"italic": True}), sub("d"), (" = (μ", {}), sub("0"), ("/2)∫|", {}),
+          ("H", {"italic": True}), sub("d"), ("|² d", {}), ("V", {"italic": True})],
+         "形成畴结构或闭合磁通可降低退磁能。"),
+        ("外场能",
+         [("E", {"italic": True}), sub("Z"), (" = −μ", {}), sub("0"),
+          ("∫ ", {}), ("M", {"italic": True}), ("·", {}), ("H", {"italic": True}),
+          sub("ext"), (" d", {}), ("V", {"italic": True})],
+         "磁化与外场同向时最低；撤场后该项为零。"),
     ]
-    textbox(s, 6.7, 4.02, 5.65, 1.95, lines, size=11.5, color=BODY, line_spacing=1.5,
-            space_after=4)
+    cw2, gap2, ch2 = 5.846, 0.24, 1.86
+    for i, (name, eq, desc) in enumerate(cards):
+        row, col = divmod(i, 2)
+        x = L + col * (cw2 + gap2)
+        y = 1.98 + row * (ch2 + 0.2)
+        card(s, x, y, cw2, ch2, fill=WHITE)
+        textbox(s, x + 0.24, y + 0.12, 3.0, 0.26, [[(name, {"spc": 1.0})]], size=9.5,
+                color=ACCENT, bold=True)
+        textbox(s, x + 0.24, y + 0.44, cw2 - 0.48, 0.6, [eq], size=16, color=INK,
+                anchor=MSO_ANCHOR.MIDDLE)
+        textbox(s, x + 0.24, y + 1.14, cw2 - 0.48, 0.6, [[(desc, {})]], size=9.5,
+                color=MUTED, line_spacing=1.35)
 
-    textbox(s, L, 6.05, CW, 0.5,
-            [[("注：无限薄膜近似给出 K", {}), sub("eff"), (" ≈ 2.35×10", {}), sup("4"),
-              (" J/m³；本页用 200×200×4 的实际 N", {}), sub("z"), (" − N", {}), sub("x"),
-              ("。判据只比较均匀态，多畴与边缘成核仍需模拟。", {})]],
-            size=9, color=MUTED, line_spacing=1.2)
-    footer(s, 5, "推导见 2-微磁学四种能量竞争_学习笔记.md §8；参数见 3-Fidimag…md §7")
-    note(s, "第一个结论：均匀态下面外是否有利，看 K_eff 的符号。用 200×200×4 的教学参数，"
-            "阈值约 5.2 乘 10 的 4 次方，小于 K_u 的 8 乘 10 的 4 次方，所以 K_eff 约 2.8 乘 10 的 4 次方，"
-            "是正的。但这只比较均匀态，大样品仍可能分畴。")
+    card(s, L, 6.1, CW, 0.62, fill=ACCENT_LIGHT, line=None)
+    textbox(s, L + 0.24, 6.1, CW - 0.45, 0.62,
+            [[("畴壁参数：Δ = √(A/K)，δ", {}), sub("wall"), (" = πΔ，σ", {}), sub("wall"),
+              (" = 4√(AK)；壁越窄，单位面积畴壁能越高", {})]],
+            size=10, color=INK, anchor=MSO_ANCHOR.MIDDLE)
+    footer(s, 3)
+    note(s, "四项能量各有一条公式。交换能看邻居同不同向；各向异性看偏离易轴多少；"
+            "退磁能是退磁场平方的积分；外场能看顺不顺场。单位都是焦耳。"
+            "最后一行是畴壁：宽度由交换和各向异性之比决定，单位面积能量是四倍根号 AK。")
+
+    # ------------------------------------------------------------- slide 5 --
+    s = new_slide(prs)
+    kicker(s, "03", "判据")
+    title(s, "面外稳定性取决于各向异性能与退磁能之差")
+    rule(s)
+
+    formula(s, L, 1.98, CW, 1.42,
+            [("K", {"italic": True}), sub("eff"), (" = ", {}),
+             ("K", {"italic": True}), sub("u"), (" − (μ", {}), sub("0"),
+             ("M", {"italic": True}), sub("s"), ("²/2)(N", {}), sub("z"),
+             (" − ", {}), ("N", {"italic": True}), sub("x"), (")", {})],
+            size=24, caption="有效各向异性 = 各向异性能 − 退磁能之差")
+
+    card(s, L, 3.62, 6.35, 1.75, fill=WHITE)
+    textbox(s, L + 0.24, 3.74, 5.9, 0.26, [[("条件（两种写法等价）", {"spc": 0.6})]],
+            size=9.5, color=ACCENT, bold=True)
+    textbox(s, L + 0.24, 4.04, 5.9, 1.1,
+            [[("K", {"italic": True}), sub("u"), (" > (μ", {}), sub("0"),
+              ("M", {"italic": True}), sub("s"), ("²/2)(N", {}), sub("z"), (" − N", {}),
+              sub("x"), (")", {})],
+             [("Q", {"italic": True}), (" = 2", {}), ("K", {"italic": True}), sub("u"),
+              (" / (μ", {}), sub("0"), ("M", {"italic": True}), sub("s"),
+              ("²) ⇒ ", {}), ("Q", {"italic": True}), ("(N", {}), sub("z"),
+              (" − ", {}), ("N", {"italic": True}), sub("x"), (") > 1", {})]],
+            size=14, color=BODY, line_spacing=1.7)
+
+    card(s, 7.35, 3.62, 5.28, 1.75, fill=WHITE)
+    vals = [
+        ("各向异性能", [*sci(KU), (" J/m³", {})], BODY, False),
+        ("退磁能之差", [*sci(THRESHOLD), (" J/m³", {})], BODY, False),
+        ("有效各向异性", [*sci(KEFF), (" J/m³ > 0", {})], ACCENT, True),
+    ]
+    for i, (lab, val, col, bold) in enumerate(vals):
+        y = 3.9 + i * 0.44
+        textbox(s, 7.6, y, 1.7, 0.32, [[(lab, {})]], size=10, color=MUTED)
+        textbox(s, 9.2, y, 3.25, 0.32, [val], size=12, color=col, bold=bold,
+                align=PP_ALIGN.RIGHT)
+
+    textbox(s, L, 5.62, CW, 0.55,
+            [[("仅对均匀态成立：", {}), ("K", {"italic": True}), sub("eff"),
+              (" > 0 表示面外取向能量更低，不保证单畴；分畴可进一步降低退磁能。", {})]],
+            size=11, color=BODY, line_spacing=1.35)
+    textbox(s, L, 6.3, CW, 0.35,
+            [[("解析给出均匀态的能量判据；畴结构与翻转过程须由微磁学模拟给出。", {})]],
+            size=12, color=ACCENT, bold=True)
+    footer(s, 4)
+    note(s, "把各向异性减去退磁能之差，就是有效各向异性。这里 8.0 减 5.15，还剩 2.85 乘十的四次方，大于零，"
+            "所以均匀态下面外取向能量更低。等价写法是 Q 乘上 N_z 减 N_x 大于一。但有效各向异性大于零不等于单畴，"
+            "分畴还可能继续降低退磁能，这要模拟才能回答。")
 
     # ------------------------------------------------------------- slide 6 --
     s = new_slide(prs)
-    kicker(s, "05", "结论二 · 形状")
-    title(s, "平面形状改的是面内各向异性，厚度才主导 N_z")
+    kicker(s, "04", "尺度")
+    title(s, "交换长度决定网格尺度，畴壁宽度决定分辨率")
     rule(s)
 
-    tbl_w = 6.9
-    shape = s.shapes.add_table(4, 4, Inches(L), Inches(2.08), Inches(tbl_w), Inches(1.8))
-    tbl = shape.table
-    tblPr = tbl._tbl.tblPr
-    for el in tblPr.findall(qn("a:tableStyleId")):
-        tblPr.remove(el)
-    for idx, width in enumerate((2.4, 1.5, 1.5, 1.5)):
-        tbl.columns[idx].width = Inches(width)
-    for r in range(4):
-        tbl.rows[r].height = Inches(0.45)
-    heads = [[("全尺寸 (nm)", {})], [("N", {}), sub("x")],
-             [("N", {}), sub("y")], [("N", {}), sub("z")]]
-    for c, parts in enumerate(heads):
-        cell = tbl.cell(0, c)
-        cell.fill.solid()
-        cell.fill.fore_color.rgb = RGBColor.from_string(ACCENT)
-        set_cell(cell, parts, 11, WHITE, bold=True,
-                 align=PP_ALIGN.LEFT if c == 0 else PP_ALIGN.CENTER)
-    for r, (label, _) in enumerate(SHAPES, start=1):
-        vals = (N[r - 1][0], N[r - 1][1], N[r - 1][2])
-        for c in range(4):
-            cell = tbl.cell(r, c)
-            cell.fill.solid()
-            cell.fill.fore_color.rgb = RGBColor.from_string(WHITE if r % 2 else FAINT)
-            if c == 0:
-                set_cell(cell, [(label, {})], 11.5, INK, align=PP_ALIGN.LEFT)
-            else:
-                set_cell(cell, [(f"{vals[c - 1]:.6f}", {})], 11.5, BODY)
+    card(s, L, 1.98, cw2, 1.66, fill=WHITE)
+    textbox(s, L + 0.24, 2.08, 3.2, 0.24, [[("交换长度", {"spc": 1.0})]], size=9.5,
+            color=ACCENT, bold=True)
+    textbox(s, L + 0.24, 2.34, cw2 - 0.48, 0.5,
+            [[("ℓ", {"italic": True}), sub("ex"), (" = √(2", {}), ("A", {"italic": True}),
+              ("/(μ", {}), sub("0"), ("M", {"italic": True}), sub("s"), ("²)) ≈ ", {}),
+              (f"{LEX_NM:.1f} nm", {"bold": True})]],
+            size=15, color=INK, anchor=MSO_ANCHOR.MIDDLE)
+    textbox(s, L + 0.24, 2.9, cw2 - 0.48, 0.6,
+            [[("磁化转向的特征长度；网格应显著小于该值。", {})]], size=9.5, color=MUTED)
 
-    textbox(s, L, 3.98, tbl_w, 0.28,
-            [[("200×200×4：退磁代价几乎全部在厚度方向", {})]], size=10, color=MUTED)
-    bar_y, bar_h = 4.3, 0.42
-    x = L
-    for val, color in zip(N_SQ, ("BFD6D1", "9FC3BD", ACCENT)):
-        w = tbl_w * val
-        rect(s, x, bar_y, w, bar_h, color)
-        x += w
-    textbox(s, L + tbl_w - 1.55, bar_y + 0.05, 1.4, 0.32,
-            [[("N", {}), sub("z"), (" 94%", {})]], size=10, color=WHITE, bold=True,
-            anchor=MSO_ANCHOR.MIDDLE, align=PP_ALIGN.RIGHT)
-    textbox(s, L, 4.84, tbl_w, 0.3,
-            [[("面内 N", {}), sub("x"), ("、N", {}), sub("y"), (" 各约 3%，合计约 5.9%", {})]],
-            size=9.5, color=MUTED)
-    textbox(s, L, 5.35, tbl_w, 0.85,
-            [[("想稳定面外：", {"bold": True, "color": ACCENT}),
-              ("厚度是 N", {}), sub("z"), (" 的主控参数；平面轮廓主要改变面内各向异性。", {})]],
-            size=11, color=BODY, line_spacing=1.35)
+    card(s, 6.787, 1.98, cw2, 1.66, fill=WHITE)
+    textbox(s, 7.03, 2.08, 3.2, 0.24, [[("网格", {"spc": 1.0})]], size=9.5,
+            color=ACCENT, bold=True)
+    textbox(s, 7.03, 2.34, cw2 - 0.48, 0.5, [[("2 nm → 1 nm", {"bold": True})]],
+            size=17, color=INK, anchor=MSO_ANCHOR.MIDDLE)
+    textbox(s, 7.03, 2.9, cw2 - 0.48, 0.6,
+            [[("以 2 nm 起步；关键结果用 1 nm 复核。", {})]], size=9.5, color=MUTED)
 
-    insights = [
-        ("0.941 → 0.929",
-         "同面积同厚度，方形改长条：N_z 几乎不变，变的是面内 N_x 0.030→0.014、N_y 0.030→0.057。"),
-        ("0.941 → 0.805",
-         "厚度 4 → 20 nm：N_z 明显下降，厚度才是 N_z 的主控参数。"),
-        (f"{CENTER_ERR:.2f}% / {INFINITE_ERR:.2f}%",
-         "中心点 N_z 比体积平均高 4.37%；用无限薄膜 N_z=1 会高估 6.29%。"),
-    ]
-    for i, (big, desc) in enumerate(insights):
-        y = 2.08 + i * 1.4
-        textbox(s, 8.0, y, 4.63, 0.42, [[(big, {})]], size=19, color=ACCENT, bold=True)
-        textbox(s, 8.0, y + 0.44, 4.63, 0.85, [[(desc, {})]], size=10.5, color=BODY,
-                line_spacing=1.3)
-        if i < 2:
-            rect(s, 8.0, y + 1.26, 4.63, 0.012, LINE)
-    footer(s, 6, "固定均匀磁化下的解析值（Newell/Aharoni），不是微磁模拟结果")
-    note(s, "第二个结论是形状。同面积同厚度把方形改成长条，N_z 几乎不动，变的是面内 N_x、N_y；"
-            "真正拉低 N_z 的是厚度。还有两个坑：中心点不等于体积平均，差 4.4%；无限薄膜 N_z=1 会高估 6.3%。")
+    card(s, L, 3.84, cw2, 1.66, fill=WHITE)
+    textbox(s, L + 0.24, 3.94, 3.2, 0.24, [[("畴壁", {"spc": 1.0})]], size=9.5,
+            color=ACCENT, bold=True)
+    textbox(s, L + 0.24, 4.2, cw2 - 0.48, 0.5,
+            [[("Δ = √(", {}), ("A", {"italic": True}), ("/", {}), ("K", {"italic": True}),
+              (")，δ", {}), sub("wall"), (" = πΔ ≈ ", {}),
+              (f"{WALL_NM:.0f} nm", {"bold": True})]],
+            size=14, color=INK, anchor=MSO_ANCHOR.MIDDLE)
+    textbox(s, L + 0.24, 4.76, cw2 - 0.48, 0.6,
+            [[("壁宽定义不唯一（Δ 或 πΔ），引用文献前需核对。", {})]], size=9.5,
+            color=MUTED)
+
+    card(s, 6.787, 3.84, cw2, 1.66, fill=WHITE)
+    textbox(s, 7.03, 3.94, 3.2, 0.24, [[("分辨率判断", {"spc": 1.0})]], size=9.5,
+            color=ACCENT, bold=True)
+    textbox(s, 7.03, 4.2, cw2 - 0.48, 0.5, [[("≥ 3–5 格 / 壁", {"bold": True})]],
+            size=15, color=INK, anchor=MSO_ANCHOR.MIDDLE)
+    textbox(s, 7.03, 4.76, cw2 - 0.48, 0.6,
+            [[("单一网格结果不足以判定收敛，至少比较两种网格。", {})]], size=9.5, color=MUTED)
+
+    textbox(s, L, 5.72, CW, 0.5,
+            [[("本参数：", {"bold": True}),
+              ("M", {"italic": True}), sub("s"), (" = 3×10⁵ A/m，", {}),
+              ("A", {"italic": True}), (" = 5 pJ/m，", {}),
+              ("K", {"italic": True}), sub("u"), (" = 8×10⁴ J/m³；σ", {}), sub("wall"),
+              (" = 4√(AK) ≈ 2.5×10⁻³ J/m²。", {})]],
+            size=10, color=MUTED, line_spacing=1.3)
+
+    card(s, L, 6.18, CW, 0.6, fill=ACCENT_LIGHT, line=None)
+    textbox(s, L + 0.24, 6.18, CW - 0.45, 0.6,
+            [[("经验判据：格距 ≤ ", {}), ("ℓ", {"italic": True}), sub("ex"),
+              ("/4，且畴壁内不少于 3–5 个格点；取二者中较严者。", {})]],
+            size=10, color=INK, anchor=MSO_ANCHOR.MIDDLE)
+    footer(s, 5)
+    note(s, "尺度有两个来源。第一个是交换长度，本参数下 9.4 纳米，网格必须比它细，先用 2 纳米跑通，关键结果用 1 纳米复算。"
+            "第二个是畴壁宽度，Δ 的 π 倍，约 25 纳米；要分辨畴壁，至少三到五个格点。"
+            "注意壁宽的定义不唯一，比文献时要先对齐。")
 
     # ------------------------------------------------------------- slide 7 --
     s = new_slide(prs)
-    kicker(s, "06", "可信度")
-    title(s, "能离线验证的，已经验完")
+    kicker(s, "05", "动力学")
+    title(s, "磁化动力学：绕有效场进动，并由阻尼趋向低能态")
     rule(s)
 
-    checks = [
-        ("矩形退磁因子（解析）",
-         [[("对 OOMMF 基准：", {}), *sci(REF_ERR), ("", {})],
-          [("迹误差：", {}), *sci(TRACE_ERR)],
-          [("独立积分交叉验证：", {}), *sci(QUAD_ERR)]]),
-        ("单磁矩 LLG（RK4）",
-         [[("与解析解：", {}), *sci(LLG_COMP)],
-          [("模长误差：", {}), *sci(LLG_NORM)],
-          [("步长减半差：", {}), *sci(LLG_HALF)]]),
-    ]
-    for i, (head, lines) in enumerate(checks):
-        x = L + i * 6.08
-        card(s, x, 2.1, 5.85, 2.35, fill=WHITE)
-        rect(s, x, 2.1, 0.055, 2.35, ACCENT)
-        textbox(s, x + 0.26, 2.24, 3.3, 0.28, [[("已通过", {"spc": 1.5})]], size=10,
-                color=ACCENT, bold=True)
-        textbox(s, x + 0.26, 2.56, 5.3, 0.34, [[(head, {})]], size=14.5, color=INK, bold=True)
-        textbox(s, x + 0.26, 3.02, 5.3, 1.25, lines, size=11.5, color=BODY, line_spacing=1.5)
-        textbox(s, x + 0.26, 4.0, 5.3, 0.3,
-                [[(("实现：标准库 · 双精度 · 不强制归一化" if i == 0
-                    else "验证：解析解 + 步长减半 + 模长检查"), {})]],
-                size=8.5, color=MUTED)
+    formula(s, L, 1.95, CW, 1.05,
+            [("H", {"italic": True}), sub("eff"), (" = −(1/μ", {}), sub("0"),
+             ("M", {"italic": True}), sub("s"), (") δ", {}), ("E", {"italic": True}),
+             ("/δ", {}), ("m", {"italic": True})],
+            size=18, caption="有效场：能量对磁化求导")
 
-    card(s, L, 4.72, CW, 1.25, fill=AMBER_LIGHT, line=None)
-    rect(s, L, 4.72, 0.055, 1.25, AMBER)
-    textbox(s, L + 0.28, 4.86, 1.6, 0.26, [[("未执行", {"spc": 1.5})]], size=10,
-            color=AMBER, bold=True)
-    textbox(s, L + 1.55, 4.84, 9.9, 0.3,
-            [[("薄膜脚本 thinfilm_fidimag.py", {})]], size=13.5, color=INK, bold=True)
-    textbox(s, L + 0.28, 5.20, CW - 0.55, 0.6,
-            [[("接口与语法已核对，但本机没有 Fidimag，尚未运行：目前没有任何薄膜模拟结果，",
-               {}),
-              ("这一步的结论还不能写。", {"bold": True, "color": AMBER})]],
-            size=11.5, color=BODY, line_spacing=1.2)
+    formula(s, L, 3.12, CW, 1.55,
+            [("∂", {}), ("m", {"italic": True}), ("/∂", {}), ("t", {"italic": True}),
+             (" = −γ", {}), sub("H"), ("/(1+α²)[ ", {}),
+             ("m", {"italic": True}), (" × ", {}), ("H", {"italic": True}), sub("eff"),
+             (" + α ", {}), ("m", {"italic": True}), (" × (", {}),
+             ("m", {"italic": True}), (" × ", {}), ("H", {"italic": True}), sub("eff"),
+             (") ]", {})],
+            size=15, caption="LLG 方程（显式形式）")
 
-    textbox(s, L, 6.3, CW, 0.4,
-            [[("解析校验通过 ≠ 求解器验证通过。下一步第一件事，是在求解器里复现同一组 N。", {})]],
-            size=12, color=ACCENT, bold=True)
-    footer(s, 7, "结果来自 rectangular_demag.py 与 macrospin_results/verification.json")
-    note(s, "能离线验证的都验了：解析退磁因子对 OOMMF 基准到 10 的负 15 次方量级，单磁矩 LLG 到 10 的负 12 次方。"
-            "但薄膜脚本因为本机没有 Fidimag 还没跑，目前没有任何薄膜结果，这点我不会含糊。")
+    card(s, L, 4.85, cw2, 1.35, fill=WHITE)
+    textbox(s, L + 0.24, 4.95, 3.2, 0.24, [[("两套单位制须配套使用", {"spc": 1.0})]],
+            size=9.5, color=ACCENT, bold=True)
+    textbox(s, L + 0.24, 5.24, cw2 - 0.48, 0.85,
+            [[("H 用 A/m → γ", {}), sub("H"), (" = 2.21×10⁵", {})],
+             [("μ", {}), sub("0"), ("H 用 T → γ", {}), sub("B"), (" = 1.76×10¹¹", {})]],
+            size=10.5, color=BODY, line_spacing=1.5)
+
+    card(s, 6.787, 4.85, cw2, 1.35, fill=WHITE)
+    textbox(s, 7.03, 4.95, 3.2, 0.24, [[("阻尼系数 α 的作用", {"spc": 1.0})]], size=9.5,
+            color=ACCENT, bold=True)
+    textbox(s, 7.03, 5.24, cw2 - 0.48, 0.85,
+            [[("仅改变演化路径与速率，不改变静态能量。", {})],
+             [("求静态解可令进动项为零；报告翻转时间须实际积分。", {})]],
+            size=10.5, color=BODY, line_spacing=1.5)
+    footer(s, 6)
+    note(s, "四项能量对磁化求导，就是 LLG 里的有效场。LLG 两项：一项绕有效场进动，一项被阻尼拉向低能。"
+            "写代码时单位要配套：场用安每米配 2.2 乘十的五次方，用特斯拉配 1.8 乘十的十一次方。"
+            "α 只改路径和速度，不改静态能量；但要报翻转时间，必须真的跑动力学。")
 
     # ------------------------------------------------------------- slide 8 --
     s = new_slide(prs)
-    kicker(s, "07", "下一步")
-    title(s, "四条动作，把模型跑起来")
+    kicker(s, "06", "后续计划")
+    title(s, "研究计划：先建立基准，再比较形状")
     rule(s)
 
-    steps = [
-        ("01", "定软件路线",
-         "OOMMF / WSL+Fidimag / MuMax3：先验证 GPU 与 CUDA 兼容性；本机 RTX 5060 可能不兼容旧版。"),
-        ("02", "锁定参数表", "饱和磁化强度、交换刚度、各向异性、阻尼 α：一次定死并注明来源"),
-        ("03", "均匀磁化静态校验",
-         [("三个方向分别测 N，目标 |ΔN| < 10", {}), ("−4", {"sup": True}),
-          ("，场法与能量法互校", {})]),
-        ("04", "形状 → 磁畴 → 磁滞 → 收敛", "方形 / 圆形 / 长方形，等面积等厚度，再扫厚度"),
+    stages = [
+        ("理论学习", "✓ 已完成", "明确四项能量与适用边界"),
+        ("基准模拟", "当前位置", "跑通薄膜基准算例"),
+        ("形状比较", "待启动", "方、圆、长条三种轮廓"),
+        ("数据分析", "待启动", "曲线对比与网格收敛"),
+        ("总结优化", "待启动", "设计建议与总结"),
     ]
-    for i, (num, head, desc) in enumerate(steps):
-        y = 2.02 + i * 1.1
-        textbox(s, L, y, 0.62, 0.42, [[(num, {})]], size=17, color=ACCENT, bold=True)
-        textbox(s, L + 0.7, y - 0.02, CW - 0.7, 0.36, [[(head, {})]], size=14.5, color=INK,
-                bold=True)
-        textbox(s, L + 0.7, y + 0.36, CW - 0.7, 0.5, [desc], size=10.5, color=MUTED,
-                line_spacing=1.2)
-        if i < len(steps) - 1:
-            rect(s, L, y + 0.98, CW, 0.009, LINE)
+    tw, tgap, ty, th = 2.25, 0.17, 1.98, 1.62
+    for i, (name, state, std) in enumerate(stages):
+        x = L + i * (tw + tgap)
+        if i == 0:
+            card(s, x, ty, tw, th, fill=ACCENT, line=None)
+            textbox(s, x + 0.2, ty + 0.16, tw - 0.4, 0.32, [[(name, {})]], size=13.5,
+                    color=WHITE, bold=True)
+            textbox(s, x + 0.2, ty + 0.52, tw - 0.4, 0.26, [[(state, {})]], size=10,
+                    color=WHITE)
+            textbox(s, x + 0.2, ty + 0.88, tw - 0.4, 0.6, [[(std, {})]], size=8.5,
+                    color=WHITE, line_spacing=1.2)
+        elif i == 1:
+            card(s, x, ty, tw, th, fill=WHITE, line=ACCENT, width=2.0)
+            textbox(s, x + 0.2, ty + 0.16, tw - 0.4, 0.32, [[(name, {})]], size=13.5,
+                    color=ACCENT, bold=True)
+            textbox(s, x + 0.2, ty + 0.52, tw - 0.4, 0.26, [[(state, {})]], size=10,
+                    color=ACCENT)
+            textbox(s, x + 0.2, ty + 0.88, tw - 0.4, 0.6, [[(std, {})]], size=8.5,
+                    color=BODY, line_spacing=1.2)
+        else:
+            card(s, x, ty, tw, th, fill=FAINT)
+            textbox(s, x + 0.2, ty + 0.16, tw - 0.4, 0.32, [[(name, {})]], size=13.5,
+                    color=MUTED, bold=True)
+            textbox(s, x + 0.2, ty + 0.52, tw - 0.4, 0.26, [[(state, {})]], size=10,
+                    color=MUTED)
+            textbox(s, x + 0.2, ty + 0.88, tw - 0.4, 0.6, [[(std, {})]], size=8.5,
+                    color=MUTED, line_spacing=1.2)
 
-    card(s, L, 6.4, CW, 0.52, fill=ACCENT_LIGHT, line=None)
-    textbox(s, L + 0.24, 6.4, CW - 0.4, 0.52,
-            [[("理论地基已打好，下周开始出第一张退磁场云图。", {})]], size=13,
+    textbox(s, L, 3.78, CW, 0.28, [[("近期工作", {"spc": 1.5})]], size=9.5,
+            color=ACCENT, bold=True)
+    near = [
+        ("① 确定求解器", "在 OOMMF、WSL+Fidimag、MuMax3 中择一；先验证 CUDA 兼容性。"),
+        ("② 锁定参数与网格", "参数一次确定并注明来源；网格自 2 nm 起步。"),
+        ("③ 静态校验　|ΔN| < 10⁻⁴", "沿 x、y、z 分别施加均匀磁化，与解析 N 对比。"),
+    ]
+    for i, (head, desc) in enumerate(near):
+        x = L + i * (3.84 + 0.2)
+        textbox(s, x, 4.1, 3.84, 0.3, [[(head, {})]], size=12, color=INK, bold=True)
+        textbox(s, x, 4.44, 3.8, 0.6, [[(desc, {})]], size=9.5, color=MUTED,
+                line_spacing=1.3)
+
+    card(s, L, 6.05, CW, 0.6, fill=ACCENT_LIGHT, line=None)
+    textbox(s, L + 0.24, 6.05, CW - 0.4, 0.6,
+            [[("下一步：在求解器中复现同一组 N。", {})]], size=12.5,
             color=ACCENT, bold=True, anchor=MSO_ANCHOR.MIDDLE)
-    footer(s, 8)
-    note(s, "下一步四件事：定软件、锁参数、做静态校验，再跑三形状、磁畴、磁滞和收敛。"
-            "软件路线还没定：这台机器有 RTX 5060，但新显卡和旧版 MuMax3 可能不兼容，"
-            "也可能走 OOMMF 或 WSL 加 Fidimag。谢谢。")
+    footer(s, 7)
+    note(s, "计划分五个阶段：理论已完成；基准模拟是当前位置，标准是跑通薄膜基准算例；"
+            "然后是方形、圆形、长条形三种形状的比较，再做数据分析和总结。"
+            "近期工作：确定求解器、锁定参数与网格、先做静态校验，x、y、z 三个方向的 N 要和解析值对上。"
+            "下一步就是在求解器里复现同一组 N。谢谢。")
 
-    prs.save(OUT)
+    global OUT
+    try:
+        prs.save(OUT)
+    except PermissionError:
+        OUT = OUT.with_name("阶段汇报_理论版.pptx")
+        prs.save(OUT)
+        print(f"note: 1.pptx 被占用，已另存为 {OUT.name}")
     return prs
 
 
-def verify(path=OUT):
+def verify(path=None):
+    path = OUT if path is None else path
     prs = Presentation(str(path))
     assert len(prs.slides) == TOTAL_SLIDES, len(prs.slides)
     assert abs(prs.slide_width - Inches(W)) < 1000
