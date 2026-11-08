@@ -1,0 +1,32 @@
+{
+  "checked_date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "os": "Windows 11, build 26200, x64",
+  "cpu": "Intel Core Ultra 9 275HX",
+  "logical_cpus": 24,
+  "usable_ram_gib": 31.43,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "gpu_memory_mib": 8151,
+  "nvidia_driver": "621.01",
+  "cuda_compute_capability": "12.0",
+  "python": "3.14.7",
+  "wsl": "not installed, according to wsl --list --verbose",
+  "solver_selected": "OOMMF 2.0b0 (2022-09-30), NIST prebuilt Windows x64",
+  "solver_url": "https://math.nist.gov/oommf/dist/oommf20b0_20220930_86_x64.zip",
+  "solver_archive_sha256": "5D018CEE265143B686A4BDB9190590BC14B705ECCEB8F55DF79E8CE27173A5FD",
+  "tcl": "8.6.18, existing Git for Windows ucrt64 distribution",
+  "tcl_compatibility": "Project-local copies of tcl86.dll and tk86.dll named tcl86t.dll and tk86t.dll per NIST's naming workaround; originals unchanged.",
+  "mumax_test": {
+    "version": "3.12",
+    "commit": "6e5c98bb",
+    "build": "windows_amd64 go1.26.0 CUDA-12.9",
+    "download_url": "https://mumax.ugent.be/mumax3-binaries/mumax3.12_windows_cuda12.9.zip",
+    "archive_sha256": "83C733C241CF1C9952962E78F96297DC8BAF3DA1F155553AFC17F00BA6CB4BA9",
+    "cuda_initialization": "passed",
+    "convolution_self_test_max_error": 0.38552275,
+    "convolution_self_test_tolerance": 0.000001,
+    "status": "Not accepted for baseline. Failure reproduced with synchronous CUDA and outside restricted execution. Root cause not conclusively established; this does not demonstrate a GPU hardware defect.",
+    "diagnostic_static_Bz_T_accuracy8": -0.35447642,
+    "diagnostic_static_Bz_T_accuracy32": -0.35465118
+  }
+}

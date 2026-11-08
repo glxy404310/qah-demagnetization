@@ -1,0 +1,29 @@
+{
+  "started": "2026-11-08T16:00:29.340284+08:00",
+  "command": [
+    "C:\\Program Files\\Git\\ucrt64\\bin\\tclsh.exe",
+    "C:\\Users\\35730\\Desktop\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\oommf.tcl",
+    "boxsi",
+    "+fg",
+    "-tk",
+    "0",
+    "-threads",
+    "8",
+    "-exitondone",
+    "1",
+    "-kill",
+    "all",
+    "-outdir",
+    "C:\\Users\\35730\\Desktop\\qah-demagnetization\\simulations\\baseline\\oommf_1nm_relax",
+    "-parameters",
+    "cell 1e-9 mode relax axis z stop 0.01 basename relax",
+    "C:\\Users\\35730\\Desktop\\qah-demagnetization\\simulations\\baseline\\square.mif"
+  ],
+  "cell_nm": 1,
+  "mode": "relax",
+  "axis": "z",
+  "stopping_dm_dt_deg_ns": 0.01,
+  "mif_sha256": "d32b7eb44f93768727b79ed2fd462ec328304065df206e2e4132ed74bd03b84f",
+  "returncode": 0,
+  "wall_seconds": 103.87276350002503
+}

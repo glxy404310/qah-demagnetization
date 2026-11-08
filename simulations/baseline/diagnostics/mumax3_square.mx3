@@ -1,0 +1,62 @@
+// Baseline: hypothetical material, 200 x 200 x 4 nm, open boundaries.
+// Fixed uniform magnetization first; NEVER relax the demag calibration states.
+SetGridSize(100, 100, 2)
+SetCellSize(2e-9, 2e-9, 2e-9)
+SetPBC(0, 0, 0)
+Msat = 3e5
+DemagAccuracy = 8
+OutputFormat = OVF2_BINARY
+
+phase := 0
+TableAddVar(phase, "phase", "")
+TableAdd(B_demag)
+TableAdd(E_demag)
+TableAdd(E_exch)
+TableAdd(E_anis)
+TableAdd(E_Zeeman)
+TableAdd(E_total)
+TableAdd(maxTorque)
+TableAdd(B_ext)
+TableAddVar(step, "steps", "")
+
+m = Uniform(1, 0, 0)
+TableSave()
+phase = 1
+m = Uniform(0, 1, 0)
+TableSave()
+phase = 2
+m = Uniform(0, 0, 1)
+TableSave()
+SaveAs(B_demag, "uniform_z_B_demag")
+
+// This is near-out-of-plane zero-field relaxation, NOT field withdrawal.
+Aex = 5e-12
+Ku1 = 8e4
+anisU = Vector(0, 0, 1)
+alpha = 0.5
+B_ext = Vector(0, 0, 0)
+DoPrecess = false
+MaxErr = 1e-7
+m = Uniform(0.01, 0, 1)
+phase = 3
+TableSave()
+SaveAs(m, "initial_m")
+
+RelaxTorqueThreshold = 1e-5
+RelaxWallClockTime = 180
+relax()
+phase = 4
+TableSave()
+SaveAs(m, "relaxed_m")
+SaveAs(B_eff, "relaxed_B_eff")
+SaveAs(B_demag, "relaxed_B_demag")
+
+// Tighten convergence on the same state to check sensitivity to tolerance.
+RelaxTorqueThreshold = 2e-6
+relax()
+phase = 5
+TableSave()
+SaveAs(m, "final_m")
+SaveAs(B_eff, "final_B_eff")
+SaveAs(B_demag, "final_B_demag")
+Flush()

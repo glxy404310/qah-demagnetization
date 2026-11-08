@@ -11,5 +11,9 @@ __pycache__/
 # local runtime state
 state/
 
+# Project-local simulation executables and Python environment
+.tools/
+.venv/
+
 # regenerable layout screenshots
 理论学习资料/辅助文件/tmp/**/*.png

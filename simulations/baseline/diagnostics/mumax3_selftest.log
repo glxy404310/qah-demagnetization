@@ -1,0 +1,37 @@
+//mumax 3.12 [windows_amd64 go1.26.0(gc) CUDA-12.9]
+//commit hash: 6e5c98bb
+//CPU info: Unknown, Error: exec: "wmic": executable file not found in %PATH%
+//GPU info: NVIDIA GeForce RTX 5060 Laptop GPU(8123MB), CUDA Driver 13.5, cc=12.0, using cc=120 PTX
+//OS  info: Windows OS, Hostname: 未央
+//Timestamp: 2026-11-08 16:02:07
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: .tools/mumax_diagnostic_record.out/
+SetGridSize(100, 100, 2)
+SetCellSize(2e-9, 2e-9, 2e-9)
+//not starting GUI (-http="")
+SetPBC(0, 0, 0)
+//resizing...
+Msat = 3e5
+DemagAccuracy = 8
+OutputFormat = OVF2_BINARY
+phase := 0
+TableAddVar(phase, "phase", "")
+TableAdd(B_demag)
+TableAdd(E_demag)
+TableAdd(E_exch)
+TableAdd(E_anis)
+TableAdd(E_Zeeman)
+TableAdd(E_total)
+TableAdd(maxTorque)
+TableAdd(B_ext)
+TableAddVar(step, "steps", "")
+m = Uniform(1, 0, 0)
+TableSave()
+//Using cached kernel: .tools/kernel-cache/mumax3kernel_[100 100 2]_[0 0 0]_[2e-09 2e-09 2e-09]_8_
+//convolution self-test...
+convolution self-test tolerance: 0.38552275 FAIL

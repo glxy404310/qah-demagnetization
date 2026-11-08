@@ -1,0 +1,72 @@
+# MIF 2.2
+# Hypothetical material; open boundaries; all dimensions in SI.
+Parameter cell 2e-9
+Parameter mode relax
+Parameter axis z
+Parameter stop 0.01
+Parameter basename square
+
+SetOptions [subst {
+    basename [list $basename]
+    scalar_output_format %.17g
+    vector_field_output_format {binary 8}
+}]
+Specify Oxs_BoxAtlas:atlas {
+    name film
+    xrange {0 200e-9}
+    yrange {0 200e-9}
+    zrange {0 4e-9}
+}
+Specify Oxs_RectangularMesh:mesh [subst {
+    cellsize {$cell $cell $cell}
+    atlas :atlas
+}]
+Specify Oxs_Demag:demag {}
+
+set fixed {}
+set m0 {0.01 0 1}
+if {$mode eq "static"} {
+    switch -- $axis {
+        x {set m0 {1 0 0}}
+        y {set m0 {0 1 0}}
+        z {set m0 {0 0 1}}
+        default {error "axis must be x, y, or z"}
+    }
+    # Freeze every spin. Only evaluate the field, without changing M.
+    set fixed {fixed_spins { :atlas film }}
+} elseif {$mode eq "relax"} {
+    Specify Oxs_UniformExchange:exchange { A 5e-12 }
+    Specify Oxs_UniaxialAnisotropy:anisotropy {
+        K1 8e4
+        axis {0 0 1}
+    }
+    Specify Oxs_FixedZeeman:zeeman { field {0 0 0} }
+} else {
+    error "mode must be static or relax"
+}
+
+Specify Oxs_RungeKuttaEvolve:evolve [subst {
+    alpha 0.5
+    gamma_G 2.21e5
+    do_precess 0
+    method rkf54
+    relative_step_error 1e-7
+    $fixed
+}]
+Specify Oxs_TimeDriver [subst {
+    evolver :evolve
+    mesh :mesh
+    Ms 3e5
+    m0 [list $m0]
+    stopping_dm_dt $stop
+    total_iteration_limit 100000
+    stage_count 1
+    checkpoint_interval -1
+    normalize_aveM_output 1
+}]
+Destination archive mmArchive
+Schedule DataTable archive Step 25
+Schedule DataTable archive Done
+Schedule Oxs_TimeDriver::Spin archive Done
+Schedule Oxs_Demag:demag:Field archive Done
+Schedule {Oxs_RungeKuttaEvolve:evolve:Total field} archive Done

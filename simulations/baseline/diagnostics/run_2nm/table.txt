@@ -1,0 +1,1 @@
+# t (s)	mx ()	my ()	mz ()	phase ()	B_demagx (T)	B_demagy (T)	B_demagz (T)	E_demag (J)	E_exch (J)	E_anis (J)	E_Zeeman (J)	E_total (J)	maxTorque (T)	B_extx (T)	B_exty (T)	B_extz (T)	steps ()
