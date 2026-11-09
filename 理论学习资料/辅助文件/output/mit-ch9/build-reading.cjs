@@ -60,6 +60,7 @@ const html = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><met
   // Persist fitted font sizes into the standalone HTML.
   const finalHtml = await page.content();
   fs.writeFileSync(htmlPath, finalHtml, 'utf8');
+  fs.mkdirSync(path.join(root, 'tmp/pdfs'), { recursive: true });
   fs.writeFileSync(path.join(root,'tmp/pdfs/layout-audit.json'), JSON.stringify(audit,null,2));
   if(audit.some(x=>x.overflow)) throw new Error('Page overflow: '+JSON.stringify(audit.filter(x=>x.overflow)));
   const mathAudit=await page.evaluate(()=>[...document.querySelectorAll('.eq-math')].map(x=>({width:x.scrollWidth,available:x.clientWidth})).filter(x=>x.width>x.available+1));

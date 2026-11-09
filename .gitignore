@@ -17,3 +17,9 @@ state/
 
 # regenerable layout screenshots
 理论学习资料/辅助文件/tmp/**/*.png
+
+# Regenerable rendering reports and intermediate pages (keep scripts)
+.aris/traces/
+理论学习资料/辅助文件/tmp/**/*.json
+理论学习资料/辅助文件/tmp/**/*.html
+理论学习资料/辅助文件/output/**/*.review.json
