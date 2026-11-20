@@ -1,0 +1,30 @@
+Logging to file "C:/Users/35730/Desktop/qah-demagnetization/.tools/oommf20b0/oommf/boxsi.errors"
+
+[Boxsi<35136-未央-35730> 16:00:34.778 2026-11-08] 2.0b0 infolog:
+Start: "C:/Users/35730/Desktop/qah-demagnetization/simulations/baseline/square.mif"
+Options: -exitondone 1 -kill all -outdir {C:\Users\35730\Desktop\qah-demagnetization\simulations\baseline\oommf_1nm_relax} -parameters {cell 1e-9 mode relax axis z stop 0.01 basename relax} -threads 8
+
+[Boxsi<35136-未央-35730> 16:00:34.988 2026-11-08] 2.0b0 infolog:
+Boxsi version 2.0b0
+Running on: 未央
+OS/machine: Windows NT/amd64
+User: 35730	PID: 35136
+Number of threads: 8
+Mesh geometry: 200 x 200 x 4 = 160 000 cells
+Checkpointing disabled
+Start: "C:/Users/35730/Desktop/qah-demagnetization/simulations/baseline/square.mif"
+Options: -exitondone 1 -kill all -outdir {C:\Users\35730\Desktop\qah-demagnetization\simulations\baseline\oommf_1nm_relax} -parameters {cell 1e-9 mode relax axis z stop 0.01 basename relax} -threads 8
+Boxsi version 2.0b0
+Running on: 未央
+OS/machine: Windows NT/amd64
+User: 35730	PID: 35136
+Number of threads: 8
+Mesh geometry: 200 x 200 x 4 = 160 000 cells
+Checkpointing disabled
+
+[Boxsi<35136-未央-35730> 16:00:34.994 2026-11-08] 2.0b0 infolog:
+Loaded "square.mif", CRC: 0x4D1E2514, 1778 bytes 
+
+[Boxsi<35136-未央-35730> 16:02:13.192 2026-11-08] 2.0b0 infolog:
+End "square.mif"
+Boxsi run end.

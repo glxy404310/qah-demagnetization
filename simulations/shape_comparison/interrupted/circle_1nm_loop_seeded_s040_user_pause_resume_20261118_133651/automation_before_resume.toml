@@ -1,0 +1,10 @@
+version = 1
+id = "qah"
+kind = "heartbeat"
+name = "继续完成 QAH 退磁场仿真验证"
+prompt = "继续当前聊天中用户已授权的仿真计划，工作目录 D:/Documents/qah-demagnetization。读取 refine-logs/EXPERIMENT_PLAN.md、simulations/shape_comparison/status.json、controller.json、launch.json 和最新运行日志，检查后台 OOMMF 批次的实际进程及新输出。已有正常运行的计算不得重复启动或终止。没有新结果或需要处理的问题时保持安静。若批次失败、退出或数值验收未通过，检查原始数据和日志，在既有计划范围内修复实现问题或补充所需验证，保留全部已有结果和失败记录，恢复串行计算；不得将未收敛或检查失败的数据当作通过，不扩展到新材料、新物理模型或付费计算。当前重点是三形状的翻转区场步、停止阈值、微扰敏感性和 1 nm 网格验证；2 nm 主实验及翻转过程快照已完成。脚本运行说明与协议见 simulations/shape_comparison/README.md 和 DECISIONS.md。避免两个 OOMMF 作业同时启动（运行器使用 -kill all）。完成后独立核对 analysis/results.json 的 pending 和 failed_checks、输出审计及原始数据，检查图表并完善中文结论、更新实验追踪表。只在有实质性结果、需要用户行动的问题或全计划完成时向用户反馈；不能把启动成功当作任务完成。全部要求完成并交付报告后，停用本心跳。"
+status = "PAUSED"
+rrule = "FREQ=MINUTELY;INTERVAL=15"
+target_thread_id = "01a1d492-e822-7713-a9ff-b73e3dfdf5d5"
+created_at = 1794570304906
+updated_at = 1794748413147

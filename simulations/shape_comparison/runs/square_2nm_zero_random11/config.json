@@ -1,0 +1,23 @@
+{
+  "run_id": "square_2nm_zero_random11",
+  "shape": "square",
+  "cell_nm": 2,
+  "initial": "random11",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "6f27216a5e337a1e3736828163a5a7681ad75837b3ff750157a3822e3391888d",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "1cc2c52471a6f4395c9ec0ea6af562cf6f84cecea84c32a2d9b534f500193fe0"
+}

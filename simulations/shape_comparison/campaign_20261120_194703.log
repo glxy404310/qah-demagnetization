@@ -1,0 +1,11 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 459 runs, 2930 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 459 runs, 2930 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START rectangle_1nm_refine_b0_5000uT_s004: 1 stages

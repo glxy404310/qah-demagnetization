@@ -1,0 +1,942 @@
+{
+  "config": {
+    "run_id": "rectangle_1nm_refine_b0_10000uT_s003",
+    "shape": "rectangle",
+    "cell_nm": 1,
+    "initial": "plus",
+    "fields_T": [
+      -0.2,
+      -0.21,
+      -0.22,
+      -0.24,
+      -0.26,
+      -0.28,
+      -0.3,
+      -0.32,
+      -0.34,
+      -0.36,
+      -0.38,
+      -0.4,
+      -0.42,
+      -0.44,
+      -0.46,
+      -0.48,
+      -0.5,
+      -0.52,
+      -0.54,
+      -0.56,
+      -0.58,
+      -0.6
+    ],
+    "stop": 0.01,
+    "static": false,
+    "epsilon": 0,
+    "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\rectangle_1nm_refine_b0_10000uT_s002\\result-Oxs_TimeDriver-Spin-00-0056561.omf",
+    "predecessor_sha256": "5b460664a11929ab0d233c92706ae481afed44a2f6d967d39ce09fb8fda221a0",
+    "initial_sha256": "f63f45397727283fd9c8536849aef621af8d02b91117e94cc411e61e2f620a2c",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "ca7b350a3746c166fa8c20b127e64b292f45615dcfe7cce4fbe75a94f71244e7"
+  },
+  "geometry": {
+    "shape": "rectangle",
+    "cell_nm": 1,
+    "lx_nm": 400,
+    "ly_nm": 100,
+    "nz": 4,
+    "ny": 100,
+    "nx": 400,
+    "magnetic_cells": 160000,
+    "area_nm2": 40000,
+    "volume_m3": 1.6000000000000004e-22,
+    "area_fraction_error": 0.0
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "b_T": -0.2,
+      "mean_m": [
+        2.4798322730495244e-06,
+        4.974917161841466e-11,
+        -0.9999998201013486
+      ],
+      "mean_abs_mz": 0.9999998201011645,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999869,
+      "max_mz": -0.9999937895085974,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.40653428346083e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8926744448612502e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.605402260321474e-24,
+        "Oxs_UZeeman:zeeman:Energy": -9.599998272971182e-18
+      },
+      "total_energy_J": -1.1932701166636064e-18,
+      "energy_density_J_m3": -7457.938229147539,
+      "max_dm_dt_deg_ns": 0.009562863667398844,
+      "independent_dm_dt_deg_ns": 0.009562863667398721,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-00-0000036.omf",
+      "mean_Hd_A_m": [
+        -0.016101483661423572,
+        -7.323754546177952e-07,
+        278744.25663515466
+      ]
+    },
+    {
+      "stage": 1,
+      "b_T": -0.21,
+      "mean_m": [
+        2.3219523932811395e-06,
+        4.6468457287965336e-11,
+        -0.99999982026576
+      ],
+      "mean_abs_mz": 0.999999820265641,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999855,
+      "max_mz": -0.9999937953678817,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406534456823561e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8909989676791877e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.601191677323791e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.0079998188277663e-17
+      },
+      "total_energy_J": -1.6732700303656573e-18,
+      "energy_density_J_m3": -10457.937689785356,
+      "max_dm_dt_deg_ns": 0.009747872758464619,
+      "independent_dm_dt_deg_ns": 0.009747872758390291,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-01-0000072.omf",
+      "mean_Hd_A_m": [
+        -0.015020554546721224,
+        -6.838195964974148e-07,
+        278744.25951839273
+      ]
+    },
+    {
+      "stage": 2,
+      "b_T": -0.22,
+      "mean_m": [
+        2.1710083467092703e-06,
+        4.334204574734583e-11,
+        -0.9999998204307405
+      ],
+      "mean_abs_mz": 0.9999998204305993,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999866,
+      "max_mz": -0.9999938012112578,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406534630815627e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8893181676771597e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.5969687558927184e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.0559998103747132e-17
+      },
+      "total_energy_J": -2.153269944145983e-18,
+      "energy_density_J_m3": -13457.937150912392,
+      "max_dm_dt_deg_ns": 0.009471821719921135,
+      "independent_dm_dt_deg_ns": 0.009471821719896951,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-02-0000108.omf",
+      "mean_Hd_A_m": [
+        -0.013992472944759584,
+        -6.375609790666204e-07,
+        278744.2624121052
+      ]
+    },
+    {
+      "stage": 3,
+      "b_T": -0.24,
+      "mean_m": [
+        1.9985115811437186e-06,
+        3.978422811114918e-11,
+        -0.9999998207591804
+      ],
+      "mean_abs_mz": 0.9999998207590463,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999941,
+      "max_mz": -0.9999938123669129,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406534978046493e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.885966031374684e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.588560543925885e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.1519997935144215e-17
+      },
+      "total_energy_J": -3.1132697719340405e-18,
+      "energy_density_J_m3": -19457.93607458775,
+      "max_dm_dt_deg_ns": 0.009385927137614226,
+      "independent_dm_dt_deg_ns": 0.009385927137594072,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 40,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-03-0000148.omf",
+      "mean_Hd_A_m": [
+        -0.012825334909998218,
+        -5.849740570283756e-07,
+        278744.268186977
+      ]
+    },
+    {
+      "stage": 4,
+      "b_T": -0.26,
+      "mean_m": [
+        1.8369861459608536e-06,
+        3.646683739048451e-11,
+        -0.9999998210863792
+      ],
+      "mean_abs_mz": 0.9999998210862854,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999939,
+      "max_mz": -0.9999938234392634,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406535324402844e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8826253463997346e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.5801832507437575e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.2479997767156844e-17
+      },
+      "total_energy_J": -4.073269600036109e-18,
+      "energy_density_J_m3": -25457.935000225676,
+      "max_dm_dt_deg_ns": 0.009492123889305844,
+      "independent_dm_dt_deg_ns": 0.009492123889304696,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 39,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-04-0000187.omf",
+      "mean_Hd_A_m": [
+        -0.011739674592331857,
+        -5.35957361535111e-07,
+        278744.2739472728
+      ]
+    },
+    {
+      "stage": 5,
+      "b_T": -0.28,
+      "mean_m": [
+        1.6826350514550445e-06,
+        3.330975645979869e-11,
+        -0.9999998214131772
+      ],
+      "mean_abs_mz": 0.9999998214131316,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999908,
+      "max_mz": -0.999993834467935,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406535670712143e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.879288127976657e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.571816016492116e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.3439997599792491e-17
+      },
+      "total_energy_J": -5.033269428451534e-18,
+      "energy_density_J_m3": -31457.93392782208,
+      "max_dm_dt_deg_ns": 0.009228282935414547,
+      "independent_dm_dt_deg_ns": 0.009228282935453127,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 39,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-05-0000226.omf",
+      "mean_Hd_A_m": [
+        -0.010708814526754895,
+        -4.893675336006709e-07,
+        278744.27970677835
+      ]
+    },
+    {
+      "stage": 6,
+      "b_T": -0.3,
+      "mean_m": [
+        1.5424319562797554e-06,
+        3.0453300301473303e-11,
+        -0.9999998217377737
+      ],
+      "mean_abs_mz": 0.9999998217377495,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999948,
+      "max_mz": -0.9999938453753332,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.40653601510876e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8759723005524719e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.563505819495483e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.4399997433023596e-17
+      },
+      "total_energy_J": -5.993269257178961e-18,
+      "energy_density_J_m3": -37457.9328573685,
+      "max_dm_dt_deg_ns": 0.009751002430783811,
+      "independent_dm_dt_deg_ns": 0.009751002430851759,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 38,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-06-0000264.omf",
+      "mean_Hd_A_m": [
+        -0.009778099805547162,
+        -4.472244173030049e-07,
+        278744.2854344652
+      ]
+    },
+    {
+      "stage": 7,
+      "b_T": -0.32,
+      "mean_m": [
+        1.4106410367347751e-06,
+        2.7778290872943467e-11,
+        -0.9999998220623462
+      ],
+      "mean_abs_mz": 0.9999998220623245,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999929,
+      "max_mz": -0.9999938562461219,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406536359802343e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8726566031843724e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.555196722846758e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.5359997266877312e-17
+      },
+      "total_energy_J": -6.953269086217927e-18,
+      "energy_density_J_m3": -43457.93178886203,
+      "max_dm_dt_deg_ns": 0.009706409035815496,
+      "independent_dm_dt_deg_ns": 0.009706409035794191,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 38,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-07-0000302.omf",
+      "mean_Hd_A_m": [
+        -0.008908243671232186,
+        -4.0780068165986447e-07,
+        278744.29116708244
+      ]
+    },
+    {
+      "stage": 8,
+      "b_T": -0.34,
+      "mean_m": [
+        1.2859096451113069e-06,
+        2.525580905421063e-11,
+        -0.99999982238629
+      ],
+      "mean_abs_mz": 0.9999998223862996,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999931,
+      "max_mz": -0.9999938670695857,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406536704214138e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8693465966534024e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.5469029930985504e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.631999710134441e-17
+      },
+      "total_energy_J": -7.913268915567615e-18,
+      "energy_density_J_m3": -49457.930722297584,
+      "max_dm_dt_deg_ns": 0.009444438326407241,
+      "independent_dm_dt_deg_ns": 0.009444438326520104,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 38,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-08-0000340.omf",
+      "mean_Hd_A_m": [
+        -0.00808954863668605,
+        -3.7060146191834063e-07,
+        278744.2968949793
+      ]
+    },
+    {
+      "stage": 9,
+      "b_T": -0.36,
+      "mean_m": [
+        1.1684236319546027e-06,
+        2.2888338843608977e-11,
+        -0.9999998227093474
+      ],
+      "mean_abs_mz": 0.9999998227093436,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999942,
+      "max_mz": -0.9999938778359617,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.40653704800032e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8660455690003906e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.538633091185729e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.727999693641746e-17
+      },
+      "total_energy_J": -8.873268745227148e-18,
+      "energy_density_J_m3": -55457.92965766966,
+      "max_dm_dt_deg_ns": 0.00917806661880606,
+      "independent_dm_dt_deg_ns": 0.0091780666187623,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 38,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-09-0000378.omf",
+      "mean_Hd_A_m": [
+        -0.007322572350314886,
+        -3.3574668327673864e-07,
+        278744.30261248245
+      ]
+    },
+    {
+      "stage": 10,
+      "b_T": -0.38,
+      "mean_m": [
+        1.0631612558176532e-06,
+        2.0774496122807428e-11,
+        -0.9999998230299235
+      ],
+      "mean_abs_mz": 0.9999998230299523,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999944,
+      "max_mz": -0.9999938884844992,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406537389615992e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8627682939462375e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.5304255359066274e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.823999677206633e-17
+      },
+      "total_energy_J": -9.833268575195407e-18,
+      "energy_density_J_m3": -61457.92859497128,
+      "max_dm_dt_deg_ns": 0.009878582111917916,
+      "independent_dm_dt_deg_ns": 0.009878582111964558,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 37,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-10-0000415.omf",
+      "mean_Hd_A_m": [
+        -0.006638950069611156,
+        -3.046579512556491e-07,
+        278744.3082938644
+      ]
+    },
+    {
+      "stage": 11,
+      "b_T": -0.4,
+      "mean_m": [
+        9.643336291057016e-07,
+        1.879647017808512e-11,
+        -0.9999998233510617
+      ],
+      "mean_abs_mz": 0.9999998233511295,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999942,
+      "max_mz": -0.9999938991233221,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406537732132845e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8594853349436336e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.522203426085694e-24,
+        "Oxs_UZeeman:zeeman:Energy": -1.919999660834169e-17
+      },
+      "total_energy_J": -1.0793268405471924e-17,
+      "energy_density_J_m3": -67457.92753419951,
+      "max_dm_dt_deg_ns": 0.009641349175189964,
+      "independent_dm_dt_deg_ns": 0.009641349175181906,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 37,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-11-0000452.omf",
+      "mean_Hd_A_m": [
+        -0.00600030052895545,
+        -2.755349827566533e-07,
+        278744.3139902154
+      ]
+    },
+    {
+      "stage": 12,
+      "b_T": -0.42,
+      "mean_m": [
+        8.71999134044143e-07,
+        1.6954440898721516e-11,
+        -0.9999998236714002
+      ],
+      "mean_abs_mz": 0.99999982367142,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999936,
+      "max_mz": -0.9999939097102681,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406538074049865e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8562110613813973e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.514004014048586e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.015999644521583e-17
+      },
+      "total_energy_J": -1.1753268236055812e-17,
+      "energy_density_J_m3": -73457.92647534881,
+      "max_dm_dt_deg_ns": 0.009394928484111645,
+      "independent_dm_dt_deg_ns": 0.009394928484118542,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 37,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-12-0000489.omf",
+      "mean_Hd_A_m": [
+        -0.005406504440805247,
+        -2.484707895291649e-07,
+        278744.3196765858
+      ]
+    },
+    {
+      "stage": 13,
+      "b_T": -0.44,
+      "mean_m": [
+        7.860835176503585e-07,
+        1.5245982263662653e-11,
+        -0.99999982399078
+      ],
+      "mean_abs_mz": 0.9999998239908077,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999943,
+      "max_mz": -0.9999939202455076,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406538415346294e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8529456560056504e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.5058277176794285e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.111999628268586e-17
+      },
+      "total_energy_J": -1.2713268066946246e-17,
+      "energy_density_J_m3": -79457.92541841402,
+      "max_dm_dt_deg_ns": 0.009152915123563143,
+      "independent_dm_dt_deg_ns": 0.009152915123611514,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 37,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-13-0000526.omf",
+      "mean_Hd_A_m": [
+        -0.004856610095716451,
+        -2.233332516880182e-07,
+        278744.32535261346
+      ]
+    },
+    {
+      "stage": 14,
+      "b_T": -0.46,
+      "mean_m": [
+        7.064628298050388e-07,
+        1.3667722469106651e-11,
+        -0.9999998243093372
+      ],
+      "mean_abs_mz": 0.9999998243092967,
+      "negative_fraction": 1.0,
+      "min_mz": -0.999999999999994,
+      "max_mz": -0.9999939307299154,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406538756022415e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8496891003519732e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.4976744195058814e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.2079996120749276e-17
+      },
+      "total_energy_J": -1.3673267898142408e-17,
+      "energy_density_J_m3": -85457.92436339002,
+      "max_dm_dt_deg_ns": 0.008917920447342347,
+      "independent_dm_dt_deg_ns": 0.008917920447315857,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 37,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-14-0000563.omf",
+      "mean_Hd_A_m": [
+        -0.004349376306133945,
+        -2.0015351456095232e-07,
+        278744.33101831534
+      ]
+    },
+    {
+      "stage": 15,
+      "b_T": -0.48,
+      "mean_m": [
+        6.362655994434819e-07,
+        1.2280532514678875e-11,
+        -0.9999998246252372
+      ],
+      "mean_abs_mz": 0.9999998246251695,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999941,
+      "max_mz": -0.9999939411030597,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406539094299778e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8464583271284086e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.489588103000984e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.303999595936391e-17
+      },
+      "total_energy_J": -1.4633267729643314e-17,
+      "energy_density_J_m3": -91457.9233102707,
+      "max_dm_dt_deg_ns": 0.009933051484266108,
+      "independent_dm_dt_deg_ns": 0.009933051484247411,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-15-0000599.omf",
+      "mean_Hd_A_m": [
+        -0.003904180074425176,
+        -1.7977807951865543e-07,
+        278744.33664412174
+      ]
+    },
+    {
+      "stage": 16,
+      "b_T": -0.5,
+      "mean_m": [
+        5.713175515069167e-07,
+        1.100089651624042e-11,
+        -0.999999824941828
+      ],
+      "mean_abs_mz": 0.9999998249418531,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999941,
+      "max_mz": -0.9999939514794616,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406539433714683e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8432196033933276e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.48148103108077e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.3999995798604477e-17
+      },
+      "total_energy_J": -1.5593267561448423e-17,
+      "energy_density_J_m3": -97457.92225905262,
+      "max_dm_dt_deg_ns": 0.009818756850680602,
+      "independent_dm_dt_deg_ns": 0.009818756850686445,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-16-0000635.omf",
+      "mean_Hd_A_m": [
+        -0.0034940518553095443,
+        -1.6098294931907732e-07,
+        278744.34228881967
+      ]
+    },
+    {
+      "stage": 17,
+      "b_T": -0.52,
+      "mean_m": [
+        5.115003919476148e-07,
+        9.825817018263139e-12,
+        -0.9999998252577327
+      ],
+      "mean_abs_mz": 0.9999998252576879,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999941,
+      "max_mz": -0.9999939618113,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406539772547176e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8399893219391818e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.473395676952171e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.49599956384319e-17
+      },
+      "total_energy_J": -1.6553267393556856e-17,
+      "energy_density_J_m3": -103457.92120973032,
+      "max_dm_dt_deg_ns": 0.009690397382172276,
+      "independent_dm_dt_deg_ns": 0.009690397382176004,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-17-0000671.omf",
+      "mean_Hd_A_m": [
+        -0.0031179262029636446,
+        -1.4374885131474001e-07,
+        278744.3479238191
+      ]
+    },
+    {
+      "stage": 18,
+      "b_T": -0.54,
+      "mean_m": [
+        4.566115420599463e-07,
+        8.750690806813414e-12,
+        -0.9999998255726686
+      ],
+      "mean_abs_mz": 0.9999998255726481,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999941,
+      "max_mz": -0.9999939720987865,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406540110767428e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8367677509937159e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.465332722000657e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.5919995478843052e-17
+      },
+      "total_energy_J": -1.7513267225967804e-17,
+      "energy_density_J_m3": -109457.92016229875,
+      "max_dm_dt_deg_ns": 0.009568200171533637,
+      "independent_dm_dt_deg_ns": 0.009568200171528323,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-18-0000707.omf",
+      "mean_Hd_A_m": [
+        -0.0027742297670349672,
+        -1.279762092508463e-07,
+        278744.3535486261
+      ]
+    },
+    {
+      "stage": 19,
+      "b_T": -0.56,
+      "mean_m": [
+        4.06974781397225e-07,
+        7.78122556927387e-12,
+        -0.999999825886346
+      ],
+      "mean_abs_mz": 0.9999998258862939,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999939,
+      "max_mz": -0.9999939823282228,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406540447916017e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8335592372496673e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.457303417749083e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.687999531982359e-17
+      },
+      "total_energy_J": -1.847326705868043e-17,
+      "energy_density_J_m3": -115457.91911675266,
+      "max_dm_dt_deg_ns": 0.009781852982925554,
+      "independent_dm_dt_deg_ns": 0.00978185298288404,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-19-0000743.omf",
+      "mean_Hd_A_m": [
+        -0.002464691456251785,
+        -1.1377907139831222e-07,
+        278744.35915560176
+      ]
+    },
+    {
+      "stage": 20,
+      "b_T": -0.58,
+      "mean_m": [
+        3.616814821797482e-07,
+        6.899096437722055e-12,
+        -0.9999998261995399
+      ],
+      "mean_abs_mz": 0.9999998261995099,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999939,
+      "max_mz": -0.9999939925287044,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.4065407849088e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.830355064671501e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.449285115150487e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.783999516139436e-17
+      },
+      "total_energy_J": -1.943326689169398e-17,
+      "energy_density_J_m3": -121457.91807308733,
+      "max_dm_dt_deg_ns": 0.009679656103212484,
+      "independent_dm_dt_deg_ns": 0.009679656103189107,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-20-0000779.omf",
+      "mean_Hd_A_m": [
+        -0.0021833718535736353,
+        -1.0085371209243022e-07,
+        278744.36475997197
+      ]
+    },
+    {
+      "stage": 21,
+      "b_T": -0.6,
+      "mean_m": [
+        3.205055207062584e-07,
+        6.099400117409118e-12,
+        -0.9999998265119231
+      ],
+      "mean_abs_mz": 0.9999998265118724,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999999938,
+      "max_mz": -0.999994002688749,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406541121302677e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.8271594295344507e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.441288662275225e-24,
+        "Oxs_UZeeman:zeeman:Energy": -2.8799995003541926e-17
+      },
+      "total_energy_J": -2.0393266725007634e-17,
+      "energy_density_J_m3": -127457.91703129768,
+      "max_dm_dt_deg_ns": 0.00957857482736147,
+      "independent_dm_dt_deg_ns": 0.009578574827357456,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 36,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-21-0000815.omf",
+      "mean_Hd_A_m": [
+        -0.0019286363806482769,
+        -8.913267588468443e-08,
+        278744.37035437115
+      ]
+    }
+  ],
+  "all_passed": true
+}

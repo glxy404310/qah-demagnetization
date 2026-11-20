@@ -1,0 +1,25 @@
+{
+  "time": "2026-11-20T19:48:12.675046+08:00",
+  "status": {
+    "phase": "M4_field_and_tolerance_1nm",
+    "updated": "2026-11-20T19:47:52.185301+08:00"
+  },
+  "completed": {
+    "static_2nm": 9,
+    "zero_2nm": 24,
+    "loops_2nm": 3,
+    "static_1nm": 9,
+    "zero_1nm": 6,
+    "loops_1nm": 3
+  },
+  "current_paths": [
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT",
+      "completed_stages": 4,
+      "total_stages": 31,
+      "last_b_T": -0.18,
+      "mean_mz": 0.9999992448577879
+    }
+  ],
+  "completed_verification_branches": 10
+}

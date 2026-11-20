@@ -1,0 +1,10 @@
+version = 1
+id = "qah"
+kind = "heartbeat"
+name = "继续完成 QAH 退磁场仿真验证"
+prompt = "继续执行用户已要求恢复的 QAH 仿真任务，工作目录 D:/Documents/qah-demagnetization。以 refine-logs/PROGRESS_AND_NEXT_STEPS_20261118.md 的 P0–P4 和原 EXPERIMENT_PLAN.md 为范围，读取 status.json、controller.json、launch.json、report_worker.json 和最新日志，并核对实际进程及新原始输出。已有健康计算不得重复启动或终止；始终串行，运行器使用 -kill all。2026-11-18 已归档圆形 1 nm s040 的暂停现场，从已通过 s039 以相同输入恢复，先完成圆形和长方形 1 nm 全回线，再完成三形状六支局部场步和严格阈值验证。若失败或验收未通过，保留全部已有结果和中断记录，检查日志，在原模型范围内修复或补验后继续；不得将未收敛数据当作通过，不扩展材料、物理模型或付费计算。计算后按 P3 对照两网格翻转前后磁化与标量轨迹，不能仅凭终态一致宣布模式一致；中间过程证据不足时串行补存每形状最多一个代表下降支场点的 1 nm 快照，并验证重放终态。必要时补微扰或圆边界验证。按 P4 独立核对 pending、failed_checks、12 条逐支验证、实际停止指标、输入输出与前驱校验和、原始磁化和 ODT、面积体积及图表；不能仅依赖 numerical_acceptance_complete。更新中文报告、进度和追踪表及最终清单；用实际耗时更新预算。健康运行且无实质变化时保持安静，只在有实质结果、失败、需要用户操作或全部完成时通知。启动成功仅表示恢复；P0–P4 全部完成并交付后停用本心跳。"
+status = "PAUSED"
+rrule = "FREQ=MINUTELY;INTERVAL=15"
+target_thread_id = "01a1d492-e822-7713-a9ff-b73e3dfdf5d5"
+created_at = 1794570304906
+updated_at = 1794983364131

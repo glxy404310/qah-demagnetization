@@ -1,0 +1,20 @@
+{
+  "snapshot_time_local": "2026-11-20T10:47:57",
+  "timezone": "Asia/Shanghai",
+  "stage_report_only": true,
+  "files_sha256": {
+    "GEMINI_STAGE_REPORT_BRIEF_20261120.md": "873d1f02138077a87d1ea7f78c612ba947b9a1ea5fe9f43f63b043ffbebbf17a",
+    "evidence/coercivity_refined.csv": "273c156bc5ba70353cb16a57e7ce07a6cad5bc7c96487be3ab5fdddc77bb7e31",
+    "evidence/DECISIONS.md": "22d9ab6a1e0a7d19af6a6e772ec6e3d582bf21877468eb880ae0f7684ca03cf4",
+    "evidence/results.json": "d9069c4baad47ac9952c1f6cfe09f70e2cbb47cd90a37e888b069a3985ec599b",
+    "evidence/RESULTS.md": "1b5f2cda7ef5458987e3fc07887f6bdbe2f7fabdef8a0fc5db9c2d4ba58b4894",
+    "evidence/verification_details.json": "42710d025b6f7f2c185576fb8fba525f7358f61c7c1f30fbee34135c21d45489",
+    "figures/demag_comparison.png": "056cfd3dc6f61dfd5943c87b4ce34ce02ac85cdb1c257546da4bec945362d2af",
+    "figures/domain_energy_competition.png": "8bc173dd28554eeb766f3d70305b6876133d336a7351387835f70999b53ce681",
+    "figures/energy_components.png": "82f8b779d58264abc78a6dbcc36fd32a86c8516863bf04c4c8925d83ee4769a3",
+    "figures/hysteresis_comparison.png": "0125d6f0bc72cbdf924838f0bc5f727f7ed7aa4a1530b84d94fffce25bda68a5",
+    "figures/reversal_states.png": "9c7e508faa50ad1e3e767d48db484284a81a1a5c50605bbbb61ef0135d01e726",
+    "figures/reversal_trajectory.png": "49e3a998943e55b10ccd7c6d48db1d890632e7de29bcd65f37850f64b775bc12",
+    "figures/zero_states.png": "9273bc46aa2eb109b76d490a13d129194a546c6937089d1dd3a53b38e09a08b5"
+  }
+}

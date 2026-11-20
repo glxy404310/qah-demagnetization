@@ -1,0 +1,14 @@
+{
+  "input_byte_matches": {
+    "geometry.json": true,
+    "input.mif": true,
+    "initial.omf": true,
+    "config.json": true
+  },
+  "solver_count": 1,
+  "accepted": false,
+  "archived": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\interrupted\\square_1nm_refine_b0_10000uT_s002_restart_20261118_234706",
+  "time": "2026-11-18T23:48:03.8000179+08:00",
+  "solver_pid": 42488,
+  "latest_odt": "                       1.7632562087802357e-17                          2665                                        0.18457496909600546                 -2.3833996892686298e-15                -7.6367679082613916e-28            8.5123627736170583e-18          1.5651504160560468e-22                     0.15865354271301838                            0.15865354271301838                              0.15865354271301838                          6.6484164640850227e-23              9.1199763149790541e-18     190                  0                     0                    -190                     400                           400                         0                     0.0020251914628402565  0.00074932083731686985  0.99999740295822936        3.2016438151819208e-13              6.1622804320458564e-11       "
+}

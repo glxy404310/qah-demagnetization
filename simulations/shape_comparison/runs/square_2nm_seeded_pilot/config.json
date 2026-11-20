@@ -1,0 +1,16 @@
+{
+  "run_id": "square_2nm_seeded_pilot",
+  "shape": "square",
+  "cell_nm": 2,
+  "fields_T": [
+    -0.16,
+    -0.18,
+    -0.2,
+    -0.22
+  ],
+  "stop": 0.01,
+  "protocol": "epsilon applied before each opposing-field point",
+  "epsilon": 0.001,
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\square_2nm_loop\\result-Oxs_TimeDriver-Spin-00037-0001379.omf",
+  "predecessor_sha256": "9ead9f887aed40d78849b880ed1425b0053670cfed8bd843dc425459e19b5da1"
+}

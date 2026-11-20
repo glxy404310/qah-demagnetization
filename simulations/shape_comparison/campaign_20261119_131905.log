@@ -1,0 +1,90 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 383 runs, 2434 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 383 runs, 2434 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START square_1nm_refine_b0_5000uT_s004: 1 stages
+PASS square_1nm_refine_b0_5000uT_s004: 3794.7s, mz=-0.99999986
+START square_1nm_refine_b0_5000uT_s005: 26 stages
+PASS square_1nm_refine_b0_5000uT_s005: 44.7s, mz=-0.99999986
+PATH PASS square_1nm_refine_b0_5000uT: 31 stages
+START square_1nm_refine_b0_5000uT_tight_s000: 1 stages
+PASS square_1nm_refine_b0_5000uT_tight_s000: 707.4s, mz=0.99999985
+START square_1nm_refine_b0_5000uT_tight_s001: 1 stages
+PASS square_1nm_refine_b0_5000uT_tight_s001: 901.7s, mz=0.99999985
+START square_1nm_refine_b0_5000uT_tight_s002: 1 stages
+PASS square_1nm_refine_b0_5000uT_tight_s002: 1389.9s, mz=0.99999984
+START square_1nm_refine_b0_5000uT_tight_s003: 1 stages
+PASS square_1nm_refine_b0_5000uT_tight_s003: 316.7s, mz=0.99999927
+START square_1nm_refine_b0_5000uT_tight_s004: 1 stages
+PASS square_1nm_refine_b0_5000uT_tight_s004: 4121.8s, mz=-0.99999986
+START square_1nm_refine_b0_5000uT_tight_s005: 26 stages
+PASS square_1nm_refine_b0_5000uT_tight_s005: 50.0s, mz=-0.99999986
+PATH PASS square_1nm_refine_b0_5000uT_tight: 31 stages
+START square_1nm_refine_b1_10000uT_s000: 1 stages
+PASS square_1nm_refine_b1_10000uT_s000: 794.7s, mz=-0.99999984
+START square_1nm_refine_b1_10000uT_s001: 1 stages
+PASS square_1nm_refine_b1_10000uT_s001: 234.0s, mz=-0.99999924
+START square_1nm_refine_b1_10000uT_s002: 1 stages
+PASS square_1nm_refine_b1_10000uT_s002: 2206.7s, mz=0.99999986
+START square_1nm_refine_b1_10000uT_s003: 22 stages
+PASS square_1nm_refine_b1_10000uT_s003: 40.2s, mz=0.99999986
+PATH PASS square_1nm_refine_b1_10000uT: 25 stages
+START square_1nm_refine_b1_5000uT_s000: 1 stages
+PASS square_1nm_refine_b1_5000uT_s000: 610.8s, mz=-0.99999985
+START square_1nm_refine_b1_5000uT_s001: 1 stages
+PASS square_1nm_refine_b1_5000uT_s001: 834.7s, mz=-0.99999984
+START square_1nm_refine_b1_5000uT_s002: 1 stages
+PASS square_1nm_refine_b1_5000uT_s002: 1047.5s, mz=-0.99999981
+START square_1nm_refine_b1_5000uT_s003: 1 stages
+PASS square_1nm_refine_b1_5000uT_s003: 232.0s, mz=-0.99999910
+START square_1nm_refine_b1_5000uT_s004: 1 stages
+PASS square_1nm_refine_b1_5000uT_s004: 3946.2s, mz=0.99999986
+START square_1nm_refine_b1_5000uT_s005: 26 stages
+PASS square_1nm_refine_b1_5000uT_s005: 45.5s, mz=0.99999986
+PATH PASS square_1nm_refine_b1_5000uT: 31 stages
+START square_1nm_refine_b1_5000uT_tight_s000: 1 stages
+PASS square_1nm_refine_b1_5000uT_tight_s000: 740.8s, mz=-0.99999985
+START square_1nm_refine_b1_5000uT_tight_s001: 1 stages
+PASS square_1nm_refine_b1_5000uT_tight_s001: 944.0s, mz=-0.99999985
+START square_1nm_refine_b1_5000uT_tight_s002: 1 stages
+PASS square_1nm_refine_b1_5000uT_tight_s002: 1363.9s, mz=-0.99999984
+START square_1nm_refine_b1_5000uT_tight_s003: 1 stages
+PASS square_1nm_refine_b1_5000uT_tight_s003: 312.4s, mz=-0.99999927
+START square_1nm_refine_b1_5000uT_tight_s004: 1 stages
+PASS square_1nm_refine_b1_5000uT_tight_s004: 3965.6s, mz=0.99999986
+START square_1nm_refine_b1_5000uT_tight_s005: 26 stages
+PASS square_1nm_refine_b1_5000uT_tight_s005: 46.7s, mz=0.99999986
+PATH PASS square_1nm_refine_b1_5000uT_tight: 31 stages
+START circle_1nm_refine_b0_10000uT_s000: 1 stages
+PASS circle_1nm_refine_b0_10000uT_s000: 794.5s, mz=0.99999985
+START circle_1nm_refine_b0_10000uT_s001: 1 stages
+PASS circle_1nm_refine_b0_10000uT_s001: 230.6s, mz=0.99999920
+START circle_1nm_refine_b0_10000uT_s002: 1 stages
+PASS circle_1nm_refine_b0_10000uT_s002: 2172.9s, mz=-0.99999987
+START circle_1nm_refine_b0_10000uT_s003: 22 stages
+PASS circle_1nm_refine_b0_10000uT_s003: 40.1s, mz=-0.99999987
+PATH PASS circle_1nm_refine_b0_10000uT: 25 stages
+START circle_1nm_refine_b0_5000uT_s000: 1 stages
+PASS circle_1nm_refine_b0_5000uT_s000: 645.1s, mz=0.99999986
+START circle_1nm_refine_b0_5000uT_s001: 1 stages
+PASS circle_1nm_refine_b0_5000uT_s001: 780.9s, mz=0.99999985
+START circle_1nm_refine_b0_5000uT_s002: 1 stages
+PASS circle_1nm_refine_b0_5000uT_s002: 1159.9s, mz=0.99999982
+START circle_1nm_refine_b0_5000uT_s003: 1 stages
+PASS circle_1nm_refine_b0_5000uT_s003: 229.6s, mz=0.99999902
+START circle_1nm_refine_b0_5000uT_s004: 1 stages
+PASS circle_1nm_refine_b0_5000uT_s004: 4287.9s, mz=-0.99999987
+START circle_1nm_refine_b0_5000uT_s005: 26 stages
+PASS circle_1nm_refine_b0_5000uT_s005: 47.4s, mz=-0.99999987
+PATH PASS circle_1nm_refine_b0_5000uT: 31 stages
+START circle_1nm_refine_b0_5000uT_tight_s000: 1 stages
+PASS circle_1nm_refine_b0_5000uT_tight_s000: 833.5s, mz=0.99999986
+START circle_1nm_refine_b0_5000uT_tight_s001: 1 stages
+PASS circle_1nm_refine_b0_5000uT_tight_s001: 1069.8s, mz=0.99999986
+START circle_1nm_refine_b0_5000uT_tight_s002: 1 stages

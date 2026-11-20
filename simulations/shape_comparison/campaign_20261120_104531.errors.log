@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\continue_campaign.py", line 30, in <module>
+    campaign('all')
+    ~~~~~~~~^^^^^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 134, in campaign
+    verify_mesh(1)
+    ~~~~~~~~~~~^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 58, in verify_mesh
+    r5=refine(coarse,branch,0.005)
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 40, in refine
+    r=seeded_path(run_id,cfg['shape'],cfg['cell_nm'],fields=fields,stop=stop,
+           predecessor=spin_path(s,max(0,i-2)))
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 317, in seeded_path
+    part=case(part_id,shape,cell,fields=fields[start:end],stop=stop,
+              predecessor=current,epsilon=epsilon if opposing else 0)
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 273, in case
+    summary = analyze_case(out)
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 220, in analyze_case
+    raise ValueError(f'Failed numerical checks: {folder}: '+str([(r['stage'],r['checks']) for r in report if not all(r['checks'].values())]))
+ValueError: Failed numerical checks: D:\Documents\qah-demagnetization\simulations\shape_comparison\runs\rectangle_1nm_refine_b0_5000uT_s004: [(0, {'unit_m': True, 'energy_sum': True, 'field_energy': True, 'converged': False, 'independent_rhs': True, 'independent_convergence': False, 'fixed_field_energy_nonincreasing': True})]

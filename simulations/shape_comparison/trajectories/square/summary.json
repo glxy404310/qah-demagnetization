@@ -1,0 +1,1523 @@
+{
+  "shape": "square",
+  "source_run": "square_2nm_loop_seeded_s040",
+  "b_T": -0.2,
+  "samples": [
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000000.omf",
+      "iteration": 0,
+      "mean_m": [
+        0.0019169002859537503,
+        0.0007092530971551231,
+        0.9999976953727457
+      ],
+      "mean_norm": 0.9999997841487092,
+      "mean_abs_mz": 0.9999976953727462,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000050.omf",
+      "iteration": 50,
+      "mean_m": [
+        0.001972426928206568,
+        0.0007297979562671493,
+        0.999997548994156
+      ],
+      "mean_norm": 0.9999997605336531,
+      "mean_abs_mz": 0.9999975489941492,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000100.omf",
+      "iteration": 100,
+      "mean_m": [
+        0.0020572245381136915,
+        0.0007611730733100498,
+        0.9999973203478522
+      ],
+      "mean_norm": 0.9999997261300289,
+      "mean_abs_mz": 0.9999973203478445,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000150.omf",
+      "iteration": 150,
+      "mean_m": [
+        0.0021479883875540986,
+        0.0007947556979419298,
+        0.9999970668839311
+      ],
+      "mean_norm": 0.9999996896335508,
+      "mean_abs_mz": 0.9999970668839356,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000200.omf",
+      "iteration": 200,
+      "mean_m": [
+        0.0022390420099013346,
+        0.0008284455376005095,
+        0.9999968028807702
+      ],
+      "mean_norm": 0.9999996527013861,
+      "mean_abs_mz": 0.9999968028807725,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000250.omf",
+      "iteration": 250,
+      "mean_m": [
+        0.0023402945539146296,
+        0.0008659089773393197,
+        0.9999964974506922
+      ],
+      "mean_norm": 0.9999996108452285,
+      "mean_abs_mz": 0.9999964974506954,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000300.omf",
+      "iteration": 300,
+      "mean_m": [
+        0.0024472503486669406,
+        0.000905482619023968,
+        0.9999961609806242
+      ],
+      "mean_norm": 0.99999956545442,
+      "mean_abs_mz": 0.9999961609806222,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000350.omf",
+      "iteration": 350,
+      "mean_m": [
+        0.002553993772078566,
+        0.000944977682794746,
+        0.999995810827105
+      ],
+      "mean_norm": 0.9999995187692682,
+      "mean_abs_mz": 0.9999958108270989,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000400.omf",
+      "iteration": 400,
+      "mean_m": [
+        0.0026737894296024038,
+        0.000989302072478792,
+        0.9999954006423962
+      ],
+      "mean_norm": 0.9999994645870821,
+      "mean_abs_mz": 0.9999954006424042,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000450.omf",
+      "iteration": 450,
+      "mean_m": [
+        0.0027977960506225686,
+        0.0010351845184226314,
+        0.9999949567512801
+      ],
+      "mean_norm": 0.9999994063986852,
+      "mean_abs_mz": 0.9999949567512824,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000500.omf",
+      "iteration": 500,
+      "mean_m": [
+        0.0029358957998564623,
+        0.0010862814215921689,
+        0.9999944392222454
+      ],
+      "mean_norm": 0.9999993389832253,
+      "mean_abs_mz": 0.9999944392222504,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000550.omf",
+      "iteration": 550,
+      "mean_m": [
+        0.0030854535749050786,
+        0.0011416177946646214,
+        0.9999938511027067
+      ],
+      "mean_norm": 0.9999992627788153,
+      "mean_abs_mz": 0.9999938511027009,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000600.omf",
+      "iteration": 600,
+      "mean_m": [
+        0.0032235074459272327,
+        0.001192697724548562,
+        0.9999932826381115
+      ],
+      "mean_norm": 0.9999991894244025,
+      "mean_abs_mz": 0.9999932826381133,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000650.omf",
+      "iteration": 650,
+      "mean_m": [
+        0.0033824333253774336,
+        0.001251500298851487,
+        0.999992597760185
+      ],
+      "mean_norm": 0.9999991013412771,
+      "mean_abs_mz": 0.9999925977601822,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000700.omf",
+      "iteration": 700,
+      "mean_m": [
+        0.0035435837371137163,
+        0.0013111259523872604,
+        0.999991869947025
+      ],
+      "mean_norm": 0.9999990079980644,
+      "mean_abs_mz": 0.999991869947025,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000750.omf",
+      "iteration": 750,
+      "mean_m": [
+        0.003721483424565558,
+        0.0013769488413443015,
+        0.9999910274399734
+      ],
+      "mean_norm": 0.9999989001931175,
+      "mean_abs_mz": 0.9999910274399765,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000800.omf",
+      "iteration": 800,
+      "mean_m": [
+        0.003900190687029478,
+        0.001443070537166188,
+        0.9999901398075601
+      ],
+      "mean_norm": 0.9999987868254212,
+      "mean_abs_mz": 0.9999901398075581,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000850.omf",
+      "iteration": 850,
+      "mean_m": [
+        0.004096698296173196,
+        0.001515778367596517,
+        0.9999891159336023
+      ],
+      "mean_norm": 0.9999986562524257,
+      "mean_abs_mz": 0.9999891159335924,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000900.omf",
+      "iteration": 900,
+      "mean_m": [
+        0.004295935236025894,
+        0.0015894960572361496,
+        0.999988026654904
+      ],
+      "mean_norm": 0.9999985175041197,
+      "mean_abs_mz": 0.999988026654902,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0000950.omf",
+      "iteration": 950,
+      "mean_m": [
+        0.0045139094977991,
+        0.001670146566640981,
+        0.9999867758614548
+      ],
+      "mean_norm": 0.9999983583318004,
+      "mean_abs_mz": 0.9999867758614545,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001000.omf",
+      "iteration": 1000,
+      "mean_m": [
+        0.004737249638672551,
+        0.0017527824624589353,
+        0.9999854302187252
+      ],
+      "mean_norm": 0.9999981872134712,
+      "mean_abs_mz": 0.9999854302187264,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001050.omf",
+      "iteration": 1050,
+      "mean_m": [
+        0.00497356084750818,
+        0.0018402176685257611,
+        0.9999839357970651
+      ],
+      "mean_norm": 0.9999979972783747,
+      "mean_abs_mz": 0.9999839357970646,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001100.omf",
+      "iteration": 1100,
+      "mean_m": [
+        0.0052266239023228125,
+        0.0019338510774584321,
+        0.9999822548820327
+      ],
+      "mean_norm": 0.9999977837257245,
+      "mean_abs_mz": 0.9999822548820408,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001150.omf",
+      "iteration": 1150,
+      "mean_m": [
+        0.00549517779863816,
+        0.00203321612189913,
+        0.999980379924133
+      ],
+      "mean_norm": 0.9999975455870131,
+      "mean_abs_mz": 0.9999803799241392,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001200.omf",
+      "iteration": 1200,
+      "mean_m": [
+        0.005763437353756567,
+        0.002132472281536566,
+        0.9999784132947721
+      ],
+      "mean_norm": 0.9999972958481899,
+      "mean_abs_mz": 0.9999784132947716,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001250.omf",
+      "iteration": 1250,
+      "mean_m": [
+        0.006074666509881663,
+        0.0022476272426439395,
+        0.9999760142409985
+      ],
+      "mean_norm": 0.9999969912248445,
+      "mean_abs_mz": 0.9999760142409962,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001300.omf",
+      "iteration": 1300,
+      "mean_m": [
+        0.00637439848972189,
+        0.002358528274046127,
+        0.9999735845729573
+      ],
+      "mean_norm": 0.9999966827222051,
+      "mean_abs_mz": 0.9999735845729548,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001350.omf",
+      "iteration": 1350,
+      "mean_m": [
+        0.006698449487957132,
+        0.0024784273962598635,
+        0.9999708261317097
+      ],
+      "mean_norm": 0.9999963324644923,
+      "mean_abs_mz": 0.9999708261317072,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001400.omf",
+      "iteration": 1400,
+      "mean_m": [
+        0.007040244369881436,
+        0.002604891814939049,
+        0.9999677684164743
+      ],
+      "mean_norm": 0.9999959441787645,
+      "mean_abs_mz": 0.9999677684164834,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001450.omf",
+      "iteration": 1450,
+      "mean_m": [
+        0.007393092784312934,
+        0.002735446103301119,
+        0.9999644521529716
+      ],
+      "mean_norm": 0.9999955230179254,
+      "mean_abs_mz": 0.9999644521529791,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001500.omf",
+      "iteration": 1500,
+      "mean_m": [
+        0.007770488846419551,
+        0.0028750831104418203,
+        0.9999607256355539
+      ],
+      "mean_norm": 0.9999950496944412,
+      "mean_abs_mz": 0.9999607256355485,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001550.omf",
+      "iteration": 1550,
+      "mean_m": [
+        0.008144784129257933,
+        0.003013572893927524,
+        0.9999568464230831
+      ],
+      "mean_norm": 0.9999945569044347,
+      "mean_abs_mz": 0.9999568464230779,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001600.omf",
+      "iteration": 1600,
+      "mean_m": [
+        0.008550654223408803,
+        0.0031637454841049136,
+        0.999952433644172
+      ],
+      "mean_norm": 0.9999939962439968,
+      "mean_abs_mz": 0.9999524336441702,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001650.omf",
+      "iteration": 1650,
+      "mean_m": [
+        0.009003432292640256,
+        0.0033312742075975814,
+        0.999947257519855
+      ],
+      "mean_norm": 0.9999933384789988,
+      "mean_abs_mz": 0.9999472575198499,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001700.omf",
+      "iteration": 1700,
+      "mean_m": [
+        0.009450817112079594,
+        0.0034968075361124086,
+        0.9999418806025647
+      ],
+      "mean_norm": 0.9999926550680381,
+      "mean_abs_mz": 0.999941880602565,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001750.omf",
+      "iteration": 1750,
+      "mean_m": [
+        0.009924701884697861,
+        0.0036721460382980404,
+        0.9999359006618108
+      ],
+      "mean_norm": 0.9999918948653401,
+      "mean_abs_mz": 0.9999359006618143,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001800.omf",
+      "iteration": 1800,
+      "mean_m": [
+        0.010448340866266444,
+        0.003865893888250477,
+        0.9999289524200347
+      ],
+      "mean_norm": 0.9999910113847228,
+      "mean_abs_mz": 0.9999289524200358,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001850.omf",
+      "iteration": 1850,
+      "mean_m": [
+        0.01098485892896232,
+        0.004064407230751036,
+        0.9999214625271449
+      ],
+      "mean_norm": 0.9999900588277121,
+      "mean_abs_mz": 0.9999214625271426,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001900.omf",
+      "iteration": 1900,
+      "mean_m": [
+        0.011548026222160486,
+        0.004272781098613847,
+        0.999913196892688
+      ],
+      "mean_norm": 0.9999890073836311,
+      "mean_abs_mz": 0.9999131968926864,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0001950.omf",
+      "iteration": 1950,
+      "mean_m": [
+        0.012157093242421167,
+        0.004498138303772423,
+        0.9999037921269514
+      ],
+      "mean_norm": 0.9999878107627924,
+      "mean_abs_mz": 0.999903792126949,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002000.omf",
+      "iteration": 2000,
+      "mean_m": [
+        0.012716835825667978,
+        0.004705245540949803,
+        0.9998947224437372
+      ],
+      "mean_norm": 0.9999866565209038,
+      "mean_abs_mz": 0.999894722443739,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002050.omf",
+      "iteration": 2050,
+      "mean_m": [
+        0.01335387299694919,
+        0.004940952448608244,
+        0.999883903220751
+      ],
+      "mean_norm": 0.9999852793191919,
+      "mean_abs_mz": 0.9998839032207477,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002100.omf",
+      "iteration": 2100,
+      "mean_m": [
+        0.014042316065317018,
+        0.005195680209347174,
+        0.9998716158827953
+      ],
+      "mean_norm": 0.9999837148580912,
+      "mean_abs_mz": 0.9998716158827985,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002150.omf",
+      "iteration": 2150,
+      "mean_m": [
+        0.014800799035324915,
+        0.005476323652207878,
+        0.999857362733293
+      ],
+      "mean_norm": 0.9999818996285901,
+      "mean_abs_mz": 0.9998573627332975,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002200.omf",
+      "iteration": 2200,
+      "mean_m": [
+        0.015547167569604229,
+        0.005752485250143035,
+        0.9998426046443853
+      ],
+      "mean_norm": 0.9999800195844211,
+      "mean_abs_mz": 0.9998426046443885,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002250.omf",
+      "iteration": 2250,
+      "mean_m": [
+        0.0163387865561421,
+        0.006045390487547102,
+        0.9998261575923203
+      ],
+      "mean_norm": 0.9999779238053695,
+      "mean_abs_mz": 0.9998261575923117,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002300.omf",
+      "iteration": 2300,
+      "mean_m": [
+        0.017157179192505517,
+        0.006348202931743787,
+        0.9998082946277814
+      ],
+      "mean_norm": 0.9999756469458738,
+      "mean_abs_mz": 0.9998082946277791,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002350.omf",
+      "iteration": 2350,
+      "mean_m": [
+        0.01804802798022613,
+        0.006677825695475731,
+        0.9997878565827782
+      ],
+      "mean_norm": 0.9999730410567977,
+      "mean_abs_mz": 0.9997878565827762,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002400.omf",
+      "iteration": 2400,
+      "mean_m": [
+        0.018974989808407724,
+        0.007020811697175732,
+        0.9997654902979207
+      ],
+      "mean_norm": 0.9999701883685124,
+      "mean_abs_mz": 0.9997654902979229,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002450.omf",
+      "iteration": 2450,
+      "mean_m": [
+        0.01995024290346606,
+        0.007381667224802398,
+        0.9997407478377452
+      ],
+      "mean_norm": 0.9999670315015886,
+      "mean_abs_mz": 0.9997407478377384,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002500.omf",
+      "iteration": 2500,
+      "mean_m": [
+        0.020979582033205973,
+        0.007762536685205446,
+        0.9997132859877409
+      ],
+      "mean_norm": 0.9999635263440781,
+      "mean_abs_mz": 0.9997132859877412,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002550.omf",
+      "iteration": 2550,
+      "mean_m": [
+        0.022040754851101706,
+        0.008155186673955803,
+        0.9996835260975202
+      ],
+      "mean_norm": 0.9999597263364485,
+      "mean_abs_mz": 0.9996835260975229,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002600.omf",
+      "iteration": 2600,
+      "mean_m": [
+        0.023160178693749197,
+        0.008569392312044623,
+        0.9996505380531997
+      ],
+      "mean_norm": 0.9999555123063104,
+      "mean_abs_mz": 0.9996505380531975,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002650.omf",
+      "iteration": 2650,
+      "mean_m": [
+        0.02440296820736972,
+        0.00902924771501653,
+        0.9996119963042386
+      ],
+      "mean_norm": 0.9999505864426372,
+      "mean_abs_mz": 0.9996119963042426,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002700.omf",
+      "iteration": 2700,
+      "mean_m": [
+        0.02566209689840736,
+        0.009495151624208529,
+        0.9995708887392774
+      ],
+      "mean_norm": 0.9999453298738981,
+      "mean_abs_mz": 0.999570888739281,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002750.omf",
+      "iteration": 2750,
+      "mean_m": [
+        0.026944541427999884,
+        0.009969685826110351,
+        0.9995268887334569
+      ],
+      "mean_norm": 0.9999397003066839,
+      "mean_abs_mz": 0.9995268887334634,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002800.omf",
+      "iteration": 2800,
+      "mean_m": [
+        0.028359563186823675,
+        0.01049328030516173,
+        0.9994758432907631
+      ],
+      "mean_norm": 0.999933165305308,
+      "mean_abs_mz": 0.9994758432907601,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002850.omf",
+      "iteration": 2850,
+      "mean_m": [
+        0.02983720111268436,
+        0.011040048654117457,
+        0.9994197418758265
+      ],
+      "mean_norm": 0.9999259781082136,
+      "mean_abs_mz": 0.9994197418758293,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002900.omf",
+      "iteration": 2900,
+      "mean_m": [
+        0.03145889647988366,
+        0.011640127678825924,
+        0.9993548802014078
+      ],
+      "mean_norm": 0.99991766227149,
+      "mean_abs_mz": 0.9993548802014015,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0002950.omf",
+      "iteration": 2950,
+      "mean_m": [
+        0.03308385113382911,
+        0.012241418597643,
+        0.9992864320788069
+      ],
+      "mean_norm": 0.9999088792844676,
+      "mean_abs_mz": 0.9992864320788063,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003000.omf",
+      "iteration": 3000,
+      "mean_m": [
+        0.034838785159739996,
+        0.012890813429871474,
+        0.9992086207122991
+      ],
+      "mean_norm": 0.9998988857519872,
+      "mean_abs_mz": 0.999208620712303,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003050.omf",
+      "iteration": 3050,
+      "mean_m": [
+        0.03663713041979249,
+        0.013556279985672225,
+        0.9991246930527723
+      ],
+      "mean_norm": 0.9998880958988577,
+      "mean_abs_mz": 0.9991246930527748,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003100.omf",
+      "iteration": 3100,
+      "mean_m": [
+        0.038555561390152655,
+        0.014266192736243877,
+        0.9990304804412039
+      ],
+      "mean_norm": 0.9998759705182839,
+      "mean_abs_mz": 0.9990304804412026,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003150.omf",
+      "iteration": 3150,
+      "mean_m": [
+        0.04057142282273494,
+        0.015012170278639329,
+        0.9989262726282799
+      ],
+      "mean_norm": 0.9998625424293904,
+      "mean_abs_mz": 0.9989262726282819,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003200.omf",
+      "iteration": 3200,
+      "mean_m": [
+        0.042678663679611935,
+        0.01579197556016371,
+        0.9988116277753532
+      ],
+      "mean_norm": 0.9998477497123354,
+      "mean_abs_mz": 0.9988116277753548,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003250.omf",
+      "iteration": 3250,
+      "mean_m": [
+        0.0449003315338318,
+        0.016614140131470518,
+        0.9986844269065502
+      ],
+      "mean_norm": 0.9998313127572175,
+      "mean_abs_mz": 0.9986844269065543,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003300.omf",
+      "iteration": 3300,
+      "mean_m": [
+        0.047222886751378625,
+        0.017473656384363698,
+        0.9985444947504352
+      ],
+      "mean_norm": 0.999813201401629,
+      "mean_abs_mz": 0.9985444947504369,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003350.omf",
+      "iteration": 3350,
+      "mean_m": [
+        0.049580221269259775,
+        0.0183460618174525,
+        0.9983951883741851
+      ],
+      "mean_norm": 0.9997938429966665,
+      "mean_abs_mz": 0.9983951883741825,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003400.omf",
+      "iteration": 3400,
+      "mean_m": [
+        0.05225524419621058,
+        0.019336061217272715,
+        0.9982168665903411
+      ],
+      "mean_norm": 0.9997706769828982,
+      "mean_abs_mz": 0.998216866590342,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003450.omf",
+      "iteration": 3450,
+      "mean_m": [
+        0.055121821291689604,
+        0.020396981962290495,
+        0.9980152638272146
+      ],
+      "mean_norm": 0.9997444267850598,
+      "mean_abs_mz": 0.9980152638272113,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003500.omf",
+      "iteration": 3500,
+      "mean_m": [
+        0.0579346595809185,
+        0.02143804466496783,
+        0.9978068510538638
+      ],
+      "mean_norm": 0.9997172232935879,
+      "mean_abs_mz": 0.9978068510538683,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003550.omf",
+      "iteration": 3550,
+      "mean_m": [
+        0.06087968246252746,
+        0.022528064553512032,
+        0.9975773829387979
+      ],
+      "mean_norm": 0.9996871932661169,
+      "mean_abs_mz": 0.9975773829387956,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003600.omf",
+      "iteration": 3600,
+      "mean_m": [
+        0.06418087223149477,
+        0.02374995352658631,
+        0.9973064407966465
+      ],
+      "mean_norm": 0.9996516300728897,
+      "mean_abs_mz": 0.9973064407966514,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003650.omf",
+      "iteration": 3650,
+      "mean_m": [
+        0.06776932763679872,
+        0.025078224768184585,
+        0.9969954290842188
+      ],
+      "mean_norm": 0.9996106665800906,
+      "mean_abs_mz": 0.9969954290842242,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003700.omf",
+      "iteration": 3700,
+      "mean_m": [
+        0.07126781163597612,
+        0.026373250816972917,
+        0.9966756316869106
+      ],
+      "mean_norm": 0.9995683889222079,
+      "mean_abs_mz": 0.9966756316869091,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003750.omf",
+      "iteration": 3750,
+      "mean_m": [
+        0.07522846867515978,
+        0.027839430779162597,
+        0.9962937674201711
+      ],
+      "mean_norm": 0.9995176973948962,
+      "mean_abs_mz": 0.9962937674201723,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003800.omf",
+      "iteration": 3800,
+      "mean_m": [
+        0.07938475356328008,
+        0.029378116111002606,
+        0.9958703338586591
+      ],
+      "mean_norm": 0.9994612221913821,
+      "mean_abs_mz": 0.9958703338586667,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003850.omf",
+      "iteration": 3850,
+      "mean_m": [
+        0.08364202129368173,
+        0.030954282515219176,
+        0.9954124123368163
+      ],
+      "mean_norm": 0.9993998328828781,
+      "mean_abs_mz": 0.9954124123368245,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003900.omf",
+      "iteration": 3900,
+      "mean_m": [
+        0.08820773206478934,
+        0.032644757426171636,
+        0.9948939843944996
+      ],
+      "mean_norm": 0.9993299376921468,
+      "mean_abs_mz": 0.9948939843945034,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0003950.omf",
+      "iteration": 3950,
+      "mean_m": [
+        0.09298806912041431,
+        0.03441483079300719,
+        0.9943207354612786
+      ],
+      "mean_norm": 0.9992521636431478,
+      "mean_abs_mz": 0.9943207354612829,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004000.omf",
+      "iteration": 4000,
+      "mean_m": [
+        0.09801473241849976,
+        0.03627626687701123,
+        0.9936841752834569
+      ],
+      "mean_norm": 0.9991651993130896,
+      "mean_abs_mz": 0.9936841752834552,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004050.omf",
+      "iteration": 4050,
+      "mean_m": [
+        0.10358082031955061,
+        0.03833764941340562,
+        0.9929386751783943
+      ],
+      "mean_norm": 0.9990625477744829,
+      "mean_abs_mz": 0.9929386751783895,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004100.omf",
+      "iteration": 4100,
+      "mean_m": [
+        0.10966376807186852,
+        0.04059068920697272,
+        0.9920747907066847
+      ],
+      "mean_norm": 0.9989425090733349,
+      "mean_abs_mz": 0.992074790706691,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004150.omf",
+      "iteration": 4150,
+      "mean_m": [
+        0.1157311661825888,
+        0.04283823048520515,
+        0.9911615833254335
+      ],
+      "mean_norm": 0.9988143476528888,
+      "mean_abs_mz": 0.9911615833254327,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004200.omf",
+      "iteration": 4200,
+      "mean_m": [
+        0.12215768034863804,
+        0.04521909528882488,
+        0.990137725170217
+      ],
+      "mean_norm": 0.9986691044846396,
+      "mean_abs_mz": 0.9901377251702146,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004250.omf",
+      "iteration": 4250,
+      "mean_m": [
+        0.12944581920234155,
+        0.04791955541872436,
+        0.9889054577491108
+      ],
+      "mean_norm": 0.9984921172780844,
+      "mean_abs_mz": 0.9889054577491073,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004300.omf",
+      "iteration": 4300,
+      "mean_m": [
+        0.13734921918201645,
+        0.05084846847312909,
+        0.9874827562879632
+      ],
+      "mean_norm": 0.9982848134285353,
+      "mean_abs_mz": 0.9874827562879582,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004350.omf",
+      "iteration": 4350,
+      "mean_m": [
+        0.1453443557709945,
+        0.05381190832292736,
+        0.9859508898745282
+      ],
+      "mean_norm": 0.9980580446428026,
+      "mean_abs_mz": 0.985950889874538,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004400.omf",
+      "iteration": 4400,
+      "mean_m": [
+        0.15389886382129472,
+        0.05698329507266186,
+        0.9842071599018378
+      ],
+      "mean_norm": 0.9977954148044905,
+      "mean_abs_mz": 0.9842071599018334,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004450.omf",
+      "iteration": 4450,
+      "mean_m": [
+        0.16312944986825106,
+        0.06040605778918591,
+        0.9822022384989526
+      ],
+      "mean_norm": 0.997487516986705,
+      "mean_abs_mz": 0.9822022384989545,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004500.omf",
+      "iteration": 4500,
+      "mean_m": [
+        0.1733458463377634,
+        0.06419528517816694,
+        0.9798310247911579
+      ],
+      "mean_norm": 0.9971151659788113,
+      "mean_abs_mz": 0.9798310247911569,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004550.omf",
+      "iteration": 4550,
+      "mean_m": [
+        0.18414583154342726,
+        0.06820204587506178,
+        0.977146653343205
+      ],
+      "mean_norm": 0.9966828926374678,
+      "mean_abs_mz": 0.9771466533432034,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004600.omf",
+      "iteration": 4600,
+      "mean_m": [
+        0.19665211470497493,
+        0.07284326519265322,
+        0.9738038844804083
+      ],
+      "mean_norm": 0.9961286066221562,
+      "mean_abs_mz": 0.9738038844804094,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004650.omf",
+      "iteration": 4650,
+      "mean_m": [
+        0.21024217461578865,
+        0.07788846261631029,
+        0.9698772530502456
+      ],
+      "mean_norm": 0.9954548058953748,
+      "mean_abs_mz": 0.9698772530502452,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004700.omf",
+      "iteration": 4700,
+      "mean_m": [
+        0.22529065526509903,
+        0.08347728380396963,
+        0.9651577951406564
+      ],
+      "mean_norm": 0.9946124399894862,
+      "mean_abs_mz": 0.9651577951406529,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004750.omf",
+      "iteration": 4750,
+      "mean_m": [
+        0.24194820140958176,
+        0.08966641316888463,
+        0.9594569301788122
+      ],
+      "mean_norm": 0.9935474818467684,
+      "mean_abs_mz": 0.9594569301788067,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004800.omf",
+      "iteration": 4800,
+      "mean_m": [
+        0.2607048013189292,
+        0.09663887595613259,
+        0.9524027860393549
+      ],
+      "mean_norm": 0.9921578163943136,
+      "mean_abs_mz": 0.9524027860393558,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004850.omf",
+      "iteration": 4850,
+      "mean_m": [
+        0.281816460736026,
+        0.1044910943757608,
+        0.9435988027079889
+      ],
+      "mean_norm": 0.9903118735113572,
+      "mean_abs_mz": 0.9435988027079835,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004900.omf",
+      "iteration": 4900,
+      "mean_m": [
+        0.3053995058366942,
+        0.11326776668174839,
+        0.9325793820265627
+      ],
+      "mean_norm": 0.9878272869866541,
+      "mean_abs_mz": 0.9325793820265633,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0004950.omf",
+      "iteration": 4950,
+      "mean_m": [
+        0.3339561310424529,
+        0.12390249807882774,
+        0.9173483455031057
+      ],
+      "mean_norm": 0.9840764774590963,
+      "mean_abs_mz": 0.9173483455031052,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005000.omf",
+      "iteration": 5000,
+      "mean_m": [
+        0.3670375748774867,
+        0.1362313400812207,
+        0.896656220088234
+      ],
+      "mean_norm": 0.9784007034008056,
+      "mean_abs_mz": 0.8966562200882392,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005050.omf",
+      "iteration": 5050,
+      "mean_m": [
+        0.4060111341985778,
+        0.15076725441128844,
+        0.8669624792341197
+      ],
+      "mean_norm": 0.9691231843763234,
+      "mean_abs_mz": 0.8669624792341197,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005100.omf",
+      "iteration": 5100,
+      "mean_m": [
+        0.45503459197612045,
+        0.1690666660354491,
+        0.817796571764193
+      ],
+      "mean_norm": 0.9510159043089044,
+      "mean_abs_mz": 0.8177965717641886,
+      "negative_fraction": 0.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005150.omf",
+      "iteration": 5150,
+      "mean_m": [
+        0.504521959452864,
+        0.1875568199457065,
+        0.7439885555053338
+      ],
+      "mean_norm": 0.918280425034323,
+      "mean_abs_mz": 0.7538041927633385,
+      "negative_fraction": 0.0434
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005200.omf",
+      "iteration": 5200,
+      "mean_m": [
+        0.5472477580442452,
+        0.20355104765577575,
+        0.6268444447867735
+      ],
+      "mean_norm": 0.8566487586206233,
+      "mean_abs_mz": 0.7162954053131679,
+      "negative_fraction": 0.1282
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005250.omf",
+      "iteration": 5250,
+      "mean_m": [
+        0.5682233039420792,
+        0.2114801952338428,
+        0.46870906411043395
+      ],
+      "mean_norm": 0.7663483430518238,
+      "mean_abs_mz": 0.7056886423634412,
+      "negative_fraction": 0.2208
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005300.omf",
+      "iteration": 5300,
+      "mean_m": [
+        0.5699776087518589,
+        0.21230916549676385,
+        0.3064535860444163
+      ],
+      "mean_norm": 0.6810752209792262,
+      "mean_abs_mz": 0.704084653444783,
+      "negative_fraction": 0.3086
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005350.omf",
+      "iteration": 5350,
+      "mean_m": [
+        0.5625234038673037,
+        0.2098511422334138,
+        0.1296378562663166
+      ],
+      "mean_norm": 0.6142280159455871,
+      "mean_abs_mz": 0.702288518888168,
+      "negative_fraction": 0.4044
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005400.omf",
+      "iteration": 5400,
+      "mean_m": [
+        0.5480002805474851,
+        0.20506414779214943,
+        -0.0645046069549928
+      ],
+      "mean_norm": 0.5886564842998512,
+      "mean_abs_mz": 0.6977962235887386,
+      "negative_fraction": 0.509
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005450.omf",
+      "iteration": 5450,
+      "mean_m": [
+        0.5196480305469392,
+        0.19582150292368955,
+        -0.276214036607221
+      ],
+      "mean_norm": 0.6202211949598792,
+      "mean_abs_mz": 0.6964249366850432,
+      "negative_fraction": 0.636
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005500.omf",
+      "iteration": 5500,
+      "mean_m": [
+        0.457078598009479,
+        0.17449977964170313,
+        -0.48603643091316706
+      ],
+      "mean_norm": 0.6896393477957328,
+      "mean_abs_mz": 0.75424427197704,
+      "negative_fraction": 0.7718
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005550.omf",
+      "iteration": 5550,
+      "mean_m": [
+        0.34518499071393977,
+        0.13242379628277856,
+        -0.6826329011877341
+      ],
+      "mean_norm": 0.7763223669456576,
+      "mean_abs_mz": 0.8378709057228025,
+      "negative_fraction": 0.861
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005600.omf",
+      "iteration": 5600,
+      "mean_m": [
+        0.24238045002592584,
+        0.09180189791565534,
+        -0.8177799233716786
+      ],
+      "mean_norm": 0.8578693805501367,
+      "mean_abs_mz": 0.8935405441034076,
+      "negative_fraction": 0.9237
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005650.omf",
+      "iteration": 5650,
+      "mean_m": [
+        0.16248014722804863,
+        0.059303326502081845,
+        -0.9074740635295869
+      ],
+      "mean_norm": 0.9238105102002042,
+      "mean_abs_mz": 0.9368079666543999,
+      "negative_fraction": 0.9686
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005700.omf",
+      "iteration": 5700,
+      "mean_m": [
+        0.09517442559317572,
+        0.031694118010376096,
+        -0.9633287292441415
+      ],
+      "mean_norm": 0.9685375206932249,
+      "mean_abs_mz": 0.968999303497714,
+      "negative_fraction": 0.9893
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005750.omf",
+      "iteration": 5750,
+      "mean_m": [
+        0.04626489890182032,
+        0.014191012095554137,
+        -0.9922275580686075
+      ],
+      "mean_norm": 0.9934069421367477,
+      "mean_abs_mz": 0.9922275580685982,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005800.omf",
+      "iteration": 5800,
+      "mean_m": [
+        0.016763839163332333,
+        0.004973029231107405,
+        -0.9992922240014852
+      ],
+      "mean_norm": 0.9994451992345863,
+      "mean_abs_mz": 0.9992922240014829,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005850.omf",
+      "iteration": 5850,
+      "mean_m": [
+        0.005626061079743915,
+        0.0016267735255509628,
+        -0.999940359609173
+      ],
+      "mean_norm": 0.9999575099626478,
+      "mean_abs_mz": 0.9999403596091765,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005900.omf",
+      "iteration": 5900,
+      "mean_m": [
+        0.0020813458220596934,
+        0.0005881410988877021,
+        -0.9999932210858582
+      ],
+      "mean_norm": 0.9999955600541701,
+      "mean_abs_mz": 0.9999932210858661,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0005950.omf",
+      "iteration": 5950,
+      "mean_m": [
+        0.0007737122122370386,
+        0.00021370480360471755,
+        -0.9999990749087936
+      ],
+      "mean_norm": 0.9999993970592049,
+      "mean_abs_mz": 0.9999990749087941,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0006000.omf",
+      "iteration": 6000,
+      "mean_m": [
+        0.00027278400806156415,
+        7.356877187306821e-05,
+        -0.9999997668444428
+      ],
+      "mean_norm": 0.9999998067561909,
+      "mean_abs_mz": 0.9999997668444485,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0006050.omf",
+      "iteration": 6050,
+      "mean_m": [
+        0.00010269585520598061,
+        2.7090651707987834e-05,
+        -0.9999998396007188
+      ],
+      "mean_norm": 0.9999998452408908,
+      "mean_abs_mz": 0.9999998396007214,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0006100.omf",
+      "iteration": 6100,
+      "mean_m": [
+        3.628724121197652e-05,
+        9.3524932030509e-06,
+        -0.9999998489403739
+      ],
+      "mean_norm": 0.9999998496424904,
+      "mean_abs_mz": 0.9999998489403773,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0006150.omf",
+      "iteration": 6150,
+      "mean_m": [
+        1.2760072564784608e-05,
+        3.2141104647482004e-06,
+        -0.9999998499916323
+      ],
+      "mean_norm": 0.9999998500782072,
+      "mean_abs_mz": 0.9999998499916335,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0006200.omf",
+      "iteration": 6200,
+      "mean_m": [
+        4.818871129064586e-06,
+        1.1886399249726578e-06,
+        -0.999999850108177
+      ],
+      "mean_norm": 0.9999998501204942,
+      "mean_abs_mz": 0.9999998501081678,
+      "negative_fraction": 1.0
+    },
+    {
+      "file": "result-Oxs_TimeDriver-Spin-00-0006237.omf",
+      "iteration": 6237,
+      "mean_m": [
+        2.2580804062187254e-06,
+        5.481444557753083e-07,
+        -0.9999998501223254
+      ],
+      "mean_norm": 0.9999998501250251,
+      "mean_abs_mz": 0.999999850122325,
+      "negative_fraction": 1.0
+    }
+  ],
+  "final_spin_max_difference": 0.0,
+  "max_dm_dt_deg_ns": 0.009866866581203266,
+  "minimum_mean_norm": 0.5886564842998512,
+  "passed": true
+}

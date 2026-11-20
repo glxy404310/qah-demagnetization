@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\continue_campaign.py", line 28, in <module>
+    campaign('all')
+    ~~~~~~~~^^^^^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 68, in campaign
+    check_loop(s)
+    ~~~~~~~~~~^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 21, in check_loop
+    assert sign*rows[i]['mean_m'][2]>=0.999, f'Unsaturated endpoint {s["config"]["run_id"]} stage {i}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Unsaturated endpoint square_2nm_loop stage 60

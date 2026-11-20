@@ -1,0 +1,9 @@
+{
+  "legacy_configs_mif_unchanged": 404,
+  "failed_case_still_rejected": true,
+  "predecessor_raw_revalidated": true,
+  "predecessor_sha256": "1b432f19dcd32ec70146aa9e71780365c6af14aca7c1397b29a62b3d6f0dbe2a",
+  "only_mif_change": "stage and total iteration caps 100000 -> 200000",
+  "threshold_deg_ns": 0.01,
+  "archive": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\interrupted\\rectangle_1nm_refine_b0_5000uT_s004_iteration_cap_20261120_1947"
+}

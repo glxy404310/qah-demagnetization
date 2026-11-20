@@ -1,0 +1,25 @@
+{
+  "time": "2026-11-15T21:04:18.290161+08:00",
+  "status": {
+    "phase": "M3_primary_complete",
+    "updated": "2026-11-15T21:04:18.178121+08:00"
+  },
+  "completed": {
+    "static_2nm": 9,
+    "zero_2nm": 24,
+    "loops_2nm": 3,
+    "static_1nm": 9,
+    "zero_1nm": 6,
+    "loops_1nm": 1
+  },
+  "current_paths": [
+    {
+      "run_id": "circle_1nm_loop_seeded",
+      "completed_stages": 40,
+      "total_stages": 121,
+      "last_b_T": -0.18,
+      "mean_mz": 0.9999992838080312
+    }
+  ],
+  "completed_verification_branches": 6
+}

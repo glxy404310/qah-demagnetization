@@ -1,0 +1,28 @@
+{
+  "provider": "local-windows-cpu",
+  "base": "Python 3.13.9 venv",
+  "solver": "OOMMF 2.0b0 2022-09-30 Windows x64 Tcl 8.6",
+  "solver_url": "https://math.nist.gov/oommf/dist/oommf20b0_20220930_86_x64.zip",
+  "solver_sha256": "5d018cee265143b686a4bdb9190590bc14b705ecceb8f55df79e8ce27173a5fd",
+  "tcl": "D:/Git/mingw64/bin/tclsh.exe",
+  "pip_phases": [
+    [
+      "contourpy==1.4.0",
+      "cycler==0.12.1",
+      "fonttools==4.68.0",
+      "kiwisolver==1.5.1",
+      "matplotlib==3.11.2",
+      "numpy==2.5.4",
+      "packaging==26.3",
+      "pillow==13.0.0",
+      "pyparsing==3.3.3",
+      "python-dateutil==4.0.0",
+      "pywin32==312",
+      "tzdata==2026.6"
+    ]
+  ],
+  "threads": 8,
+  "gpu": false,
+  "smoke": "python simulations/shape_comparison/validate_environment.py",
+  "token": "Administrators deny-only, privileges removed, private desktop, user-owned default DACL"
+}

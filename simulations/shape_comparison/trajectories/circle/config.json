@@ -1,0 +1,29 @@
+{
+  "source_run": "circle_2nm_loop_seeded_s040",
+  "source_config": {
+    "run_id": "circle_2nm_loop_seeded_s040",
+    "shape": "circle",
+    "cell_nm": 2,
+    "initial": "plus",
+    "fields_T": [
+      -0.2
+    ],
+    "stop": 0.01,
+    "static": false,
+    "epsilon": 0.001,
+    "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_2nm_loop_seeded_s039\\result-Oxs_TimeDriver-Spin-00-0001044.omf",
+    "predecessor_sha256": "67a558ac93dde2763f4caa4472d67bb4ff5145da10988d4c164465a35fb3752f",
+    "initial_sha256": "c22f9de4311e59fb4aff5db8bf044119e875b1389261001edeb80c0973a2c5d3",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "0b4ff31a28440e72f04b386caa4c692eb38c22dc638ac2147462f0fe8cff1ad5"
+  },
+  "source_mif_file_sha256": "136b6f341b0da257263dccbaa305efb446a9c69f14cb57d5e93b38e7615ca970",
+  "snapshot_step": 50,
+  "change": "Only add Spin archive Step 50"
+}

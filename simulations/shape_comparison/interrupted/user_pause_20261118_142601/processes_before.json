@@ -1,0 +1,58 @@
+[
+  {
+    "ProcessId": 13928,
+    "ParentProcessId": 12328,
+    "CreationDate": "2026-11-18T13:37:02.306062+08:00",
+    "Name": "python.exe",
+    "CommandLine": "\"D:\\Documents\\qah-demagnetization\\.venv\\Scripts\\python.exe\" -u simulations/shape_comparison/continue_campaign.py"
+  },
+  {
+    "ProcessId": 32244,
+    "ParentProcessId": 13928,
+    "CreationDate": "2026-11-18T13:37:02.342485+08:00",
+    "Name": "python.exe",
+    "CommandLine": "\"D:\\Documents\\qah-demagnetization\\.venv\\Scripts\\python.exe\" -u simulations/shape_comparison/continue_campaign.py"
+  },
+  {
+    "ProcessId": 6440,
+    "ParentProcessId": 9988,
+    "CreationDate": "2026-11-18T13:37:20.782812+08:00",
+    "Name": "python.exe",
+    "CommandLine": "\"D:\\Documents\\qah-demagnetization\\.venv\\Scripts\\python.exe\" -u simulations/shape_comparison/finish_report.py --wait-pid 13928"
+  },
+  {
+    "ProcessId": 8388,
+    "ParentProcessId": 6440,
+    "CreationDate": "2026-11-18T13:37:20.82045+08:00",
+    "Name": "python.exe",
+    "CommandLine": "\"D:\\Documents\\qah-demagnetization\\.venv\\Scripts\\python.exe\" -u simulations/shape_comparison/finish_report.py --wait-pid 13928"
+  },
+  {
+    "ProcessId": 30744,
+    "ParentProcessId": 32244,
+    "CreationDate": "2026-11-18T14:21:14.255459+08:00",
+    "Name": "tclsh.exe",
+    "CommandLine": "D:\\Git\\mingw64\\bin\\tclsh.exe D:\\Documents\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\oommf.tcl boxsi +fg -tk 0 -threads 8 -exitondone 1 -kill all -outdir D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s098 D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s098\\input.mif"
+  },
+  {
+    "ProcessId": 24100,
+    "ParentProcessId": 30744,
+    "CreationDate": "2026-11-18T14:21:14.351007+08:00",
+    "Name": "oxs.exe",
+    "CommandLine": "D:\\Documents\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\app\\oxs\\windows-x86_64\\oxs.exe D:/Documents/qah-demagnetization/.tools/oommf20b0/oommf/app/oxs/boxsi.tcl -tk 0 -threads 8 -exitondone 1 -kill all -outdir D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s098 D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s098\\input.mif"
+  },
+  {
+    "ProcessId": 14084,
+    "ParentProcessId": 24100,
+    "CreationDate": "2026-11-18T14:21:18.566023+08:00",
+    "Name": "omfsh.exe",
+    "CommandLine": "D:\\Documents\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\app\\omfsh\\windows-x86_64\\omfsh.exe D:/Documents/qah-demagnetization/.tools/oommf20b0/oommf/pkg/net/threads/host.tcl -tk 0 15136 11610"
+  },
+  {
+    "ProcessId": 29464,
+    "ParentProcessId": 24100,
+    "CreationDate": "2026-11-18T14:21:18.659466+08:00",
+    "Name": "omfsh.exe",
+    "CommandLine": "D:\\Documents\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\app\\omfsh\\windows-x86_64\\omfsh.exe D:/Documents/qah-demagnetization/.tools/oommf20b0/oommf/pkg/net/threads/account.tcl -tk 0 0 11614"
+  }
+]

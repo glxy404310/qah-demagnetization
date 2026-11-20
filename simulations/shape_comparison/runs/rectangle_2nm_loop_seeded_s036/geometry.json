@@ -1,0 +1,13 @@
+{
+  "shape": "rectangle",
+  "cell_nm": 2,
+  "lx_nm": 400,
+  "ly_nm": 100,
+  "nz": 2,
+  "ny": 50,
+  "nx": 200,
+  "magnetic_cells": 20000,
+  "area_nm2": 40000,
+  "volume_m3": 1.6000000000000004e-22,
+  "area_fraction_error": 0.0
+}

@@ -1,0 +1,284 @@
+{
+  "solver": "OOMMF 2.0b0",
+  "model": {
+    "size_nm": [
+      200,
+      200,
+      4
+    ],
+    "Ms_A_m": 300000.0,
+    "A_J_m": 5e-12,
+    "Ku_J_m3": 80000.0,
+    "alpha": 0.5,
+    "gamma_G_m_As": 221000.0,
+    "field_A_m": [
+      0,
+      0,
+      0
+    ],
+    "initial_m_direction": [
+      0.01,
+      0,
+      1
+    ],
+    "temperature_K": 0,
+    "precession": false,
+    "boundaries": "open"
+  },
+  "static": [
+    {
+      "cell_nm": 2,
+      "axis": "x",
+      "N_analytic": 0.029568912837833375,
+      "N_field": 0.029568912837834117,
+      "N_energy": 0.029568912837834135,
+      "abs_error": 7.424616477180734e-16,
+      "energy_J": 2.675332205164127e-19,
+      "energy_from_field_J": 2.6753322051641256e-19,
+      "mean_Hd_A_m": [
+        -8870.673851350135,
+        3.8926373235881327e-14,
+        -5.456968210637569e-16
+      ],
+      "max_uniform_m_error": 0.0,
+      "iterations": 0
+    },
+    {
+      "cell_nm": 2,
+      "axis": "y",
+      "N_analytic": 0.029568912837833375,
+      "N_field": 0.029568912837834173,
+      "N_energy": 0.029568912837834176,
+      "abs_error": 7.979727989493313e-16,
+      "energy_J": 2.675332205164131e-19,
+      "energy_from_field_J": 2.6753322051641305e-19,
+      "mean_Hd_A_m": [
+        3.8926373235881327e-14,
+        -8870.673851350199,
+        6.893969839438797e-14
+      ],
+      "max_uniform_m_error": 0.0,
+      "iterations": 0
+    },
+    {
+      "cell_nm": 2,
+      "axis": "z",
+      "N_analytic": 0.9408621743243292,
+      "N_field": 0.940862174324332,
+      "N_energy": 0.9408621743243322,
+      "abs_error": 2.7755575615628914e-15,
+      "energy_J": 8.512720401305783e-18,
+      "energy_from_field_J": 8.512720401305781e-18,
+      "mean_Hd_A_m": [
+        -5.456968210637569e-16,
+        6.893969839438797e-14,
+        -282258.65229730087
+      ],
+      "max_uniform_m_error": 0.0,
+      "iterations": 0
+    },
+    {
+      "cell_nm": 1,
+      "axis": "x",
+      "N_analytic": 0.029568912837833375,
+      "N_field": 0.029568912837834208,
+      "N_energy": 0.02956891283783422,
+      "abs_error": 8.326672684688674e-16,
+      "energy_J": 2.675332205164135e-19,
+      "energy_from_field_J": 2.675332205164134e-19,
+      "mean_Hd_A_m": [
+        -8870.673851350344,
+        1.2887539924122392e-13,
+        -2.59660737356171e-14
+      ],
+      "max_uniform_m_error": 0.0,
+      "iterations": 0
+    },
+    {
+      "cell_nm": 1,
+      "axis": "y",
+      "N_analytic": 0.029568912837833375,
+      "N_field": 0.029568912837834117,
+      "N_energy": 0.029568912837834128,
+      "abs_error": 7.424616477180734e-16,
+      "energy_J": 2.6753322051641266e-19,
+      "energy_from_field_J": 2.6753322051641256e-19,
+      "mean_Hd_A_m": [
+        1.2887539924122392e-13,
+        -8870.673851350346,
+        1.0563780961092562e-13
+      ],
+      "max_uniform_m_error": 0.0,
+      "iterations": 0
+    },
+    {
+      "cell_nm": 1,
+      "axis": "z",
+      "N_analytic": 0.9408621743243292,
+      "N_field": 0.940862174324332,
+      "N_energy": 0.9408621743243324,
+      "abs_error": 2.7755575615628914e-15,
+      "energy_J": 8.512720401305784e-18,
+      "energy_from_field_J": 8.512720401305781e-18,
+      "mean_Hd_A_m": [
+        -2.59660737356171e-14,
+        1.0563780961092562e-13,
+        -282258.65229729214
+      ],
+      "max_uniform_m_error": 0.0,
+      "iterations": 0
+    }
+  ],
+  "relaxation": {
+    "2nm_relax": {
+      "mean_m": [
+        8.950456134265486e-06,
+        -1.192839230168552e-19,
+        0.9999998468174442
+      ],
+      "mean_abs_mz": 0.9999998468174457,
+      "min_mz": 0.9999967706078149,
+      "max_mz": 0.999999999999913,
+      "negative_mz_fraction": 0.0,
+      "max_tilt_deg": 0.14561232693708695,
+      "max_norm_error": 3.3306690738754696e-16,
+      "stopping_dm_dt_deg_ns": 0.01,
+      "reported_max_dm_dt_deg_ns": 0.009987481954618056,
+      "independent_max_dm_dt_deg_ns": 0.009987481954618056,
+      "max_m_cross_H_A_m": 1.9718828517149767,
+      "initial_energy_J": 8.51317583704413e-18,
+      "final_energy_J": 8.5125818092142e-18,
+      "energy_terms_J": {
+        "demag": 8.512441767541347e-18,
+        "exchange": 1.361202037638817e-22,
+        "anisotropy": 3.921469089723334e-24,
+        "zeeman": 0.0
+      },
+      "max_recorded_energy_increase_J": -1.06010887858851e-28,
+      "demag_energy_from_field_J": 8.512441767541344e-18,
+      "iterations": 788,
+      "numerical_relaxation_time_s": 5.434777649367701e-10
+    },
+    "1nm_relax": {
+      "mean_m": [
+        8.942868856193054e-06,
+        8.535381602892134e-21,
+        0.9999998539201619
+      ],
+      "mean_abs_mz": 0.9999998539200795,
+      "min_mz": 0.9999936794548218,
+      "max_mz": 0.9999999999999988,
+      "negative_mz_fraction": 0.0,
+      "max_tilt_deg": 0.20371130407677632,
+      "max_norm_error": 3.3306690738754696e-16,
+      "stopping_dm_dt_deg_ns": 0.01,
+      "reported_max_dm_dt_deg_ns": 0.009981096394164023,
+      "independent_max_dm_dt_deg_ns": 0.009981096394164017,
+      "max_m_cross_H_A_m": 1.970622115804252,
+      "initial_energy_J": 8.513175837044132e-18,
+      "final_energy_J": 8.512564403432529e-18,
+      "energy_terms_J": {
+        "demag": 8.512407073188614e-18,
+        "exchange": 1.5359060448796612e-22,
+        "anisotropy": 3.7396394267947835e-24,
+        "zeeman": 0.0
+      },
+      "max_recorded_energy_increase_J": -2.944361698979206e-30,
+      "demag_energy_from_field_J": 8.512407073188613e-18,
+      "iterations": 3476,
+      "numerical_relaxation_time_s": 5.43558442805344e-10
+    },
+    "2nm_tight": {
+      "mean_m": [
+        4.373206448124872e-06,
+        8.098990228466718e-21,
+        0.9999998468510263
+      ],
+      "mean_abs_mz": 0.999999846851016,
+      "min_mz": 0.9999967742997061,
+      "max_mz": 0.9999999999999978,
+      "negative_mz_fraction": 0.0,
+      "max_tilt_deg": 0.14552906995497894,
+      "max_norm_error": 3.3306690738754696e-16,
+      "stopping_dm_dt_deg_ns": 0.005,
+      "reported_max_dm_dt_deg_ns": 0.004975766457452874,
+      "independent_max_dm_dt_deg_ns": 0.004975766457452874,
+      "max_m_cross_H_A_m": 0.9823926186973643,
+      "initial_energy_J": 8.51317583704413e-18,
+      "final_energy_J": 8.512581808922897e-18,
+      "energy_terms_J": {
+        "demag": 8.512441768115542e-18,
+        "exchange": 1.3612019766061627e-22,
+        "anisotropy": 3.920609694593312e-24,
+        "zeeman": 0.0
+      },
+      "max_recorded_energy_increase_J": -3.3635981292734197e-29,
+      "demag_energy_from_field_J": 8.51244176811554e-18,
+      "iterations": 867,
+      "numerical_relaxation_time_s": 5.995999602044669e-10
+    }
+  },
+  "mesh_check": {
+    "abs_mean_mz_change": 7.102717636264799e-09,
+    "relative_total_energy_change": 2.044712410498306e-06,
+    "max_tilt_change_deg": 0.05809897713968937,
+    "note": "One mesh refinement; sufficient for this near-uniform baseline, not a universal convergence claim."
+  },
+  "tolerance_check": {
+    "abs_mean_mz_change": 3.3582026048861735e-11,
+    "relative_total_energy_change": 3.4220182243416275e-11
+  },
+  "checks": {
+    "2nm_x_N": true,
+    "2nm_x_field_energy": true,
+    "2nm_x_frozen": true,
+    "2nm_y_N": true,
+    "2nm_y_field_energy": true,
+    "2nm_y_frozen": true,
+    "2nm_z_N": true,
+    "2nm_z_field_energy": true,
+    "2nm_z_frozen": true,
+    "2nm_trace": true,
+    "2nm_xy_symmetry": true,
+    "1nm_x_N": true,
+    "1nm_x_field_energy": true,
+    "1nm_x_frozen": true,
+    "1nm_y_N": true,
+    "1nm_y_field_energy": true,
+    "1nm_y_frozen": true,
+    "1nm_z_N": true,
+    "1nm_z_field_energy": true,
+    "1nm_z_frozen": true,
+    "1nm_trace": true,
+    "1nm_xy_symmetry": true,
+    "2nm_relax_converged": true,
+    "2nm_relax_independent_RHS": true,
+    "2nm_relax_unit_m": true,
+    "2nm_relax_energy_decreased": true,
+    "2nm_relax_energy_monotonic": true,
+    "2nm_relax_energy_sum": true,
+    "2nm_relax_demag_energy": true,
+    "2nm_relax_iteration_limit_not_hit": true,
+    "1nm_relax_converged": true,
+    "1nm_relax_independent_RHS": true,
+    "1nm_relax_unit_m": true,
+    "1nm_relax_energy_decreased": true,
+    "1nm_relax_energy_monotonic": true,
+    "1nm_relax_energy_sum": true,
+    "1nm_relax_demag_energy": true,
+    "1nm_relax_iteration_limit_not_hit": true,
+    "2nm_tight_converged": true,
+    "2nm_tight_independent_RHS": true,
+    "2nm_tight_unit_m": true,
+    "2nm_tight_energy_decreased": true,
+    "2nm_tight_energy_monotonic": true,
+    "2nm_tight_energy_sum": true,
+    "2nm_tight_demag_energy": true,
+    "2nm_tight_iteration_limit_not_hit": true,
+    "mesh_mean_mz": true,
+    "mesh_total_energy": true,
+    "tighter_tolerance_mean_mz": true,
+    "tighter_tolerance_energy": true
+  },
+  "all_passed": true
+}

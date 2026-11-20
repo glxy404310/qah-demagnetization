@@ -1,0 +1,23 @@
+{
+  "run_id": "square_2nm_static_x",
+  "shape": "square",
+  "cell_nm": 2,
+  "initial": "x",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": true,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "b7b006108c23fdd924d342486a8cf0ec60fb7a05a9693adc46b23341af33ee03",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "e0911b7975d91f0dcdec10b5df08ec5889a6b1555cecf2bd67115c2c75d2e344"
+}

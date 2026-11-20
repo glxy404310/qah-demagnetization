@@ -1,0 +1,9 @@
+{
+  "accepted": false,
+  "predecessor_verified": true,
+  "last_max_dm_dt_deg_ns": 0.095296533564427,
+  "recorded": "2026-11-19T13:19:05.6039278+08:00",
+  "last_iteration": 4900,
+  "archive": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\interrupted\\square_1nm_refine_b0_5000uT_s004_shutdown_20261119_131904",
+  "reason": "System shutdown events 1074 at 01:20:18 and 13 at 01:20:33; solver exit 1073807364"
+}

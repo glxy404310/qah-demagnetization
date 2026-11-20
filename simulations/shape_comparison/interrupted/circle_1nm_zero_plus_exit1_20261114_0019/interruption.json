@@ -1,0 +1,5 @@
+{
+  "reason": "Launcher exited 1 before convergence. Last ODT row: iteration 1800, max dm/dt 0.243041314 deg/ns > 0.01. No final vector outputs. Later Net_Thread Cache dropped warning. Exact external/IPC cause undetermined; numerical failure not established. No OOMMF processes alive before retry.",
+  "archived": "2026-11-14T00:18:32.2679415+08:00",
+  "action": "Archive complete failed attempt; rerun identical inputs with unchanged solver and acceptance settings."
+}

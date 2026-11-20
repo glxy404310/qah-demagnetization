@@ -1,0 +1,24 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 376 runs, 2388 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 376 runs, 2388 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START square_1nm_refine_b0_10000uT_s002: 1 stages
+PASS square_1nm_refine_b0_10000uT_s002: 2386.1s, mz=-0.99999986
+START square_1nm_refine_b0_10000uT_s003: 22 stages
+PASS square_1nm_refine_b0_10000uT_s003: 140.3s, mz=-0.99999986
+PATH PASS square_1nm_refine_b0_10000uT: 25 stages
+START square_1nm_refine_b0_5000uT_s000: 1 stages
+PASS square_1nm_refine_b0_5000uT_s000: 723.4s, mz=0.99999985
+START square_1nm_refine_b0_5000uT_s001: 1 stages
+PASS square_1nm_refine_b0_5000uT_s001: 776.7s, mz=0.99999984
+START square_1nm_refine_b0_5000uT_s002: 1 stages
+PASS square_1nm_refine_b0_5000uT_s002: 1039.1s, mz=0.99999981
+START square_1nm_refine_b0_5000uT_s003: 1 stages
+PASS square_1nm_refine_b0_5000uT_s003: 236.7s, mz=0.99999910
+START square_1nm_refine_b0_5000uT_s004: 1 stages

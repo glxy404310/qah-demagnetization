@@ -1,0 +1,29 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 336 runs, 2115 checks passed
+REPORT {"pending": ["三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 336 runs, 2115 checks passed
+REPORT {"pending": ["三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START circle_1nm_loop_seeded_s040: 1 stages
+PASS circle_1nm_loop_seeded_s040: 1244.2s, mz=-0.99999987
+START circle_1nm_loop_seeded_s041: 50 stages
+PASS circle_1nm_loop_seeded_s041: 82.7s, mz=-0.99999987
+START circle_1nm_loop_seeded_s091: 1 stages
+PASS circle_1nm_loop_seeded_s091: 110.9s, mz=-0.99999987
+START circle_1nm_loop_seeded_s092: 1 stages
+PASS circle_1nm_loop_seeded_s092: 123.2s, mz=-0.99999987
+START circle_1nm_loop_seeded_s093: 1 stages
+PASS circle_1nm_loop_seeded_s093: 139.8s, mz=-0.99999987
+START circle_1nm_loop_seeded_s094: 1 stages
+PASS circle_1nm_loop_seeded_s094: 162.9s, mz=-0.99999987
+START circle_1nm_loop_seeded_s095: 1 stages
+PASS circle_1nm_loop_seeded_s095: 190.2s, mz=-0.99999987
+START circle_1nm_loop_seeded_s096: 1 stages
+PASS circle_1nm_loop_seeded_s096: 247.8s, mz=-0.99999987
+START circle_1nm_loop_seeded_s097: 1 stages
+PASS circle_1nm_loop_seeded_s097: 324.8s, mz=-0.99999986
+START circle_1nm_loop_seeded_s098: 1 stages

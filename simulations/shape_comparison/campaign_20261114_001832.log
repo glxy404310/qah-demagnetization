@@ -1,0 +1,25 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 293 runs, 1837 checks passed
+REPORT {"pending": ["1/2 nm三轴固定态", "1 nm代表零场态", "circle零场停止阈值复核", "rectangle零场停止阈值复核", "三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 293 runs, 1837 checks passed
+REPORT {"pending": ["1/2 nm三轴固定态", "1 nm代表零场态", "circle零场停止阈值复核", "rectangle零场停止阈值复核", "三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START circle_1nm_zero_plus: 1 stages
+PASS circle_1nm_zero_plus: 182.8s, mz=0.99999987
+START circle_1nm_zero_domains: 1 stages
+PASS circle_1nm_zero_domains: 146.7s, mz=0.00000000
+START circle_2nm_zero_plus_tight: 1 stages
+PASS circle_2nm_zero_plus_tight: 9.6s, mz=0.99999986
+START rectangle_1nm_static_x: 1 stages
+PASS rectangle_1nm_static_x: 4.9s, mz=0.00000000
+START rectangle_1nm_static_y: 1 stages
+PASS rectangle_1nm_static_y: 4.9s, mz=0.00000000
+START rectangle_1nm_static_z: 1 stages
+PASS rectangle_1nm_static_z: 4.9s, mz=1.00000000
+START rectangle_1nm_zero_plus: 1 stages
+PASS rectangle_1nm_zero_plus: 157.7s, mz=0.99999982
+START rectangle_1nm_zero_domains: 1 stages

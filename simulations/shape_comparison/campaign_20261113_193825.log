@@ -1,0 +1,329 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+TRAJECTORY START square: square_2nm_loop_seeded_s040
+TRAJECTORY PASS square: 126 snapshots, final error=0
+TRAJECTORY START circle: circle_2nm_loop_seeded_s040
+TRAJECTORY PASS circle: 123 snapshots, final error=0
+TRAJECTORY START rectangle: rectangle_2nm_loop_seeded_s040
+TRAJECTORY PASS rectangle: 136 snapshots, final error=0
+OUTPUT AUDIT 119 runs, 742 checks passed
+REPORT {"pending": ["1/2 nm三轴固定态", "1 nm代表零场态", "square零场停止阈值复核", "circle零场停止阈值复核", "rectangle零场停止阈值复核", "三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START square_2nm_refine_b0_10000uT_s000: 1 stages
+PASS square_2nm_refine_b0_10000uT_s000: 21.9s, mz=0.99999983
+START square_2nm_refine_b0_10000uT_s001: 1 stages
+PASS square_2nm_refine_b0_10000uT_s001: 9.5s, mz=0.99999923
+START square_2nm_refine_b0_10000uT_s002: 1 stages
+PASS square_2nm_refine_b0_10000uT_s002: 55.5s, mz=-0.99999985
+START square_2nm_refine_b0_10000uT_s003: 22 stages
+PASS square_2nm_refine_b0_10000uT_s003: 8.0s, mz=-0.99999986
+PATH PASS square_2nm_refine_b0_10000uT: 25 stages
+START square_2nm_refine_b0_5000uT_s000: 1 stages
+PASS square_2nm_refine_b0_5000uT_s000: 20.2s, mz=0.99999984
+START square_2nm_refine_b0_5000uT_s001: 1 stages
+PASS square_2nm_refine_b0_5000uT_s001: 22.3s, mz=0.99999983
+START square_2nm_refine_b0_5000uT_s002: 1 stages
+PASS square_2nm_refine_b0_5000uT_s002: 27.8s, mz=0.99999981
+START square_2nm_refine_b0_5000uT_s003: 1 stages
+PASS square_2nm_refine_b0_5000uT_s003: 10.0s, mz=0.99999909
+START square_2nm_refine_b0_5000uT_s004: 1 stages
+PASS square_2nm_refine_b0_5000uT_s004: 101.0s, mz=-0.99999985
+START square_2nm_refine_b0_5000uT_s005: 26 stages
+PASS square_2nm_refine_b0_5000uT_s005: 9.0s, mz=-0.99999986
+PATH PASS square_2nm_refine_b0_5000uT: 31 stages
+START square_2nm_refine_b0_5000uT_tight_s000: 1 stages
+PASS square_2nm_refine_b0_5000uT_tight_s000: 24.9s, mz=0.99999984
+START square_2nm_refine_b0_5000uT_tight_s001: 1 stages
+PASS square_2nm_refine_b0_5000uT_tight_s001: 30.8s, mz=0.99999984
+START square_2nm_refine_b0_5000uT_tight_s002: 1 stages
+PASS square_2nm_refine_b0_5000uT_tight_s002: 39.6s, mz=0.99999983
+START square_2nm_refine_b0_5000uT_tight_s003: 1 stages
+PASS square_2nm_refine_b0_5000uT_tight_s003: 11.9s, mz=0.99999926
+START square_2nm_refine_b0_5000uT_tight_s004: 1 stages
+PASS square_2nm_refine_b0_5000uT_tight_s004: 111.9s, mz=-0.99999985
+START square_2nm_refine_b0_5000uT_tight_s005: 26 stages
+PASS square_2nm_refine_b0_5000uT_tight_s005: 9.2s, mz=-0.99999986
+PATH PASS square_2nm_refine_b0_5000uT_tight: 31 stages
+START square_2nm_perturb_b0_eps0.0001_s000: 1 stages
+PASS square_2nm_perturb_b0_eps0.0001_s000: 6.6s, mz=0.99999898
+START square_2nm_perturb_b0_eps0.0001_s001: 1 stages
+PASS square_2nm_perturb_b0_eps0.0001_s001: 111.8s, mz=-0.99999985
+PATH PASS square_2nm_perturb_b0_eps0.0001: 2 stages
+START square_2nm_perturb_b0_eps0.001_s000: 1 stages
+PASS square_2nm_perturb_b0_eps0.001_s000: 12.2s, mz=0.99999755
+START square_2nm_perturb_b0_eps0.001_s001: 1 stages
+PASS square_2nm_perturb_b0_eps0.001_s001: 98.4s, mz=-0.99999985
+PATH PASS square_2nm_perturb_b0_eps0.001: 2 stages
+START square_2nm_perturb_b0_eps0.01_s000: 1 stages
+PASS square_2nm_perturb_b0_eps0.01_s000: 249.6s, mz=0.99999642
+START square_2nm_perturb_b0_eps0.01_s001: 1 stages
+PASS square_2nm_perturb_b0_eps0.01_s001: 64.0s, mz=-0.99999985
+PATH PASS square_2nm_perturb_b0_eps0.01: 2 stages
+START square_2nm_refine_b1_10000uT_s000: 1 stages
+PASS square_2nm_refine_b1_10000uT_s000: 22.1s, mz=-0.99999983
+START square_2nm_refine_b1_10000uT_s001: 1 stages
+PASS square_2nm_refine_b1_10000uT_s001: 9.6s, mz=-0.99999923
+START square_2nm_refine_b1_10000uT_s002: 1 stages
+PASS square_2nm_refine_b1_10000uT_s002: 56.7s, mz=0.99999985
+START square_2nm_refine_b1_10000uT_s003: 22 stages
+PASS square_2nm_refine_b1_10000uT_s003: 8.1s, mz=0.99999986
+PATH PASS square_2nm_refine_b1_10000uT: 25 stages
+START square_2nm_refine_b1_5000uT_s000: 1 stages
+PASS square_2nm_refine_b1_5000uT_s000: 19.0s, mz=-0.99999984
+START square_2nm_refine_b1_5000uT_s001: 1 stages
+PASS square_2nm_refine_b1_5000uT_s001: 22.8s, mz=-0.99999983
+START square_2nm_refine_b1_5000uT_s002: 1 stages
+PASS square_2nm_refine_b1_5000uT_s002: 28.6s, mz=-0.99999981
+START square_2nm_refine_b1_5000uT_s003: 1 stages
+PASS square_2nm_refine_b1_5000uT_s003: 10.6s, mz=-0.99999909
+START square_2nm_refine_b1_5000uT_s004: 1 stages
+PASS square_2nm_refine_b1_5000uT_s004: 103.3s, mz=0.99999985
+START square_2nm_refine_b1_5000uT_s005: 26 stages
+PASS square_2nm_refine_b1_5000uT_s005: 9.3s, mz=0.99999986
+PATH PASS square_2nm_refine_b1_5000uT: 31 stages
+START square_2nm_refine_b1_5000uT_tight_s000: 1 stages
+PASS square_2nm_refine_b1_5000uT_tight_s000: 22.6s, mz=-0.99999984
+START square_2nm_refine_b1_5000uT_tight_s001: 1 stages
+PASS square_2nm_refine_b1_5000uT_tight_s001: 27.5s, mz=-0.99999984
+START square_2nm_refine_b1_5000uT_tight_s002: 1 stages
+PASS square_2nm_refine_b1_5000uT_tight_s002: 38.5s, mz=-0.99999983
+START square_2nm_refine_b1_5000uT_tight_s003: 1 stages
+PASS square_2nm_refine_b1_5000uT_tight_s003: 11.9s, mz=-0.99999926
+START square_2nm_refine_b1_5000uT_tight_s004: 1 stages
+PASS square_2nm_refine_b1_5000uT_tight_s004: 114.6s, mz=0.99999985
+START square_2nm_refine_b1_5000uT_tight_s005: 26 stages
+PASS square_2nm_refine_b1_5000uT_tight_s005: 10.7s, mz=0.99999986
+PATH PASS square_2nm_refine_b1_5000uT_tight: 31 stages
+START square_2nm_perturb_b1_eps0.0001_s000: 1 stages
+PASS square_2nm_perturb_b1_eps0.0001_s000: 6.9s, mz=-0.99999898
+START square_2nm_perturb_b1_eps0.0001_s001: 1 stages
+PASS square_2nm_perturb_b1_eps0.0001_s001: 136.4s, mz=0.99999985
+PATH PASS square_2nm_perturb_b1_eps0.0001: 2 stages
+START square_2nm_perturb_b1_eps0.001_s000: 1 stages
+PASS square_2nm_perturb_b1_eps0.001_s000: 12.2s, mz=-0.99999755
+START square_2nm_perturb_b1_eps0.001_s001: 1 stages
+PASS square_2nm_perturb_b1_eps0.001_s001: 114.3s, mz=0.99999985
+PATH PASS square_2nm_perturb_b1_eps0.001: 2 stages
+START square_2nm_perturb_b1_eps0.01_s000: 1 stages
+PASS square_2nm_perturb_b1_eps0.01_s000: 286.1s, mz=-0.99999642
+START square_2nm_perturb_b1_eps0.01_s001: 1 stages
+PASS square_2nm_perturb_b1_eps0.01_s001: 79.2s, mz=0.99999985
+PATH PASS square_2nm_perturb_b1_eps0.01: 2 stages
+START circle_2nm_refine_b0_10000uT_s000: 1 stages
+PASS circle_2nm_refine_b0_10000uT_s000: 29.1s, mz=0.99999985
+START circle_2nm_refine_b0_10000uT_s001: 1 stages
+PASS circle_2nm_refine_b0_10000uT_s001: 10.8s, mz=0.99999920
+START circle_2nm_refine_b0_10000uT_s002: 1 stages
+PASS circle_2nm_refine_b0_10000uT_s002: 69.4s, mz=-0.99999986
+START circle_2nm_refine_b0_10000uT_s003: 22 stages
+PASS circle_2nm_refine_b0_10000uT_s003: 9.5s, mz=-0.99999987
+PATH PASS circle_2nm_refine_b0_10000uT: 25 stages
+START circle_2nm_refine_b0_5000uT_s000: 1 stages
+PASS circle_2nm_refine_b0_5000uT_s000: 24.5s, mz=0.99999985
+START circle_2nm_refine_b0_5000uT_s001: 1 stages
+PASS circle_2nm_refine_b0_5000uT_s001: 28.1s, mz=0.99999985
+START circle_2nm_refine_b0_5000uT_s002: 1 stages
+PASS circle_2nm_refine_b0_5000uT_s002: 39.2s, mz=0.99999982
+START circle_2nm_refine_b0_5000uT_s003: 1 stages
+PASS circle_2nm_refine_b0_5000uT_s003: 11.0s, mz=0.99999903
+START circle_2nm_refine_b0_5000uT_s004: 1 stages
+PASS circle_2nm_refine_b0_5000uT_s004: 124.9s, mz=-0.99999986
+START circle_2nm_refine_b0_5000uT_s005: 26 stages
+PASS circle_2nm_refine_b0_5000uT_s005: 9.8s, mz=-0.99999987
+PATH PASS circle_2nm_refine_b0_5000uT: 31 stages
+START circle_2nm_refine_b0_5000uT_tight_s000: 1 stages
+PASS circle_2nm_refine_b0_5000uT_tight_s000: 30.4s, mz=0.99999986
+START circle_2nm_refine_b0_5000uT_tight_s001: 1 stages
+PASS circle_2nm_refine_b0_5000uT_tight_s001: 37.3s, mz=0.99999986
+START circle_2nm_refine_b0_5000uT_tight_s002: 1 stages
+PASS circle_2nm_refine_b0_5000uT_tight_s002: 51.8s, mz=0.99999985
+START circle_2nm_refine_b0_5000uT_tight_s003: 1 stages
+PASS circle_2nm_refine_b0_5000uT_tight_s003: 14.0s, mz=0.99999921
+START circle_2nm_refine_b0_5000uT_tight_s004: 1 stages
+PASS circle_2nm_refine_b0_5000uT_tight_s004: 127.6s, mz=-0.99999986
+START circle_2nm_refine_b0_5000uT_tight_s005: 26 stages
+PASS circle_2nm_refine_b0_5000uT_tight_s005: 10.6s, mz=-0.99999987
+PATH PASS circle_2nm_refine_b0_5000uT_tight: 31 stages
+START circle_2nm_perturb_b0_eps0.0001_s000: 1 stages
+PASS circle_2nm_perturb_b0_eps0.0001_s000: 6.7s, mz=0.99999890
+START circle_2nm_perturb_b0_eps0.0001_s001: 1 stages
+PASS circle_2nm_perturb_b0_eps0.0001_s001: 134.8s, mz=-0.99999986
+PATH PASS circle_2nm_perturb_b0_eps0.0001: 2 stages
+START circle_2nm_perturb_b0_eps0.001_s000: 1 stages
+PASS circle_2nm_perturb_b0_eps0.001_s000: 12.5s, mz=0.99999729
+START circle_2nm_perturb_b0_eps0.001_s001: 1 stages
+PASS circle_2nm_perturb_b0_eps0.001_s001: 115.6s, mz=-0.99999986
+PATH PASS circle_2nm_perturb_b0_eps0.001: 2 stages
+START circle_2nm_perturb_b0_eps0.01_s000: 1 stages
+PASS circle_2nm_perturb_b0_eps0.01_s000: 291.1s, mz=0.99997813
+START circle_2nm_perturb_b0_eps0.01_s001: 1 stages
+PASS circle_2nm_perturb_b0_eps0.01_s001: 71.7s, mz=-0.99999986
+PATH PASS circle_2nm_perturb_b0_eps0.01: 2 stages
+START circle_2nm_refine_b1_10000uT_s000: 1 stages
+PASS circle_2nm_refine_b1_10000uT_s000: 27.7s, mz=-0.99999985
+START circle_2nm_refine_b1_10000uT_s001: 1 stages
+PASS circle_2nm_refine_b1_10000uT_s001: 11.1s, mz=-0.99999920
+START circle_2nm_refine_b1_10000uT_s002: 1 stages
+PASS circle_2nm_refine_b1_10000uT_s002: 66.2s, mz=0.99999986
+START circle_2nm_refine_b1_10000uT_s003: 22 stages
+PASS circle_2nm_refine_b1_10000uT_s003: 8.5s, mz=0.99999987
+PATH PASS circle_2nm_refine_b1_10000uT: 25 stages
+START circle_2nm_refine_b1_5000uT_s000: 1 stages
+PASS circle_2nm_refine_b1_5000uT_s000: 19.2s, mz=-0.99999985
+START circle_2nm_refine_b1_5000uT_s001: 1 stages
+PASS circle_2nm_refine_b1_5000uT_s001: 23.5s, mz=-0.99999985
+START circle_2nm_refine_b1_5000uT_s002: 1 stages
+PASS circle_2nm_refine_b1_5000uT_s002: 29.4s, mz=-0.99999982
+START circle_2nm_refine_b1_5000uT_s003: 1 stages
+PASS circle_2nm_refine_b1_5000uT_s003: 9.8s, mz=-0.99999903
+START circle_2nm_refine_b1_5000uT_s004: 1 stages
+PASS circle_2nm_refine_b1_5000uT_s004: 109.7s, mz=0.99999986
+START circle_2nm_refine_b1_5000uT_s005: 26 stages
+PASS circle_2nm_refine_b1_5000uT_s005: 10.1s, mz=0.99999987
+PATH PASS circle_2nm_refine_b1_5000uT: 31 stages
+START circle_2nm_refine_b1_5000uT_tight_s000: 1 stages
+PASS circle_2nm_refine_b1_5000uT_tight_s000: 28.1s, mz=-0.99999986
+START circle_2nm_refine_b1_5000uT_tight_s001: 1 stages
+PASS circle_2nm_refine_b1_5000uT_tight_s001: 36.9s, mz=-0.99999986
+START circle_2nm_refine_b1_5000uT_tight_s002: 1 stages
+PASS circle_2nm_refine_b1_5000uT_tight_s002: 54.9s, mz=-0.99999985
+START circle_2nm_refine_b1_5000uT_tight_s003: 1 stages
+PASS circle_2nm_refine_b1_5000uT_tight_s003: 17.0s, mz=-0.99999921
+START circle_2nm_refine_b1_5000uT_tight_s004: 1 stages
+PASS circle_2nm_refine_b1_5000uT_tight_s004: 148.2s, mz=0.99999986
+START circle_2nm_refine_b1_5000uT_tight_s005: 26 stages
+PASS circle_2nm_refine_b1_5000uT_tight_s005: 11.9s, mz=0.99999987
+PATH PASS circle_2nm_refine_b1_5000uT_tight: 31 stages
+START circle_2nm_perturb_b1_eps0.0001_s000: 1 stages
+PASS circle_2nm_perturb_b1_eps0.0001_s000: 7.2s, mz=-0.99999890
+START circle_2nm_perturb_b1_eps0.0001_s001: 1 stages
+PASS circle_2nm_perturb_b1_eps0.0001_s001: 155.5s, mz=0.99999986
+PATH PASS circle_2nm_perturb_b1_eps0.0001: 2 stages
+START circle_2nm_perturb_b1_eps0.001_s000: 1 stages
+PASS circle_2nm_perturb_b1_eps0.001_s000: 13.1s, mz=-0.99999729
+START circle_2nm_perturb_b1_eps0.001_s001: 1 stages
+PASS circle_2nm_perturb_b1_eps0.001_s001: 131.5s, mz=0.99999986
+PATH PASS circle_2nm_perturb_b1_eps0.001: 2 stages
+START circle_2nm_perturb_b1_eps0.01_s000: 1 stages
+PASS circle_2nm_perturb_b1_eps0.01_s000: 339.8s, mz=-0.99997813
+START circle_2nm_perturb_b1_eps0.01_s001: 1 stages
+PASS circle_2nm_perturb_b1_eps0.01_s001: 83.7s, mz=0.99999986
+PATH PASS circle_2nm_perturb_b1_eps0.01: 2 stages
+START rectangle_2nm_refine_b0_10000uT_s000: 1 stages
+PASS rectangle_2nm_refine_b0_10000uT_s000: 27.9s, mz=0.99999979
+START rectangle_2nm_refine_b0_10000uT_s001: 1 stages
+PASS rectangle_2nm_refine_b0_10000uT_s001: 18.1s, mz=0.99999934
+START rectangle_2nm_refine_b0_10000uT_s002: 1 stages
+PASS rectangle_2nm_refine_b0_10000uT_s002: 90.1s, mz=-0.99999981
+START rectangle_2nm_refine_b0_10000uT_s003: 22 stages
+PASS rectangle_2nm_refine_b0_10000uT_s003: 9.9s, mz=-0.99999982
+PATH PASS rectangle_2nm_refine_b0_10000uT: 25 stages
+START rectangle_2nm_refine_b0_5000uT_s000: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_s000: 23.7s, mz=0.99999980
+START rectangle_2nm_refine_b0_5000uT_s001: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_s001: 28.6s, mz=0.99999979
+START rectangle_2nm_refine_b0_5000uT_s002: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_s002: 36.4s, mz=0.99999977
+START rectangle_2nm_refine_b0_5000uT_s003: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_s003: 18.2s, mz=0.99999924
+START rectangle_2nm_refine_b0_5000uT_s004: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_s004: 170.1s, mz=-0.99999981
+START rectangle_2nm_refine_b0_5000uT_s005: 26 stages
+PASS rectangle_2nm_refine_b0_5000uT_s005: 10.9s, mz=-0.99999982
+PATH PASS rectangle_2nm_refine_b0_5000uT: 31 stages
+START rectangle_2nm_refine_b0_5000uT_tight_s000: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_tight_s000: 30.8s, mz=0.99999980
+START rectangle_2nm_refine_b0_5000uT_tight_s001: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_tight_s001: 35.8s, mz=0.99999980
+START rectangle_2nm_refine_b0_5000uT_tight_s002: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_tight_s002: 49.7s, mz=0.99999980
+START rectangle_2nm_refine_b0_5000uT_tight_s003: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_tight_s003: 54.4s, mz=0.99999957
+START rectangle_2nm_refine_b0_5000uT_tight_s004: 1 stages
+PASS rectangle_2nm_refine_b0_5000uT_tight_s004: 179.9s, mz=-0.99999981
+START rectangle_2nm_refine_b0_5000uT_tight_s005: 26 stages
+PASS rectangle_2nm_refine_b0_5000uT_tight_s005: 11.3s, mz=-0.99999982
+PATH PASS rectangle_2nm_refine_b0_5000uT_tight: 31 stages
+START rectangle_2nm_perturb_b0_eps0.0001_s000: 1 stages
+PASS rectangle_2nm_perturb_b0_eps0.0001_s000: 8.8s, mz=0.99999917
+START rectangle_2nm_perturb_b0_eps0.0001_s001: 1 stages
+PASS rectangle_2nm_perturb_b0_eps0.0001_s001: 191.9s, mz=-0.99999981
+PATH PASS rectangle_2nm_perturb_b0_eps0.0001: 2 stages
+START rectangle_2nm_perturb_b0_eps0.001_s000: 1 stages
+PASS rectangle_2nm_perturb_b0_eps0.001_s000: 48.1s, mz=0.99999887
+START rectangle_2nm_perturb_b0_eps0.001_s001: 1 stages
+PASS rectangle_2nm_perturb_b0_eps0.001_s001: 168.9s, mz=-0.99999981
+PATH PASS rectangle_2nm_perturb_b0_eps0.001: 2 stages
+START rectangle_2nm_perturb_b0_eps0.01_s000: 1 stages
+PASS rectangle_2nm_perturb_b0_eps0.01_s000: 235.8s, mz=0.99999887
+START rectangle_2nm_perturb_b0_eps0.01_s001: 1 stages
+PASS rectangle_2nm_perturb_b0_eps0.01_s001: 112.7s, mz=-0.99999981
+PATH PASS rectangle_2nm_perturb_b0_eps0.01: 2 stages
+START rectangle_2nm_refine_b1_10000uT_s000: 1 stages
+PASS rectangle_2nm_refine_b1_10000uT_s000: 28.7s, mz=-0.99999979
+START rectangle_2nm_refine_b1_10000uT_s001: 1 stages
+PASS rectangle_2nm_refine_b1_10000uT_s001: 18.6s, mz=-0.99999934
+START rectangle_2nm_refine_b1_10000uT_s002: 1 stages
+PASS rectangle_2nm_refine_b1_10000uT_s002: 89.6s, mz=0.99999981
+START rectangle_2nm_refine_b1_10000uT_s003: 22 stages
+PASS rectangle_2nm_refine_b1_10000uT_s003: 8.8s, mz=0.99999982
+PATH PASS rectangle_2nm_refine_b1_10000uT: 25 stages
+START rectangle_2nm_refine_b1_5000uT_s000: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_s000: 17.6s, mz=-0.99999980
+START rectangle_2nm_refine_b1_5000uT_s001: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_s001: 23.2s, mz=-0.99999979
+START rectangle_2nm_refine_b1_5000uT_s002: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_s002: 26.7s, mz=-0.99999977
+START rectangle_2nm_refine_b1_5000uT_s003: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_s003: 14.7s, mz=-0.99999924
+START rectangle_2nm_refine_b1_5000uT_s004: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_s004: 129.1s, mz=0.99999981
+START rectangle_2nm_refine_b1_5000uT_s005: 26 stages
+PASS rectangle_2nm_refine_b1_5000uT_s005: 8.8s, mz=0.99999982
+PATH PASS rectangle_2nm_refine_b1_5000uT: 31 stages
+START rectangle_2nm_refine_b1_5000uT_tight_s000: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_tight_s000: 24.0s, mz=-0.99999980
+START rectangle_2nm_refine_b1_5000uT_tight_s001: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_tight_s001: 27.4s, mz=-0.99999980
+START rectangle_2nm_refine_b1_5000uT_tight_s002: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_tight_s002: 38.0s, mz=-0.99999980
+START rectangle_2nm_refine_b1_5000uT_tight_s003: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_tight_s003: 41.9s, mz=-0.99999957
+START rectangle_2nm_refine_b1_5000uT_tight_s004: 1 stages
+PASS rectangle_2nm_refine_b1_5000uT_tight_s004: 139.4s, mz=0.99999981
+START rectangle_2nm_refine_b1_5000uT_tight_s005: 26 stages
+PASS rectangle_2nm_refine_b1_5000uT_tight_s005: 9.3s, mz=0.99999982
+PATH PASS rectangle_2nm_refine_b1_5000uT_tight: 31 stages
+START rectangle_2nm_perturb_b1_eps0.0001_s000: 1 stages
+PASS rectangle_2nm_perturb_b1_eps0.0001_s000: 7.5s, mz=-0.99999917
+START rectangle_2nm_perturb_b1_eps0.0001_s001: 1 stages
+PASS rectangle_2nm_perturb_b1_eps0.0001_s001: 182.7s, mz=0.99999981
+PATH PASS rectangle_2nm_perturb_b1_eps0.0001: 2 stages
+START rectangle_2nm_perturb_b1_eps0.001_s000: 1 stages
+PASS rectangle_2nm_perturb_b1_eps0.001_s000: 48.1s, mz=-0.99999887
+START rectangle_2nm_perturb_b1_eps0.001_s001: 1 stages
+PASS rectangle_2nm_perturb_b1_eps0.001_s001: 166.4s, mz=0.99999981
+PATH PASS rectangle_2nm_perturb_b1_eps0.001: 2 stages
+START rectangle_2nm_perturb_b1_eps0.01_s000: 1 stages
+PASS rectangle_2nm_perturb_b1_eps0.01_s000: 234.4s, mz=-0.99999887
+START rectangle_2nm_perturb_b1_eps0.01_s001: 1 stages
+PASS rectangle_2nm_perturb_b1_eps0.01_s001: 112.2s, mz=0.99999981
+PATH PASS rectangle_2nm_perturb_b1_eps0.01: 2 stages
+OUTPUT AUDIT 287 runs, 1810 checks passed
+REPORT {"pending": ["1/2 nm三轴固定态", "1 nm代表零场态", "square零场停止阈值复核", "circle零场停止阈值复核", "rectangle零场停止阈值复核", "三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START square_1nm_zero_plus: 1 stages
+PASS square_1nm_zero_plus: 193.6s, mz=0.99999985
+START square_1nm_zero_domains: 1 stages
+PASS square_1nm_zero_domains: 165.4s, mz=0.00000000
+START square_2nm_zero_plus_tight: 1 stages
+PASS square_2nm_zero_plus_tight: 10.7s, mz=0.99999985
+START circle_1nm_static_x: 1 stages
+PASS circle_1nm_static_x: 5.3s, mz=0.00000000
+START circle_1nm_static_y: 1 stages
+PASS circle_1nm_static_y: 5.2s, mz=0.00000000
+START circle_1nm_static_z: 1 stages
+PASS circle_1nm_static_z: 5.2s, mz=1.00000000
+START circle_1nm_zero_plus: 1 stages

@@ -1,0 +1,13 @@
+{
+  "shape": "circle",
+  "cell_nm": 2,
+  "lx_nm": 228,
+  "ly_nm": 228,
+  "nz": 2,
+  "ny": 114,
+  "nx": 114,
+  "magnetic_cells": 19968,
+  "area_nm2": 39936,
+  "volume_m3": 1.5974400000000004e-22,
+  "area_fraction_error": -0.0016000000000000458
+}

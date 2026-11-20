@@ -1,0 +1,30 @@
+Logging to file "D:/Documents/qah-demagnetization/.tools/oommf20b0/oommf/boxsi.errors"
+
+[Boxsi<33864-win-t72386i8m7s-Administrator> 12:10:40.541 2026-11-14] 2.0b0 infolog:
+Start: "D:/Documents/qah-demagnetization/simulations/shape_comparison/runs/square_1nm_loop_seeded_s034/input.mif"
+Options: -exitondone 1 -kill all -outdir {D:\Documents\qah-demagnetization\simulations\shape_comparison\runs\square_1nm_loop_seeded_s034} -threads 8
+
+[Boxsi<33864-win-t72386i8m7s-Administrator> 12:10:40.762 2026-11-14] 2.0b0 infolog:
+Boxsi version 2.0b0
+Running on: win-t72386i8m7s
+OS/machine: Windows NT/amd64
+User: Administrator	PID: 33864
+Number of threads: 8
+Mesh geometry: 200 x 200 x 4 = 160 000 cells
+Checkpointing disabled
+Start: "D:/Documents/qah-demagnetization/simulations/shape_comparison/runs/square_1nm_loop_seeded_s034/input.mif"
+Options: -exitondone 1 -kill all -outdir {D:\Documents\qah-demagnetization\simulations\shape_comparison\runs\square_1nm_loop_seeded_s034} -threads 8
+Boxsi version 2.0b0
+Running on: win-t72386i8m7s
+OS/machine: Windows NT/amd64
+User: Administrator	PID: 33864
+Number of threads: 8
+Mesh geometry: 200 x 200 x 4 = 160 000 cells
+Checkpointing disabled
+
+[Boxsi<33864-win-t72386i8m7s-Administrator> 12:10:40.766 2026-11-14] 2.0b0 infolog:
+Loaded "input.mif", CRC: 0xCC905DFA, 1434 bytes 
+
+[Boxsi<33864-win-t72386i8m7s-Administrator> 12:12:53.437 2026-11-14] 2.0b0 infolog:
+End "input.mif"
+Boxsi run end.

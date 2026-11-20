@@ -1,0 +1,5 @@
+{
+  "archived": "2026-11-14T12:01:08.4061755+08:00",
+  "action": "Retry identical inputs; preserve all completed cases. No solver process alive before restart.",
+  "reason": "System shutdown: User32 event 1074 at 00:28:42, process exit at 00:28:43, Kernel-General event 13 at 00:28:58. Last ODT iteration 1900, max dm/dt 0.219547615 > 0.01 deg/ns; no final vector output. Excluded from accepted results."
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "circle_2nm_zero_inplane_x",
+  "shape": "circle",
+  "cell_nm": 2,
+  "initial": "inplane_x",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "4211f34ed0b0d962873b40d8b66d4605f8170db4719b2e604304bcf988352000",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "d92b5c1f1534e1ff988289db12c02d012b421e6ecbffa985eb980850b59b2e8a"
+}

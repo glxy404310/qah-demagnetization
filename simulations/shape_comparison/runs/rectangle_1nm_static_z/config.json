@@ -1,0 +1,23 @@
+{
+  "run_id": "rectangle_1nm_static_z",
+  "shape": "rectangle",
+  "cell_nm": 1,
+  "initial": "z",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": true,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "20ae31476d89e5fdd80abb6fa8228c6fbd24970a9cadfd3468b9a82818db85b4",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "3f4f26a3d152bf3e6f80d1588f12a0bca88aaffa3fcb50e108cbef164a361846"
+}

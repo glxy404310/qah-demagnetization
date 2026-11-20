@@ -1,0 +1,23 @@
+{
+  "run_id": "circle_1nm_loop_seeded_s091",
+  "shape": "circle",
+  "cell_nm": 1,
+  "initial": "plus",
+  "fields_T": [
+    0.02
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0.001,
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s041\\result-Oxs_TimeDriver-Spin-49-0001844.omf",
+  "predecessor_sha256": "e59416c7db1bc7b00a046cf2ba7dc38f0ed05ea1bdbbd3680f942e7bfc82bb1f",
+  "initial_sha256": "2754deb25e96a294d7e4bef1365bac9f8439022d773feb622327ca40e5062020",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "91b1f19ce8af20d44feb90ec7656d7529818cd399f84550250487e3aad69f104"
+}

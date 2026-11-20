@@ -1,0 +1,81 @@
+{
+  "config": {
+    "run_id": "square_2nm_loop_seeded_s096",
+    "shape": "square",
+    "cell_nm": 2,
+    "initial": "plus",
+    "fields_T": [
+      0.12
+    ],
+    "stop": 0.01,
+    "static": false,
+    "epsilon": 0.001,
+    "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\square_2nm_loop_seeded_s095\\result-Oxs_TimeDriver-Spin-00-0000969.omf",
+    "predecessor_sha256": "06aac33ef0dceef80866d62cae84face3d6819e8ed9f1bf4462a8f56d8bec2f5",
+    "initial_sha256": "48de7318658ced7a8a4e993c4dc224aa2c5cfb0414101cdcf917e2b9dc52ae8b",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "689eac3d48e6df1d9ac888e0b9c0cf38b66138ef8e73f2dd07dc96a6fe08eac7"
+  },
+  "geometry": {
+    "shape": "square",
+    "cell_nm": 2,
+    "lx_nm": 200,
+    "ly_nm": 200,
+    "nz": 2,
+    "ny": 100,
+    "nx": 100,
+    "magnetic_cells": 20000,
+    "area_nm2": 40000,
+    "volume_m3": 1.6000000000000004e-22,
+    "area_fraction_error": 0.0
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "b_T": 0.12,
+      "mean_m": [
+        2.3549026000163002e-05,
+        8.713139597405876e-06,
+        -0.9999998444954783
+      ],
+      "mean_abs_mz": 0.9999998444954714,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999999997954,
+      "max_mz": -0.9999967123412719,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.512439966545851e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.3787026387476712e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 3.980911525107451e-24,
+        "Oxs_UZeeman:zeeman:Energy": 5.759999104293916e-18
+      },
+      "total_energy_J": 1.4272580922015168e-17,
+      "energy_density_J_m3": 89203.63076259478,
+      "max_dm_dt_deg_ns": 0.009987767882347105,
+      "independent_dm_dt_deg_ns": 0.009987767882347114,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 1212,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-00-0001212.omf",
+      "mean_Hd_A_m": [
+        -0.14666511423109513,
+        -0.05426609221424878,
+        282253.9945574862
+      ]
+    }
+  ],
+  "all_passed": true
+}

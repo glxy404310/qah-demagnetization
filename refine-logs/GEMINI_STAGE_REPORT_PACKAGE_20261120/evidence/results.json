@@ -1,0 +1,879 @@
+{
+  "completed_runs": 426,
+  "metrics": [
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "remanence": [
+        0.9999998468777686,
+        -0.9999998468798256
+      ],
+      "coarse_brackets_T": [
+        [
+          -0.18,
+          -0.2
+        ],
+        [
+          0.18,
+          0.2
+        ]
+      ]
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "remanence": [
+        0.9999998539751438,
+        -0.9999998539751593
+      ],
+      "coarse_brackets_T": [
+        [
+          -0.18,
+          -0.2
+        ],
+        [
+          0.18,
+          0.2
+        ]
+      ]
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "remanence": [
+        0.9999998614052534,
+        -0.9999998614054123
+      ],
+      "coarse_brackets_T": [
+        [
+          -0.18,
+          -0.2
+        ],
+        [
+          0.18,
+          0.2
+        ]
+      ]
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "remanence": [
+        0.9999998674643422,
+        -0.9999998674643915
+      ],
+      "coarse_brackets_T": [
+        [
+          -0.18,
+          -0.2
+        ],
+        [
+          0.18,
+          0.2
+        ]
+      ]
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "remanence": [
+        0.9999998078556637,
+        -0.9999998078582346
+      ],
+      "coarse_brackets_T": [
+        [
+          -0.18,
+          -0.2
+        ],
+        [
+          0.18,
+          0.2
+        ]
+      ]
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "remanence": [
+        0.9999998167804397,
+        -0.9999998167804941
+      ],
+      "coarse_brackets_T": [
+        [
+          -0.18,
+          -0.2
+        ],
+        [
+          0.18,
+          0.2
+        ]
+      ]
+    }
+  ],
+  "refined_coercivity": [
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "bc_minus_low_T": -0.185,
+      "bc_minus_high_T": -0.18,
+      "bc_plus_low_T": 0.18,
+      "bc_plus_high_T": 0.185,
+      "coercivity_estimate_T": 0.1825,
+      "coercivity_low_T": 0.18,
+      "coercivity_high_T": 0.185
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "bc_minus_low_T": -0.185,
+      "bc_minus_high_T": -0.18,
+      "bc_plus_low_T": 0.18,
+      "bc_plus_high_T": 0.185,
+      "coercivity_estimate_T": 0.1825,
+      "coercivity_low_T": 0.18,
+      "coercivity_high_T": 0.185
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "bc_minus_low_T": -0.185,
+      "bc_minus_high_T": -0.18,
+      "bc_plus_low_T": 0.18,
+      "bc_plus_high_T": 0.185,
+      "coercivity_estimate_T": 0.1825,
+      "coercivity_low_T": 0.18,
+      "coercivity_high_T": 0.185
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "bc_minus_low_T": -0.185,
+      "bc_minus_high_T": -0.18,
+      "bc_plus_low_T": 0.18,
+      "bc_plus_high_T": 0.185,
+      "coercivity_estimate_T": 0.1825,
+      "coercivity_low_T": 0.18,
+      "coercivity_high_T": 0.185
+    }
+  ],
+  "completed_refinement_paths": [
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "run_id": "circle_1nm_refine_b0_10000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "circle_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "run_id": "circle_2nm_refine_b0_10000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "circle_2nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "circle_2nm_refine_b0_5000uT_tight"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.19
+      ],
+      "run_id": "circle_2nm_refine_b1_10000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "circle_2nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "circle_2nm_refine_b1_5000uT_tight"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "run_id": "rectangle_2nm_refine_b0_10000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "rectangle_2nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "rectangle_2nm_refine_b0_5000uT_tight"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.19
+      ],
+      "run_id": "rectangle_2nm_refine_b1_10000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "rectangle_2nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "rectangle_2nm_refine_b1_5000uT_tight"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "run_id": "square_1nm_refine_b0_10000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "square_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "square_1nm_refine_b0_5000uT_tight"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.19
+      ],
+      "run_id": "square_1nm_refine_b1_10000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "square_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "square_1nm_refine_b1_5000uT_tight"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "run_id": "square_2nm_refine_b0_10000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "square_2nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "square_2nm_refine_b0_5000uT_tight"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.19
+      ],
+      "run_id": "square_2nm_refine_b1_10000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "square_2nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "square_2nm_refine_b1_5000uT_tight"
+    }
+  ],
+  "domain_energy_comparison": [
+    {
+      "shape": "square",
+      "single_J_m3": 53203.63630758699,
+      "domains_J_m3": 59534.872519939774,
+      "delta_total_J_m3": 6331.2362123527855,
+      "delta_demag_J_m3": -7742.417168069733,
+      "delta_exchange_J_m3": 3963.187535330624,
+      "delta_anisotropy_J_m3": 10110.465845091901,
+      "domain_mean_abs_mz": 0.9127492430223869
+    },
+    {
+      "shape": "circle",
+      "single_J_m3": 53379.111951669525,
+      "domains_J_m3": 60485.45337813476,
+      "delta_total_J_m3": 7106.341426465238,
+      "delta_demag_J_m3": -8700.049114998124,
+      "delta_exchange_J_m3": 4397.441717305643,
+      "delta_anisotropy_J_m3": 11408.948824157733,
+      "domain_mean_abs_mz": 0.9015439564986656
+    },
+    {
+      "shape": "rectangle",
+      "single_J_m3": 52542.18720666679,
+      "domains_J_m3": 55896.67366342242,
+      "delta_total_J_m3": 3354.4864567556288,
+      "delta_demag_J_m3": -3574.443811980498,
+      "delta_exchange_J_m3": 2058.604090580799,
+      "delta_anisotropy_J_m3": 4870.32617815534,
+      "domain_mean_abs_mz": 0.9579520463755603
+    }
+  ],
+  "reversal_trajectories": [
+    {
+      "shape": "square",
+      "source_run": "square_2nm_loop_seeded_s040",
+      "b_T": -0.2,
+      "final_spin_max_difference": 0.0,
+      "max_dm_dt_deg_ns": 0.009866866581203266,
+      "minimum_mean_norm": 0.5886564842998512,
+      "passed": true
+    },
+    {
+      "shape": "circle",
+      "source_run": "circle_2nm_loop_seeded_s040",
+      "b_T": -0.2,
+      "final_spin_max_difference": 0.0,
+      "max_dm_dt_deg_ns": 0.0098829951574775,
+      "minimum_mean_norm": 0.6050723509704765,
+      "passed": true
+    },
+    {
+      "shape": "rectangle",
+      "source_run": "rectangle_2nm_loop_seeded_s040",
+      "b_T": -0.2,
+      "final_spin_max_difference": 0.0,
+      "max_dm_dt_deg_ns": 0.009758768205357834,
+      "minimum_mean_norm": 0.42422671321381694,
+      "passed": true
+    }
+  ],
+  "checks": {
+    "output_provenance_and_fields": true,
+    "square_trajectory_replay": true,
+    "circle_trajectory_replay": true,
+    "rectangle_trajectory_replay": true,
+    "square_x_grid_N": true,
+    "square_y_grid_N": true,
+    "square_z_grid_N": true,
+    "square_plus_grid_mz": true,
+    "square_plus_grid_energy": true,
+    "square_domains_grid_mz": true,
+    "square_domains_grid_energy": true,
+    "square_2nm_loop_reversals": true,
+    "square_2nm_loop_saturated": true,
+    "square_1nm_loop_reversals": true,
+    "square_1nm_loop_saturated": true,
+    "square_Mr0_grid": true,
+    "square_Mr1_grid": true,
+    "square_1nm_b0_field": true,
+    "square_1nm_b0_tolerance": true,
+    "square_2nm_b0_field": true,
+    "square_2nm_b0_tolerance": true,
+    "square_b0_perturbation": true,
+    "square_b0_grid_Hc": true,
+    "square_1nm_b1_field": true,
+    "square_1nm_b1_tolerance": true,
+    "square_2nm_b1_field": true,
+    "square_2nm_b1_tolerance": true,
+    "square_b1_perturbation": true,
+    "square_b1_grid_Hc": true,
+    "circle_x_grid_N": true,
+    "circle_y_grid_N": true,
+    "circle_z_grid_N": true,
+    "circle_plus_grid_mz": true,
+    "circle_plus_grid_energy": true,
+    "circle_domains_grid_mz": true,
+    "circle_domains_grid_energy": true,
+    "circle_2nm_loop_reversals": true,
+    "circle_2nm_loop_saturated": true,
+    "circle_1nm_loop_reversals": true,
+    "circle_1nm_loop_saturated": true,
+    "circle_Mr0_grid": true,
+    "circle_Mr1_grid": true,
+    "circle_2nm_b0_field": true,
+    "circle_2nm_b0_tolerance": true,
+    "circle_b0_perturbation": true,
+    "circle_2nm_b1_field": true,
+    "circle_2nm_b1_tolerance": true,
+    "circle_b1_perturbation": true,
+    "rectangle_x_grid_N": true,
+    "rectangle_y_grid_N": true,
+    "rectangle_z_grid_N": true,
+    "rectangle_plus_grid_mz": true,
+    "rectangle_plus_grid_energy": true,
+    "rectangle_domains_grid_mz": true,
+    "rectangle_domains_grid_energy": true,
+    "rectangle_2nm_loop_reversals": true,
+    "rectangle_2nm_loop_saturated": true,
+    "rectangle_1nm_loop_reversals": true,
+    "rectangle_1nm_loop_saturated": true,
+    "rectangle_Mr0_grid": true,
+    "rectangle_Mr1_grid": true,
+    "rectangle_2nm_b0_field": true,
+    "rectangle_2nm_b0_tolerance": true,
+    "rectangle_b0_perturbation": true,
+    "rectangle_2nm_b1_field": true,
+    "rectangle_2nm_b1_tolerance": true,
+    "rectangle_b1_perturbation": true,
+    "square_zero_tolerance": true,
+    "circle_zero_tolerance": true,
+    "rectangle_zero_tolerance": true
+  },
+  "failed_checks": [],
+  "pending": [
+    "两种网格翻转区场步/阈值与扰动检验"
+  ],
+  "verification": [
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "square_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "square_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "square_2nm_refine_b0_5000uT",
+      "perturbations": [
+        {
+          "epsilon": 0.0001,
+          "mz": [
+            0.9999989814723608,
+            -0.9999998498807418
+          ]
+        },
+        {
+          "epsilon": 0.001,
+          "mz": [
+            0.9999975541989358,
+            -0.9999998498807466
+          ]
+        },
+        {
+          "epsilon": 0.01,
+          "mz": [
+            0.9999964206149893,
+            -0.9999998498809269
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "square_2nm_refine_b1_5000uT",
+      "perturbations": [
+        {
+          "epsilon": 0.0001,
+          "mz": [
+            -0.999998981460146,
+            0.9999998498808241
+          ]
+        },
+        {
+          "epsilon": 0.001,
+          "mz": [
+            -0.9999975541217627,
+            0.9999998498809322
+          ]
+        },
+        {
+          "epsilon": 0.01,
+          "mz": [
+            -0.9999964204337953,
+            0.9999998498807796
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "circle_2nm_refine_b0_5000uT",
+      "perturbations": [
+        {
+          "epsilon": 0.0001,
+          "mz": [
+            0.999998899889946,
+            -0.9999998641257063
+          ]
+        },
+        {
+          "epsilon": 0.001,
+          "mz": [
+            0.9999972918804121,
+            -0.999999864125646
+          ]
+        },
+        {
+          "epsilon": 0.01,
+          "mz": [
+            0.9999781291155754,
+            -0.9999998641256898
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "circle_2nm_refine_b1_5000uT",
+      "perturbations": [
+        {
+          "epsilon": 0.0001,
+          "mz": [
+            -0.9999988999277235,
+            0.9999998641257134
+          ]
+        },
+        {
+          "epsilon": 0.001,
+          "mz": [
+            -0.9999972919224678,
+            0.9999998641256723
+          ]
+        },
+        {
+          "epsilon": 0.01,
+          "mz": [
+            -0.9999781290931588,
+            0.9999998641256564
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "rectangle_2nm_refine_b0_5000uT",
+      "perturbations": [
+        {
+          "epsilon": 0.0001,
+          "mz": [
+            0.9999991729872547,
+            -0.9999998116240336
+          ]
+        },
+        {
+          "epsilon": 0.001,
+          "mz": [
+            0.9999988678135298,
+            -0.9999998116240655
+          ]
+        },
+        {
+          "epsilon": 0.01,
+          "mz": [
+            0.9999988723688588,
+            -0.999999811624012
+          ]
+        }
+      ]
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "rectangle_2nm_refine_b1_5000uT",
+      "perturbations": [
+        {
+          "epsilon": 0.0001,
+          "mz": [
+            -0.9999991728609396,
+            0.9999998116243489
+          ]
+        },
+        {
+          "epsilon": 0.001,
+          "mz": [
+            -0.9999988678311298,
+            0.9999998116242718
+          ]
+        },
+        {
+          "epsilon": 0.01,
+          "mz": [
+            -0.9999988723146378,
+            0.9999998116241364
+          ]
+        }
+      ]
+    }
+  ],
+  "numerical_acceptance_complete": false
+}

@@ -1,0 +1,6 @@
+﻿shape,cell_nm,bc_minus_low_T,bc_minus_high_T,bc_plus_low_T,bc_plus_high_T,coercivity_estimate_T,coercivity_low_T,coercivity_high_T
+square,2,-0.185,-0.18,0.18,0.185,0.1825,0.18,0.185
+square,1,-0.185,-0.18,0.18,0.185,0.1825,0.18,0.185
+circle,2,-0.185,-0.18,0.18,0.185,0.1825,0.18,0.185
+circle,1,-0.185,-0.18,0.18,0.185,0.1825,0.18,0.185
+rectangle,2,-0.185,-0.18,0.18,0.185,0.1825,0.18,0.185
