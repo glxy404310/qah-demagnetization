@@ -1,0 +1,21 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 483 runs, 3086 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 483 runs, 3086 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START rectangle_1nm_refine_b1_5000uT_tight_s002: 1 stages
+PASS rectangle_1nm_refine_b1_5000uT_tight_s002: 1122.9s, mz=-0.99999981
+START rectangle_1nm_refine_b1_5000uT_tight_s003: 1 stages
+PASS rectangle_1nm_refine_b1_5000uT_tight_s003: 1283.0s, mz=-0.99999958
+START rectangle_1nm_refine_b1_5000uT_tight_s004: 1 stages
+PASS rectangle_1nm_refine_b1_5000uT_tight_s004: 4412.0s, mz=0.99999982
+START rectangle_1nm_refine_b1_5000uT_tight_s005: 26 stages
+PASS rectangle_1nm_refine_b1_5000uT_tight_s005: 40.3s, mz=0.99999983
+PATH PASS rectangle_1nm_refine_b1_5000uT_tight: 31 stages
+OUTPUT AUDIT 488 runs, 3118 checks passed
+REPORT {"pending": [], "failed_checks": []}

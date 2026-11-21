@@ -1,0 +1,17 @@
+{
+  "run": "rectangle_1nm_refine_b0_5000uT_s004",
+  "stop": 0.01,
+  "iterations": 111962,
+  "wall_seconds": 4884.185318699998,
+  "raw_rate": 0.009996192970425694,
+  "raw_rhs": 0.009996192970425808,
+  "mean_mz": -0.9999998198571506,
+  "brackets": [
+    [
+      -0.18,
+      -0.185
+    ]
+  ],
+  "path_stages": 31,
+  "full_branch_validation": "pending strict path"
+}

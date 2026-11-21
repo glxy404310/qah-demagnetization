@@ -1,5 +1,5 @@
 {
-  "completed_runs": 426,
+  "completed_runs": 459,
   "metrics": [
     {
       "shape": "square",
@@ -145,6 +145,17 @@
       "coercivity_high_T": 0.185
     },
     {
+      "shape": "circle",
+      "cell_nm": 1,
+      "bc_minus_low_T": -0.185,
+      "bc_minus_high_T": -0.18,
+      "bc_plus_low_T": 0.18,
+      "bc_plus_high_T": 0.185,
+      "coercivity_estimate_T": 0.1825,
+      "coercivity_low_T": 0.18,
+      "coercivity_high_T": 0.185
+    },
+    {
       "shape": "rectangle",
       "cell_nm": 2,
       "bc_minus_low_T": -0.185,
@@ -180,6 +191,54 @@
         -0.185
       ],
       "run_id": "circle_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "circle_1nm_refine_b0_5000uT_tight"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.19
+      ],
+      "run_id": "circle_1nm_refine_b1_10000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "circle_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "circle_1nm_refine_b1_5000uT_tight"
     },
     {
       "shape": "circle",
@@ -252,6 +311,18 @@
         0.185
       ],
       "run_id": "circle_2nm_refine_b1_5000uT_tight"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "run_id": "rectangle_1nm_refine_b0_10000uT"
     },
     {
       "shape": "rectangle",
@@ -574,12 +645,18 @@
     "circle_1nm_loop_saturated": true,
     "circle_Mr0_grid": true,
     "circle_Mr1_grid": true,
+    "circle_1nm_b0_field": true,
+    "circle_1nm_b0_tolerance": true,
     "circle_2nm_b0_field": true,
     "circle_2nm_b0_tolerance": true,
     "circle_b0_perturbation": true,
+    "circle_b0_grid_Hc": true,
+    "circle_1nm_b1_field": true,
+    "circle_1nm_b1_tolerance": true,
     "circle_2nm_b1_field": true,
     "circle_2nm_b1_tolerance": true,
     "circle_b1_perturbation": true,
+    "circle_b1_grid_Hc": true,
     "rectangle_x_grid_N": true,
     "rectangle_y_grid_N": true,
     "rectangle_z_grid_N": true,
@@ -639,6 +716,38 @@
       "field_check_T": 0.0025000000000000022,
       "coarse_field_check_T": 0.0025000000000000022,
       "final_run": "square_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "circle_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "circle_1nm_refine_b1_5000uT"
     },
     {
       "shape": "square",

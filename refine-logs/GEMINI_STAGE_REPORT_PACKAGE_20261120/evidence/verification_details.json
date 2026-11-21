@@ -264,5 +264,37 @@
     "field_check_T": 0.0025000000000000022,
     "coarse_field_check_T": 0.0025000000000000022,
     "final_run": "square_1nm_refine_b1_5000uT"
+  },
+  {
+    "shape": "circle",
+    "cell_nm": 1,
+    "branch": 0,
+    "bracket_T": [
+      -0.18,
+      -0.185
+    ],
+    "tight_bracket_T": [
+      -0.18,
+      -0.185
+    ],
+    "field_check_T": 0.0025000000000000022,
+    "coarse_field_check_T": 0.0025000000000000022,
+    "final_run": "circle_1nm_refine_b0_5000uT"
+  },
+  {
+    "shape": "circle",
+    "cell_nm": 1,
+    "branch": 1,
+    "bracket_T": [
+      0.18,
+      0.185
+    ],
+    "tight_bracket_T": [
+      0.18,
+      0.185
+    ],
+    "field_check_T": 0.0025000000000000022,
+    "coarse_field_check_T": 0.0025000000000000022,
+    "final_run": "circle_1nm_refine_b1_5000uT"
   }
 ]

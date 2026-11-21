@@ -24,3 +24,7 @@ Checkpointing disabled
 
 [Boxsi<37220-win-t72386i8m7s-Administrator> 19:47:57.075 2026-11-20] 2.0b0 infolog:
 Loaded "input.mif", CRC: 0x5FFAFA95, 1404 bytes 
+
+[Boxsi<37220-win-t72386i8m7s-Administrator> 21:09:21.727 2026-11-20] 2.0b0 infolog:
+End "input.mif"
+Boxsi run end.

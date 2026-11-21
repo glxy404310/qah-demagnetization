@@ -1,0 +1,28 @@
+{
+  "snapshot_time_local": "2026-11-21T17:06:33+08:00",
+  "accepted_branches": 12,
+  "p3_p4": "passed",
+  "files_sha256": {
+    "evidence/coercivity_refined.csv": "700af2d9904691bfe86634615aa824e90f4b36a413ff8c2cab9fa78403bb07c3",
+    "evidence/DECISIONS.md": "9e9fdaec555345ecbe921d400c89b148d3e0c39bba98ea0e2689c053884cf90f",
+    "evidence/demag_factors.csv": "b471683eaae0b30c255b168933e2f03d9e39e2306f2666b3dae4dc4ea062f7aa",
+    "evidence/final_audit.json": "ac2a701871f38cab14113844fa68909a2907be558c816e6a05763e6602165d02",
+    "evidence/FINAL_CHECKLIST.md": "896becdfb03f2ce5f61a984c6789f253bd3400b40e6fdbe57a68f9288daf74a2",
+    "evidence/local_reversal.json": "03b1a7df4c80e7f6e5acc1bbfe5e3f95639f6a2290190cebe52b2cc230915788",
+    "evidence/local_reversal.py": "74d6af753b11d3b2b5830d22f74edba1d85f043f08687804879a9101193e359a",
+    "evidence/output_audit.json": "aa53ae7bc4938482e2aa67ddb86ecc12aac2c2b0526ba5b6a672d3ba303f9698",
+    "evidence/results.json": "88dc3b7256c382720a49f8eccc93cd360c4a661ef8230e0a33fef7b0ee2f6ecc",
+    "evidence/RESULTS.md": "26e39ba4ad704c8cf4c88e8daba04d92dde838ca0cda3e174905f42bec713e52",
+    "evidence/verification_details.json": "a653df54910ef7928e3cf1321cad599c5f08cea48d6d108d1067a8ef5bfe6c92",
+    "figures/cross_mesh_reversal_odt.png": "476f73b774a020cb041beb872917d53d301da717c67543e80f955e6c724dea00",
+    "figures/demag_comparison.png": "056cfd3dc6f61dfd5943c87b4ce34ce02ac85cdb1c257546da4bec945362d2af",
+    "figures/domain_energy_competition.png": "8bc173dd28554eeb766f3d70305b6876133d336a7351387835f70999b53ce681",
+    "figures/energy_components.png": "82f8b779d58264abc78a6dbcc36fd32a86c8516863bf04c4c8925d83ee4769a3",
+    "figures/hysteresis_comparison.png": "0125d6f0bc72cbdf924838f0bc5f727f7ed7aa4a1530b84d94fffce25bda68a5",
+    "figures/reversal_states.png": "9c7e508faa50ad1e3e767d48db484284a81a1a5c50605bbbb61ef0135d01e726",
+    "figures/reversal_trajectory.png": "49e3a998943e55b10ccd7c6d48db1d890632e7de29bcd65f37850f64b775bc12",
+    "figures/zero_states.png": "9273bc46aa2eb109b76d490a13d129194a546c6937089d1dd3a53b38e09a08b5",
+    "GEMINI_STAGE_REPORT_BRIEF_20261121.md": "1316af01a2f8f71726db5582d3e1dd5106a547e7f2c6ba8e8c68d0e36cd0f412",
+    "MECHANISM.md": "3c4e4feef335a4a199464bb77ac9faaaf96b61c3cdd4351edb33a4f1a1607815"
+  }
+}

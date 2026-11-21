@@ -1,7 +1,7 @@
 {
-  "stderr": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\final-report_20261120_194703.errors.log",
-  "started": "2026-11-20T19:47:03.5597978+08:00",
-  "wait_for": 13340,
-  "pid": 11308,
-  "stdout": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\final-report_20261120_194703.log"
+  "stdout": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\final-report_20261121_142950.log",
+  "pid": 33228,
+  "started": "2026-11-21T14:29:50.6364027+08:00",
+  "wait_for": 19856,
+  "stderr": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\final-report_20261121_142950.errors.log"
 }

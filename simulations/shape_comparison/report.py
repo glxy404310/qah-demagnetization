@@ -271,14 +271,18 @@ def build_report():
     if len(trajectories)!=3: pending.append('三形状代表翻转过程磁化快照')
     failed=[k for k,v in checks.items() if not v]
     result=dict(completed_runs=len(list((BASE/'runs').glob('*/summary.json'))),metrics=metrics,
-                refined_coercivity=refined_metrics,
+                refined_coercivity=refined_metrics, volume_demag_factors=static,
                 completed_refinement_paths=refinement_progress,
                 domain_energy_comparison=energy_comparison,
                 reversal_trajectories=[{k:v for k,v in t.items() if k!='samples'} for t in trajectories],
                 checks=checks,failed_checks=failed,pending=pending,verification=details,
                 numerical_acceptance_complete=not pending and not failed)
+    local_fields = BASE/'analysis/local_reversal.json'
+    if local_fields.is_file():
+        local = json.loads(local_fields.read_bytes())
+        result['uniform_z_local_demag'] = dict(exchange_length_nm=local['exchange_length_nm'], fields=local['fields'])
     dump(BASE/'analysis/results.json',result)
-    lines=['# 仿真结果与验证进展','',f'已分析算例目录：{result["completed_runs"]}（包括诊断和聚合路径目录，不能直接当作独立实验数量）。',
+    lines=['# 三种薄膜形状的退磁场与准静态翻转','',
            '状态：'+('全部已列数值验收通过。' if result['numerical_acceptance_complete'] else '阶段性结果，最终数值验收尚未完成。'),'',
            '正式磁滞采用统一 ε=10⁻³ 横向扰动协议，仅在外场与上一态平均磁化反向的场点施加。原始无扰动曲线留作驻点诊断，不用于下面的矫顽场统计。详见 [实施记录](DECISIONS.md)。','',
            '## 固定均匀磁化的退磁因子','', '| 形状 | 网格/nm | Nx | Ny | Nz | 实际面积/nm² |','|---|---:|---:|---:|---:|---:|']
@@ -287,7 +291,7 @@ def build_report():
             ss=[r for r in static if r['shape']==shape and r['cell_nm']==cell]
             if len(ss)==3:
                 lines.append(f'| {shape} | {cell} | {ss[0]["N_field"]:.9f} | {ss[1]["N_field"]:.9f} | {ss[2]["N_field"]:.9f} | {ss[0]["area_nm2"]} |')
-    lines+=['','## 多初态的能量竞争','',
+    lines+=['','## 2 nm 网格的多初态能量竞争','',
             '| 形状 | 近单畴能量密度/J·m⁻³ | 双畴能量密度/J·m⁻³ | 双畴减近单畴/J·m⁻³ | 双畴平均绝对 mz |',
             '|---|---:|---:|---:|---:|']
     for r in energy_comparison:
@@ -314,9 +318,9 @@ def build_report():
                 '|---|---:|---|---|---:|---|']
         for r in refined_metrics:
             lines.append(f'| {r["shape"]} | {r["cell_nm"]} | [{r["bc_minus_low_T"]:.4f}, {r["bc_minus_high_T"]:.4f}] | [{r["bc_plus_low_T"]:.4f}, {r["bc_plus_high_T"]:.4f}] | {r["coercivity_estimate_T"]:.4f} | [{r["coercivity_low_T"]:.4f}, {r["coercivity_high_T"]:.4f}] |')
-        lines+=['', '矫顽场幅值定义为 (bc+−bc−)/2，采用两支翻转区间传播得到夹逼范围。它表示离散场步下的区间，不是重复抽样的统计置信区间。最终形状排序还需通过网格与协议检查。']
+        lines+=['', '矫顽场幅值定义为 (bc+−bc−)/2，采用两支翻转区间传播得到夹逼范围。它表示离散场步下的区间，不是重复抽样的统计置信区间。在 5 mT 分辨率下，三种形状的矫顽场无法排序。']
     if trajectories:
-        lines+=['','## 代表翻转过程','',
+        lines+=['','## 2 nm 网格的代表翻转过程','',
                 '对每种形状的下降支首个翻转场点重放，保持原始初态、外场和求解参数，仅增加每 50 个接受步保存一次磁化的输出。图中标注求解器迭代步，不作为物理翻转时间。',
                 '', '| 形状 | 外场/T | 保存快照数 | 最小平均磁化矢量模长 | 与原终态最大磁化分量差 |',
                 '|---|---:|---:|---:|---:|']
@@ -335,6 +339,9 @@ def build_report():
         if (BASE/f'figures/{name}.png').exists():
             lines.append(f'![{label}](figures/{name}.png)')
     lines+=['', '所有参数均为教学模型，零温、无缺陷、关闭进动。多初态结果是所测试初态的驻态，不是基态证明；磁滞中的零场点才用于报告剩磁。关闭进动的积分时间不代表物理翻转时间。微磁学结果不直接证明 QAH 或量子化霍尔电导。']
+    mechanism = BASE/'analysis/LOCAL_REVERSAL.md'
+    if mechanism.exists():
+        lines.extend(['', mechanism.read_text(encoding='utf-8').strip()])
     (BASE/'RESULTS.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     from update_tracker import update
     update()

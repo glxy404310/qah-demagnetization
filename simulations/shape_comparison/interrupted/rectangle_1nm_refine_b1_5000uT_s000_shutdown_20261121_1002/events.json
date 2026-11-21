@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 13,
+    "TimeCreated": "2026-11-21T00:39:49.6897811+08:00",
+    "ProviderName": "Microsoft-Windows-Kernel-General",
+    "Message": "操作系统将在系统时间 ‎2026‎-‎11‎-‎20T16:39:49.689779800Z 关闭。"
+  },
+  {
+    "Id": 6006,
+    "TimeCreated": "2026-11-21T00:39:43.4948558+08:00",
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "Id": 1074,
+    "TimeCreated": "2026-11-21T00:39:25.296865+08:00",
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe (WIN-T72386I8M7S) 由于以下原因已代表用户 WIN-T72386I8M7S\\Administrator 启动计算机 WIN-T72386I8M7S 的 关闭电源: 其他(计划外)\r\n 原因代码: 0x0\r\n 关机类型: 关闭电源\r\n 注释: "
+  }
+]

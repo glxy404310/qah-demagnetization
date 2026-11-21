@@ -66,3 +66,5 @@
 | 2026-11-18 | 进度与后续规划 | refine-logs/PROGRESS_AND_NEXT_STEPS_20261118.md | documentation | 汇总已验证成果、暂停位置、P0–P4 执行步骤、验收门槛及交付清单；未启动计算 |
 | 2026-11-18 19:15:30 | /run-experiment | refine-logs/EXPERIMENT_TRACKER_20261118_191530.md | implementation | 根据原始输出更新执行状态 |
 | 2026-11-18 19:15:30 | /run-experiment | refine-logs/EXPERIMENT_TRACKER.md | implementation | 根据原始输出更新执行状态 |
+| 2026-11-21 16:25:08 | /run-experiment | refine-logs/EXPERIMENT_TRACKER_20261121_162508.md | implementation | 根据原始输出更新执行状态 |
+| 2026-11-21 16:25:08 | /run-experiment | refine-logs/EXPERIMENT_TRACKER.md | implementation | 根据原始输出更新执行状态 |

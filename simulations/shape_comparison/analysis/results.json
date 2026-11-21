@@ -1,5 +1,5 @@
 {
-  "completed_runs": 459,
+  "completed_runs": 488,
   "metrics": [
     {
       "shape": "square",
@@ -165,6 +165,181 @@
       "coercivity_estimate_T": 0.1825,
       "coercivity_low_T": 0.18,
       "coercivity_high_T": 0.185
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "bc_minus_low_T": -0.185,
+      "bc_minus_high_T": -0.18,
+      "bc_plus_low_T": 0.18,
+      "bc_plus_high_T": 0.185,
+      "coercivity_estimate_T": 0.1825,
+      "coercivity_low_T": 0.18,
+      "coercivity_high_T": 0.185
+    }
+  ],
+  "volume_demag_factors": [
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "axis": "x",
+      "area_nm2": 40000,
+      "N_field": 0.029568912837834117,
+      "N_energy": 0.029568912837834124,
+      "run_id": "square_2nm_static_x"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "axis": "y",
+      "area_nm2": 40000,
+      "N_field": 0.029568912837834173,
+      "N_energy": 0.029568912837834166,
+      "run_id": "square_2nm_static_y"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 2,
+      "axis": "z",
+      "area_nm2": 40000,
+      "N_field": 0.940862174324332,
+      "N_energy": 0.9408621743243318,
+      "run_id": "square_2nm_static_z"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "axis": "x",
+      "area_nm2": 40000,
+      "N_field": 0.029568912837834208,
+      "N_energy": 0.02956891283783421,
+      "run_id": "square_1nm_static_x"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "axis": "y",
+      "area_nm2": 40000,
+      "N_field": 0.029568912837834117,
+      "N_energy": 0.02956891283783412,
+      "run_id": "square_1nm_static_y"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "axis": "z",
+      "area_nm2": 40000,
+      "N_field": 0.940862174324332,
+      "N_energy": 0.9408621743243321,
+      "run_id": "square_1nm_static_z"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "axis": "x",
+      "area_nm2": 39936,
+      "N_field": 0.028018126106275014,
+      "N_energy": 0.02801812610627501,
+      "run_id": "circle_2nm_static_x"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "axis": "y",
+      "area_nm2": 39936,
+      "N_field": 0.028018126106274993,
+      "N_energy": 0.028018126106274986,
+      "run_id": "circle_2nm_static_y"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 2,
+      "axis": "z",
+      "area_nm2": 39936,
+      "N_field": 0.9439637477874502,
+      "N_energy": 0.9439637477874501,
+      "run_id": "circle_2nm_static_z"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "axis": "x",
+      "area_nm2": 40000,
+      "N_field": 0.02785447344257047,
+      "N_energy": 0.027854473442570478,
+      "run_id": "circle_1nm_static_x"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "axis": "y",
+      "area_nm2": 40000,
+      "N_field": 0.027854473442570457,
+      "N_energy": 0.02785447344257046,
+      "run_id": "circle_1nm_static_y"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "axis": "z",
+      "area_nm2": 40000,
+      "N_field": 0.9442910531148596,
+      "N_energy": 0.9442910531148595,
+      "run_id": "circle_1nm_static_z"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "axis": "x",
+      "area_nm2": 40000,
+      "N_field": 0.01369028496559611,
+      "N_energy": 0.01369028496559611,
+      "run_id": "rectangle_2nm_static_x"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "axis": "y",
+      "area_nm2": 40000,
+      "N_field": 0.05714062838084074,
+      "N_energy": 0.05714062838084073,
+      "run_id": "rectangle_2nm_static_y"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 2,
+      "axis": "z",
+      "area_nm2": 40000,
+      "N_field": 0.9291690866535635,
+      "N_energy": 0.9291690866535632,
+      "run_id": "rectangle_2nm_static_z"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "axis": "x",
+      "area_nm2": 40000,
+      "N_field": 0.013690284965596001,
+      "N_energy": 0.013690284965596001,
+      "run_id": "rectangle_1nm_static_x"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "axis": "y",
+      "area_nm2": 40000,
+      "N_field": 0.05714062838084074,
+      "N_energy": 0.05714062838084075,
+      "run_id": "rectangle_1nm_static_y"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "axis": "z",
+      "area_nm2": 40000,
+      "N_field": 0.9291690866535636,
+      "N_energy": 0.9291690866535636,
+      "run_id": "rectangle_1nm_static_z"
     }
   ],
   "completed_refinement_paths": [
@@ -323,6 +498,66 @@
         -0.19
       ],
       "run_id": "rectangle_1nm_refine_b0_10000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "rectangle_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 0,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 10.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.19
+      ],
+      "run_id": "rectangle_1nm_refine_b1_10000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.01,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "rectangle_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 1,
+      "step_mT": 5.0,
+      "stop": 0.005,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight"
     },
     {
       "shape": "rectangle",
@@ -620,17 +855,17 @@
     "square_1nm_loop_saturated": true,
     "square_Mr0_grid": true,
     "square_Mr1_grid": true,
-    "square_1nm_b0_field": true,
-    "square_1nm_b0_tolerance": true,
     "square_2nm_b0_field": true,
     "square_2nm_b0_tolerance": true,
     "square_b0_perturbation": true,
+    "square_1nm_b0_field": true,
+    "square_1nm_b0_tolerance": true,
     "square_b0_grid_Hc": true,
-    "square_1nm_b1_field": true,
-    "square_1nm_b1_tolerance": true,
     "square_2nm_b1_field": true,
     "square_2nm_b1_tolerance": true,
     "square_b1_perturbation": true,
+    "square_1nm_b1_field": true,
+    "square_1nm_b1_tolerance": true,
     "square_b1_grid_Hc": true,
     "circle_x_grid_N": true,
     "circle_y_grid_N": true,
@@ -645,17 +880,17 @@
     "circle_1nm_loop_saturated": true,
     "circle_Mr0_grid": true,
     "circle_Mr1_grid": true,
-    "circle_1nm_b0_field": true,
-    "circle_1nm_b0_tolerance": true,
     "circle_2nm_b0_field": true,
     "circle_2nm_b0_tolerance": true,
     "circle_b0_perturbation": true,
+    "circle_1nm_b0_field": true,
+    "circle_1nm_b0_tolerance": true,
     "circle_b0_grid_Hc": true,
-    "circle_1nm_b1_field": true,
-    "circle_1nm_b1_tolerance": true,
     "circle_2nm_b1_field": true,
     "circle_2nm_b1_tolerance": true,
     "circle_b1_perturbation": true,
+    "circle_1nm_b1_field": true,
+    "circle_1nm_b1_tolerance": true,
     "circle_b1_grid_Hc": true,
     "rectangle_x_grid_N": true,
     "rectangle_y_grid_N": true,
@@ -673,82 +908,22 @@
     "rectangle_2nm_b0_field": true,
     "rectangle_2nm_b0_tolerance": true,
     "rectangle_b0_perturbation": true,
+    "rectangle_1nm_b0_field": true,
+    "rectangle_1nm_b0_tolerance": true,
+    "rectangle_b0_grid_Hc": true,
     "rectangle_2nm_b1_field": true,
     "rectangle_2nm_b1_tolerance": true,
     "rectangle_b1_perturbation": true,
+    "rectangle_1nm_b1_field": true,
+    "rectangle_1nm_b1_tolerance": true,
+    "rectangle_b1_grid_Hc": true,
     "square_zero_tolerance": true,
     "circle_zero_tolerance": true,
     "rectangle_zero_tolerance": true
   },
   "failed_checks": [],
-  "pending": [
-    "两种网格翻转区场步/阈值与扰动检验"
-  ],
+  "pending": [],
   "verification": [
-    {
-      "shape": "square",
-      "cell_nm": 1,
-      "branch": 0,
-      "bracket_T": [
-        -0.18,
-        -0.185
-      ],
-      "tight_bracket_T": [
-        -0.18,
-        -0.185
-      ],
-      "field_check_T": 0.0025000000000000022,
-      "coarse_field_check_T": 0.0025000000000000022,
-      "final_run": "square_1nm_refine_b0_5000uT"
-    },
-    {
-      "shape": "square",
-      "cell_nm": 1,
-      "branch": 1,
-      "bracket_T": [
-        0.18,
-        0.185
-      ],
-      "tight_bracket_T": [
-        0.18,
-        0.185
-      ],
-      "field_check_T": 0.0025000000000000022,
-      "coarse_field_check_T": 0.0025000000000000022,
-      "final_run": "square_1nm_refine_b1_5000uT"
-    },
-    {
-      "shape": "circle",
-      "cell_nm": 1,
-      "branch": 0,
-      "bracket_T": [
-        -0.18,
-        -0.185
-      ],
-      "tight_bracket_T": [
-        -0.18,
-        -0.185
-      ],
-      "field_check_T": 0.0025000000000000022,
-      "coarse_field_check_T": 0.0025000000000000022,
-      "final_run": "circle_1nm_refine_b0_5000uT"
-    },
-    {
-      "shape": "circle",
-      "cell_nm": 1,
-      "branch": 1,
-      "bracket_T": [
-        0.18,
-        0.185
-      ],
-      "tight_bracket_T": [
-        0.18,
-        0.185
-      ],
-      "field_check_T": 0.0025000000000000022,
-      "coarse_field_check_T": 0.0025000000000000022,
-      "final_run": "circle_1nm_refine_b1_5000uT"
-    },
     {
       "shape": "square",
       "cell_nm": 2,
@@ -982,7 +1157,294 @@
           ]
         }
       ]
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "square_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "square",
+      "cell_nm": 1,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "square_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "circle_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "circle",
+      "cell_nm": 1,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "circle_1nm_refine_b1_5000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 0,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "tight_bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "rectangle_1nm_refine_b0_5000uT"
+    },
+    {
+      "shape": "rectangle",
+      "cell_nm": 1,
+      "branch": 1,
+      "bracket_T": [
+        0.18,
+        0.185
+      ],
+      "tight_bracket_T": [
+        0.18,
+        0.185
+      ],
+      "field_check_T": 0.0025000000000000022,
+      "coarse_field_check_T": 0.0025000000000000022,
+      "final_run": "rectangle_1nm_refine_b1_5000uT"
     }
   ],
-  "numerical_acceptance_complete": false
+  "numerical_acceptance_complete": true,
+  "uniform_z_local_demag": {
+    "exchange_length_nm": 9.403159725795938,
+    "fields": [
+      {
+        "shape": "square",
+        "cell_nm": 2,
+        "source": "runs\\square_2nm_static_z\\result-Oxs_Demag-demag-Field-00-0000000.ohf",
+        "sha256": "970880bf9669e7d5d9d09b43f08b2660bf3175425561199412744ccea60d9d97",
+        "point": {
+          "cells": 8,
+          "N": 0.9819966750174188,
+          "B_mT": -370.20402481011917
+        },
+        "core": {
+          "cells": 136,
+          "N": 0.9819499021801236,
+          "B_mT": -370.18639186587507
+        },
+        "edge": {
+          "cells": 3800,
+          "N": 0.8279897646124602,
+          "B_mT": -312.1447874104856
+        },
+        "interior": {
+          "cells": 16200,
+          "N": 0.9673384185777338,
+          "B_mT": -364.6779923206772
+        },
+        "all": {
+          "cells": 20000,
+          "N": 0.940862174324332,
+          "B_mT": -354.69668338774085
+        }
+      },
+      {
+        "shape": "square",
+        "cell_nm": 1,
+        "source": "runs\\square_1nm_static_z\\result-Oxs_Demag-demag-Field-00-0000000.ohf",
+        "sha256": "e4609b01d2612831d46a0582e64f6c5843ed39582220111baa9e51babbcd24b1",
+        "point": {
+          "cells": 16,
+          "N": 0.9819989226382321,
+          "B_mT": -370.2048721432034
+        },
+        "core": {
+          "cells": 1104,
+          "N": 0.9819499132119944,
+          "B_mT": -370.1863960247924
+        },
+        "edge": {
+          "cells": 27504,
+          "N": 0.8180948376847668,
+          "B_mT": -308.4144878412237
+        },
+        "interior": {
+          "cells": 132496,
+          "N": 0.966346663115953,
+          "B_mT": -364.3041093199306
+        },
+        "all": {
+          "cells": 160000,
+          "N": 0.940862174324332,
+          "B_mT": -354.69668338774085
+        }
+      },
+      {
+        "shape": "circle",
+        "cell_nm": 2,
+        "source": "runs\\circle_2nm_static_z\\result-Oxs_Demag-demag-Field-00-0000000.ohf",
+        "sha256": "3d04b9a6cf782881549c87f81417b7ae5fa463bc7d255eea26d5bf8e2e173518",
+        "point": {
+          "cells": 8,
+          "N": 0.9822634056147852,
+          "B_mT": -370.30457987634003
+        },
+        "core": {
+          "cells": 136,
+          "N": 0.9822199223139938,
+          "B_mT": -370.28818705814166
+        },
+        "edge": {
+          "cells": 3144,
+          "N": 0.8180508947501334,
+          "B_mT": -308.3979217451491
+        },
+        "interior": {
+          "cells": 16824,
+          "N": 0.9674938244606149,
+          "B_mT": -364.7365789582753
+        },
+        "all": {
+          "cells": 19968,
+          "N": 0.9439637477874502,
+          "B_mT": -355.865949036497
+        }
+      },
+      {
+        "shape": "circle",
+        "cell_nm": 1,
+        "source": "runs\\circle_1nm_static_z\\result-Oxs_Demag-demag-Field-00-0000000.ohf",
+        "sha256": "2d1b06a7fa83666f94eac1a549ae94efeeb699c0e5b48f5668a5f04d9140c786",
+        "point": {
+          "cells": 16,
+          "N": 0.98228016344011,
+          "B_mT": -370.3108974276517
+        },
+        "core": {
+          "cells": 1104,
+          "N": 0.9822346987118058,
+          "B_mT": -370.2937576288791
+        },
+        "edge": {
+          "cells": 25584,
+          "N": 0.8213185489081285,
+          "B_mT": -309.62979834081665
+        },
+        "interior": {
+          "cells": 134416,
+          "N": 0.9676969612480056,
+          "B_mT": -364.8131597229481
+        },
+        "all": {
+          "cells": 160000,
+          "N": 0.9442910531148596,
+          "B_mT": -355.98934023794544
+        }
+      },
+      {
+        "shape": "rectangle",
+        "cell_nm": 2,
+        "source": "runs\\rectangle_2nm_static_z\\result-Oxs_Demag-demag-Field-00-0000000.ohf",
+        "sha256": "98ea86e6cc8da0346c0757b2dbd5dc2b7df2d432a173cd99e820d1309b3a9031",
+        "point": {
+          "cells": 8,
+          "N": 0.9737651375072018,
+          "B_mT": -367.1008082777376
+        },
+        "core": {
+          "cells": 136,
+          "N": 0.9735504981795693,
+          "B_mT": -367.0198911575542
+        },
+        "edge": {
+          "cells": 4800,
+          "N": 0.82915436901529,
+          "B_mT": -312.58383292683783
+        },
+        "interior": {
+          "cells": 15200,
+          "N": 0.9607526816972285,
+          "B_mT": -362.1952280084047
+        },
+        "all": {
+          "cells": 20000,
+          "N": 0.9291690866535635,
+          "B_mT": -350.28849318882874
+        }
+      },
+      {
+        "shape": "rectangle",
+        "cell_nm": 1,
+        "source": "runs\\rectangle_1nm_static_z\\result-Oxs_Demag-demag-Field-00-0000000.ohf",
+        "sha256": "c1acd246eace6789b9916c360657dfbd1a8daa38e29022793d8bc6f307f2a821",
+        "point": {
+          "cells": 16,
+          "N": 0.9737753139518776,
+          "B_mT": -367.10464470699753
+        },
+        "core": {
+          "cells": 1104,
+          "N": 0.9735507562441382,
+          "B_mT": -367.01998844560467
+        },
+        "edge": {
+          "cells": 34704,
+          "N": 0.8192603656824068,
+          "B_mT": -308.8538815446164
+        },
+        "interior": {
+          "cells": 125296,
+          "N": 0.9596111778023872,
+          "B_mT": -361.7648911783954
+        },
+        "all": {
+          "cells": 160000,
+          "N": 0.9291690866535636,
+          "B_mT": -350.2884931888288
+        }
+      }
+    ]
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "audited_runs": 459,
-  "checks": 2930,
+  "audited_runs": 488,
+  "checks": 3118,
   "all_passed": true,
   "runs": [
     {
@@ -2550,6 +2550,16 @@
       "mif_file_sha256": "e222e32771d02a6a55f039e1049113b18b266156821543c66793518893fada56"
     },
     {
+      "run_id": "rectangle_1nm_refine_b0_5000uT",
+      "checks": {
+        "aggregate_stage_count": true,
+        "aggregate_fields": true,
+        "aggregate_sequence": true,
+        "aggregate_checkpoint_lineage": true
+      },
+      "passed": true
+    },
+    {
       "run_id": "rectangle_1nm_refine_b0_5000uT_s000",
       "checks": {
         "mif_normalized_text_hash": true,
@@ -2604,6 +2614,382 @@
       },
       "passed": true,
       "mif_file_sha256": "8fe28303d4880dce367a0f76274ab5f87a8baa910a4153715f9d54e2ad05dbb4"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_s004",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "62bba6f0442c1be5f45098f9e97579fb25dfa887c1306b3dec9d1d2e5a56a760"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_s005",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "34ce65cfb7d32c6165ea50fa5b187d562bc1797457636be311bf0d8fa225e7a8"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight",
+      "checks": {
+        "aggregate_stage_count": true,
+        "aggregate_fields": true,
+        "aggregate_sequence": true,
+        "aggregate_checkpoint_lineage": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight_s000",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "252ac9d5ec03460e6d1c04b9deae075fd064a464e40b9fade1b801a2c7f68992"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight_s001",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "749f005ed706cf4c54d44f6c514006299d9adf9e7ba7b24a3a90dfe561f67085"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight_s002",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "70b7eb3489450dd4258983347c0ba1eac06b78316d3aebecf685d997569db6f9"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight_s003",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "ea86e8881a43660cb12deca3784cc46775534d4954d914e9e8adfd764ba18a2d"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight_s004",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "7e8268670f63710d53c6474a9874760c1a2048c80ce1323bcf0b33d2299fa4c2"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b0_5000uT_tight_s005",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "ea003513197a65ee3d9398d3a74160e1202b2a1c3b7434b4f82f7e339d5c2a2b"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_10000uT",
+      "checks": {
+        "aggregate_stage_count": true,
+        "aggregate_fields": true,
+        "aggregate_sequence": true,
+        "aggregate_checkpoint_lineage": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_10000uT_s000",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "1978ccb8fd959fd9544c0a498ea73d7c240e48d9799e460604e6e2d33818cd4c"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_10000uT_s001",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "64e4e3926d1f31f23fd9547ccf41fbc9c1b929a14c23c0150d24db396b972c8c"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_10000uT_s002",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "11b510a7b22d9fe9eff391225d42be50f1788148bc67026724048248e92dd28a"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_10000uT_s003",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "a1408c0c275acba90c97d48126935863105aa7633fe327c662bcdb38af361040"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT",
+      "checks": {
+        "aggregate_stage_count": true,
+        "aggregate_fields": true,
+        "aggregate_sequence": true,
+        "aggregate_checkpoint_lineage": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_s000",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "703d0115a9d79938cf8757268d3df182111e6b0cc6350c63f80afcff723f0ffe"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_s001",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "1978ccb8fd959fd9544c0a498ea73d7c240e48d9799e460604e6e2d33818cd4c"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_s002",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "b5e2e392d4eb5bd7705a0067105bc797293236d08226914ebe0343d35d811346"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_s003",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "64e4e3926d1f31f23fd9547ccf41fbc9c1b929a14c23c0150d24db396b972c8c"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_s004",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "db6bce9e3d38ae891d5ab7d3ff272e088d37738ebdca174e3757a742b808e57e"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_s005",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "8ec7dbc252305be6fa7d141466585d18c13588e0647307fdf6ff9e407eb7203a"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight",
+      "checks": {
+        "aggregate_stage_count": true,
+        "aggregate_fields": true,
+        "aggregate_sequence": true,
+        "aggregate_checkpoint_lineage": true
+      },
+      "passed": true
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight_s000",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "9b4d4f964e2ed39d2f3be0f6458f67b0c062c8aa6864256ade9cde3acb751dcb"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight_s001",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "103e4fd53babe7eec5f88f1687763d4a14c4f7dbebb954ce71c3887b2f2f75ad"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight_s002",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "eef8204da4c77cad1575f9635de8ec023b765fa56fbec8bd28a26f94f14c44cb"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight_s003",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "5517c81a7459d3d2cb033be83c3daca499e2ef9904c12b25d4ba4d946eaca9b5"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight_s004",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "790bf9e815fae909bb337a3d0540561dfdc5eacd291682d0dfd77e3c1f953aa9"
+    },
+    {
+      "run_id": "rectangle_1nm_refine_b1_5000uT_tight_s005",
+      "checks": {
+        "mif_normalized_text_hash": true,
+        "initial_hash": true,
+        "predecessor_hash": true,
+        "stage_count": true,
+        "actual_applied_fields": true,
+        "zero_transverse_field": true,
+        "zeeman_from_field_and_m": true
+      },
+      "passed": true,
+      "mif_file_sha256": "7ced2685b3c5386f777e238ebe7d65cbbce085abe10698fd139e7aba30c6aff8"
     },
     {
       "run_id": "rectangle_1nm_static_x",
