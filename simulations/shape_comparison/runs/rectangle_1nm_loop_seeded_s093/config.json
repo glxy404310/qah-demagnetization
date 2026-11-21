@@ -1,0 +1,23 @@
+{
+  "run_id": "rectangle_1nm_loop_seeded_s093",
+  "shape": "rectangle",
+  "cell_nm": 1,
+  "initial": "plus",
+  "fields_T": [
+    0.06
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0.001,
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\rectangle_1nm_loop_seeded_s092\\result-Oxs_TimeDriver-Spin-00-0002744.omf",
+  "predecessor_sha256": "e848301cd340f92ab7ebfc1977d5a9924e4d74a2a37d0b1df3396c55457b74f3",
+  "initial_sha256": "432c39078cc475031b0b9eadd68c8cba870da3b75a339459bc14745c9f8f7299",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "76490dfef77d7b4b191cdc305f41b6810d54ce8b2fcaebe2944377e3d2d1bae4"
+}

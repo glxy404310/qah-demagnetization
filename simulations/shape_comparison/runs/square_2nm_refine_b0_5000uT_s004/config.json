@@ -1,0 +1,23 @@
+{
+  "run_id": "square_2nm_refine_b0_5000uT_s004",
+  "shape": "square",
+  "cell_nm": 2,
+  "initial": "plus",
+  "fields_T": [
+    -0.185
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0.001,
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\square_2nm_refine_b0_5000uT_s003\\result-Oxs_TimeDriver-Spin-00-0001137.omf",
+  "predecessor_sha256": "e360221da9c8931562aa3b0dc5ec07025ae7ce78598440449e16807a8688318a",
+  "initial_sha256": "363c0d5faa56bf9c12bb2db353ac0c84b384e85013873ef9a59852047788bfe2",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "6a801935756e6dfe90d5788320f85ef4918835932c46bd949e1d876e419ea547"
+}

@@ -1,0 +1,81 @@
+{
+  "config": {
+    "run_id": "square_2nm_zero_plus_tight",
+    "shape": "square",
+    "cell_nm": 2,
+    "initial": "plus",
+    "fields_T": [
+      0.0
+    ],
+    "stop": 0.005,
+    "static": false,
+    "epsilon": 0,
+    "predecessor": null,
+    "predecessor_sha256": null,
+    "initial_sha256": "39dad0302df554931dcf1b4c241a47d6904891d3c3fa628224d40f44af1808d3",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "6f3f36432e497a2ab9f4c4aa4b1e9cc94bebe28b3f293d46c52b550f1bb310b5"
+  },
+  "geometry": {
+    "shape": "square",
+    "cell_nm": 2,
+    "lx_nm": 200,
+    "ly_nm": 200,
+    "nz": 2,
+    "ny": 100,
+    "nx": 100,
+    "magnetic_cells": 20000,
+    "area_nm2": 40000,
+    "volume_m3": 1.6000000000000004e-22,
+    "area_fraction_error": 0.0
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "b_T": 0.0,
+      "mean_m": [
+        4.3296513852857436e-06,
+        2.227168102719723e-19,
+        0.9999998468512272
+      ],
+      "mean_abs_mz": 0.9999998468512254,
+      "negative_fraction": 0.0,
+      "min_mz": 0.9999967743345001,
+      "max_mz": 0.9999999999999936,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.512441768119125e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.3612019762161182e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 3.920604333976773e-24,
+        "Oxs_UZeeman:zeeman:Energy": 0.0
+      },
+      "total_energy_J": 8.512581808921081e-18,
+      "energy_density_J_m3": 53203.63630575674,
+      "max_dm_dt_deg_ns": 0.0049274327268464205,
+      "independent_dm_dt_deg_ns": 0.004927432726846419,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 863,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-00-0000863.omf",
+      "mean_Hd_A_m": [
+        -0.027330150058016808,
+        -2.8230715543031693e-13,
+        -282254.02452731633
+      ]
+    }
+  ],
+  "all_passed": true
+}

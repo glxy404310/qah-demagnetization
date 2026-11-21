@@ -1,0 +1,24 @@
+{
+  "returncode": 0,
+  "wall_seconds": 140.26217870000255,
+  "pid": 38188,
+  "command": [
+    "D:\\Git\\mingw64\\bin\\tclsh.exe",
+    "D:\\Documents\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\oommf.tcl",
+    "boxsi",
+    "+fg",
+    "-tk",
+    "0",
+    "-threads",
+    "8",
+    "-exitondone",
+    "1",
+    "-kill",
+    "all",
+    "-outdir",
+    "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\square_1nm_refine_b0_10000uT_s003",
+    "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\square_1nm_refine_b0_10000uT_s003\\input.mif"
+  ],
+  "restricted_admin_sid": true,
+  "finished": "2026-11-19T00:29:47.063257+08:00"
+}

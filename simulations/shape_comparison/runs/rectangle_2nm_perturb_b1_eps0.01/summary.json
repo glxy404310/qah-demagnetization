@@ -1,0 +1,116 @@
+{
+  "config": {
+    "run_id": "rectangle_2nm_perturb_b1_eps0.01",
+    "shape": "rectangle",
+    "cell_nm": 2,
+    "fields_T": [
+      0.18,
+      0.185
+    ],
+    "stop": 0.01,
+    "protocol": "epsilon applied before each opposing-field point",
+    "epsilon": 0.01,
+    "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\rectangle_2nm_refine_b1_5000uT_s003\\result-Oxs_TimeDriver-Spin-00-0001990.omf",
+    "predecessor_sha256": "2ffdae975efdc96a2710feb097a3650a5e30b38db226a63144879daf0ea37b08"
+  },
+  "geometry": {
+    "shape": "rectangle",
+    "cell_nm": 2,
+    "lx_nm": 400,
+    "ly_nm": 100,
+    "nz": 2,
+    "ny": 50,
+    "nx": 200,
+    "magnetic_cells": 20000,
+    "area_nm2": 40000,
+    "volume_m3": 1.6000000000000004e-22,
+    "area_fraction_error": 0.0
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "b_T": 0.18,
+      "mean_m": [
+        0.0012739708790247195,
+        1.333148598025441e-15,
+        -0.9999988723146378
+      ],
+      "mean_abs_mz": 0.9999988723146407,
+      "negative_fraction": 1.0,
+      "min_mz": -0.9999999987339531,
+      "max_mz": -0.9999959750669919,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406554976292587e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.7422768583244248e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 2.8868721148707695e-23,
+        "Oxs_UZeeman:zeeman:Energy": 8.639990256798496e-18
+      },
+      "total_energy_J": 1.7046748329498065e-17,
+      "energy_density_J_m3": 106542.17705936288,
+      "max_dm_dt_deg_ns": 0.009999970069786404,
+      "independent_dm_dt_deg_ns": 0.009999970069786623,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 33746,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "../rectangle_2nm_perturb_b1_eps0.01_s000/result-Oxs_TimeDriver-Spin-00-0033746.omf",
+      "mean_Hd_A_m": [
+        -2.4373447587243886,
+        -1.6982085071504117e-11,
+        278744.59853084036
+      ],
+      "source_run": "rectangle_2nm_perturb_b1_eps0.01_s000",
+      "applied_epsilon": 0.01
+    },
+    {
+      "stage": 1,
+      "b_T": 0.185,
+      "mean_m": [
+        2.674739836629873e-06,
+        5.3557248913971986e-12,
+        0.9999998116241364
+      ],
+      "mean_abs_mz": 0.9999998116241262,
+      "negative_fraction": 0.0,
+      "min_mz": 0.9999968332310223,
+      "max_mz": 0.9999999999998598,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.406577663277133e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.6748371377914639e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 4.822417176100383e-24,
+        "Oxs_UZeeman:zeeman:Energy": -8.879998327222243e-18
+      },
+      "total_energy_J": -4.732483578141546e-19,
+      "energy_density_J_m3": -2957.8022363384657,
+      "max_dm_dt_deg_ns": 0.009887355252415549,
+      "independent_dm_dt_deg_ns": 0.00988735525241554,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 15756,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "../rectangle_2nm_perturb_b1_eps0.01_s001/result-Oxs_TimeDriver-Spin-00-0015756.omf",
+      "mean_Hd_A_m": [
+        -0.01730866505595695,
+        -7.886011408118065e-08,
+        -278744.97655793774
+      ],
+      "source_run": "rectangle_2nm_perturb_b1_eps0.01_s001",
+      "applied_epsilon": 0.01
+    }
+  ],
+  "all_passed": true
+}

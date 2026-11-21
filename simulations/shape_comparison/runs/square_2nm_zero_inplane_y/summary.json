@@ -1,0 +1,81 @@
+{
+  "config": {
+    "run_id": "square_2nm_zero_inplane_y",
+    "shape": "square",
+    "cell_nm": 2,
+    "initial": "inplane_y",
+    "fields_T": [
+      0.0
+    ],
+    "stop": 0.01,
+    "static": false,
+    "epsilon": 0,
+    "predecessor": null,
+    "predecessor_sha256": null,
+    "initial_sha256": "5d42d727c155ce8fd1ed4e43413c35dc3e672a479340eaa83d2b755e29905692",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "1cc2c52471a6f4395c9ec0ea6af562cf6f84cecea84c32a2d9b534f500193fe0"
+  },
+  "geometry": {
+    "shape": "square",
+    "cell_nm": 2,
+    "lx_nm": 200,
+    "ly_nm": 200,
+    "nz": 2,
+    "ny": 100,
+    "nx": 100,
+    "magnetic_cells": 20000,
+    "area_nm2": 40000,
+    "volume_m3": 1.6000000000000004e-22,
+    "area_fraction_error": 0.0
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "b_T": 0.0,
+      "mean_m": [
+        -1.6588293239028217e-21,
+        7.962419940143375e-06,
+        0.9999998468253998
+      ],
+      "mean_abs_mz": 0.9999998468253981,
+      "negative_fraction": 0.0,
+      "min_mz": 0.9999967717655651,
+      "max_mz": 0.9999999999999586,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 8.512441767675457e-18,
+        "Oxs_UniformExchange:exchange:Energy": 1.361202039281695e-22,
+        "Oxs_UniaxialAnisotropy:anisotropy:Energy": 3.921265506148257e-24,
+        "Oxs_UZeeman:zeeman:Energy": 0.0
+      },
+      "total_energy_J": 8.512581809144891e-18,
+      "energy_density_J_m3": 53203.63630715555,
+      "max_dm_dt_deg_ns": 0.009997736156162678,
+      "independent_dm_dt_deg_ns": 0.009997736156162678,
+      "max_norm_error": 3.3306690738754696e-16,
+      "iterations": 1771,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "independent_rhs": true,
+        "independent_convergence": true,
+        "fixed_field_energy_nonincreasing": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-00-0001771.omf",
+      "mean_Hd_A_m": [
+        -1.837179297581315e-14,
+        -0.049184641747808566,
+        -282254.024519827
+      ]
+    }
+  ],
+  "all_passed": true
+}

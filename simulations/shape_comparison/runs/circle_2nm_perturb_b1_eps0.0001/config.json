@@ -1,0 +1,14 @@
+{
+  "run_id": "circle_2nm_perturb_b1_eps0.0001",
+  "shape": "circle",
+  "cell_nm": 2,
+  "fields_T": [
+    0.18,
+    0.185
+  ],
+  "stop": 0.01,
+  "protocol": "epsilon applied before each opposing-field point",
+  "epsilon": 0.0001,
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_2nm_refine_b1_5000uT_s003\\result-Oxs_TimeDriver-Spin-00-0001031.omf",
+  "predecessor_sha256": "a30d1defccde106beefd0ffce784973959dccd9622233ad19956c4d456828ca3"
+}

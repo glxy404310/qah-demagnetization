@@ -1,0 +1,10 @@
+{
+  "updated": "2026-11-18T14:26:03.4592168+08:00",
+  "resume_note": "Wait for explicit user request. Preserve incomplete directory; archive before retrying from the previous accepted checkpoint.",
+  "reason": "User requested pause. Controller, owned solver process tree and report waiter stopped; heartbeat qah paused.",
+  "pause_archive": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\interrupted\\user_pause_20261118_142601",
+  "phase": "PAUSED",
+  "interrupted_runs": [
+    "circle_1nm_loop_seeded_s098"
+  ]
+}

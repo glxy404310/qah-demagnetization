@@ -1,0 +1,79 @@
+{
+  "config": {
+    "run_id": "circle_2nm_static_x",
+    "shape": "circle",
+    "cell_nm": 2,
+    "initial": "x",
+    "fields_T": [
+      0.0
+    ],
+    "stop": 0.01,
+    "static": true,
+    "epsilon": 0,
+    "predecessor": null,
+    "predecessor_sha256": null,
+    "initial_sha256": "330ee89dca94032aa788bc8f9c436d8f02359ed77f2994e66bd85f02d4102d00",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "cc2f181b75df3cb89facfca0c0d6431ff710c5915a7522933fc341117b1c3db8"
+  },
+  "geometry": {
+    "shape": "circle",
+    "cell_nm": 2,
+    "lx_nm": 228,
+    "ly_nm": 228,
+    "nz": 2,
+    "ny": 114,
+    "nx": 114,
+    "magnetic_cells": 19968,
+    "area_nm2": 39936,
+    "volume_m3": 1.5974400000000004e-22,
+    "area_fraction_error": -0.0016000000000000458
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "b_T": 0.0,
+      "mean_m": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean_abs_mz": 0.0,
+      "negative_fraction": 0.0,
+      "min_mz": 0.0,
+      "max_mz": 0.0,
+      "energy_J": {
+        "Oxs_Demag:demag:Energy": 2.5309642947896875e-19
+      },
+      "total_energy_J": 2.5309642947896875e-19,
+      "energy_density_J_m3": 1584.3877045708678,
+      "max_dm_dt_deg_ns": 0.0,
+      "independent_dm_dt_deg_ns": 209.84732973238948,
+      "max_norm_error": 0.0,
+      "iterations": 0,
+      "checks": {
+        "unit_m": true,
+        "energy_sum": true,
+        "field_energy": true,
+        "converged": true,
+        "frozen": true,
+        "N_field_energy": true
+      },
+      "spin_file": "result-Oxs_TimeDriver-Spin-00-0000000.omf",
+      "mean_Hd_A_m": [
+        -8405.43783188247,
+        1.641535910050898e-13,
+        9.109522253334617e-16
+      ],
+      "N_field": 0.028018126106275014,
+      "N_energy": 0.02801812610627501
+    }
+  ],
+  "all_passed": true
+}

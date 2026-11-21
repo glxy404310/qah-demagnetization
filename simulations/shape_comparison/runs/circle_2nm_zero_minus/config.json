@@ -1,0 +1,23 @@
+{
+  "run_id": "circle_2nm_zero_minus",
+  "shape": "circle",
+  "cell_nm": 2,
+  "initial": "minus",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "b650b7c4625c9c097f7b71249e9da53233afb44ca33a1f0e8f40fc25aa46c501",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "d92b5c1f1534e1ff988289db12c02d012b421e6ecbffa985eb980850b59b2e8a"
+}

@@ -1,0 +1,45 @@
+# MIF 2.2
+SetOptions { basename result scalar_output_format %.17g vector_field_output_format {binary 8} }
+proc Circle {x y z} {
+ set dx [expr {($x-0.5)*228}]
+ set dy [expr {($y-0.5)*228}]
+ if {$dx*$dx+$dy*$dy < 12732.395447351628} {return 1}
+ return 0
+}
+Specify Oxs_ScriptAtlas:atlas {
+ xrange {-1.14e-07 1.14e-07}
+ yrange {-1.14e-07 1.14e-07}
+ zrange {0 4e-9}
+ regions {film}
+ script Circle
+}
+Specify Oxs_RectangularMesh:mesh { cellsize {1e-09 1e-09 1e-09} atlas :atlas }
+Specify Oxs_Demag:demag {}
+Specify Oxs_UniformExchange:exchange { A 5e-12 }
+Specify Oxs_UniaxialAnisotropy:anisotropy { K1 80000.0 axis {0 0 1} }
+Specify Oxs_UZeeman:zeeman {
+ multiplier 795774.71545947669
+ Hrange { {0 0 -0.17999999999999999 0 0 -0.17999999999999999 0} }
+}
+Specify Oxs_RungeKuttaEvolve:evolve {
+ alpha 0.5 gamma_G 2.21e5 do_precess 0 method rkf54 relative_step_error 1e-7
+ 
+}
+Specify Oxs_TimeDriver {
+ evolver :evolve mesh :mesh
+ Ms { Oxs_AtlasScalarField { atlas :atlas default_value 0 values {film 300000.0} } }
+ m0 { Oxs_FileVectorField { file initial.omf spatial_scaling {1 1 1} spatial_offset {0 0 0} norm 1 } }
+ stopping_dm_dt 0.01
+ stage_iteration_limit 100000
+ total_iteration_limit 100000
+ stage_count 1
+ checkpoint_interval -1
+ normalize_aveM_output 1
+}
+Destination archive mmArchive
+Schedule DataTable archive Step 100
+Schedule DataTable archive Stage 1
+Schedule DataTable archive Done
+Schedule Oxs_TimeDriver::Spin archive Stage 1
+Schedule Oxs_Demag:demag:Field archive Stage 1
+Schedule {Oxs_RungeKuttaEvolve:evolve:Total field} archive Stage 1

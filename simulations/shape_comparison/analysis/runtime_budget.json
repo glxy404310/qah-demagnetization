@@ -1,0 +1,145 @@
+{
+  "updated": "2026-11-21T16:33:29+08:00",
+  "completed_1nm_loops": {
+    "square": {
+      "accepted_run_wall_seconds": 5932.591781000001,
+      "hours": 1.6479421613888892,
+      "flip_seconds": [
+        1070.1744964,
+        1122.6435804000002
+      ],
+      "excludes_interrupted_attempts": true
+    },
+    "circle": {
+      "accepted_run_wall_seconds": 6773.069509299996,
+      "hours": 1.8814081970277767,
+      "flip_seconds": [
+        1244.1515716,
+        1240.8567977999992
+      ],
+      "excludes_interrupted_attempts": true
+    },
+    "rectangle": {
+      "accepted_run_wall_seconds": 6566.3791312999965,
+      "hours": 1.8239942031388878,
+      "flip_seconds": [
+        1185.6547388,
+        1255.833157799998
+      ],
+      "excludes_interrupted_attempts": true
+    }
+  },
+  "accepted_path_wall_seconds": {
+    "square_2nm_refine_b0": {
+      "10000uT": 94.91975919999823,
+      "5000uT": 190.2967942999967,
+      "5000uT_tight": 228.35117339999124
+    },
+    "square_2nm_refine_b1": {
+      "10000uT": 96.4493741000042,
+      "5000uT": 193.55231559999083,
+      "5000uT_tight": 225.7650006999902
+    },
+    "square_1nm_refine_b0": {
+      "10000uT": 3487.137501500005,
+      "5000uT": 6615.251538600003,
+      "5000uT_tight": 7487.4329976
+    },
+    "square_1nm_refine_b1": {
+      "10000uT": 3275.5248624000014,
+      "5000uT": 6716.775455400004,
+      "5000uT_tight": 7373.374452100004
+    },
+    "circle_2nm_refine_b0": {
+      "10000uT": 118.82405049999943,
+      "5000uT": 237.5764191000053,
+      "5000uT_tight": 271.7278363999867
+    },
+    "circle_2nm_refine_b1": {
+      "10000uT": 113.444464900007,
+      "5000uT": 201.8224132000032,
+      "5000uT_tight": 297.0120148999995
+    },
+    "circle_1nm_refine_b0": {
+      "10000uT": 3238.097485899998,
+      "5000uT": 7150.800036699999,
+      "5000uT_tight": 7690.1063535
+    },
+    "circle_1nm_refine_b1": {
+      "10000uT": 3201.8979384000004,
+      "5000uT": 6526.718529199998,
+      "5000uT_tight": 7502.1794279999995
+    },
+    "rectangle_2nm_refine_b0": {
+      "10000uT": 145.98664569999528,
+      "5000uT": 287.98004370000126,
+      "5000uT_tight": 361.9018885999976
+    },
+    "rectangle_2nm_refine_b1": {
+      "10000uT": 145.7263516000021,
+      "5000uT": 220.25347070000134,
+      "5000uT_tight": 279.9935964000033
+    },
+    "rectangle_1nm_refine_b0": {
+      "10000uT": 2968.2006113999996,
+      "5000uT": 7037.979507700002,
+      "5000uT_tight": 8903.843449899992
+    },
+    "rectangle_1nm_refine_b1": {
+      "10000uT": 3199.456536400008,
+      "5000uT": 6629.7518251,
+      "5000uT_tight": 8391.808888499996
+    }
+  },
+  "accepted_physical_runs": 427,
+  "accepted_physical_wall_hours": 38.00430489741667,
+  "archived_attempts_with_timing": [
+    {
+      "source": "interrupted\\circle_1nm_loop_seeded_s040_shutdown_20261115_2104\\run.json",
+      "wall_seconds": 1127.0629991999995
+    },
+    {
+      "source": "interrupted\\circle_1nm_refine_b0_5000uT_tight_s002_shutdown_20261120_104530\\run.json",
+      "wall_seconds": 1519.6304407999996
+    },
+    {
+      "source": "interrupted\\circle_1nm_zero_plus_exit1_20261114_0019\\run.json",
+      "wall_seconds": 118.9893333
+    },
+    {
+      "source": "interrupted\\rectangle_1nm_refine_b0_5000uT_s004_iteration_cap_20261120_1947\\original_run\\run.json",
+      "wall_seconds": 3636.2165191999993
+    },
+    {
+      "source": "interrupted\\rectangle_1nm_refine_b1_5000uT_s000_shutdown_20261121_1002\\original_run\\run.json",
+      "wall_seconds": 456.87861720000365
+    },
+    {
+      "source": "interrupted\\rectangle_1nm_refine_b1_5000uT_tight_s002_shutdown_20261121_1429\\original_run\\run.json",
+      "wall_seconds": 1035.9820000000018
+    },
+    {
+      "source": "interrupted\\rectangle_1nm_zero_domains_shutdown_20261114_1201\\run.json",
+      "wall_seconds": 83.06468229999882
+    },
+    {
+      "source": "interrupted\\square_1nm_refine_b0_10000uT_s002_restart_20261118_234706\\run.json",
+      "wall_seconds": 1105.1876721000008
+    },
+    {
+      "source": "interrupted\\square_1nm_refine_b0_5000uT_s004_shutdown_20261119_131904\\run.json",
+      "wall_seconds": 253.2372729000017
+    }
+  ],
+  "archived_measured_wall_hours": 2.593402649166668,
+  "archive_folders_without_run_json": [
+    "circle_1nm_loop_seeded_s040_user_pause_resume_20261118_133651",
+    "circle_1nm_loop_seeded_s098_user_pause_resume_20261118_164431",
+    "square_1nm_zero_plus_worker_refresh_20261113_1938",
+    "user_pause_20261115_211333",
+    "user_pause_20261118_142601"
+  ],
+  "remaining_solver_runs": 0,
+  "scope": "Accepted cost sums each physical run.json in runs once. Archived attempts with recorded durations are listed separately, excluding duplicate copies in the same incident. Idle time, untimed interruptions, validation, pilots and trajectory replays are outside the accepted-run total.",
+  "previous_estimate_snapshot": "validation\\historical\\runtime_budget_20261121_1002.json"
+}

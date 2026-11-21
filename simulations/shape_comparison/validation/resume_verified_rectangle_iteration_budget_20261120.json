@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-20T19:48:12.653305+08:00",
+  "initial_and_geometry_byte_identical": true,
+  "config_only_budget_and_mif_hash_differ": true,
+  "mif_only_iteration_budget_differs": true,
+  "predecessor_checksum_matches": true,
+  "iteration_limit": 200000,
+  "stop": 0.01,
+  "latest_iteration": 400,
+  "latest_max_dm_dt": 0.1747840473826966,
+  "status": "running; not yet accepted"
+}

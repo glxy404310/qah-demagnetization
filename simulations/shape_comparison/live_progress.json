@@ -1,0 +1,19 @@
+{
+  "time": "2026-11-21T16:25:14.021862+08:00",
+  "status": {
+    "phase": "COMPLETE",
+    "updated": "2026-11-21T16:25:08.685513+08:00",
+    "pending": [],
+    "failed_checks": []
+  },
+  "completed": {
+    "static_2nm": 9,
+    "zero_2nm": 24,
+    "loops_2nm": 3,
+    "static_1nm": 9,
+    "zero_1nm": 6,
+    "loops_1nm": 3
+  },
+  "current_paths": [],
+  "completed_verification_branches": 12
+}

@@ -1,0 +1,5 @@
+{
+  "archived": "2026-11-15T21:04:01.3878114+08:00",
+  "action": "Retry identical field point from accepted predecessor s039; reuse all other accepted cases. No live solver before restart.",
+  "reason": "System shutdown at 2026-11-14 14:36:57; launcher exited at 14:36:58. Last ODT iteration 24800, max dm/dt 800.469798 deg/ns, mean mz -0.286062507. No final vector outputs. Incomplete reversal excluded from accepted data."
+}

@@ -1,0 +1,5 @@
+{
+  "pid": 10672,
+  "phase": "failed",
+  "error": "Failed numerical checks: D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\rectangle_1nm_refine_b0_5000uT_s004: [(0, {'unit_m': True, 'energy_sum': True, 'field_energy': True, 'converged': False, 'independent_rhs': True, 'independent_convergence': False, 'fixed_field_energy_nonincreasing': True})]"
+}

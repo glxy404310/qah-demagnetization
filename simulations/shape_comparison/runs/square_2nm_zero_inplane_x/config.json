@@ -1,0 +1,23 @@
+{
+  "run_id": "square_2nm_zero_inplane_x",
+  "shape": "square",
+  "cell_nm": 2,
+  "initial": "inplane_x",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "f2fe554dba56c1150b46db895a14f33a7e9f7d531b11ed75c53039a52484e516",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "1cc2c52471a6f4395c9ec0ea6af562cf6f84cecea84c32a2d9b534f500193fe0"
+}

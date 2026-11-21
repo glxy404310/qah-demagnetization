@@ -1,0 +1,18 @@
+{
+  "rectangle_1nm_refine_b0_5000uT_s004": {
+    "stage_iteration_limit": 200000,
+    "reason": "2026-11-20: 100000-step cap reached with max dm/dt=15.0012038414 deg/ns > 0.01. Retry from passed s003 with identical initial state, field, physics and stopping threshold; failed attempt retained under interrupted/rectangle_1nm_refine_b0_5000uT_s004_iteration_cap_20261120_1947."
+  },
+  "rectangle_1nm_refine_b0_5000uT_tight_s004": {
+    "stage_iteration_limit": 200000,
+    "reason": "Preventive budget for corresponding rectangle 1 nm critical point after observed b0 s004 cap. Stopping criterion remains case-specific."
+  },
+  "rectangle_1nm_refine_b1_5000uT_s004": {
+    "stage_iteration_limit": 200000,
+    "reason": "Preventive budget for corresponding rectangle 1 nm critical point after observed b0 s004 cap. Stopping criterion remains case-specific."
+  },
+  "rectangle_1nm_refine_b1_5000uT_tight_s004": {
+    "stage_iteration_limit": 200000,
+    "reason": "Preventive budget for corresponding rectangle 1 nm critical point after observed b0 s004 cap. Stopping criterion remains case-specific."
+  }
+}

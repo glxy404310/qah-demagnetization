@@ -1,0 +1,29 @@
+{
+  "started": "2026-11-08T15:59:59.164562+08:00",
+  "command": [
+    "C:\\Program Files\\Git\\ucrt64\\bin\\tclsh.exe",
+    "C:\\Users\\35730\\Desktop\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\oommf.tcl",
+    "boxsi",
+    "+fg",
+    "-tk",
+    "0",
+    "-threads",
+    "8",
+    "-exitondone",
+    "1",
+    "-kill",
+    "all",
+    "-outdir",
+    "C:\\Users\\35730\\Desktop\\qah-demagnetization\\simulations\\baseline\\oommf_2nm_static_y",
+    "-parameters",
+    "cell 2e-9 mode static axis y stop 0.01 basename static_y",
+    "C:\\Users\\35730\\Desktop\\qah-demagnetization\\simulations\\baseline\\square.mif"
+  ],
+  "cell_nm": 2,
+  "mode": "static",
+  "axis": "y",
+  "stopping_dm_dt_deg_ns": 0.01,
+  "mif_sha256": "d32b7eb44f93768727b79ed2fd462ec328304065df206e2e4132ed74bd03b84f",
+  "returncode": 0,
+  "wall_seconds": 6.258800600015093
+}

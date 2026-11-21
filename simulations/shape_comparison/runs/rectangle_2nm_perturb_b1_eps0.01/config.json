@@ -1,0 +1,14 @@
+{
+  "run_id": "rectangle_2nm_perturb_b1_eps0.01",
+  "shape": "rectangle",
+  "cell_nm": 2,
+  "fields_T": [
+    0.18,
+    0.185
+  ],
+  "stop": 0.01,
+  "protocol": "epsilon applied before each opposing-field point",
+  "epsilon": 0.01,
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\rectangle_2nm_refine_b1_5000uT_s003\\result-Oxs_TimeDriver-Spin-00-0001990.omf",
+  "predecessor_sha256": "2ffdae975efdc96a2710feb097a3650a5e30b38db226a63144879daf0ea37b08"
+}

@@ -1,0 +1,21 @@
+{
+  "historical_checks": 50,
+  "all_passed": true,
+  "pilots": [
+    {
+      "mode": "static",
+      "wall_seconds": 5.078229200000351,
+      "mean_mz": 1.0,
+      "dm_dt": 0.0
+    },
+    {
+      "mode": "relax",
+      "wall_seconds": 9.618737100001454,
+      "mean_mz": 0.9999998468174457,
+      "dm_dt": 0.009987481954618056
+    }
+  ],
+  "numpy_witness": 219.8861386391069,
+  "python": "3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)]",
+  "restricted_token": true
+}

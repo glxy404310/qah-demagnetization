@@ -1,0 +1,52 @@
+{
+  "time": "2026-11-18T16:44:31.685131+08:00",
+  "passed": true,
+  "accepted_stages": 98,
+  "accepted_parts": [
+    "circle_1nm_loop_seeded_s000",
+    "circle_1nm_loop_seeded_s031",
+    "circle_1nm_loop_seeded_s032",
+    "circle_1nm_loop_seeded_s033",
+    "circle_1nm_loop_seeded_s034",
+    "circle_1nm_loop_seeded_s035",
+    "circle_1nm_loop_seeded_s036",
+    "circle_1nm_loop_seeded_s037",
+    "circle_1nm_loop_seeded_s038",
+    "circle_1nm_loop_seeded_s039",
+    "circle_1nm_loop_seeded_s040",
+    "circle_1nm_loop_seeded_s041",
+    "circle_1nm_loop_seeded_s091",
+    "circle_1nm_loop_seeded_s092",
+    "circle_1nm_loop_seeded_s093",
+    "circle_1nm_loop_seeded_s094",
+    "circle_1nm_loop_seeded_s095",
+    "circle_1nm_loop_seeded_s096",
+    "circle_1nm_loop_seeded_s097"
+  ],
+  "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s097\\result-Oxs_TimeDriver-Spin-00-0007346.omf",
+  "predecessor_sha256": "1b239c4847864e7faa586a215f16d6521cc1f09ffe281f98b97cb29e9cd89476",
+  "interrupted_config": {
+    "run_id": "circle_1nm_loop_seeded_s098",
+    "shape": "circle",
+    "cell_nm": 1,
+    "initial": "plus",
+    "fields_T": [
+      0.16
+    ],
+    "stop": 0.01,
+    "static": false,
+    "epsilon": 0.001,
+    "predecessor": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\runs\\circle_1nm_loop_seeded_s097\\result-Oxs_TimeDriver-Spin-00-0007346.omf",
+    "predecessor_sha256": "1b239c4847864e7faa586a215f16d6521cc1f09ffe281f98b97cb29e9cd89476",
+    "initial_sha256": "ed8b37571021edb9c9196f533db82e82aab6901ce915e7fa819baf0eb1e6eaf2",
+    "material": {
+      "Ms": 300000.0,
+      "A": 5e-12,
+      "Ku": 80000.0,
+      "alpha": 0.5
+    },
+    "protocol_version": 1,
+    "mif_sha256": "d931ec5fff90436f364d2bede1761586fe7fecbe89d96013954cf3a4fbd601f5"
+  },
+  "archive_name": "circle_1nm_loop_seeded_s098_user_pause_resume_20261118_164431"
+}

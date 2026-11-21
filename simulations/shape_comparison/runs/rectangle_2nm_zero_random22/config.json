@@ -1,0 +1,23 @@
+{
+  "run_id": "rectangle_2nm_zero_random22",
+  "shape": "rectangle",
+  "cell_nm": 2,
+  "initial": "random22",
+  "fields_T": [
+    0.0
+  ],
+  "stop": 0.01,
+  "static": false,
+  "epsilon": 0,
+  "predecessor": null,
+  "predecessor_sha256": null,
+  "initial_sha256": "280d1f82ffb0630777778962352b6f34aea0c042635415adbc284c69f73fd40b",
+  "material": {
+    "Ms": 300000.0,
+    "A": 5e-12,
+    "Ku": 80000.0,
+    "alpha": 0.5
+  },
+  "protocol_version": 1,
+  "mif_sha256": "f598cfbb052a8680bb090061f5f01286ad8bf881ef789250e75f8dae29e6b55e"
+}

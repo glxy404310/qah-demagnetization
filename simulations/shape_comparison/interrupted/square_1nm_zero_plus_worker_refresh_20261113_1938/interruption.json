@@ -1,0 +1,6 @@
+{
+  "reason": "Restart controller to load the revised validation order and trajectory capture. Complete results were retained; only the active unfinished 1nm zero-field case was archived for later fresh execution.",
+  "controller_pid": 38180,
+  "time": "2026-11-13T19:38:25+08:00",
+  "accepted_as_result": false
+}

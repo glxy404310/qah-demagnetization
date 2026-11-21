@@ -1,0 +1,7 @@
+{
+  "updated": "2026-11-15T21:13:33.4645604+08:00",
+  "phase": "PAUSED",
+  "reason": "User requested interruption. Controller, owned solver tree and report worker stopped. No automatic resume until user requests it.",
+  "resume_note": "Preserve incomplete run directory; archive it before retrying from accepted s039. Completed results remain reusable.",
+  "interrupted_run": "circle_1nm_loop_seeded_s040"
+}

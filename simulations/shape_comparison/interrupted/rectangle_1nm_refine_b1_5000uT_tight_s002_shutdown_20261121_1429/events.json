@@ -1,0 +1,20 @@
+[
+  {
+    "TimeCreated": "2026-11-21T12:37:28.1034312+08:00",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "TimeCreated": "2026-11-21T12:36:59.5113724+08:00",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "TimeCreated": "2026-11-21T12:36:46.7812666+08:00",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe (WIN-T72386I8M7S) 由于以下原因已代表用户 WIN-T72386I8M7S\\Administrator 启动计算机 WIN-T72386I8M7S 的 重启: 其他(计划外)\r\n 原因代码: 0x0\r\n 关机类型: 重启\r\n 注释: "
+  }
+]

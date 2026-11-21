@@ -1,0 +1,25 @@
+{
+  "time": "2026-11-18T14:23:01.209682+08:00",
+  "status": {
+    "phase": "M4_grid_hysteresis",
+    "updated": "2026-11-18T13:37:25.711450+08:00"
+  },
+  "completed": {
+    "static_2nm": 9,
+    "zero_2nm": 24,
+    "loops_2nm": 3,
+    "static_1nm": 9,
+    "zero_1nm": 6,
+    "loops_1nm": 1
+  },
+  "current_paths": [
+    {
+      "run_id": "circle_1nm_loop_seeded",
+      "completed_stages": 98,
+      "total_stages": 121,
+      "last_b_T": 0.14,
+      "mean_mz": -0.9999998649202911
+    }
+  ],
+  "completed_verification_branches": 6
+}

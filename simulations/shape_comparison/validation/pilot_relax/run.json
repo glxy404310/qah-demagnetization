@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "wall_seconds": 9.618737100001454,
+  "pid": 47332,
+  "command": [
+    "D:\\Git\\mingw64\\bin\\tclsh.exe",
+    "D:\\Documents\\qah-demagnetization\\.tools\\oommf20b0\\oommf\\oommf.tcl",
+    "boxsi",
+    "+fg",
+    "-tk",
+    "0",
+    "-threads",
+    "8",
+    "-exitondone",
+    "1",
+    "-kill",
+    "all",
+    "-outdir",
+    "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\validation\\pilot_relax",
+    "-parameters",
+    "cell 2e-9 mode relax axis z stop 0.01 basename pilot",
+    "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\validation\\pilot_relax\\input.mif"
+  ],
+  "restricted_admin_sid": true
+}

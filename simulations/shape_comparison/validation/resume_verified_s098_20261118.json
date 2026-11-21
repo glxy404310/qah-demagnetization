@@ -1,0 +1,37 @@
+{
+  "time": "2026-11-18T16:46:00.498484+08:00",
+  "phase": "P1_running",
+  "accepted_circle_stages": 98,
+  "archive": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\interrupted\\circle_1nm_loop_seeded_s098_user_pause_resume_20261118_164431",
+  "unchanged_inputs": {
+    "config.json": true,
+    "geometry.json": true,
+    "input.mif": true,
+    "initial.omf": true
+  },
+  "last_scalars": {
+    "Oxs_RungeKuttaEvolve:evolve:Max dm/dt": 0.1074125136624449,
+    "Oxs_TimeDriver::Iteration": 900.0,
+    "Oxs_TimeDriver::Stage": 0.0
+  },
+  "launch": {
+    "wait_pid": 0,
+    "started": "2026-11-18T16:44:47.1954069+08:00",
+    "pid": 27776,
+    "stderr": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\campaign_20261118_164447.errors.log",
+    "stdout": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\campaign_20261118_164447.log"
+  },
+  "controller": {
+    "pid": 35136,
+    "phase": "running"
+  },
+  "report_worker": {
+    "started": "2026-11-18T16:44:47.2107263+08:00",
+    "pid": 37464,
+    "stdout": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\final-report_20261118_164447.log",
+    "stderr": "D:\\Documents\\qah-demagnetization\\simulations\\shape_comparison\\final-report_20261118_164447.errors.log",
+    "wait_for": 27776
+  },
+  "heartbeat_status": "ACTIVE",
+  "numerical_acceptance_complete": false
+}

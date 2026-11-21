@@ -1,0 +1,163 @@
+{
+  "time": "2026-11-19T16:36:18.014057+08:00",
+  "shape": "square",
+  "cell_nm": 1,
+  "branch": 0,
+  "paths": [
+    {
+      "run_id": "square_1nm_refine_b0_10000uT",
+      "parts": [
+        {
+          "run_id": "square_1nm_refine_b0_10000uT_s000",
+          "wall_seconds": 741.4384867000008,
+          "stages": 1,
+          "max_stop_rate": 0.009999018756144966,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_10000uT_s001",
+          "wall_seconds": 219.34563490000073,
+          "stages": 1,
+          "max_stop_rate": 0.009994892554208466,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_10000uT_s002",
+          "wall_seconds": 2386.091201200001,
+          "stages": 1,
+          "max_stop_rate": 0.009958868611483764,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_10000uT_s003",
+          "wall_seconds": 140.26217870000255,
+          "stages": 22,
+          "max_stop_rate": 0.00994511033529584,
+          "raw_input_output_checked": true
+        }
+      ],
+      "accepted_wall_seconds": 3487.137501500005,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "stage_count": 25,
+      "final_mz": -0.9999998617302209,
+      "excludes_interrupted_attempts": true
+    },
+    {
+      "run_id": "square_1nm_refine_b0_5000uT",
+      "parts": [
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_s000",
+          "wall_seconds": 723.4358217000008,
+          "stages": 1,
+          "max_stop_rate": 0.009998355370060193,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_s001",
+          "wall_seconds": 776.720155199997,
+          "stages": 1,
+          "max_stop_rate": 0.009999255869360619,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_s002",
+          "wall_seconds": 1039.0624468000024,
+          "stages": 1,
+          "max_stop_rate": 0.009999975195056039,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_s003",
+          "wall_seconds": 236.6512309000027,
+          "stages": 1,
+          "max_stop_rate": 0.009999076343068205,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_s004",
+          "wall_seconds": 3794.6874494000003,
+          "stages": 1,
+          "max_stop_rate": 0.009986395531108059,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_s005",
+          "wall_seconds": 44.69443460000002,
+          "stages": 26,
+          "max_stop_rate": 0.009998358382238705,
+          "raw_input_output_checked": true
+        }
+      ],
+      "accepted_wall_seconds": 6615.251538600003,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "stage_count": 31,
+      "final_mz": -0.9999998617302174,
+      "excludes_interrupted_attempts": true
+    },
+    {
+      "run_id": "square_1nm_refine_b0_5000uT_tight",
+      "parts": [
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_tight_s000",
+          "wall_seconds": 707.3638612000004,
+          "stages": 1,
+          "max_stop_rate": 0.004999512795790212,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_tight_s001",
+          "wall_seconds": 901.7035199000002,
+          "stages": 1,
+          "max_stop_rate": 0.004999966009637746,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_tight_s002",
+          "wall_seconds": 1389.8887387000004,
+          "stages": 1,
+          "max_stop_rate": 0.004999895004779581,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_tight_s003",
+          "wall_seconds": 316.6692585999999,
+          "stages": 1,
+          "max_stop_rate": 0.0049992848663546205,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_tight_s004",
+          "wall_seconds": 4121.8370899,
+          "stages": 1,
+          "max_stop_rate": 0.00499642369868717,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "square_1nm_refine_b0_5000uT_tight_s005",
+          "wall_seconds": 49.970529299998816,
+          "stages": 26,
+          "max_stop_rate": 0.004958376754490273,
+          "raw_input_output_checked": true
+        }
+      ],
+      "accepted_wall_seconds": 7487.4329976,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "stage_count": 31,
+      "final_mz": -0.9999998617350986,
+      "excludes_interrupted_attempts": true
+    }
+  ],
+  "accepted_seconds": 17589.822037700007,
+  "remaining_five_branches_scaled_hours": 24.430308385694456,
+  "extrapolation_only": true,
+  "final_acceptance_complete": false
+}

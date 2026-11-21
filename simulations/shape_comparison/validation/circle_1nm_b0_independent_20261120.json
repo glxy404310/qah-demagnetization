@@ -1,0 +1,161 @@
+{
+  "time": "2026-11-20T12:29:12.306660+08:00",
+  "shape": "circle",
+  "cell_nm": 1,
+  "branch": 0,
+  "paths": [
+    {
+      "run_id": "circle_1nm_refine_b0_10000uT",
+      "parts": [
+        {
+          "run_id": "circle_1nm_refine_b0_10000uT_s000",
+          "wall_seconds": 794.5150530999999,
+          "stages": 1,
+          "max_stop_rate": 0.009999698723570562,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_10000uT_s001",
+          "wall_seconds": 230.5841100999969,
+          "stages": 1,
+          "max_stop_rate": 0.00999766543731639,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_10000uT_s002",
+          "wall_seconds": 2172.8792231000007,
+          "stages": 1,
+          "max_stop_rate": 0.009990276543516547,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_10000uT_s003",
+          "wall_seconds": 40.11909960000048,
+          "stages": 22,
+          "max_stop_rate": 0.009936180131774872,
+          "raw_input_output_checked": true
+        }
+      ],
+      "accepted_wall_seconds": 3238.097485899998,
+      "bracket_T": [
+        -0.18,
+        -0.19
+      ],
+      "stage_count": 25,
+      "final_mz": -0.9999998745289403,
+      "excludes_interrupted_attempts": true
+    },
+    {
+      "run_id": "circle_1nm_refine_b0_5000uT",
+      "parts": [
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_s000",
+          "wall_seconds": 645.0788107999979,
+          "stages": 1,
+          "max_stop_rate": 0.009997774044582552,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_s001",
+          "wall_seconds": 780.887369899996,
+          "stages": 1,
+          "max_stop_rate": 0.009999360447562633,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_s002",
+          "wall_seconds": 1159.923387499999,
+          "stages": 1,
+          "max_stop_rate": 0.009999060344708143,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_s003",
+          "wall_seconds": 229.63709240000026,
+          "stages": 1,
+          "max_stop_rate": 0.009989136336927015,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_s004",
+          "wall_seconds": 4287.8855690000055,
+          "stages": 1,
+          "max_stop_rate": 0.009974711679934287,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_s005",
+          "wall_seconds": 47.38780709999992,
+          "stages": 26,
+          "max_stop_rate": 0.00991677717741811,
+          "raw_input_output_checked": true
+        }
+      ],
+      "accepted_wall_seconds": 7150.800036699999,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "stage_count": 31,
+      "final_mz": -0.9999998745289864,
+      "excludes_interrupted_attempts": true
+    },
+    {
+      "run_id": "circle_1nm_refine_b0_5000uT_tight",
+      "parts": [
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_tight_s000",
+          "wall_seconds": 833.5143523000006,
+          "stages": 1,
+          "max_stop_rate": 0.004999705683494899,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_tight_s001",
+          "wall_seconds": 1069.8343599,
+          "stages": 1,
+          "max_stop_rate": 0.004999446203810655,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_tight_s002",
+          "wall_seconds": 1546.2577431,
+          "stages": 1,
+          "max_stop_rate": 0.004999951060505071,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_tight_s003",
+          "wall_seconds": 288.52340059999983,
+          "stages": 1,
+          "max_stop_rate": 0.004999171141050136,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_tight_s004",
+          "wall_seconds": 3898.8494358000003,
+          "stages": 1,
+          "max_stop_rate": 0.004966637094054464,
+          "raw_input_output_checked": true
+        },
+        {
+          "run_id": "circle_1nm_refine_b0_5000uT_tight_s005",
+          "wall_seconds": 53.127061799999865,
+          "stages": 26,
+          "max_stop_rate": 0.004989768111736908,
+          "raw_input_output_checked": true
+        }
+      ],
+      "accepted_wall_seconds": 7690.1063535,
+      "bracket_T": [
+        -0.18,
+        -0.185
+      ],
+      "stage_count": 31,
+      "final_mz": -0.9999998745325025,
+      "excludes_interrupted_attempts": true
+    }
+  ],
+  "field_midpoint_change_T": 0.0025000000000000022,
+  "all_checked": true
+}
