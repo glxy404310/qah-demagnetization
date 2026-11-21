@@ -1,4 +1,4 @@
-"""Build the 8-page theory deck: 汇报PPT/1.pptx.
+"""Build the 7-page theory deck: 汇报PPT/理论阶段汇报.pptx.
 
 The deck covers only what the simulation stage actually needs: the four energy
 terms, the demagnetizing factor, the K_eff criterion, the exchange length and
@@ -8,7 +8,7 @@ never hand-copied. Run with the bundled Python:
 
     python 汇报PPT/build_deck.py
 
-Output: 汇报PPT/1.pptx (8 slides, 16:9, speaker notes). If 1.pptx is locked by
+Output: 汇报PPT/理论阶段汇报.pptx (7 slides, 16:9, speaker notes). If the file is locked by
 another program, the deck is saved as 阶段汇报_理论版.pptx instead.
 """
 import json
@@ -29,7 +29,7 @@ from pptx.util import Inches, Pt
 ROOT = Path(__file__).resolve().parent.parent
 DEMAG_DIR = ROOT / "理论学习资料" / "辅助文件" / "output" / "demag-learning"
 FIDIMAG_DIR = ROOT / "理论学习资料" / "辅助文件" / "output" / "fidimag-learning"
-OUT = Path(__file__).resolve().parent / os.environ.get("DECK_NAME", "1.pptx")
+OUT = Path(__file__).resolve().parent / os.environ.get("DECK_NAME", "理论阶段汇报.pptx")
 
 sys.path.insert(0, str(DEMAG_DIR))
 from rectangular_demag import center_factors, rectangular_factors  # noqa: E402
@@ -702,7 +702,7 @@ def build():
     except PermissionError:
         OUT = OUT.with_name("阶段汇报_理论版.pptx")
         prs.save(OUT)
-        print(f"note: 1.pptx 被占用，已另存为 {OUT.name}")
+        print(f"note: 目标文件被占用，已另存为 {OUT.name}")
     return prs
 
 
