@@ -4,6 +4,8 @@
 
 项目按照 **理论学习 → 模拟实验 → 数据分析 → 总结与优化** 的顺序开展。
 
+2026-11-13 已按 [仿真执行计划](refine-logs/EXPERIMENT_PLAN.md) 完成环境与基准复核、三形状静态退磁场、24 组多初态零场弛豫，以及三条 2 nm 完整磁滞回线（363 个场点）和代表翻转过程快照。翻转区加密、扰动敏感性及 1 nm 复核继续推进，见 [运行说明与状态](simulations/shape_comparison/README.md)、[阶段结果](simulations/shape_comparison/RESULTS.md) 和 [实验追踪表](refine-logs/EXPERIMENT_TRACKER.md)。
+
 ## 1. 项目目标
 
 - 理解退磁场、磁各向异性与交换作用之间的竞争关系。
