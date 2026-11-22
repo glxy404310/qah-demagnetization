@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\continue_campaign.py", line 30, in <module>
+    campaign('all')
+    ~~~~~~~~^^^^^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 131, in campaign
+    s=seeded_path(f'{shape}_1nm_loop_seeded',shape,cell=1)
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 317, in seeded_path
+    part=case(part_id,shape,cell,fields=fields[start:end],stop=stop,
+              predecessor=current,epsilon=epsilon if opposing else 0)
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 272, in case
+    raise RuntimeError(f'OOMMF exit {result["returncode"]}: {out}/console.log')
+RuntimeError: OOMMF exit 1073807364: D:\Documents\qah-demagnetization\simulations\shape_comparison\runs\circle_1nm_loop_seeded_s040/console.log

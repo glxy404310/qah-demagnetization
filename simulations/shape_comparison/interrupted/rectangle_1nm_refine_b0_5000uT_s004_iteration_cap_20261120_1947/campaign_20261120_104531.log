@@ -1,0 +1,72 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 426 runs, 2714 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 426 runs, 2714 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START circle_1nm_refine_b0_5000uT_tight_s002: 1 stages
+PASS circle_1nm_refine_b0_5000uT_tight_s002: 1546.3s, mz=0.99999985
+START circle_1nm_refine_b0_5000uT_tight_s003: 1 stages
+PASS circle_1nm_refine_b0_5000uT_tight_s003: 288.5s, mz=0.99999921
+START circle_1nm_refine_b0_5000uT_tight_s004: 1 stages
+PASS circle_1nm_refine_b0_5000uT_tight_s004: 3898.8s, mz=-0.99999987
+START circle_1nm_refine_b0_5000uT_tight_s005: 26 stages
+PASS circle_1nm_refine_b0_5000uT_tight_s005: 53.1s, mz=-0.99999987
+PATH PASS circle_1nm_refine_b0_5000uT_tight: 31 stages
+START circle_1nm_refine_b1_10000uT_s000: 1 stages
+PASS circle_1nm_refine_b1_10000uT_s000: 776.5s, mz=-0.99999985
+START circle_1nm_refine_b1_10000uT_s001: 1 stages
+PASS circle_1nm_refine_b1_10000uT_s001: 211.3s, mz=-0.99999920
+START circle_1nm_refine_b1_10000uT_s002: 1 stages
+PASS circle_1nm_refine_b1_10000uT_s002: 2169.4s, mz=0.99999987
+START circle_1nm_refine_b1_10000uT_s003: 22 stages
+PASS circle_1nm_refine_b1_10000uT_s003: 44.7s, mz=0.99999987
+PATH PASS circle_1nm_refine_b1_10000uT: 25 stages
+START circle_1nm_refine_b1_5000uT_s000: 1 stages
+PASS circle_1nm_refine_b1_5000uT_s000: 644.8s, mz=-0.99999986
+START circle_1nm_refine_b1_5000uT_s001: 1 stages
+PASS circle_1nm_refine_b1_5000uT_s001: 816.7s, mz=-0.99999985
+START circle_1nm_refine_b1_5000uT_s002: 1 stages
+PASS circle_1nm_refine_b1_5000uT_s002: 1032.1s, mz=-0.99999982
+START circle_1nm_refine_b1_5000uT_s003: 1 stages
+PASS circle_1nm_refine_b1_5000uT_s003: 211.5s, mz=-0.99999902
+START circle_1nm_refine_b1_5000uT_s004: 1 stages
+PASS circle_1nm_refine_b1_5000uT_s004: 3773.8s, mz=0.99999987
+START circle_1nm_refine_b1_5000uT_s005: 26 stages
+PASS circle_1nm_refine_b1_5000uT_s005: 47.8s, mz=0.99999987
+PATH PASS circle_1nm_refine_b1_5000uT: 31 stages
+START circle_1nm_refine_b1_5000uT_tight_s000: 1 stages
+PASS circle_1nm_refine_b1_5000uT_tight_s000: 797.0s, mz=-0.99999986
+START circle_1nm_refine_b1_5000uT_tight_s001: 1 stages
+PASS circle_1nm_refine_b1_5000uT_tight_s001: 1014.4s, mz=-0.99999986
+START circle_1nm_refine_b1_5000uT_tight_s002: 1 stages
+PASS circle_1nm_refine_b1_5000uT_tight_s002: 1496.2s, mz=-0.99999985
+START circle_1nm_refine_b1_5000uT_tight_s003: 1 stages
+PASS circle_1nm_refine_b1_5000uT_tight_s003: 284.4s, mz=-0.99999921
+START circle_1nm_refine_b1_5000uT_tight_s004: 1 stages
+PASS circle_1nm_refine_b1_5000uT_tight_s004: 3858.7s, mz=0.99999987
+START circle_1nm_refine_b1_5000uT_tight_s005: 26 stages
+PASS circle_1nm_refine_b1_5000uT_tight_s005: 51.6s, mz=0.99999987
+PATH PASS circle_1nm_refine_b1_5000uT_tight: 31 stages
+START rectangle_1nm_refine_b0_10000uT_s000: 1 stages
+PASS rectangle_1nm_refine_b0_10000uT_s000: 579.5s, mz=0.99999980
+START rectangle_1nm_refine_b0_10000uT_s001: 1 stages
+PASS rectangle_1nm_refine_b0_10000uT_s001: 313.2s, mz=0.99999935
+START rectangle_1nm_refine_b0_10000uT_s002: 1 stages
+PASS rectangle_1nm_refine_b0_10000uT_s002: 2036.8s, mz=-0.99999982
+START rectangle_1nm_refine_b0_10000uT_s003: 22 stages
+PASS rectangle_1nm_refine_b0_10000uT_s003: 38.6s, mz=-0.99999983
+PATH PASS rectangle_1nm_refine_b0_10000uT: 25 stages
+START rectangle_1nm_refine_b0_5000uT_s000: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_s000: 467.8s, mz=0.99999981
+START rectangle_1nm_refine_b0_5000uT_s001: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_s001: 570.8s, mz=0.99999980
+START rectangle_1nm_refine_b0_5000uT_s002: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_s002: 752.0s, mz=0.99999978
+START rectangle_1nm_refine_b0_5000uT_s003: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_s003: 325.5s, mz=0.99999924
+START rectangle_1nm_refine_b0_5000uT_s004: 1 stages

@@ -1,0 +1,2 @@
+OUTPUT AUDIT 336 runs, 2115 checks passed
+REPORT {"pending": ["三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}

@@ -1,0 +1,71 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 345 runs, 2178 checks passed
+REPORT {"pending": ["三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 345 runs, 2178 checks passed
+REPORT {"pending": ["三形状两种网格完整磁滞", "两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START circle_1nm_loop_seeded_s098: 1 stages
+PASS circle_1nm_loop_seeded_s098: 518.2s, mz=-0.99999986
+START circle_1nm_loop_seeded_s099: 1 stages
+PASS circle_1nm_loop_seeded_s099: 212.6s, mz=-0.99999928
+START circle_1nm_loop_seeded_s100: 1 stages
+PASS circle_1nm_loop_seeded_s100: 1240.9s, mz=0.99999987
+START circle_1nm_loop_seeded_s101: 20 stages
+PASS circle_1nm_loop_seeded_s101: 37.9s, mz=0.99999987
+PATH PASS circle_1nm_loop_seeded: 121 stages
+START rectangle_1nm_loop_seeded_s000: 31 stages
+PASS rectangle_1nm_loop_seeded_s000: 81.9s, mz=0.99999982
+START rectangle_1nm_loop_seeded_s031: 1 stages
+PASS rectangle_1nm_loop_seeded_s031: 101.2s, mz=0.99999982
+START rectangle_1nm_loop_seeded_s032: 1 stages
+PASS rectangle_1nm_loop_seeded_s032: 108.9s, mz=0.99999982
+START rectangle_1nm_loop_seeded_s033: 1 stages
+PASS rectangle_1nm_loop_seeded_s033: 121.6s, mz=0.99999982
+START rectangle_1nm_loop_seeded_s034: 1 stages
+PASS rectangle_1nm_loop_seeded_s034: 140.5s, mz=0.99999982
+START rectangle_1nm_loop_seeded_s035: 1 stages
+PASS rectangle_1nm_loop_seeded_s035: 166.3s, mz=0.99999981
+START rectangle_1nm_loop_seeded_s036: 1 stages
+PASS rectangle_1nm_loop_seeded_s036: 201.1s, mz=0.99999981
+START rectangle_1nm_loop_seeded_s037: 1 stages
+PASS rectangle_1nm_loop_seeded_s037: 265.2s, mz=0.99999981
+START rectangle_1nm_loop_seeded_s038: 1 stages
+PASS rectangle_1nm_loop_seeded_s038: 414.3s, mz=0.99999981
+START rectangle_1nm_loop_seeded_s039: 1 stages
+PASS rectangle_1nm_loop_seeded_s039: 332.5s, mz=0.99999940
+START rectangle_1nm_loop_seeded_s040: 1 stages
+PASS rectangle_1nm_loop_seeded_s040: 1185.7s, mz=-0.99999982
+START rectangle_1nm_loop_seeded_s041: 50 stages
+PASS rectangle_1nm_loop_seeded_s041: 74.4s, mz=-0.99999982
+START rectangle_1nm_loop_seeded_s091: 1 stages
+PASS rectangle_1nm_loop_seeded_s091: 110.6s, mz=-0.99999982
+START rectangle_1nm_loop_seeded_s092: 1 stages
+PASS rectangle_1nm_loop_seeded_s092: 138.2s, mz=-0.99999982
+START rectangle_1nm_loop_seeded_s093: 1 stages
+PASS rectangle_1nm_loop_seeded_s093: 147.0s, mz=-0.99999982
+START rectangle_1nm_loop_seeded_s094: 1 stages
+PASS rectangle_1nm_loop_seeded_s094: 169.1s, mz=-0.99999982
+START rectangle_1nm_loop_seeded_s095: 1 stages
+PASS rectangle_1nm_loop_seeded_s095: 208.9s, mz=-0.99999981
+START rectangle_1nm_loop_seeded_s096: 1 stages
+PASS rectangle_1nm_loop_seeded_s096: 211.7s, mz=-0.99999981
+START rectangle_1nm_loop_seeded_s097: 1 stages
+PASS rectangle_1nm_loop_seeded_s097: 284.0s, mz=-0.99999981
+START rectangle_1nm_loop_seeded_s098: 1 stages
+PASS rectangle_1nm_loop_seeded_s098: 455.7s, mz=-0.99999981
+START rectangle_1nm_loop_seeded_s099: 1 stages
+PASS rectangle_1nm_loop_seeded_s099: 357.3s, mz=-0.99999940
+START rectangle_1nm_loop_seeded_s100: 1 stages
+PASS rectangle_1nm_loop_seeded_s100: 1255.8s, mz=0.99999982
+START rectangle_1nm_loop_seeded_s101: 20 stages
+PASS rectangle_1nm_loop_seeded_s101: 34.5s, mz=0.99999983
+PATH PASS rectangle_1nm_loop_seeded: 121 stages
+START square_1nm_refine_b0_10000uT_s000: 1 stages
+PASS square_1nm_refine_b0_10000uT_s000: 741.4s, mz=0.99999984
+START square_1nm_refine_b0_10000uT_s001: 1 stages
+PASS square_1nm_refine_b0_10000uT_s001: 219.3s, mz=0.99999924
+START square_1nm_refine_b0_10000uT_s002: 1 stages

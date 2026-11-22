@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\continue_campaign.py", line 30, in <module>
+    campaign('all')
+    ~~~~~~~~^^^^^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 134, in campaign
+    verify_mesh(1)
+    ~~~~~~~~~~~^^^
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 65, in verify_mesh
+    tight=refine(coarse,branch,0.005,stop=0.005,label='_tight')
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\run_campaign.py", line 40, in refine
+    r=seeded_path(run_id,cfg['shape'],cfg['cell_nm'],fields=fields,stop=stop,
+           predecessor=spin_path(s,max(0,i-2)))
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 317, in seeded_path
+    part=case(part_id,shape,cell,fields=fields[start:end],stop=stop,
+              predecessor=current,epsilon=epsilon if opposing else 0)
+  File "D:\Documents\qah-demagnetization\simulations\shape_comparison\simulate.py", line 272, in case
+    raise RuntimeError(f'OOMMF exit {result["returncode"]}: {out}/console.log')
+RuntimeError: OOMMF exit 1073807364: D:\Documents\qah-demagnetization\simulations\shape_comparison\runs\circle_1nm_refine_b0_5000uT_tight_s002/console.log

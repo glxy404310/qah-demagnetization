@@ -1,0 +1,38 @@
+TRACE square: 1.000000000000
+TRACE circle: 1.000000000000
+TRACE rectangle: 1.000000000000
+DIAGNOSTIC square: unperturbed loop has 0 reversals
+DIAGNOSTIC circle: unperturbed loop has 0 reversals
+DIAGNOSTIC rectangle: unperturbed loop has 0 reversals
+OUTPUT AUDIT 459 runs, 2930 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+OUTPUT AUDIT 459 runs, 2930 checks passed
+REPORT {"pending": ["两种网格翻转区场步/阈值与扰动检验"], "failed_checks": []}
+START rectangle_1nm_refine_b0_5000uT_s004: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_s004: 4884.2s, mz=-0.99999982
+START rectangle_1nm_refine_b0_5000uT_s005: 26 stages
+PASS rectangle_1nm_refine_b0_5000uT_s005: 37.7s, mz=-0.99999983
+PATH PASS rectangle_1nm_refine_b0_5000uT: 31 stages
+START rectangle_1nm_refine_b0_5000uT_tight_s000: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_tight_s000: 667.8s, mz=0.99999981
+START rectangle_1nm_refine_b0_5000uT_tight_s001: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_tight_s001: 834.2s, mz=0.99999981
+START rectangle_1nm_refine_b0_5000uT_tight_s002: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_tight_s002: 1297.9s, mz=0.99999981
+START rectangle_1nm_refine_b0_5000uT_tight_s003: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_tight_s003: 1372.3s, mz=0.99999958
+START rectangle_1nm_refine_b0_5000uT_tight_s004: 1 stages
+PASS rectangle_1nm_refine_b0_5000uT_tight_s004: 4696.2s, mz=-0.99999982
+START rectangle_1nm_refine_b0_5000uT_tight_s005: 26 stages
+PASS rectangle_1nm_refine_b0_5000uT_tight_s005: 35.5s, mz=-0.99999983
+PATH PASS rectangle_1nm_refine_b0_5000uT_tight: 31 stages
+START rectangle_1nm_refine_b1_10000uT_s000: 1 stages
+PASS rectangle_1nm_refine_b1_10000uT_s000: 624.5s, mz=-0.99999980
+START rectangle_1nm_refine_b1_10000uT_s001: 1 stages
+PASS rectangle_1nm_refine_b1_10000uT_s001: 342.7s, mz=-0.99999935
+START rectangle_1nm_refine_b1_10000uT_s002: 1 stages
+PASS rectangle_1nm_refine_b1_10000uT_s002: 2157.7s, mz=0.99999982
+START rectangle_1nm_refine_b1_10000uT_s003: 22 stages
+PASS rectangle_1nm_refine_b1_10000uT_s003: 74.6s, mz=0.99999983
+PATH PASS rectangle_1nm_refine_b1_10000uT: 25 stages
+START rectangle_1nm_refine_b1_5000uT_s000: 1 stages
